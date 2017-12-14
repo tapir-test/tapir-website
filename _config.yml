@@ -1,0 +1,62 @@
+# Site settings
+title: tapir
+email: tapir@bmiag.de
+description: >
+  tapir - Test API against Regression
+
+baseurl: "/tapir-website" # the subpath of your site, e.g. /blog/
+url: https://tapir-test.github.io/tapir-website # the base hostname & protocol for your site
+staticmanUrl: https://api.staticman.net/v2/entry/tapir-test/tapir-website/gh-pages/comments
+git_address: https://github.com/tapir-test/tapir-website
+git_edit_address: https://github.com/tapir-test/tapir-website/blob/gh-pages
+
+# theme options from https://bootswatch.com/
+# comment out this to use default Bootstrap
+bootwatch: tapir
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+timezone: Europe/Berlin
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true

@@ -1,0 +1,48 @@
+- title: Getting Started
+  docs:
+  - gettingstarted/introducingtapir
+  - gettingstarted/systemrequirements
+  - gettingstarted/installation
+  - gettingstarted/firsttapirtestcase
+  - gettingstarted/license
+
+- title: Using tapir
+  docs:
+  - usingtapir/howdoesitwork
+  - usingtapir/whyxtend
+  - usingtapir/buildsystems
+  - usingtapir/modules
+  - usingtapir/archetypes
+  - usingtapir/testclass
+  - usingtapir/testsuite
+  - usingtapir/pageobjects
+  - usingtapir/structuringcode
+  - usingtapir/runningtapirtests
+  - usingtapir/dataprovider
+  - usingtapir/logging
+  - usingtapir/concurrenttestexecution
+  - usingtapir/selenium
+  - /usingtapir/selenium/seleniumcoremodule
+  - usingtapir/selenium/webbrowsermodule
+  - usingtapir/selenium/webframeworkmodule
+
+- title: Extensions
+  docs:
+  - extensions/documentation
+  - extensions/junit
+  - extensions/allure
+  - extensions/immutables
+  - extensions/variantmanagement
+  - extensions/configurationmanagement
+  - extensions/conditional
+
+- title: Customization
+  docs:
+  - customization/executionfilter
+  - customization/executionlistener
+  - customization/stepexecutioninvocationhandler
+  - customization/attachmentlistener
+  - customization/customimplementation
+  - customization/htmlcomponents
+  - customization/ui-technology
+  - customization/dynamicactiveannotations

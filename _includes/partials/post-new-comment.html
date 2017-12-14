@@ -1,0 +1,38 @@
+<form id="post-new-comment" class="form" action="{{ site.staticmanUrl }}" method="post">
+    <input type="hidden" name="options[slug]" value="{{ post_slug }}">
+    <input type="hidden" name="options[parent]" value="{{ post_slug }}">
+    <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
+    <input type="hidden" name="options[redirect]" value="{{ site.url }}{{ page.url }}">
+    <!--
+        <input type="hidden" name="options[reCaptcha][siteKey]" value="6LddezEUAAAAAEgYhFlbg6YMrola0d5ZdhK6OyrA">
+        <input type="hidden" name="options[reCaptcha][secret]" value="C/beoE4nGgpjfvj6yPT4/B+54tlnfxXiL/OynntFifQ2CFQDadkGXnBAzxk/LFa2Ta/KCUSSfmgpDrODqzgZ4euo+EGL1VL3jKcP6mstpyT39Z9mlzd4grO2COrdbjuIJ1R4dlmjL95532Os0qbw3KfYkj0tOzbxBahlOrCzC0o=">
+    -->
+
+
+    <div class="control-group form-group">
+        <div class="controls">
+            <label>Full Name:</label>
+            <input type="text" class="form-control" name="fields[name]" required data-validation-required-message="Please enter your name.">
+            <p class="help-block"></p>
+        </div>
+    </div>
+    <div class="control-group form-group">
+        <div class="controls">
+            <label>Email Address:</label>
+            <input type="email" class="form-control" name="fields[email]" required data-validation-required-message="Please enter your email address.">
+        </div>
+    </div>
+    <div class="control-group form-group">
+        <div class="controls">
+            <label>Message:</label>
+            <textarea rows="10" cols="100" class="form-control" name="fields[message]" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+        </div>
+    </div>
+    <!--
+
+        <div class="form__recaptcha g-recaptcha" data-sitekey="6LddezEUAAAAAEgYhFlbg6YMrola0d5ZdhK6OyrA"></div>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    -->
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
