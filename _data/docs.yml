@@ -22,7 +22,7 @@
   - usingtapir/logging
   - usingtapir/concurrenttestexecution
   - usingtapir/selenium
-  - /usingtapir/selenium/seleniumcoremodule
+  - usingtapir/selenium/seleniumcoremodule
   - usingtapir/selenium/webbrowsermodule
   - usingtapir/selenium/webframeworkmodule
 

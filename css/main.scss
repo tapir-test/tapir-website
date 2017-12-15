@@ -18,8 +18,7 @@
     "bootswatch/{{site.bootwatch | downcase}}/bootswatch",
   {% endif %}
 
-  "syntax-highlighting",
-  "typeahead"
+  "syntax-highlighting"
 ;
 
 html {
