@@ -16,17 +16,20 @@ layout: default
 
     <div class="row">
         <div class="col-md-6">
-            <h2 class="header-light regular-pad">What is Jekyll?</h2>
+            <h2 class="header-light regular-pad">What is <i>tapir</i>?</h2>
             <blockquote>
-              <p>Jekyll is a simple, blog-aware, static site generator. It takes a template
-              directory containing raw text files in various formats, runs it through
-              a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>)
-              and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and
-              spits out a complete, ready-to-publish static website suitable
-              for serving with your favorite web server. Jekyll also happens to be the engine
-              behind <a href="https://pages.github.com">GitHub Pages</a>, which means you can use Jekyll
-              to host your project’s page, blog, or website from GitHub’s servers <strong>for
-              free</strong>.</p>
+              <p>
+                  <i>tapir</i> is a framework to develop UI regression tests. Its name is an acronym for <i><strong>T</strong>est <strong>API</strong> against <strong>R</strong>egression</i>. <i>tapir</i> focuses on maintainablity, readability and robustness.
+              </p>
+              <p>
+                  Unlike Capture/Replay-Tools <i>tapir</i> pursues the approach to implement test cases with a technology independent API.
+              </p>
+              <p>
+                Instead of reinventing the wheel <i>tapir</i> uses established open-source frameworks and tools. It applies patterns and concepts commonly known in the application development to the testing domain.
+              </p>
+              <p>
+                  <a href="{{ "/docs/gettingstarted/first<i>tapir</i>testcase/" | prepend: site.baseurl }}">Let's get started!</a>
+              </p>
             </blockquote>
         </div>
         <div class="col-md-6 text-center">
@@ -38,32 +41,49 @@ layout: default
 
     <div class="row">
         <div class="col-sm-4">
-            <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Easy to install and publish</h3>
-            <p>Get started by clonening source into GitHub account of your project. Thanks to <a href="https://pages.github.com">GitHub Pages</a>,
-              it will be automatically compiled and publsihed under your project's subdomain on `github.io`.
+            <h1 class="text-center"><i class="fa fa-eye" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Easy to read and maintain</h3>
+            <p><i>tapir</i> ships with an API which reflects the test domain. This enables the possiblity to read tests as an executable specification and maintain them easily.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-cubes" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Technology independent</h3>
+            <p><i>tapir</i> tests are implemented in a technology independent manner. The specifics of the underlying UI technology (like HTML or JavaFX) do not pollute your test code.</p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-shield" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Non-flaky</h3>
+            <p>You do not have to struggle with technical issues like synchronization between the test code and the tested software. <i>tapir</i> handles these situations internally.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-puzzle-piece" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Modular</h3>
+            <p><i>tapir</i> itself is splitted into several modules. Every module is a functional unit. There are a lot of modules (<a href="{{ "docs/extensions/documentation/" | prepend: site.baseurl }}">extensions</a>) which can be used optionally.
             </p>
         </div>
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Modular Styling and Templating</h3>
-            <p>This template uses <a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> along with <a href="https://bootswatch.com/">Bootwatch themes</a>.
-            You can change the theme or write your custom by overwriting bootstrap sass variables for different color set, font options, etc.</p>
+            <h3 class="text-center">Integrates seamlessly</h3>
+            <p><i>tapir</i> provides a couple of adapters which fulfill APIs of existing frameworks and tools. If no adapter for your framework or your tool is available yet, it’s very easy to write one by yourself.
+            </p>
         </div>
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
-            <h3 class="text-center">Git based source control</h3>
-            <p>Leverege from Git version control system by
-              maintaining your documentation along with the source code; publish the page when you merge to the master branch.</p>
+            <h3 class="text-center">Tests product lines</h3>
+            <p><i>tapir</i> offers support for testing multiple variants of the Software Under Test. By using feature markers <i>tapir</i> avoids the necessity to duplicate the test code.
+            </p>
         </div>
     </div>
-
 
 </div>
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Pricing</h2>
+            <h2 class="section-heading">Editions</h2>
             <hr class="primary">
         </div>
     </div>
@@ -72,21 +92,17 @@ layout: default
      <!-- Content Row -->
      <div class="row">
          <div class="col-md-4">
-             <div class="panel panel-default text-center sr-pricing">
+             <div class="panel panel-primary text-center sr-pricing">
                  <div class="panel-heading">
-                     <h3 class="panel-title">Basic</h3>
-                 </div>
-                 <div class="panel-body">
-                     <span class="price"><sup>$</sup>19<sup>99</sup></span>
-                     <span class="period">per month</span>
+                     <h3 class="panel-title">Evaluation <span class="label label-success">Free</span></h3>
                  </div>
                  <ul class="list-group">
-                     <li class="list-group-item"><strong>1</strong> User</li>
-                     <li class="list-group-item"><strong>5</strong> Projects</li>
-                     <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                     <li class="list-group-item"><strong>10GB</strong> Disk Space</li>
-                     <li class="list-group-item"><strong>100GB</strong> Monthly Bandwidth</li>
-                     <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a>
+                     <li class="list-group-item"><strong>3</strong> Page Objects</li>
+                     <li class="list-group-item"><strong>5</strong> Test Cases</li>
+                     <li class="list-group-item"><strong>5</strong> Datasets per Dataprovider</li>
+                     <li class="list-group-item">No Time or Functional Limitation*</li>
+                     <li class="list-group-item">No License Needed</li>
+                     <li class="list-group-item"><a href="#" class="btn btn-primary">Start now!</a>
                      </li>
                  </ul>
              </div>
@@ -94,45 +110,40 @@ layout: default
          <div class="col-md-4">
              <div class="panel panel-primary text-center sr-pricing">
                  <div class="panel-heading">
-                     <h3 class="panel-title">Plus <span class="label label-success">Best Value</span></h3>
-                 </div>
-                 <div class="panel-body">
-                     <span class="price"><sup>$</sup>39<sup>99</sup></span>
-                     <span class="period">per month</span>
+                     <h3 class="panel-title">Community <span class="label label-success">Free</span></h3>
                  </div>
                  <ul class="list-group">
-                     <li class="list-group-item"><strong>10</strong> User</li>
-                     <li class="list-group-item"><strong>500</strong> Projects</li>
-                     <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                     <li class="list-group-item"><strong>1000GB</strong> Disk Space</li>
-                     <li class="list-group-item"><strong>10000GB</strong> Monthly Bandwidth</li>
-                     <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a>
+                     <li class="list-group-item"><strong>Unlimited</strong> Page Objects</li>
+                     <li class="list-group-item"><strong>Unlimited</strong> Test Cases</li>
+                     <li class="list-group-item"><strong>Unlimited</strong> Datasets per Dataprovider</li>
+                     <li class="list-group-item">No Functional Limitation*</li>
+                     <li class="list-group-item">Free for Non-Enterprise Users</li>
+                     <li class="list-group-item"><a href="#" class="btn btn-primary">Get it for free!</a>
                      </li>
                  </ul>
              </div>
          </div>
          <div class="col-md-4">
-             <div class="panel panel-default text-center sr-pricing">
+             <div class="panel panel-primary text-center sr-pricing">
                  <div class="panel-heading">
-                     <h3 class="panel-title">Ultra</h3>
-                 </div>
-                 <div class="panel-body">
-                     <span class="price"><sup>$</sup>159<sup>99</sup></span>
-                     <span class="period">per month</span>
+                     <h3 class="panel-title">Enterprise</h3>
                  </div>
                  <ul class="list-group">
-                     <li class="list-group-item"><strong>Unlimted</strong> Users</li>
-                     <li class="list-group-item"><strong>Unlimited</strong> Projects</li>
-                     <li class="list-group-item"><strong>Unlimited</strong> Email Accounts</li>
-                     <li class="list-group-item"><strong>10000GB</strong> Disk Space</li>
-                     <li class="list-group-item"><strong>Unlimited</strong> Monthly Bandwidth</li>
-                     <li class="list-group-item"><a href="#" class="btn btn-primary">Sign Up!</a>
+                     <li class="list-group-item"><strong>Individual</strong> Number of Page Objects</li>
+                     <li class="list-group-item"><strong>Individual</strong> Number of Test Cases</li>
+                     <li class="list-group-item"><strong>Individual</strong> Number of Datasets per Dataprovider</li>
+                     <li class="list-group-item">Individual Feature Set</li>
+                     <li class="list-group-item">For Enterprise Users</li>
+                     <li class="list-group-item"><a href="#" class="btn btn-primary">Request offer now!</a>
                      </li>
                  </ul>
              </div>
          </div>
      </div>
      <!-- /.row -->
+     <div>
+         * except Product-Line Testing and Parallel Execution
+     </div>
  </div>
 
  <div class="container">
@@ -149,7 +160,7 @@ layout: default
     <div class="row">
         <div class="col-md-8">
             <h3>Send us a Message</h3>
-            <form name="sentMessage" id="contactForm" method="post" action="https://formspree.io/tapir@bmiag.de">
+            <form name="sentMessage" id="contactForm" method="post" action="https://formspree.io/<i>tapir</i>@bmiag.de">
             <div class="control-group form-group">
                 <div class="controls">
                     <label>Full Name:</label>
