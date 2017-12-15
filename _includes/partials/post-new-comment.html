@@ -1,4 +1,5 @@
 <form id="post-new-comment" class="form" action="{{ site.staticmanUrl }}" method="post">
+    <input type="hidden" name="options[title]" value="{{ page.title }}">
     <input type="hidden" name="options[slug]" value="{{ post_slug }}">
     <input type="hidden" name="options[parent]" value="{{ post_slug }}">
     <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
