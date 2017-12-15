@@ -1,5 +1,5 @@
 ---
-title: UI Technolgy
+title: UI Technology
 permalink: /docs/customization/ui-technology/
 ---
 

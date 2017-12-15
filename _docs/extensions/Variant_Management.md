@@ -1,5 +1,5 @@
 ---
-title: Variant Managemenr
+title: Variant Management
 permalink: /docs/extensions/variantmanagement/
 ---
 
