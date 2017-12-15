@@ -17,7 +17,7 @@
                 <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | prepend: site.baseurl }}">Blog</a></li>
             </ul>
             <div class="navbar-right">
-                <form class="navbar-form navbar-left" action="/search/">
+                <form class="navbar-form navbar-left" action="{{ "/search" | prepend: site.baseurl }}">
                     <div class="form-group has-feedback">
                     <input type="text" name="q" id="tipue_search_input" class="form-control" placeholder="Search..." pattern=".{3,}" title="At least 3 characters" required>
                         <i class="fa fa-search form-control-feedback"></i>

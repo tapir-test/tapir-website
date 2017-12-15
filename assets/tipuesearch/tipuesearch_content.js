@@ -46,7 +46,8 @@ layout: null
       {%- endunless -%}
     {%- endunless -%}
   {%- endfor -%}
-  {%- for section in site.data.docs -%}
+{%- endif -%}
+{%- for section in site.data.docs -%}
     {%- for item in section.docs -%}
         {%- assign item_url = item | prepend:"/docs/" | append:"/" -%}
         {%- assign page = site.docs | where:"url", item_url | first -%}
@@ -67,8 +68,7 @@ layout: null
           {%- endunless -%}
         {%- endunless -%}
     {%- endfor -%}
-  {%- endfor -%}
-{%- endif -%}
+{%- endfor -%}
 {%- for collection in site.tipue_search.include.collections -%}
   {%- assign documents = site.documents | where:"collection",collection -%}
   {%- for document in documents -%}
