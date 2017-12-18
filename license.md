@@ -6,7 +6,7 @@ sectionid: license
 # Editions
 {% include editions.html %}
 
-# Request a License
+# Request a License {#request}
 
 <div class="container">
     <!-- Contact Form -->
@@ -31,8 +31,8 @@ sectionid: license
                 <div class="controls">
                     <label>Edition:</label>
                     <select class="form-control" id="edition" required data-validation-required-message="Please enter the desired edition.">
-                      <option>Community-Edition</option>
-                      <option>Enterprise-Edition</option>
+                      <option value="community">Community-Edition</option>
+                      <option value="enterprise">Enterprise-Edition</option>
                     </select>
                 </div>
             </div>
@@ -48,4 +48,25 @@ sectionid: license
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </div>
+    </div>
 </div>
+
+<script>
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+var edition = getUrlParameter('edition');
+document.getElementById("edition").value = edition;
+</script>
