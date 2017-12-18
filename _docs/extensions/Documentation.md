@@ -34,38 +34,38 @@ useful for providing an informative documentation.
 <tr class="odd">
 <td><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/documentation/Title.html">@Title</a></td>
 <td>Provides a title/headline for the annotated element. It describes the behaviour of the annotated element more abstract than <em>@Description</em>.</td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
 </tr>
 <tr class="even">
 <td><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/documentation/Description.html">@Description</a></td>
 <td><p>Describes the behaviour of the annotated element more detailed than <em>@Title</em>.</p></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
 </tr>
 <tr class="odd">
 <td><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/documentation/Issues.html">@Issues</a></td>
 <td>Provides the possibility to link the annotated element with an issue tracker.</td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/error.png" alt="(error)" class="emoticon emoticon-cross" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/error.png" alt="(error)" class="emoticon emoticon-cross" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/error.png" alt="(error)" class="emoticon emoticon-cross" /></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-times"/></td>
+<td style="text-align: center;"><div class="fa fa-times"/></td>
+<td style="text-align: center;"><div class="fa fa-times"/></td>
 </tr>
 <tr class="even">
 <td><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/documentation/Tags.html">@Tags</a></td>
 <td>Helps structuring your test suites and classes</td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/check.png" alt="(tick)" class="emoticon emoticon-tick" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/error.png" alt="(error)" class="emoticon emoticon-cross" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/error.png" alt="(error)" class="emoticon emoticon-cross" /></td>
-<td style="text-align: center;"><img src="images/icons/emoticons/error.png" alt="(error)" class="emoticon emoticon-cross" /></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-check"/></td>
+<td style="text-align: center;"><div class="fa fa-times"/></td>
+<td style="text-align: center;"><div class="fa fa-times"/></td>
+<td style="text-align: center;"><div class="fa fa-times"/></td>
 </tr>
 </tbody>
 </table>

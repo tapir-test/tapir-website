@@ -1,5 +1,5 @@
 ---
-title: Why does Tapir use Xtend?
+title: Why does tapir use Xtend?
 permalink: /docs/usingtapir/whyxtend/
 ---
 
@@ -8,37 +8,43 @@ comprehensible Java source code. Syntactically and semantically Xtend
 has its roots in the Java programming language but improves it on many
 aspects.
 
-All of Xtend's features can be used in Tapir, but we focus only on the
+All of Xtend's features can be used in <i>tapir</i>, but we focus only on the
 most important ones in this documentation. To get a full set of the
 advantages over plain Java consult the Xtend documentation.
 
 # Active Annotations
 
-The complete documentation can be found
-[here](http://www.eclipse.org/xtend/documentation/204_activeannotations.html).
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  The complete documentation can be found <a href="http://www.eclipse.org/xtend/documentation/204_activeannotations.html">here</a>.
+  </div>
+</div>
 
 Active annotations allow developers to participate in the translation
 process of Xtend source code to Java code via library code. 
 
-Tapir uses this feature a lot as it facilitates the user to focus on his
+<i>tapir</i> uses this feature a lot as it facilitates the user to focus on his
 domain without struggling with boilerplate and glue code. Most of the
-annotations provided by Tapir are Active Annotations. Tapir uses Xtend
-to guide the test developer. You could say that Tapir provides an
+annotations provided by <i>tapir</i> are Active Annotations. <i>tapir</i> uses Xtend
+to guide the test developer. You could say that <i>tapir</i> provides an
 internal DSL (Domain Specific Language) for Xtend.
 
 ## Example
 
-Tapir Testcases are organized in steps which are executed sequentially.
+<i>tapir</i> Testcases are organized in steps which are executed sequentially.
 Unfortunately the order of methods is not included in Java's bytecode.
-Therefore we need another way to determine the order at runtime. Tapir
-uses the Active Annotation @Step to achieve this. A @DependsOn which
+Therefore we need another way to determine the order at runtime. <i>tapir</i>
+uses the Active Annotation [@Step](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/step/Step.html) to achieve this. A [@DependsOn](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/dependency/DependsOn.html) which
 refers the name of the predecessor is generated. This information is
 evaluated at runtime and the methods can be sorted and executed in the
 desired order.
 
 **MyTest.xtend**
 
-``` java
+``` xtend
 @TestClass
 class MyTest {
     @Step
@@ -74,21 +80,27 @@ how it is processed.
 
 # Extension Methods
 
-The complete documentation can be found
-[here](http://www.eclipse.org/xtend/documentation/202_xtend_classes_members.html#extension-methods).
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  The complete documentation can be found <a href="http://www.eclipse.org/xtend/documentation/202_xtend_classes_members.html#extension-methods">here</a>.
+  </div>
+</div>
 
 Extension methods allow to add new methods to existing types without
 modifying them. This feature is actually where Xtend got its name from. 
 
-Extension methods enrich Tapir's API when writing test cases. On every
-@TestClass annotated class TapirAssertions is registered as extension.
+Extension methods enrich <i>tapir</i>'s API when writing test cases. On every
+[@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/model/TestClass.html) annotated class [TapirAssertions](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/util/extensions/TapirAssertions.html) is registered as extension.
 Therefore you can use methods like assertThat or containsString. By
-using @UseExtension it is possible to add custom extensions like
-BrowserInteractionService which provides openURL and getTitle.
+using [@UseExtension](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/useextension/UseExtension.html) it is possible to add custom extensions like
+[BrowserInteractionService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/BrowserInteractionService.html) which provides *openURL* and *getTitle*.
 
 **GoogleTest.xtend**
 
-``` java
+``` xtend
 @TestClass
 @UseExtension(BrowserInteractionService)
 class GoogleTest {
@@ -106,7 +118,7 @@ class GoogleTest {
 ```
 
 Generally, extension methods facilitate the *Composition over
-Inheritence principle*. Most of the Tapir classes choose [composition
+Inheritence principle*. Most of the <i>tapir</i> classes choose [composition
 over
 inheritence](https://en.wikipedia.org/wiki/Composition_over_inheritance)
 for the known reasons.
@@ -121,7 +133,7 @@ Xtend offers a lot of syntactic sugar like
 
     **Xtend**
 
-    ``` java
+    ``` xtend
      println(googlePage.queryField.text)
     ```
 
@@ -137,8 +149,8 @@ Xtend offers a lot of syntactic sugar like
 
     **Xtend**
 
-    ``` java
-    googlePage.queryField.text ="Tapir" 
+    ``` xtend
+    googlePage.queryField.text = "Tapir" 
     ```
 
     **Generated Java**
@@ -153,6 +165,6 @@ Xtend offers a lot of syntactic sugar like
     explictly
 
 This is just a small insight to Xtend. You can use any Xtend feature in
-conjunction with Tapir. We highly recommend to take a look at Xtend as
+conjunction with <i>tapir</i>. We highly recommend to take a look at Xtend as
 it's a very powerful JVM-based language. You can find more information
 at their [website](https://eclipse.org/xtend/).

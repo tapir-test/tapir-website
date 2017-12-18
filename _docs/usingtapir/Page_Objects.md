@@ -9,7 +9,7 @@ It Wrong."*
 Simon Stewart, creator of Selenium WebDriver
 
 You have to take it seriously if the creator on an API gives you such a
-serious suggestion on how to use his API. Tapir highly encourages you to
+serious suggestion on how to use his API. <i>tapir</i> highly encourages you to
 use Page Objects by making the creation and usage as easy as possible.
 
 Page Objects encapsulate implementation details of the SUT and just
@@ -26,7 +26,7 @@ There is a lot of information about Page Objects around the web. One of
 the most fundamental abstracts is written by [Martin
 Fowler](https://martinfowler.com/bliki/PageObject.html).
 
-In Tapir's Selenium integration you need these dependencies:
+In <i>tapir</i>'s Selenium integration you need these dependencies:
 
 ``` xml
 <dependency>
@@ -61,7 +61,7 @@ declares the class as a page object. There is a
 [Button](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/Button.html)called
 *searchButton* on the
 page. [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
-tells Tapir to use its Selenium implementation. The provided name
+tells <i>tapir</i> to use its Selenium implementation. The provided name
 attributes *"g"* and *"btnG"* finally bind the *TextField* and the
 *Button* to their HTML counterparts.
 
@@ -85,7 +85,7 @@ class GoogleTest {
 ```
 
 Please notice the syntactic sugar Xtend provides. For more information
-why Tapir chooses Xtend over plain Java, consult the chapter [Why does
+why <i>tapir</i> chooses Xtend over plain Java, consult the chapter [Why does
 Tapir use Xtend?](45219887.html).
 
 Showcase
@@ -164,9 +164,9 @@ Used by *de.bmiag.tapir.showcase.test.WikipediaSmokeTest.openWebsite()*
 ## Implicit check
 
 Explicitly checking for a page to be active is not needed mostly,
-because Tapir does this check for you whenever you interact with the
+because <i>tapir</i> does this check for you whenever you interact with the
 page (e.g. click a button or set a value into an input field). Before
-Tapir interacts with an element on a page, it calls the page's
+<i>tapir</i> interacts with an element on a page, it calls the page's
 *assertPageActive( )* method and only proceeds if no AssertionError is
 thrown.
 

@@ -3,19 +3,19 @@ title: Modules
 permalink: /docs/usingtapir/modules/
 ---
 
-Tapir distinguishes between Inclusion modules and Bootstrap modules. In
+<i>tapir</i> distinguishes between Inclusion modules and Bootstrap modules. In
 contrast to Inclusion modules, Bootstrap modules are executable and
 there can only be one Bootstrap module in your execution classpath.
 
 # Spring Boot
 
-Tapir relies on [Spring Boot](https://projects.spring.io/spring-boot/)
+<i>tapir</i> relies on [Spring Boot](https://projects.spring.io/spring-boot/)
 and its
 [auto-configuration](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-auto-configuration)
-capabilities. Tapir attempts to automatically configure your Test
+capabilities. <i>tapir</i> attempts to automatically configure your Test
 execution based on the jar dependencies that you have added. The
 AutoConfiguration just collects all available configurations at runtime
-and weaves them together. The main entry point in Tapir's context is the
+and weaves them together. The main entry point in <i>tapir</i>'s context is the
 class which is annotated by @BootstrapConfiguration.
 
 If you are not familiar with Spring so far, consult the chapter [How
@@ -35,14 +35,14 @@ A Bootstrap module has to contain a class which is annotated
 by [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)*.*
 This class is the main entry point for the configuration of your test
 execution environment. You do not have to add anything in this class,
-unless you would like to customize or extend Tapir. These possibilities
+unless you would like to customize or extend <i>tapir</i>. These possibilities
 are convered in the chapter [Customiziation](Customiziation).
 
 Beside a Bootstrap Configuration you need a class annotated
 by [@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)
 which contains at least one method which is annotated
 by [@Step](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/step/Step.html).
-So the most simple setup to run a Tapir test looks like this:
+So the most simple setup to run a <i>tapir</i> test looks like this:
 
 ``` java
 import de.bmiag.tapir.bootstrap.annotation.BootstrapConfiguration

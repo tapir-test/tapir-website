@@ -3,7 +3,7 @@ title: Archetypes
 permalink: /docs/usingtapir/archetypes/
 ---
 
-Tapir provides Maven Archetypes in order to setup modules in no time.
+<i>tapir</i> provides Maven Archetypes in order to setup modules in no time.
 You can either run the archetypes from Eclipse or from command-line.
 
 # Using an archetype
@@ -17,7 +17,7 @@ a wizard to creates modules based on Maven archetypes.
 2.  Select *Maven* \| *Maven Project* and click *Next &gt;*
 3.  Leave the defaults of the first wizard page by clicking *Next &gt;  
     *
-4.  Select one of the Tapir archetypes:  
+4.  Select one of the <i>tapir</i> archetypes:  
     ![](img/docs/47218729/47218725.png){height="400"}
 5.  Provide some Maven properties:
 
@@ -55,7 +55,7 @@ subfolder which is named like your artifactId.
 
 ## tapir-module-archetype
 
-This archetype can be used for arbitrary Tapir modules. It provides a
+This archetype can be used for arbitrary <i>tapir</i> modules. It provides a
 basic @ModuleConfiguration annotated class and inherits
 from tapir-starter-module which provides a couple of presets.
 
@@ -68,7 +68,7 @@ from tapir-starter-module which provides a couple of presets.
 
 ## tapir-bootstrap-archetype
 
-This archteype can be used for Tapir bootstrap modules. The modules
+This archteype can be used for <i>tapir</i> bootstrap modules. The modules
 inherits from *tapir-starter-selenium-allure*. It provides a
 basic [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
 annotated class and an executable test based on the Google website.

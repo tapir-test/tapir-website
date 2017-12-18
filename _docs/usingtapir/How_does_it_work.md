@@ -3,13 +3,13 @@ title: How does it work?
 permalink: /docs/usingtapir/howdoesitwork/
 ---
 
-Tapir's architecture is fundamentaly based on the [Spring
+<i>tapir's</i> architecture is fundamentaly based on the [Spring
 Framework](https://projects.spring.io/spring-framework/), more precisely
 on [Spring Boot](https://projects.spring.io/spring-boot/). You do not
-need to be a Spring expert in order to use Tapir, but a basic
-understanding of the main concepts helps you while exploring Tapir. It
+need to be a Spring expert in order to use <i>tapir</i>, but a basic
+understanding of the main concepts helps you while exploring <i>tapir</i>. It
 does not make sense to read the whole Spring (Boot) reference as Spring
-is a General Purpose Framework with a lot of features. Tapir only uses a
+is a General Purpose Framework with a lot of features. <i>tapir</i> only uses a
 small subset of this. Therefore we introduce the main concepts in this
 chapter and refer to the Spring reference selectively.
 
@@ -23,9 +23,16 @@ It searches for a module in the classpath which contains
 a [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
 annotated class.
 
-Exactly one *@BootstrapConfiguration* annotated class has to be in the
-classpath, otherwise Tapir does not know how to build the Spring
-Container and exits with an error message.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  Exactly one <i>@BootstrapConfiguration</i> annotated class has to be in the
+  classpath, otherwise <i>tapir</i> does not know how to build the Spring
+  Container and exits with an error message.
+  </div>
+</div>
 
 Beside the Bootstrap modules all inclusion modules are picked up by
 searching
@@ -38,15 +45,21 @@ annotated method in the configuration class or by placing a
 [@Component](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html)
 annotated class in a (sub-) package of the configuration class.
 
-This is a very simplified view. If you would like to understand Spring's
-container configuration more detailed, please consult the [Spring
-reference](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#beans-java).
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  This is a very simplified view. If you would like to understand Spring's
+  container configuration more detailed, please consult the <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#beans-java">Spring
+  reference</a>.
+  </div>
+</div>
 
-
-![](img/docs/45219845/45219848.png){width="600"}
+![]({{ "/img/docs/45219845/45219848.png" | prepend: site.baseurl }})
 
 After picking up the configurations and their beans the Spring Container
-is built. Nearly all instances used in Tapir are managed by Spring.
+is built. Nearly all instances used in <i>tapir</i> are managed by Spring.
 Therefore it is possible to access these instances in any class. 
 
 # Building your Execution Plan
@@ -66,15 +79,20 @@ other words, TestSuites and TestClasses are Spring beans and the
 by *@TestSuite* or *@TestClass*. Test suites help you structuring your
 test classes. You can also nest your test suites infinitely.
 
- 
-
-![](img/docs/45219845/45219857.png){width="600"}
+![]({{ "/img/docs/45219845/45219857.png" | prepend: site.baseurl }})
 
 The test suites and classes are transformed to an execution plan which
 is executed afterwards.
 
-It's possible to influence the execution plan creation by using some
-Tapir extensions, but this is subject of later chapters.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  It's possible to influence the execution plan creation by using some
+  <i>tapir</i> extensions, but this is subject of later chapters.
+  </div>
+</div>
 
 # Running your Execution Plan
 
@@ -89,26 +107,33 @@ The executor notifies registered execution listeners about every event
 (suite/class/step started/succeeded/failed/skipped). These execution
 listeners can use this information, e.g. for building reports.
 
-![](img/docs/45219845/45219863.png){width="600"}
+![]({{ "/img/docs/45219845/45219863.png" | prepend: site.baseurl }})
 
-There are a couple of additional annotations which influence the
-execution, but this is subject of later chapters, too.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  There are a couple of additional annotations which influence the
+  execution, but this is subject of later chapters, too.
+  </div>
+</div>
 
 # Dependency Injection
 
-Tapir heavily uses Dependency Injection. Nearly all instances are
+<i>tapir</i> heavily uses Dependency Injection. Nearly all instances are
 managed by Spring. Therefore it's possible to inject any bean in any
 other bean by using
 the [@Autowired](http://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html)
-annotation. As Tapir just leverages the features Spring provides, it's
+annotation. As <i>tapir</i> just leverages the features Spring provides, it's
 most reasonable to read the corresponding [Spring
 documentation](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#beans-dependencies).
 
-# Tapir modules
+# <i>tapir</i> modules
 
-Tapir is shipped with a couple of modules. These modules can be
+<i>tapir</i> is shipped with a couple of modules. These modules can be
 distinguishes into core, ui and extension modules. The core modules
-driveTapir's fundamental concepts like annotation processing, using
+drive <i>tapir's</i> fundamental concepts like annotation processing, using
 immutables or building and executing an execution plan. The ui modules
 provide some basic technology agnostic API and concrete implemtations
 like Selenium.
@@ -120,7 +145,7 @@ while writing tests like Conditional, Configuration and Variant, on the
 other hand there are extensions which are just used at runtime like
 Allure or CLI.
 
-![](img/docs/45219845/52527108.png){width="600"}
+![]({{ "/img/docs/45219845/52527108.png" | prepend: site.baseurl }})
 
 While developing the page objects you just need the Page module and an
 API modules which provides interfaces for the UI elements on your page.
@@ -133,29 +158,4 @@ used to execute the tests and which reports (Allure, JUnit,...) should
 be generated. Of yourse the test execution is also aware of the
 extensions which have been used by the test classes and interprets them.
 
-![](img/docs/45219845/52527110.png){width="600"}
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[Tapir-Bootstrapping.png](img/docs/45219845/45219856.png)
-(image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[Tapir-Bootstrapping.png](img/docs/45219845/45219848.png)
-(image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[TapirExecutor.png](img/docs/45219845/45219864.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"} [image2017-5-29
-8:41:53.png](img/docs/45219845/45219859.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[TapirExecution.png](img/docs/45219845/45219863.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[TapirExecutor.png](img/docs/45219845/45219857.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[Tapir-Module.png](img/docs/45219845/52527108.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[Tapir-Entwicklung-Ausführung.png](img/docs/45219845/52527109.png)
-(image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[Tapir-Development-Execution.png](img/docs/45219845/52527110.png)
-(image/png)  
+![]({{ "/img/docs/45219845/52527110.png" | prepend: site.baseurl }})

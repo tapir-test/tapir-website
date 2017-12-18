@@ -5,14 +5,22 @@ permalink: /docs/usingtapir/buildsystems/
 
 # Dependency Management
 
-Each release of Tapir defines a list of dependencies. In practice, you
+Each release of <i>tapir</i> defines a list of dependencies. In practice, you
 do not need to provide a version for any of these dependencies in your
-build configuration as Tapir is managing this for you. When you upgrade
-Tapir itself, these dependencies will be upgraded as well in a
+build configuration as <i>tapir</i> is managing this for you. When you upgrade
+<i>tapir</i> itself, these dependencies will be upgraded as well in a
 consistent way.
 
-You can still specify a version and override Tapir's recommendations if
-you feel that this is necessary.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  You can still specify a version and override <i>tapir's</i> recommendations if
+  you feel that this is necessary.
+  </div>
+</div>
+
 
 # Maven
 
@@ -41,9 +49,16 @@ tapir-*starter-module *simply set the *parent*:
 </parent>
 ```
 
-You should only need to specify the Tapir version number on this
-dependency. If you import additional starters or add dependencies, you
-can safely omit the version number.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  You should only need to specify the <i>tapir</i> version number on this
+  dependency. If you import additional starters or add dependencies, you
+  can safely omit the version number.
+  </div>
+</div>
 
 With that setup, you can also override individual dependencies by
 overriding a property in your own project. For instance, to upgrade to
@@ -54,10 +69,16 @@ another Selenium version you would add the following to your *pom.xml*.
     <selenium.version>3.4.0</selenium.version>
 </properties>
 ```
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+    Check the <i>tapir-dependencies</i> pom for a list of supported properties.
+  </div>
+</div>
 
-Check the *tapir-dependencies* pom for a list of supported properties.
-
-## Using Tapir Without the Parent POM
+## Using <i>tapir</i> Without the Parent POM
 
 If you don’t want to use the tapir-*starter-module*, you can still keep
 the benefit of the dependency management (but not the plugin management)
@@ -83,12 +104,12 @@ a property as explained above.
 
 ## Additional Starters
 
-There a more specialized starters provided by Tapir. Those starters are
+There a more specialized starters provided by <i>tapir</i>. Those starters are
 explained below.
 
 ### tapir-starter-selenium-allure
 
-If you would like to use Tapir's Selenium implementation and the Allure
+If you would like to use <i>tapir's</i> Selenium implementation and the Allure
 report capabilities you might want to
 use *tapir-starter-selenium-allure*. The project provides the following
 features:
@@ -106,16 +127,16 @@ features:
 
 # Gradle
 
-Currently Tapir does not provide a specific Gradle plugin. However, it
-is possible to use Gradle as a build tool for Tapir test cases. We
+Currently <i>tapir</i> does not provide a specific Gradle plugin. However, it
+is possible to use Gradle as a build tool for <i>tapir</i> test cases. We
 suggest to use the [Spring dependency management
 plugin](https://plugins.gradle.org/plugin/io.spring.dependency-management)
-for Gradle in order to import the dependency management from Tapir. You
+for Gradle in order to import the dependency management from <i>tapir</i>. You
 need also a [plugin](https://github.com/xtext/xtext-gradle-plugin)to
 support the Xtend build and another
 [plugin](https://github.com/d10xa/gradle-allure-plugin)to create the
 Allure report. The following snippet shows you a simple *build.gradle*
-file which can be used to execute Tapir test cases and generate an
+file which can be used to execute <i>tapir</i> test cases and generate an
 Allure report.
 
 ``` groovy
