@@ -6,6 +6,18 @@ description: >
 
 baseurl: "/tapir-website" # the subpath of your site, e.g. /blog/
 url: https://tapir-test.github.io/tapir-website # the base hostname & protocol for your site
+twitter:
+    username: tapir_test
+
+author: Oliver Libutzki
+
+logo: /img/jekyll-dark.png
+
+social:
+    name: tapir
+    links:
+        - https://twitter.com/tapir_test
+
 staticmanUrl: https://api.staticman.net/v2/entry/tapir-test/tapir-website/master/comments
 git_address: https://github.com/tapir-test/tapir-website
 git_edit_address: https://github.com/tapir-test/tapir-website/blob/master
