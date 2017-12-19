@@ -1,0 +1,62 @@
+---
+layout: default
+sectionid: license
+---
+
+
+<div class="container">
+    <div class="row">
+        <h1>Editions</h1>
+        {% include editions.html %}
+        <h1 id="request">Request a License</h1>
+
+        <div class="container">
+            <!-- Contact Form -->
+            <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+            <div class="row">
+                <div class="col-md-8">
+                    <form id="contact-form">
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Full Name:</label>
+                                <input type="text" class="form-control" name="name" required data-validation-required-message="Please enter your name." autofocus>
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Email Address:</label>
+                                <input type="email" class="form-control" name="email" required data-validation-required-message="Please enter your email address.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Edition:</label>
+                                <select class="form-control" id="edition" name="edition" required data-validation-required-message="Please enter the desired edition.">
+                                  <option value="community">Community-Edition</option>
+                                  <option value="enterprise">Enterprise-Edition</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Message:</label>
+                                <textarea rows="10" cols="100" class="form-control" name="message" maxlength="999" style="resize:none"></textarea>
+                            </div>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none">
+                        <input type="hidden" name="_subject" value="tapir-test.io - License form submission" />
+                        <input type="hidden" name="_format" value="plain" />
+                        <div id="contact-form-submission-result"></div>
+                        <button type="submit" class="btn btn-primary">Request License</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        var edition = getUrlParameter('edition');
+        document.getElementById("edition").value = edition;
+        </script>
+    </div>
+</div>
