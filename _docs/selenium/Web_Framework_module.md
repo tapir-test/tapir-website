@@ -1,6 +1,6 @@
 ---
 title: Web Framework Module
-permalink: /docs/usingtapir/selenium/webframeworkmodule/
+permalink: /docs/selenium/webframeworkmodule/
 ---
 Tapir's Selenium integration is able to automate the interaction with
 any web framework. By default, only basic HTML components are

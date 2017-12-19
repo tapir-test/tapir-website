@@ -1,6 +1,6 @@
 ---
 title: Selenium Core Module
-permalink: /docs/usingtapir/selenium/seleniumcoremodule/
+permalink: /docs/selenium/seleniumcoremodule/
 ---
 
 The Selenium Core module acts as a bridge between <i>tapir</i> and Selenium

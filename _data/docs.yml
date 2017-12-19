@@ -21,10 +21,13 @@
   - usingtapir/dataprovider
   - usingtapir/logging
   - usingtapir/concurrenttestexecution
-  - usingtapir/selenium
-  - usingtapir/selenium/seleniumcoremodule
-  - usingtapir/selenium/webbrowsermodule
-  - usingtapir/selenium/webframeworkmodule
+  - usingtapir/externalizedconfiguration
+
+- title: Selenium
+  docs:
+  - selenium/seleniumcoremodule
+  - selenium/webbrowsermodule
+  - selenium/webframeworkmodule
 
 - title: Extensions
   docs:
