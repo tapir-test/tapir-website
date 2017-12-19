@@ -26,7 +26,7 @@ the [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/late
 annotation for this purpose.
 
 Annotating a page object field
-with [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)instructs
+with [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html) instructs
 <i>tapir</i> to identify the element with Selenium. The annotation offers a
 couple of ways how to identify the element in the HTML DOM. The
 corresponding annotation methods are inspired by
@@ -35,7 +35,7 @@ annotation. 
 
 In the example below the query field is located by the name "q".
 
-``` java
+``` xtend
 @Page
 class GooglePage {
     @SeleniumElement(name="q")
@@ -104,7 +104,7 @@ This is our first simple page object,...
 
 **GooglePage.xtend**
 
-``` java
+``` xtend
 @Page
 class GooglePage {
     @SeleniumElement(name="q")
@@ -127,7 +127,7 @@ public interface TextField extends TapirElement, Enabable, Displayable {
 
 **MyTest.xtend**
 
-``` java
+``` xtend
 val queryField = googlePage.queryField // no interaction with the WebDriver API
 println(queryField.text) // TextField.getText() returns a String which does not implement TapirElement, WebDriver API is queried
 ```
@@ -146,7 +146,7 @@ This is our page object:
 
 **GooglePage.xtend**
 
-``` java
+``` xtend
 @Page
 class GooglePage {
     @SeleniumElement(id="res")
@@ -188,11 +188,11 @@ The client code:
 
 **MyTest.xtend**
 
-``` java
+``` xtend
 val searchResultList = googlePage.searchResultList// no interaction with the WebDriver API
 val tapirResults = searchResultList.selectResults[headline.text.contains("Tapir")] // Searches for all headlines which include "Tapir", this query is NOT executed now, because the method returns a List of SearchResult which is a TapirElement subtype
 val firstTapirResult = tapirResults.get(0) // Returns the first entry in tapirResults, still no interaction with the WebDriver API as a TapirElement (subtype) is returned
-println("URL of first result containing 'Tapir': " + firstTapirResult.URL) // Finally a getter which returns a String is called. Tapir needs to consult the HTML page to obtain the needed information.
+println("URL of first result containing 'Tapir': " + firstTapirResult.URL) // Finally a getter which returns a String is called. tapir needs to consult the HTML page to obtain the needed information.
 ```
 
 When *firstTapirResult.URL* is called (line 4) <i>tapir</i> executes the whole
@@ -240,6 +240,6 @@ attitude that "it's ok that these tests fail sometimes". While the
 problem is well described in [this blog
 post](http://darrellgrainger.blogspot.de/2012/06/staleelementexception.html),
 the solution propagated there is a mess as it requires the test code to
-handle the error situation. Because of Tapir's built-in error handling
+handle the error situation. Because of <i>tapir's</i> built-in error handling
 test developers do not have to keep struggling with error handling which
 bloats their test code and makes it less comprehensible.

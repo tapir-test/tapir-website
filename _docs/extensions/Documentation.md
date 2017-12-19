@@ -3,21 +3,21 @@ title: Documentation
 permalink: /docs/extensions/documentation/
 ---
 
-Tapir facilitates the developer to write comprehensive and maintainable
+<i>tapir</i> facilitates the developer to write comprehensive and maintainable
 tests. However, additional documentation might help other developers,
 test managers and stakeholders to understand the purpose of a test
-suite, class or step. Tapir provides a set of annotations which might be
+suite, class or step. <i>tapir</i> provides a set of annotations which might be
 useful for providing an informative documentation.
 
 <table style="width:100%;">
 <colgroup>
 <col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col style="width: 26%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">

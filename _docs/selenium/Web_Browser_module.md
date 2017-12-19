@@ -2,8 +2,8 @@
 title: Web Browser Module
 permalink: /docs/selenium/webbrowsermodule/
 ---
-Tapir's web browser implementations are organized in optional modules.
-Tapir delivers four built-in browser modules, but feel free to add a
+<i>tapir's</i> web browser implementations are organized in optional modules.
+<i>tapir</i> delivers four built-in browser modules, but feel free to add a
 module for your favorite web browser (emulation).
 
 -   [Chrome](#WebBrowsermodule-Chrome)
@@ -11,7 +11,7 @@ module for your favorite web browser (emulation).
 -   [Internet Explorer](#WebBrowsermodule-InternetExplorer)
 -   [HtmlUnit](#WebBrowsermodule-HtmlUnit)
 
-# Chrome
+# Chrome {#WebBrowsermodule-Chrome}
 
 ## Dependency
 
@@ -70,17 +70,17 @@ browser=chrome
 </tbody>
 </table>
 
-To run Tapir tests with Chrome, you have to fire up the
+To run <i>tapir</i> tests with Chrome, you have to fire up the
 ChromeDriver which acts as a bridge between your test code and the
 Chrome browser. For further information consult [the ChromeDriver
 website](https://sites.google.com/a/chromium.org/chromedriver). Ensure
 that the ChromeDriver you use is compatible with your Chrome browser
 version.
 
-The Chrome integration is very fast and reliable, so using Tapir in
+The Chrome integration is very fast and reliable, so using <i>tapir</i> in
 conjunction with Chrome is recommended.
 
-# Firefox
+# Firefox {#WebBrowsermodule-Firefox}
 
 ## Dependency
 
@@ -145,7 +145,7 @@ browser=firefox
 </table>
 
 Firefox 48 and above does not support the legacy connection mode
-anymore. To run Tapir tests, you have to fire up the GeckoDriver which
+anymore. To run <i>tapir</i> tests, you have to fire up the GeckoDriver which
 acts as a bridge between your test code and the Firefox browser. For
 further information consult [the GeckoDriver
 website](https://github.com/mozilla/geckodriver). Ensure that the
@@ -159,7 +159,7 @@ The Firefox integration (especially the one based on the GeckoDriver) is
 not feature-complete and therefore not as stable as the Chrome
 integration.
 
-# Internet Explorer
+# Internet Explorer {#WebBrowsermodule-InternetExplorer}
 
 ## Dependency
 
@@ -213,15 +213,22 @@ browser=internetexplorer
 </tbody>
 </table>
 
-To run Tapir tests with Internet Explorer, you have to fire up
+To run <i>tapir</i> tests with Internet Explorer, you have to fire up
 the DriverServer which acts as a bridge between your test code and the
 Internet Explorer. For further information consult [the
 InternetExplorerDriver
 website](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
 
-The Internet Explorer will only work on Windows!
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+    The Internet Explorer will only work on Windows!
+  </div>
+</div>
 
-# HtmlUnit
+# HtmlUnit {#WebBrowsermodule-HtmlUnit}
 
 ## Dependency
 
@@ -271,12 +278,19 @@ browser=htmlunit
 
 HtmlUnit is a headless web browser implemented in Java. Therefore it
 does not need any additional binaries. All required depdendencies are
-provided by Tapir. HtmlUnit does not require a graphical user interface.
+provided by <i>tapir</i>. HtmlUnit does not require a graphical user interface.
 
 HtmlUnit is very fast as it does emulate the browser interaction and
 does not render the web site. For further information consult [the
 HtmlUnitDriver website](https://github.com/SeleniumHQ/htmlunit-driver).
 
-HtmlUnit does not have a rendering engine, so you cannot see any browser
-interaction on the screen. Moreover, it's not possible to capture
-screenshots.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  HtmlUnit does not have a rendering engine, so you cannot see any browser
+  interaction on the screen. Moreover, it's not possible to capture
+  screenshots.
+  </div>
+</div>

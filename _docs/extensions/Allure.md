@@ -30,7 +30,7 @@ files are picked up by Allure and transformed to a good-looking report.
 
 The screenshot below displays a sample test execution report.
 
-![](img/docs/46137538/46497870.png){width="600"}
+![]({{"/img/docs/46137538/46497870.png" | prepend: site.baseurl}}){:width="600px"}
 
 # Maven
 
@@ -58,8 +58,3 @@ defaults are fine to work with Tapir. 
 
 The Allure Report is stored for every build and you can switch from the
 Jenkins UI to the Allure report and vice versa.
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[AllureReport.png](img/docs/46137538/46497870.png) (image/png)  

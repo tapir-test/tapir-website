@@ -2,11 +2,11 @@
 title: Web Framework Module
 permalink: /docs/selenium/webframeworkmodule/
 ---
-Tapir's Selenium integration is able to automate the interaction with
+<i>tapir's</i> Selenium integration is able to automate the interaction with
 any web framework. By default, only basic HTML components are
-implemented, but you can build Tapir components for the components of
+implemented, but you can build <i>tapir</i> components for the components of
 your web application. For further information consult the chapter [HTML
-Components](HTML_Components).
+Components]({{"/docs/customization/htmlcomponents/" | prepend: site.baseurl}}).
 
 It's recommended to divide each web framework binding into an API and an
 Implementation module. The API module provides some interfaces which
@@ -47,7 +47,7 @@ exactly reflects these possibilities by providing the following methods:
 -   void click()
 
 All of these methods are inherited from interfaces which are defined in
-Tapir's UI API:
+<i>tapir's</i> UI API:
 
 -   [Displayable](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/Displayable.html)
     provides *isDisplayed()*
@@ -65,13 +65,20 @@ interface:
 ``` java
 public interface Button extends TapirElement, Displayable, Clickable, Enabable {
 }
-```
 
-Notice the extended
-[TapirElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/TapirElement.html).
-This is an important marker interface as Tapir handles interfaces which
-extend *TapirElement* specifically. Read [Selenium Core
-module](Selenium_Core_module) for more information.
+```
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  Notice the extended
+  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/TapirElement.html">TapirElement</a>.
+  This is an important marker interface as <i>tapir</i> handles interfaces which
+  extend <i>TapirElement</i> specifically. Read <a href="{{"/docs/selenium/seleniumcoremodule/" | prepend: site.baseurl}}">Selenium Core
+  module</a> for more information.
+  </div>
+</div>
 
 We don't want to investigate the implementation further as this is
-subject of the corresponding [customization chapter](HTML_Components).
+subject of the corresponding [customization chapter]({{"/docs/customization/htmlcomponents/" | prepend: site.baseurl}}).
