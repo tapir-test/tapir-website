@@ -2,12 +2,7 @@
 title: Attachment Listener
 permalink: /docs/customization/attachmentlistener/
 ---
-In a [previous chapter](Execution_Listener)we showed you how to
-implement custom execution listeners. You might have noted, that some of
-the listeners were responsible for creating attachments (screenshots,
-HTML content and so on). In this chapter we show you how to handle
-attachments during the test execution. The attachment listeners are part
-of Tapir's *execution* module.
+In a [previous chapter]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}) we showed you how to implement custom execution listeners. You might have noted, that some of the listeners were responsible for creating attachments (screenshots, HTML content and so on). In this chapter we show you how to handle attachments during the test execution. The attachment listeners are part of <i>tapir's</i> *execution* module.
 
 ``` xml
 <dependency>
@@ -26,7 +21,7 @@ driver.
 
 **ScreenshotService.xtend**
 
-``` java
+``` xtend
 @Component("tapirScreenshotService")
 class ScreenshotService {
 
@@ -54,28 +49,15 @@ class ScreenshotService {
 }
 ```
 
-The listener creates a screenshot with the class *AShot* and creates a
-new attachment instance (*attachment* is incidentally an [immutable
-class](Immutable_Data_Types) ). The mandatory fields of the attachment
-are the name, the mime type and, of course, the binary content. Once
-created, the listener uses the
-[AttachmentListenerNotifier](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/AttachmentListenerNotifier.html)to
-send the attachment to the registered observers. You should always use
-this mechanism to propagate attachments to the listeners responsible for
-creating reports, because otherwise not all listeners might receive the
-data.
+The listener creates a screenshot with the class *AShot* and creates a new attachment instance (*attachment* is incidentally an [immutable
+class]({{"/docs/extensions/immutables/" | prepend: site.baseurl}})). The mandatory fields of the attachment are the name, the mime type and, of course, the binary content. Once created, the listener uses the [AttachmentListenerNotifier](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/AttachmentListenerNotifier.html)to send the attachment to the registered observers. You should always use this mechanism to propagate attachments to the listeners responsible for creating reports, because otherwise not all listeners might receive the data.
 
 # Receiving Attachments
 
-If you want to be notified about new attachments, you have to create a
-class which implements the interface
-[AttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/AttachmentListener.html).
-Furthermore, Spring must be aware of your component. The following
-excerpt is from the
-[FilesystemAttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html),
-which writes the attachments to a temporary folder on the file system.
+If you want to be notified about new attachments, you have to create a class which implements the interface [AttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/AttachmentListener.html).
+Furthermore, Spring must be aware of your component. The following excerpt is from the [FilesystemAttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html), which writes the attachments to a temporary folder on the file system.
 
-``` java
+``` xtend
 @Component("tapirFilesystemAttachmentListener")
 class FilesystemAttachmentListener implements AttachmentListener {
 
@@ -101,14 +83,20 @@ class FilesystemAttachmentListener implements AttachmentListener {
 }
 ```
 
-The listener receives the attachment, determines the file extension and
-writes it into a temporary folder. In a similar manner you can write
+The listener receives the attachment, determines the file extension and writes it into a temporary folder. In a similar manner you can write
 your own listener to handle attachments.
 
-Some listeners might implement both *ExecutionListener* **and**
-*AttachmentListener*. This is what the
-[AllureExecutionListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/junit/allure/listener/AllureExecutionListener.html)does.
-It stores all attachments (screenshots, HTML content and so on), but
-sends them to the Allure component not until the test step finished.
-This makes sure that the Allure report assigns all the attachments to
-the correct test steps.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  Some listeners might implement both <i>ExecutionListener</i> <strong>and</strong>
+  <i>AttachmentListener<i>. This is what the
+  <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/junit/allure/listener/AllureExecutionListener.html">AllureExecutionListener</a>does.
+  It stores all attachments (screenshots, HTML content and so on), but
+  sends them to the Allure component not until the test step finished.
+  This makes sure that the Allure report assigns all the attachments to
+  the correct test steps.
+  </div>
+</div>

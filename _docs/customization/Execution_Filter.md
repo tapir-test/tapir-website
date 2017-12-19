@@ -3,10 +3,10 @@ title: Execution Filter
 permalink: /docs/customization/executionfilter/
 ---
 
-Before Tapir starts the test cases, a execution plan is assembled (this
-is also described in the chapter [How does it work?](45219845.html)) by
+Before Tapir starts the test cases, a execution plan is assembled by
 the
-[TapirExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/TapirExecutor.html).
+[TapirExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/TapirExecutor.html). This
+is also described in the chapter [How does it work?]({{"/docs/usingtapir/howdoesitwork/" | prepend: site.baseurl}}).
 Before the plan is actually executed, various filters can decide whether
 steps, classes or suites should be filtered out. This is especially
 useful when you want to make sure that specific elements are not
@@ -22,9 +22,9 @@ executed and are not even visible in the test report in the first place.
 As you might remember, some previous features of Tapir were able to
 remove elements from the execution plan: The
 [@FeatureActivated](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/feature/FeatureActivated.html)annotation
-from the [variant management chapter](Variant_Management), the
+from the [variant management chapter]({{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}), the
 [@Conditional](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/conditional/annotations/Conditional.html)annotation
-from the [conditional chapter](Conditional) and so on. Well, they all
+from the [conditional chapter]({{"/docs/extensions/conditional/" | prepend: site.baseurl}}) and so on. Well, they all
 use the same mechanism as described in this chapter.
 
 In order to filter elements out, you have to create a class which
@@ -35,7 +35,7 @@ does not filter out anything) would look like the following.
 
 **MyExecutionFilter.xtend**
 
-``` java
+``` xtend
 @Component
 class MyExecutionFilter implements ExecutionFilter {
 
@@ -69,6 +69,13 @@ the
 [FeatureBasedParameterFilter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/filter/FeatureBasedParameterFilter.html),
 work in a similar manner.
 
-Keep in mind that you cannot "unfilter" an element. If at least one
-registered filter wants to filter an element out, it is removed from the
-execution plan.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  Keep in mind that you cannot "unfilter" an element. If at least one
+  registered filter wants to filter an element out, it is removed from the
+  execution plan.
+  </div>
+</div>

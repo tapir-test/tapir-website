@@ -15,18 +15,24 @@ issues or as a load test). The concurrent test execution is part of
     <artifactId>tapir-execution</artifactId>
 </dependency>
 ```
-
-Keep in mind that a concurrent test execution can also mean that it is
-more difficult to reproduce error scenarios. Also, <i>tapir</i> doesn't provide
-explicit support for locking and unlocking shared resources for the test
-cases. You still have to care about this yourself.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  Keep in mind that a concurrent test execution can also mean that it is
+  more difficult to reproduce error scenarios. Also, <i>tapir</i> doesn't provide
+  explicit support for locking and unlocking shared resources for the test
+  cases. You still have to care about this yourself.
+  </div>
+</div>
 
 # Parallelize Test Suites and Test Cases
 
-The annotation @Parallel can be used to mark test classes or test suites
+The annotation [@Parallel](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/behaviour/Parallel.html) can be used to mark test classes or test suites
 for concurrent execution.
 
-``` java
+``` xtend
 @TestSuite(#[TestClass2, TestClass3])
 @Parallel
 class TestSuite1 {
@@ -45,7 +51,7 @@ class (or test suite) of the suite in parallel. In the above example,
 the execution of *TestSuite1* would start *TestClass2* and *TestClass3*
 in parallel. Annoting a test class becomes interesting when you use the
 [@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html)annotation
-from the [data provider module](Data_Provider) on a field. If a field of
+from the [data provider module]({{"/docs/usingtapir/datprovider/" | prepend: site.baseurl}}) on a field. If a field of
 a test class is annotated with *IteratedParameter*, then the test class
 is executed for each element of the corresponding data collection. If
 the test class itself is annotated with the *Parallel* annotation, then
@@ -56,7 +62,7 @@ the annotated element. Assume the following example in which
 *MyTestSuite1* is annotated and consists just of the execution of
 *MyTestSuite2* which itself has three test classes as children.
 
-``` java
+``` xtend
 @TestSuite(#[MyTestSuite2])
 @Parallel
 class MyTestSuite1 {
@@ -74,10 +80,15 @@ there are no further children of *MyTestSuite1*). If you would want to
 start the test cases in parallel, you would have to annotate
 *MyTestSuite2*.
 
-Showcase
-
-*Parallel* is used by
-*de.bmiag.tapir.showcase.test.WikipediaContentTableTest*.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  <i>Parallel</i> is used by
+  <i>de.bmiag.tapir.showcase.test.WikipediaContentTableTest</i>.
+  </div>
+</div>
 
 # Execution of the Tasks
 
@@ -90,8 +101,4 @@ that this is necessary. The component delegates the task execution to
 Spring's *ThreadPoolTaskExecutor* with a default pool size of four. You
 can change this value by setting the property *threadPoolSize* to
 another value. Take a look at the chapter [Externalized
-Configuration](Externalized_Configuration) on how to do this.
-
- 
-
- 
+Configuration]({{"/docs/usingtapir/externalizedconfiguration/" | prepend: site.baseurl}}) on how to do this.

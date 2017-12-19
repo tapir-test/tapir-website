@@ -5,10 +5,7 @@ permalink: /docs/customization/stepexecutioninvocationhandler/
 
 A
 [StepExecutionInvocationHandler](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/StepExecutionInvocationHandler.html)
-is notified before and after a step is executed. In constrast to
-a [execution listener](Execution_Listener) the
-StepExecutionInvocationHandler can influence the result of the step
-execution.
+is notified before and after a step is executed. In constrast to an [execution listener]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}) the StepExecutionInvocationHandler can influence the result of the step execution.
 
 # Dependency
 
@@ -27,7 +24,7 @@ could provide an annotation:
 
 **AssertEntryPage.xtend**
 
-``` java
+``` xtend
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 annotation AssertEntryPage {
@@ -41,7 +38,7 @@ check:
 
 **AssertEntryPageeStepExecutionInvocationHandler.xtend**
 
-``` java
+``` xtend
 @Component
 class AssertEntryPageStepExecutionInvocationHandler implements StepExecutionInvocationHandler {
 

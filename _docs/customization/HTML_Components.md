@@ -15,30 +15,31 @@ Always set yourself in the user's place when defining the interface
 methods. What can he do with your component?
 
  
-
-Showcase
-
-[de.bmiag.tapir.showcase.element.ContentTable](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/ContentTable.html)
-and
-[de.bmiag.tapir.showcase.element.ContentElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/ContentElement.html)
-are interfaces of custom components.
-
-These interfaces are implemented by
-[de.bmiag.tapir.showcase.element.impl.ContentTableImpl](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/impl/ContentTableImpl.html)
-and
-[de.bmiag.tapir.showcase.element.impl.ContentElementImpl](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/impl/ContentElementImpl.html).
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+      <p>
+          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/ContentTable.html">de.bmiag.tapir.showcase.element.ContentTable</a>
+          and
+          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/ContentElement.html">de.bmiag.tapir.showcase.element.ContentElement</a>  are interfaces of custom components.
+      </p>
+      <p>
+          These interfaces are implemented by
+          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/impl/ContentTableImpl.html">de.bmiag.tapir.showcase.element.impl.ContentTableImpl</a>
+          and
+          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/impl/ContentElementImpl.html">de.bmiag.tapir.showcase.element.impl.ContentElementImpl</a>.
+      </p>
+  </div>
+</div>
 
 # Example Interface
 
-Instead of describing the custom component creation in an abstract way,
-we will use the example of a button provided by Vaadin, a widespread web
-framework. Vaadin makes use of complex components which extend the
-functionaility and behaviour of the basic HTML components. In order to
-benefit from these advances features in your test cases, you have to
-design custom Tapir components.
+Instead of describing the custom component creation in an abstract way, we will use the example of a button provided by [Vaadin](https://vaadin.com/), a widespread web framework. Vaadin makes use of complex components which extend the functionaility and behaviour of the basic HTML components. In order to
+benefit from these advances features in your test cases, you have to design custom <i>tapir</i> components.
 
-In contrast to a basic HTML button a Vaadin button might have a tooltip
-and a label. We define the interface accordingly:
+In contrast to a basic HTML button a Vaadin button might have a tooltip and a label. We define the interface accordingly:
 
 **VaadinButton.java**
 
@@ -47,8 +48,7 @@ public interface VaadinButton extends TapirElement, Displayable, Clickable, Enab
 }
 ```
 
-In this example we decide to externalize the getToolTip() method in a
-Tooltipped interface as other components might want to use it as well:
+In this example we decide to externalize the *getToolTip()* method in a Tooltipped interface as other components might want to use it as well:
 
 **Tooltipped.java**
 
@@ -58,8 +58,7 @@ public interface Tooltipped {
 }
 ```
 
-It is very important that the interface extends TapirElement as this
-marker interface is handled separately by Tapir.
+It is very important that the interface extends [TapirElement](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/TapirElement.html) as this marker interface is handled separately by <i>tapir</i>.
 
 ## Example Implementation
 
@@ -139,42 +138,44 @@ public class DefaultVaadinButton extends AbstractSingleSeleniumElement implement
 }
 ```
 
-Writing such a component requires knowledge of the WebDriver API and the
-HTML code. The components are the major binding element between the
+Writing such a component requires knowledge of the WebDriver API and the HTML code. The components are the major binding element between the
 business test code and the technical HTML code.
 
 Let's take a deeper look into the implementation:
 
 ### @Component
 
-Because of the @Component annotation the Tapir component is scanned by
-the module configuration. You just have to make sure that the Tapir
-component is located in a (sub-) package of the classes which is
-annotated by @ModuleConfiguration.
+Because of the [@Component](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html) annotation the <i>tapir</i> component is scanned by the module configuration. You just have to make sure that the <i>tapir</i> component is located in a (sub-) package of the classes which is annotated by [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html).
 
 ### isDisplayed()
 
-The implementation is straightforward as isDisplayed() is simply
+The implementation is straightforward as *isDisplayed()* is simply
 forwarded to the underlying web element.
 
 ### click()
 
 The implementation is straightforward and does not differ from
-DefaultSeniumButton.
+[DefaultSeniumButton](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/impl/DefaultSeleniumButton.html).
 
 ### isEnabled()
 
-isEnabled() is a little bit trickier. A Vaadin button is enabled if the
+*isEnabled()* is a little bit trickier. A Vaadin button is enabled if the
 following conditions match:
 
-1.  the web element does not have the css class v-disabled
-2.  WebElement.isEnabled() returns true
-3.  WebElement.getAttribute("readonly")  does not return true
+1. the web element does not have the css class v-disabled
+1. WebElement.isEnabled() returns true
+1. WebElement.getAttribute("readonly")  does not return true
 
-This implementation is Vaadin-specific. A Vaadin update
-might necessitate an implementation adjustment, but always keep in mind
-that you have to adjust one single point. All of your test code is not
-affected!
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  This implementation is Vaadin-specific. A Vaadin update might necessitate an implementation adjustment, but always keep in mind that you have to adjust one single point. All of your test code is not affected!
+  </div>
+</div>
+
+
 
 ## getLabel()
 
@@ -187,10 +188,10 @@ This is the most complicated implementation, but if you take a deeper
 look it exactly reflects the actions a user performs in order to see the
 tooltip:
 
-1.  Moving the mouse cursor to the button
-2.  Waiting a second for the tooltip to occur
-3.  Checking if the tooltip is displayed
-4.  Accessing and returning the text
+1. Moving the mouse cursor to the button
+1. Waiting a second for the tooltip to occur
+1. Checking if the tooltip is displayed
+1. Accessing and returning the text
 
 It's simple, but would you like to have this in your business test code?
 No way! 
@@ -201,4 +202,4 @@ Writing a custom Tapir component is easy, but you have to deal with the
 characteristics of your web component. The great advantage of using
 these Tapir components is that they completely encapsulate your test
 code and your HTML page. In conjunction with [Page
-Objects](Page_Objects) you get a highly maintainable test code base.
+Objects]({{"/docs/usingtapir/pageobjects/" | prepend: site.baseurl}}) you get a highly maintainable test code base.

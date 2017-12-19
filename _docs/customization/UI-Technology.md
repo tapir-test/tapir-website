@@ -3,20 +3,29 @@ title: UI Technology
 permalink: /docs/customization/ui-technology/
 ---
 
-Tapir is not restricted to the usage of Selenium. Selenium is just one
+<i>tapir</i> is not restricted to the usage of Selenium. Selenium is just one
 framework you can use for automated interaction with a software under
 test.
 
-The Selenium modules are not part of Tapir's core modules, so it's easy
+The Selenium modules are not part of <i>tapir's</i> core modules, so it's easy
 to exchange them with your prefered automation framework.
 
-Tapir is not stucked on web applications. You can also test desktop
+<i>tapir</i> is not stucked on web applications. You can also test desktop
 applications if you have a suitable automation framework which is
-implemented in Java. Tapir's API is completely technology-independent.
+implemented in Java. <i>tapir's</i> API is completely technology-independent.
 
-In Tapir this is the most complex task as you need to build a UI
-technology binding from scratch. It's time-consuming, but you will
-likely do this rarely or never.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  In <i>tapir</i> this is the most complex task as you need to build a UI
+  technology binding from scratch. It's time-consuming, but you will
+  likely do this rarely or never.
+  </div>
+</div>
+
+
 
 # How to Start?
 
@@ -25,7 +34,7 @@ technology module: Page objects. In your page object each field is bound
 to a specific UI technology implementation. This binding is established
 by an annotation which is annotated by
 [@PageElementAnnotation](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/annotation/PageElementAnnotation.html).
-Tapir's Selenium module provides
+<i>tapir's</i> Selenium module provides
 the [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
 annotation in order to bind the field to a html element which is located
 by Selenium. The annotated fields are processed and initialized by the
@@ -34,13 +43,20 @@ In case of Selenium
 the [SeleniumPageObjectFieldInitializer](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/aop/pageobject/SeleniumPageObjectFieldInitializer.html)
 solves this task.
 
-Tapir provides an experimental JavaFX module which is based
+<i>tapir</i> provides an experimental JavaFX module which is based
 on [TestFX](https://github.com/TestFX/TestFX). We use this binding to
 exemplify the implementation of a custom UI technology.
 
-As we don't want to get lost in Java FX implementation details we focus
-on the Tapir API. Explanation of the JavaFX/TestFX API are omitted
-unless they are essential to understand the use case.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  As we don't want to get lost in Java FX implementation details we focus
+  on the <i>tapir</i> API. Explanation of the JavaFX/TestFX API are omitted
+  unless they are essential to understand the use case.
+  </div>
+</div>
 
 ## PageElementAnnotation
 
@@ -50,7 +66,7 @@ to locate it.
 
 **JavaFXElement.xtend**
 
-``` java
+``` xtend
 @DynamicActive(processorRequired = false)
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
@@ -62,13 +78,11 @@ annotation JavaFXElement {
 
 ## PageObjectFieldInitializer
 
-You have to implement your
-own [PageObjectFieldInitializer](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/aop/pageobject/PageObjectFieldInitializer.html) in
-order to inject the fields of the page objects.
+You have to implement your own [PageObjectFieldInitializer](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/aop/pageobject/PageObjectFieldInitializer.html) in order to inject the fields of the page objects.
 
 **JavaFXPageObjectFieldInitializer.xtend**
 
-``` java
+``` xtend
 @Component
 class JavaFXPageObjectFieldInitializer implements PageObjectFieldInitializer {
     @Autowired
@@ -96,16 +110,11 @@ class JavaFXPageObjectFieldInitializer implements PageObjectFieldInitializer {
 }
 ```
 
-The initializer collects all fields which are annotated by
-*JavaFXElement* (line 13) and transforms them to Tapir elements (line
-20) and injects the *TapirElement* into the field (line 22).
+The initializer collects all fields which are annotated by *JavaFXElement* (line 13) and transforms them to <i>tapir</i> elements (line 20) and injects the *TapirElement* into the field (line 22).
 
 ## Component
 
-Each field which is annotated by JavaFXElement needs a type which
-implements/extends *TapirElement*. It's nearly the same as described in
-the chapter [HTML Components](HTML_Components) with the difference that
-your implementation relies on TestFX instead of Selenium.
+Each field which is annotated by JavaFXElement needs a type which implements/extends *TapirElement*. It's nearly the same as described in the chapter [HTML Components]({{"/docs/customization/htmlcomponents/" | prepend: site.baseurl}}) with the difference that your implementation relies on TestFX instead of Selenium.
 
 This is a example interface and its implementation:
 
@@ -116,7 +125,9 @@ public interface Button extends TapirElement, Displayable, Clickable, Enabable {
 }
 ```
 
-``` java
+**DefaultJavaFXButton.xtend**
+
+``` xtend
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 class DefaultJavaFXButton extends AbstractJavaFXElement implements Button {
@@ -137,9 +148,9 @@ class DefaultJavaFXButton extends AbstractJavaFXElement implements Button {
 }
 ```
 
-Query lately
+## Query lately
 
-As decribed in the chapter [Selenium Core module](Selenium_Core_module)
+As decribed in the chapter [Selenium Core module]({{"/docs/selenium/seleniumcoremodule/" | prepend: site.baseurl}})
 you should query elements as late as possible. Unfortunately JavaFX
 makes extensive use of final methods without providing interfaces.
 Therefore it's impossible to use proxies. In this example we focus on
@@ -147,7 +158,7 @@ proxying the *NodeQuery* interface which is provided by TestFX:
 
 **JavaFxConfiguration.xtend**
 
-``` java
+``` xtend
 @ModuleConfiguration
 @AutoConfigureOrder(8000)
 class JavaFxConfiguration {
@@ -180,7 +191,7 @@ which is explained below:
 
 **NodeQueryMethodInterceptor.xtend**
 
-``` java
+``` xtend
 class NodeQueryMethodInterceptor implements MethodInterceptor {
  
     @Autowired
@@ -220,7 +231,7 @@ Whenever a method at *NodeQuery* is called which returns a subtype of
 method calls are forwarded to the proxied *NodeQuery* which is obtained
 lazily and cached by the *cache* field.
 
-``` java
+``` xtend
 @Component
 class NodeProxyFactory {
     @Autowired
@@ -243,13 +254,13 @@ like *NodeQuery.lookup(String query)* which returns a *NodeQuery*.
 
 # Conclusion
 
-Integrating a new UI technology in Tapir is a complex task, but most
+Integrating a new UI technology in <i>tapir</i> is a complex task, but most
 users never ever get in touch as you could rely on the UI technologies
 bindings that already exist.
 
 If you have to get your handy dirty by implementing a UI technology
 binding, it's definitely worth the effort as you benefit from all the
-great features Tapir provides. Users which already use another Tapir UI
+great features <i>tapir</i> provides. Users which already use another <i>tapir</i> UI
 technology do not need time to learn the ropes as they are familiar with
 the API and all the concepts.
 
@@ -257,7 +268,7 @@ This is a Page Object based on the JavaFX module:
 
 **MainPage.xtend**
 
-``` java
+``` xtend
 @Page
 class MainPage {
     @JavaFXElement(id='#button')
@@ -275,7 +286,7 @@ And an example test:
 
 **MainTestClass.xtend**
 
-``` java
+``` xtend
 @TestClass
 class MainTestClass {
 

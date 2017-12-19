@@ -7,8 +7,15 @@ As all instances are managed by Spring Tapir enables you to overwrite
 any implementation, even those provided by Tapir's core or any optional
 module. This offers maximum flexibility to the user.
 
-Handle this feature with care! Violating contracts might lead to elusive
-errors.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  Handle this feature with care! Violating contracts might lead to elusive
+  errors.
+  </div>
+</div>
 
 # Example
 
@@ -21,13 +28,10 @@ Imagine you want to change this identifier to
 
     {TestClassName}-{StepName}-Failure
 
-The name is built
-by [ScreenshotListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/ScreenshotListener.html)
-whose bean name is its fully qualified name
-*de.bmiag.tapir.selenium.listener.ScreenshotListener*.
+The name is built by [ScreenshotListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/ScreenshotListener.html)
+whose bean name is its fully qualified name *de.bmiag.tapir.selenium.listener.ScreenshotListener*.
 
-The [FilesystemAttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html)captures
-the attachment, stores it on the disk and outputs the file path:
+The [FilesystemAttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html) captures the attachment, stores it on the disk and outputs the file path:
 
     The attachment GoogleTest.assertTitle-FailScreenshot has been written to {somepath}/GoogleTest.assertTitle-FailScreenshot.png
 
@@ -35,7 +39,7 @@ We can register a custom screenshot listener which uses our identifier:
 
 **CustomScreenshotListener.xtend**
 
-``` java
+``` xtend
 @Component
 @Order(4000)
 class CustomScreenshotListener extends AbstractExecutionListener {
@@ -64,7 +68,7 @@ configuration class:
 
 **MyConfiguration.xtend**
 
-``` java
+``` xtend
 @ModuleConfiguration
 public class MyConfiguration {
     @Bean("de.bmiag.tapir.selenium.listener.ScreenshotListener")
@@ -75,17 +79,20 @@ public class MyConfiguration {
 ```
 
 This declaration overrides the bean
-"de.bmiag.tapir.selenium.listener.ScreenshotListener". The result is
+*de.bmiag.tapir.selenium.listener.ScreenshotListener*. The result is
 this logged message:
 
     The attachment GoogleTest-assertTitle-Failure has been written to {somepath}/GoogleTest-assertTitle-Failure.png
 
 # Conclusion
 
-Overriding a bean is quite simple. All you need to know is the name of
-the bean you would like to override, Of course you have to make sure
-that the type of your bean is compatible with the type of the overridden
-bean.
+Overriding a bean is quite simple. All you need to know is the name of the bean you would like to override. Of course you have to make sure that the type of your bean is compatible with the type of the overridden bean.
 
-Beans which are registered via component scan cannot override other
-beans. You have to declare them in your module's configuration class.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  Beans which are registered via component scan cannot override other beans. You have to declare them in your module's configuration class.
+  </div>
+</div>
