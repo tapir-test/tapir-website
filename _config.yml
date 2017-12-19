@@ -13,8 +13,7 @@ author:
   twitter: OLibutzki
 
 logo: /img/jekyll-dark.png
-image:
-    path: /img/jekyll-dark.png
+image: /img/jekyll-dark.png
 
 social:
     name: tapir
