@@ -3,11 +3,11 @@ title: Concurent Test Execution
 permalink: /docs/usingtapir/concurrenttestexecution/
 ---
 
-Tapir provides the possibility to execute tests concurrently. This can
+<i>tapir</i> provides the possibility to execute tests concurrently. This can
 be useful to speed up the test execution or if you want to test how your
 application handles concurrent access (possibly to detect concurrency
 issues or as a load test). The concurrent test execution is part of
-Tapir's execution module.
+<i>tapir's</i> execution module.
 
 ``` xml
 <dependency>
@@ -17,7 +17,7 @@ Tapir's execution module.
 ```
 
 Keep in mind that a concurrent test execution can also mean that it is
-more difficult to reproduce error scenarios. Also, Tapir doesn't provide
+more difficult to reproduce error scenarios. Also, <i>tapir</i> doesn't provide
 explicit support for locking and unlocking shared resources for the test
 cases. You still have to care about this yourself.
 
@@ -40,7 +40,7 @@ class TestClass1 {
 }
 ```
 
-If you annotate a test suite with *Parallel*, Tapir executes each test
+If you annotate a test suite with *Parallel*, <i>tapir</i> executes each test
 class (or test suite) of the suite in parallel. In the above example,
 the execution of *TestSuite1* would start *TestClass2* and *TestClass3*
 in parallel. Annoting a test class becomes interesting when you use the

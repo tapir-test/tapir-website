@@ -3,7 +3,7 @@ title: Selenium Core Module
 permalink: /docs/usingtapir/selenium/seleniumcoremodule/
 ---
 
-The Selenium Core module acts as a bridge between Tapir and Selenium
+The Selenium Core module acts as a bridge between <i>tapir</i> and Selenium
 without being bound to a specific browser or web framework. It
 encapsulates the Selenium WebDriver API and provides some features which
 simplify the communication between the test code and the browser.
@@ -19,7 +19,7 @@ simplify the communication between the test code and the browser.
 
 # HTML binding
 
-Tapir relies on the usage of Page objects. The binding to a specific UI
+<i>tapir</i> relies on the usage of Page objects. The binding to a specific UI
 technology like Selenium is realized via annotations. The Selenium
 module provides
 the [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
@@ -27,7 +27,7 @@ annotation for this purpose.
 
 Annotating a page object field
 with [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)instructs
-Tapir to identify the element with Selenium. The annotation offers a
+<i>tapir</i> to identify the element with Selenium. The annotation offers a
 couple of ways how to identify the element in the HTML DOM. The
 corresponding annotation methods are inspired by
 Selenium's [@FindBy](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/FindBy.html)
@@ -60,7 +60,7 @@ The Selenium module provides a couple of Selenium-specific services.
     Executes a given code with a given [implicit wait
     time](http://www.seleniumhq.org/docs/04_webdriver_advanced.jsp)
 
-You can use these services in your client code. Additionally Tapir
+You can use these services in your client code. Additionally <i>tapir</i>
 provides some execution listeners which make use of these services:
 
 -   [HtmlPageCaptureListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/HtmlPageCaptureListener.html):
@@ -81,12 +81,12 @@ chapter](Execution_Listener).
 
 # WebDriver Interaction
 
-Tapir encapsulates the interaction between the test code and the website
+<i>tapir</i> encapsulates the interaction between the test code and the website
 by using page objects. These page objects have fields of a specific
 element interface type. Each field represents a component on the HTML
 page.
 
-Whenever the test code obtains a Tapir element (e.g. a test field) by
+Whenever the test code obtains a <i>tapir</i> element (e.g. a test field) by
 calling the corresponding getter on the page object, a proxied element
 is returned. Clients always get an instance (never *null*), whether or
 not the element is displayed on the page. The WebDriver API is queried
@@ -195,7 +195,7 @@ val firstTapirResult = tapirResults.get(0) // Returns the first entry in tapirRe
 println("URL of first result containing 'Tapir': " + firstTapirResult.URL) // Finally a getter which returns a String is called. Tapir needs to consult the HTML page to obtain the needed information.
 ```
 
-When *firstTapirResult.URL* is called (line 4) Tapir executes the whole
+When *firstTapirResult.URL* is called (line 4) <i>tapir</i> executes the whole
 query stack which has been recorded:
 
 1.  Selects all the results whose headline contains "Tapir"
@@ -206,23 +206,23 @@ It's important to understand this behaviour as you might face errors you
 don't expect at a certain method call. Imagine there is no headline
 which contains "Tapir". *tapirResults* is an empty list and you might
 expect an IndexOutOfBoundsException in line 3. But this method call
-doesn't throw this exception as Tapir just doesn't know that there are
+doesn't throw this exception as <i>tapir</i> just doesn't know that there are
 no results, because the queries have not been called so far. Instead
 the IndexOutOfBoundsException is thrown in line 4 because getURL()
-returns a String and Tapir has to execute the query stack. While
+returns a String and <i>tapir</i> has to execute the query stack. While
 excuting this stack the *IndexOutOfBoundsException* is thrown.
 
 You might argue that you prefer failing fast. In the next chapter we
-discuss Tapir's failure handling which is the main reason why we
+discuss <i>tapir's</i> failure handling which is the main reason why we
 interact with the WebDriver API as late as possible.
 
 # Failure Handling
 
-Tapir tries to keep away technical issues from the test developer.
+<i>tapir</i> tries to keep away technical issues from the test developer.
 Therefore it tries to handle a couple of exceptions thrown by the
 WebDriver internally.
 
-Regardless of the configured implicit wait time, Tapir executes all
+Regardless of the configured implicit wait time, <i>tapir</i> executes all
 method invocations against the WebDriver API with an implicit wait time
 of 0 ms. Whenever
 a [StaleElementReferenceException](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/StaleElementReferenceException.html),

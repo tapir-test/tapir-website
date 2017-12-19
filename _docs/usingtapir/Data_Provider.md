@@ -6,7 +6,7 @@ permalink: /docs/usingtapir/dataprovider/
 Separating your tests from the test data helps to increase
 maintainability. It is even possible that developers can add further
 data to the tests without having actually to worry about how the tests
-work. The Tapir Execution module comes with two annotations to help you
+work. The <i>tapir</i> Execution module comes with two annotations to help you
 with this task.
 
 ``` xml
@@ -17,7 +17,7 @@ with this task.
 ```
 
 The annotations are
-[@Parameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/Parameter.html)and
+[@Parameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
 [@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html).
 They can be used to inject data into your test cases.
 
@@ -26,7 +26,7 @@ They can be used to inject data into your test cases.
 You can use the *Parameter* annotation to annotate fields or parameters
 of steps in your test classes.
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -58,7 +58,7 @@ the field and the suffix *Parameter*. Annotated parameters get a method
 with the name of the test step and the parameter name with the suffix
 *Parameter*.
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -90,7 +90,7 @@ the annotation *value* or *method* (which is just an alias for *value*).
 This allows also to use the same provider method for different
 parameters and fields.
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -120,7 +120,7 @@ specify another provider class. If you use such external data provider
 classes, they must be available in the Spring context. It is usually
 sufficient to annoatate them with Spring's *Component* annotation.
 
-``` java
+``` xtend
 @Component
 class MyDataProvider {
 
@@ -151,7 +151,7 @@ class MyTestCase {
 
 For some tests you don't want to provide a single data entry, but rather
 a whole collection. The
-[@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html)annotation
+[@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotation
 works similar to the *Parameter* annotation, but it repeats test steps
 or even whole test classes for each element of the returned *Iterable*.
 This is why the test provider methods must return a compatible
@@ -163,7 +163,7 @@ with three test steps. The second step has a parameter annotated with
 *IteratedParameter* and the corresponding provider method returns three
 entries.
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -192,27 +192,13 @@ executed three times. Subsequently, *step3* is executed. The following
 image shows you how the test execution looks in Eclipse. Note that the
 parameters of the steps are shown in brackets.
 
-![](img/docs/44564532/45940746.png){.image-left width="600"}
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![]({{"/img/docs/44564532/45940746.png" | prepend: site.baseurl}}){:height="199px" width="600px"}
 
 Now, what happens when you annotate more than one parameter of the same
-test step? The answer is, that Tapir will execute the test step with all
+test step? The answer is, that <i>tapir</i> will execute the test step with all
 possible combinations by using the cartesian product.
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -242,29 +228,7 @@ class MyTestCase {
 This time *step2* is executed nine times. The following image shows the
 complete execution in Eclipse.
 
-![](img/docs/44564532/45940747.png){.image-left width="600"}
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![]({{"/img/docs/44564532/45940747.png" | prepend: site.baseurl}}){:height="316px" width="600px"}
 
 So far we used the annotation only on step parameters. However, it is
 also possible to annotate fields. In this case the whole test class is
@@ -272,7 +236,7 @@ executed for each element of the provided *Iterable*. The following
 example consists of three test steps, but only the field of the test
 class is annotated.
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -302,38 +266,14 @@ As the *paramParameter* method provides an *Iterable* with three
 elements, the test class *MyTestCase* is executed three times. The
 following image from the Eclipse IDE shows the execution.
 
-![](img/docs/44564532/45940753.png){.image-left width="600"}
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![]({{"/img/docs/44564532/45940753.png" | prepend: site.baseurl}}){:height="336px" width="600px"}
 
 It is also possible to combine annotations on fields and parameters. The
 following example demonstrates this. It consists of a field, which is
 annotated with *IteratedParameter* and three steps. Two of these steps
 have a parameter which is annotated with *IteratedParameter* as well.
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -369,69 +309,32 @@ class MyTestCase {
 
 The following image shows the complete test execution in Eclipse.
 
-![](img/docs/44564532/45940756.png){.image-left width="600"}
+![]({{"/img/docs/44564532/45940756.png" | prepend: site.baseurl}}){:height="328px" width="600px"}
 
- 
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  With the help of the annotation <i>IterableParameter</i> you can allow
+  developers or business experts to add tests simply by adding further
+  test data. However, as the test execution is based on the cartesian
+  product if you use more than one parameter, the number of tests can grow
+  very fast if you are not careful.
+  </div>
+</div>
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-With the help of the annotation *IterableParameter* you can allow
-developers or business experts to add tests simply by adding further
-test data. However, as the test execution is based on the cartesian
-product if you use more than one parameter, the number of tests can grow
-very fast if you are not careful.
-
-Showcase
-
-*IteratedParameter* is used by
-*de.bmiag.tapir.showcase.test.WikipediaContentTableTest.wikipediaContentTableExpectaton*
-and
-*de.bmiag.tapir.showcase.test.WikipediaContentTableTest.assertContentTableEntry(ContentElementExpectation)*.
-The parameter value of *wikipediaContentTableExpectaton* is injected by
-the external data provider
-*de.bmiag.tapir.showcase.test.data.ContentTableTestDataProvider.*
-
- 
-
- 
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif){width="8" height="8"} [2017-06-01
-07\_44\_05-workspace - Java -
-tapir-jpetstore-example\_src\_test\_java\_de\_bmiag\_tapir\_example\_.png](img/docs/44564532/45940741.png)
-(image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"} [2017-06-01
-07\_49\_16-workspace - Java -
-tapir-jpetstore-example\_src\_test\_java\_de\_bmiag\_tapir\_example\_.png](img/docs/44564532/45940743.png)
-(image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[1.png](img/docs/44564532/45940746.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[2.png](img/docs/44564532/45940747.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[3.png](img/docs/44564532/45940753.png) (image/png)  
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[4.png](img/docs/44564532/45940756.png) (image/png)  
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  <i>IteratedParameter</i> is used by
+  <i>de.bmiag.tapir.showcase.test.WikipediaContentTableTest.wikipediaContentTableExpectaton</i>
+  and
+  <i>de.bmiag.tapir.showcase.test.WikipediaContentTableTest.assertContentTableEntry(ContentElementExpectation)</i>.
+  The parameter value of <i>wikipediaContentTableExpectaton</i> is injected by
+  the external data provider
+  <i>de.bmiag.tapir.showcase.test.data.ContentTableTestDataProvider.</i>
+  </div>
+</div>

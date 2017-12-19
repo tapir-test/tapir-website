@@ -7,17 +7,24 @@ permalink: /docs/usingtapir/runningtapirtests/
 
 # Standalone
 
-Tapir test suites can be started standalone. For every class annotated
+<i>tapir</i> test suites can be started standalone. For every class annotated
 with
 [@TestSuite](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/suite/TestSuite.html) or [@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/testclass/TestClass.html) a
 main method is generated, which means that it can be started as a Java
 application.
 
-If you start your test suite from within Eclipse with *Run As -&gt; Java
-Application*, Eclipse might report the error that the main class could
-not be found. That happens when your test suite lies in a test source
-folder. Move the file to the main source folder in order to start it as
-Java application.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  If you start your test suite from within Eclipse with <i>Run As -&gt; Java
+  Application</i>, Eclipse might report the error that the main class could
+  not be found. That happens when your test suite lies in a test source
+  folder. Move the file to the main source folder in order to start it as
+  Java application.
+  </div>
+</div>
 
 You can also run the test suite or class from the commandline:
 
@@ -27,7 +34,7 @@ You can also run the test suite or class from the commandline:
 
 # CLI
 
-Tapir provides a dedicated cli module which can be used to run test
+<i>tapir</i> provides a dedicated cli module which can be used to run test
 suites or classes. Currently this module does not provide any advantages
 compared to the way introduced in the last chapter, but later on you
 might be able to provide some custom properties which influence the

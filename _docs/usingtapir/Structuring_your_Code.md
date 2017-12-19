@@ -45,6 +45,6 @@ dependencies and plugins into place.
 # Additional Modules
 
 Of course you could have as many modules as you would like to.
-Modularity is one of Tapir's key paradigms, so we encourage you to build
+Modularity is one of <i>tapir's</i> key paradigms, so we encourage you to build
 reusable modules. These modules are similar to the page module explained
 above, but the dependencies might differ due to the module's purpose.
