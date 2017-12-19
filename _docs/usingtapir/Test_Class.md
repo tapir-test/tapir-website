@@ -12,7 +12,7 @@ an executable unit which contains at least one step. All the steps
 in a test class are executed sequentially. The most simple test class
 looks like this:
 
-``` java
+``` xtend
 @TestClass
 class MyTest {
     @Step
@@ -27,12 +27,20 @@ class MyTest {
 Test classes should use page objects to interact with the SUT. Like any
 other Spring bean these page objects can be autowired by using
 Spring's *@Autowire* annotation. You can find additional information
-about page objects in the [dedicated chapter](Page_Objects).
+about page objects in the [dedicated chapter]({{ "/docs/usingtapir/pageobjects/" | prepend: site.baseurl }}).
 
-You can inject any bean by using *@Autowired*. This capability is not
-limited to page objects.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  The showcase bootstrap configuration is
+  You can inject any bean by using <i>@Autowired</i>. This capability is not
+  limited to page objects.
+  </div>
+</div>
 
-``` java
+``` xtend
 @TestClass
 class MyTest {
  
@@ -52,7 +60,7 @@ In every Test
 class [TapirAssertions](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/util/extensions/TapirAssertions.html)
 is registered and all its visible members can be used in the test class:
 
-``` java
+``` xtend
 @TestClass
 class MyTest {
  
@@ -72,15 +80,18 @@ using [@UseExtension](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/lates
 # Documentation
 
 Test classes can and should be documented. There is a dedicated chapter
-about [Documentation](Documentation).
+about [Documentation]({{"/docs/extensions/documentation/" | prepend: site.baseurl}}).
 
-Showcase
 
-There are two test classes in the showcase:
-
--   de.bmiag.tapir.showcase.test.WikipediaContentTableTest
--   de.bmiag.tapir.showcase.test.WikipediaSmokeTest
-
- 
-
- 
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  There are two test classes in the showcase:
+  <ul>
+    <li>de.bmiag.tapir.showcase.test.WikipediaContentTableTest</li>
+    <li>de.bmiag.tapir.showcase.test.WikipediaSmokeTest</li>
+  </ul>
+  </div>
+</div>

@@ -22,7 +22,7 @@ consistent way.
 </div>
 
 
-# Maven
+# Maven {#BuildSystems-Maven}
 
 Maven users can use the *tapir-starter-module* to obtain sensible
 defaults. The project provides the following features:

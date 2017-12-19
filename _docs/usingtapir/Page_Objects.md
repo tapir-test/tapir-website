@@ -3,10 +3,14 @@ title: Page Objects
 permalink: /docs/usingtapir/pageobjects/
 ---
 
-*"If you have WebDriver APIs in your test methods, You're Doing
-It Wrong."*
-
-Simon Stewart, creator of Selenium WebDriver
+<div class="panel panel-default">
+    <div class="panel-body">
+    <i>"If you have WebDriver APIs in your test methods, You're Doing
+    It Wrong."</i>
+    <br/><br/>
+    Simon Stewart, creator of Selenium WebDriver
+    </div>
+</div>
 
 You have to take it seriously if the creator on an API gives you such a
 serious suggestion on how to use his API. <i>tapir</i> highly encourages you to
@@ -20,11 +24,18 @@ changes in the SUT as you always have only a single point to adjust. The
 test cases can focus on the behaviour of the application and do not have
 to deal with technical issues.
 
-![](img/docs/45219869/45220094.png){width="600"}
+![]({{"/img/docs/45219869/45220094.png" | prepend: site.baseurl}}){:height="192px" width="600px"}
 
-There is a lot of information about Page Objects around the web. One of
-the most fundamental abstracts is written by [Martin
-Fowler](https://martinfowler.com/bliki/PageObject.html).
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  There is a lot of information about Page Objects around the web. One of
+  the most fundamental abstracts is written by <a href="https://martinfowler.com/bliki/PageObject.html">Martin
+  Fowler]</a>.
+  </div>
+</div>
 
 In <i>tapir</i>'s Selenium integration you need these dependencies:
 
@@ -41,7 +52,7 @@ In <i>tapir</i>'s Selenium integration you need these dependencies:
 
 A Page Object for the Google website looks like this:
 
-``` java
+``` xtend
 @Page
 class GooglePage {
     @SeleniumElement(name="q")
@@ -56,9 +67,9 @@ You just have to provide some fundamental information without any
 boilerplate or glue
 code. [@Page](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/annotation/Page.html)
 declares the class as a page object. There is a
-[TextField](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/TextField.html)called
+[TextField](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/TextField.html) called
 *queryField* and a
-[Button](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/Button.html)called
+[Button](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/Button.html) called
 *searchButton* on the
 page. [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
 tells <i>tapir</i> to use its Selenium implementation. The provided name
@@ -69,7 +80,7 @@ You can use the page object in your test class like described in the
 example below. You can just inject the page as a field by using Spring's
 *@Autowired* annotation.
 
-``` java
+``` xtend
 @TestClass
 class GoogleTest {
 
@@ -84,16 +95,30 @@ class GoogleTest {
 }
 ```
 
-Please notice the syntactic sugar Xtend provides. For more information
-why <i>tapir</i> chooses Xtend over plain Java, consult the chapter [Why does
-Tapir use Xtend?](45219887.html).
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  Please notice the syntactic sugar Xtend provides. For more information
+  why <i>tapir</i> chooses Xtend over plain Java, consult the chapter <a href="{{"/docs/usingtapir/whyxtend/" | prepend: site.baseurl}}">Why does
+  Tapir use Xtend?</a>.
+  </div>
+</div>
 
-Showcase
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  There are two test classes in the showcase:
+  <ul>
+    <li><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaContentPage.htmlt">de.bmiag.tapir.showcase.page.WikipediaContentPage</a></li>
+    <li><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaMainPage.html">de.bmiag.tapir.showcase.page.WikipediaMainPage</a></li>
+  </ul>
+  </div>
+</div>
 
-There are two pages in the show case:
-
--   [de.bmiag.tapir.showcase.page.WikipediaContentPage](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaContentPage.html)
--   [de.bmiag.tapir.showcase.page.WikipediaMainPage](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaMainPage.html)
 
 #  Assert that a Page is Active
 
@@ -104,11 +129,15 @@ itself if it's active, e.g. by checking for a specific element or a
 headline text. If the page is not active, you have to throw an
 *AssertionError*.
 
-Showcase
-
-In the showcase
-[de.bmiag.tapir.showcase.page.WikipediaMainPage](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaMainPage.html)
-implements *PageActiveAssertion*.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  In the showcase
+  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaMainPage.html">de.bmiag.tapir.showcase.page.WikipediaMainPage</a> implements <i>PageActiveAssertion</i>.
+  </div>
+</div>
 
 ## Explicit check
 
@@ -118,7 +147,7 @@ Test classes can check, if a page is active by using
 the [PageActiveAssertionExtensions](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/extensions/PageActiveAssertionExtensions.html)as
 an extension.
 
-``` java
+``` xtend
 @UseExtension(PageActiveAssertionExtensions)
 class GoogleTest {
 
@@ -136,7 +165,7 @@ class GoogleTest {
 
 Alternatively you can explicitly call the *assertPageActive( )* method:
 
-``` java
+``` xtend
  @Step
     def void assertGooglePageActive() {
         googlePage.assertPageActive
@@ -150,16 +179,21 @@ the [*@*AssertPostPage](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/lat
 annotation you can ensure that the given page is active after the step
 is completed:
 
-``` java
+``` xtend
  @Step
     @AssertPostPage(GooglePage)
     def void assertGooglePageActive() {
     }
 ```
 
-Showcase
-
-Used by *de.bmiag.tapir.showcase.test.WikipediaSmokeTest.openWebsite()*
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+    Used by <i>de.bmiag.tapir.showcase.test.WikipediaSmokeTest.openWebsite()</i>
+  </div>
+</div>
 
 ## Implicit check
 
@@ -182,17 +216,48 @@ embedded, in other words, they are contextless and can not implement
 
 Comparison of a page and a page component:
 
-|                     |                                  Page                                 |                              Page component                             |
-|:--------------------|:---------------------------------------------------------------------:|:-----------------------------------------------------------------------:|
-| Nestable            | ![(tick)](images/icons/emoticons/check.png){.emoticon .emoticon-tick} |  ![(tick)](images/icons/emoticons/check.png){.emoticon .emoticon-tick}  |
-| Standalone          | ![(tick)](images/icons/emoticons/check.png){.emoticon .emoticon-tick} | ![(error)](images/icons/emoticons/error.png){.emoticon .emoticon-cross} |
-| PageActiveAssertion | ![(tick)](images/icons/emoticons/check.png){.emoticon .emoticon-tick} | ![(error)](images/icons/emoticons/error.png){.emoticon .emoticon-cross} |
+<table style="width: 75%">
+  <colgroup>
+    <col style="width: 33%" />
+    <col style="width: 33%" />
+    <col style="width: 33%" />
+  </colgroup>
 
-Showcase
+  <tr class="header">
+    <th></th>
+    <th style="text-align: center;">Page</th>
+    <th style="text-align: center;">Page Component</th>
+  </tr>
 
-In the showcase the
-[de.bmiag.tapir.showcase.page.WikipediaHeader](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaHeader.html)
-is declared as *PageComponent*.
+  <tr>
+    <td>Nestable</td>
+    <td style="text-align: center;"><div class="fa fa-check"/></td>
+    <td style="text-align: center;"><div class="fa fa-check"/></td>
+  </tr>
+
+  <tr>
+    <td>Standalone</td>
+    <td style="text-align: center;"><div class="fa fa-check"/></td>
+    <td style="text-align: center;"><div class="fa fa-times"/></td>
+  </tr>
+
+  <tr>
+    <td>PageActiveAssertion</td>
+    <td style="text-align: center;"><div class="fa fa-check"/></td>
+    <td style="text-align: center;"><div class="fa fa-times"/></td>
+  </tr>
+</table>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  In the showcase the
+  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaHeader.html">de.bmiag.tapir.showcase.page.WikipediaHeader</a>
+  is declared as <i>PageComponent</i>.
+  </div>
+</div>
 
 # Nested Pages
 
@@ -204,7 +269,7 @@ and *@Reference* annotations.
 [@Reference](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/reference/Reference.html)
 just generates a getter for the referenced Page (component).
 
-``` java
+``` xtend
 @Page
 class Page1 {
     @Reference
@@ -212,9 +277,16 @@ class Page1 {
 }
 ```
 
-Showcase
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  Used by <i>de.bmiag.tapir.showcase.page.WikipediaMainPage.header</i>
+  </div>
+</div>
 
-Used by de.bmiag.tapir.showcase.page.WikipediaMainPage.header
+
 
 ## @Include
 
@@ -224,15 +296,10 @@ generates delegate methods for all public members of the annotated
 field. Include solves the problem of multiple inheritance as it is
 possible to include multiple pages / page components.
 
-``` java
+``` xtend
 @Page
 class Page1 {
     @Include
     PageComponent1 pageComponent1
 }
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[TapirPageObject.png](img/docs/45219869/45220094.png) (image/png)  

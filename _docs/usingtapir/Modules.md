@@ -18,16 +18,31 @@ AutoConfiguration just collects all available configurations at runtime
 and weaves them together. The main entry point in <i>tapir</i>'s context is the
 class which is annotated by @BootstrapConfiguration.
 
-If you are not familiar with Spring so far, consult the chapter [How
-does it work?](45219845.html).
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  If you are not familiar with Spring so far, consult the chapter <a href="{{ "/docs/usingtapir/howdoesitwork/" | prepend: site.baseurl }}">How
+  does it work?</a>
+  </div>
+</div>
 
-Take care of the
-[@AutoConfigureOrder](http://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/AutoConfigureOrder.html)
-annotation. It declares the precedence of the configuration processing.
-Beans defined in configurations with a higher order value override beans
-of lower-ordered configurations. For more information on overriding
-beans, consult the chapter [Custom
-Implementation](Custom_Implementation).
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  Take care of the
+  <a href="http://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/AutoConfigureOrder.html">@AutoConfigureOrder</a>
+  annotation. It declares the precedence of the configuration processing.
+  Beans defined in configurations with a higher order value override beans
+  of lower-ordered configurations. For more information on overriding
+  beans, consult the chapter <a href="{{ "/docs/customization/customimplementation/" | prepend: site.baseurl }}">Custom
+  Implementation</a>.
+  </div>
+</div>
+
 
 # Bootstrap Module
 
@@ -36,7 +51,7 @@ by [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapi
 This class is the main entry point for the configuration of your test
 execution environment. You do not have to add anything in this class,
 unless you would like to customize or extend <i>tapir</i>. These possibilities
-are convered in the chapter [Customiziation](Customiziation).
+are convered in the chapter [Customiziation]({{ "/docs/customization/executionfilter/" | prepend: site.baseurl }}).
 
 Beside a Bootstrap Configuration you need a class annotated
 by [@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)
@@ -44,7 +59,7 @@ which contains at least one method which is annotated
 by [@Step](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/step/Step.html).
 So the most simple setup to run a <i>tapir</i> test looks like this:
 
-``` java
+``` xtend
 import de.bmiag.tapir.bootstrap.annotation.BootstrapConfiguration
  
 @BootstrapConfiguration
@@ -52,12 +67,17 @@ class MyConfiguration {
 }
 ```
 
-Showcase
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  The showcase bootstrap configuration is
+  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/TestConfiguration.html">de.bmiag.tapir.showcase.TestConfiguration.</a>
+  </div>
+</div>
 
-The showcase bootstrap configuration is
-[de.bmiag.tapir.showcase.TestConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/TestConfiguration.html).
-
-``` java
+``` xtend
 import de.bmiag.tapir.execution.annotations.step.Step
 import de.bmiag.tapir.execution.annotations.testclass.TestClass
  
@@ -72,9 +92,7 @@ class MyTest {
 ```
 
 The easisiest way to create a bootstrap module is the [corresponding
-archetype](Archetypes_47218729.html#Archetypes-tapir-bootstrap-archetype).
-
- 
+archetype]({{ "/docs/usingtapir/archetypes#Archetypes-tapir-bootstrap-archetype" | prepend: site.baseurl }}).
 
 # Inclusion Module
 
@@ -88,4 +106,4 @@ You don't need to have any further configuration as
 component-scan capabilities.
 
 The easiest way to create an inclusion module is the [corresponding
-archetype](Archetypes_47218729.html#Archetypes-tapir-module-archetype).
+archetype]({{ "/docs/usingtapir/archetypes#Archetypes-tapir-module-archetype" | prepend: site.baseurl }}).
