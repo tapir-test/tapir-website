@@ -150,13 +150,13 @@ Xtend offers a lot of syntactic sugar like
     **Xtend**
 
     ``` xtend
-    googlePage.queryField.text = "Tapir" 
+    googlePage.queryField.text = "tapir" 
     ```
 
     **Generated Java**
 
     ``` java
-    this.googlePage.getQueryField().setText("Tapir");
+    this.googlePage.getQueryField().setText("tapir");
     ```
 
 -   [it

@@ -89,7 +89,7 @@ class GoogleTest {
 
     @Step
     def void searchForTapir() {
-        googlePage.queryField.text ="Tapir"
+        googlePage.queryField.text ="tapir"
         googlePage.searchButton.click
     }
 }
@@ -102,7 +102,7 @@ class GoogleTest {
   <div class="panel-body">
   Please notice the syntactic sugar Xtend provides. For more information
   why <i>tapir</i> chooses Xtend over plain Java, consult the chapter <a href="{{"/docs/usingtapir/whyxtend/" | prepend: site.baseurl}}">Why does
-  Tapir use Xtend?</a>.
+  tapir use Xtend?</a>.
   </div>
 </div>
 

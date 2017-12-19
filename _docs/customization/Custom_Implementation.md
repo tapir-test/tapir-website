@@ -3,8 +3,8 @@ title: Custom Implementation
 permalink: /docs/customization/customimplementation/
 ---
 
-As all instances are managed by Spring Tapir enables you to overwrite
-any implementation, even those provided by Tapir's core or any optional
+As all instances are managed by Spring <i>tapir</i> enables you to overwrite
+any implementation, even those provided by <i>tapir's</i> core or any optional
 module. This offers maximum flexibility to the user.
 
 <div class="panel panel-warning">
@@ -19,7 +19,7 @@ module. This offers maximum flexibility to the user.
 
 # Example
 
-Tapir's Selenium integration captures a screenshot every time a test
+<i>tapir's</i> Selenium integration captures a screenshot every time a test
 step fails. The name of the screenshot has the following format: 
 
     {TestClassName}.{StepName}-FailScreenshot

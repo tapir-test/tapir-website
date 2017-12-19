@@ -41,7 +41,7 @@ To configure your project to inherit from the
 tapir-*starter-module *simply set the *parent*:
 
 ``` xml
-<!-- Inherit defaults from Tapir -->
+<!-- Inherit defaults from tapir -->
 <parent>
     <groupId>de.bmiag.tapir</groupId>
     <artifactId>tapir-starter-module</artifactId>
@@ -88,7 +88,7 @@ by using a dependency with the import scope:
 <dependencyManagement>
      <dependencies>
         <dependency>
-            <!-- Import dependency management from Tapir -->
+            <!-- Import dependency management from tapir -->
             <groupId>de.bmiag.tapir</groupId>
             <artifactId>tapir-dependencies</artifactId>
             <version>2.0.0</version>

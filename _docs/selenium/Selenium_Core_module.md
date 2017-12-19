@@ -190,21 +190,21 @@ The client code:
 
 ``` xtend
 val searchResultList = googlePage.searchResultList// no interaction with the WebDriver API
-val tapirResults = searchResultList.selectResults[headline.text.contains("Tapir")] // Searches for all headlines which include "Tapir", this query is NOT executed now, because the method returns a List of SearchResult which is a TapirElement subtype
+val tapirResults = searchResultList.selectResults[headline.text.contains("tapir")] // Searches for all headlines which include "tapir", this query is NOT executed now, because the method returns a List of SearchResult which is a TapirElement subtype
 val firstTapirResult = tapirResults.get(0) // Returns the first entry in tapirResults, still no interaction with the WebDriver API as a TapirElement (subtype) is returned
-println("URL of first result containing 'Tapir': " + firstTapirResult.URL) // Finally a getter which returns a String is called. tapir needs to consult the HTML page to obtain the needed information.
+println("URL of first result containing 'tapir': " + firstTapirResult.URL) // Finally a getter which returns a String is called. tapir needs to consult the HTML page to obtain the needed information.
 ```
 
 When *firstTapirResult.URL* is called (line 4) <i>tapir</i> executes the whole
 query stack which has been recorded:
 
-1.  Selects all the results whose headline contains "Tapir"
+1.  Selects all the results whose headline contains "tapir"
 2.  Selects the first element of the results
 3.  Reads the url of this entry and returns it
 
 It's important to understand this behaviour as you might face errors you
 don't expect at a certain method call. Imagine there is no headline
-which contains "Tapir". *tapirResults* is an empty list and you might
+which contains "tapir". *tapirResults* is an empty list and you might
 expect an IndexOutOfBoundsException in line 3. But this method call
 doesn't throw this exception as <i>tapir</i> just doesn't know that there are
 no results, because the queries have not been called so far. Instead
