@@ -12,7 +12,7 @@ your test executions. This happens in two steps:
 Please consult the [Allure website](http://allure.qatools.ru/) to obtain
 further information about Allure.
 
-The Allure module acts as an adapter between Tapir's Notification API
+The Allure module acts as an adapter between <i>tapir's</i> Notification API
 and Allure's Reporting API. If the optional module is in the classpath
 at test runtime, the corresponding xml files are generated. These xml
 files are picked up by Allure and transformed to a good-looking report.
@@ -38,7 +38,7 @@ Allure seamlessly integrates into Maven by providing a [dedicated
 plugin](http://wiki.qatools.ru/display/AL/Allure+Maven+Plugin). By
 extending *tapir-starter-selenium-allure* you do not have to care about
 the configuration as this is done by the parent pom. In order to run the
-tests (using the [Maven failsafe plugin](JUnit)), generate the report
+tests (using the [Maven failsafe plugin]({{"/docs/extensions/junit/" | prepend: site.baseurl}})), generate the report
 and deploying the report, run the following command:
 
 ``` text
@@ -51,10 +51,9 @@ report.
 
 # Jenkins
 
-Allure provides a [plugin for
-Jenkins](https://plugins.jenkins.io/allure-jenkins-pluginhttp://wiki.qatools.ru/display/AL/Allure+Jenkins+Plugin).
+Allure provides a [plugin for Jenkins](https://plugins.jenkins.io/allure-jenkins-plugin).
 Please consult the documentation on their website, but in general the
-defaults are fine to work with Tapir. 
+defaults are fine to work with <i>tapir</i>. 
 
 The Allure Report is stored for every build and you can switch from the
 Jenkins UI to the Allure report and vice versa.

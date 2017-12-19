@@ -76,8 +76,7 @@ provides some execution listeners which make use of these services:
     [ScreenshotService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/ScreenshotService.html) whenever
     a step fails
 
-For more information on execution listeners, consult the [corresponding
-chapter](Execution_Listener).
+For more information on execution listeners, consult the [corresponding chapter]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}).
 
 # WebDriver Interaction
 
