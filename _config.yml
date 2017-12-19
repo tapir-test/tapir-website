@@ -9,9 +9,12 @@ url: https://tapir-test.github.io # the base hostname & protocol for your site
 twitter:
     username: tapir_test
 
-author: Oliver Libutzki
+author:
+  twitter: OLibutzki
 
 logo: /img/jekyll-dark.png
+image:
+    path: /img/jekyll-dark.png
 
 social:
     name: tapir
