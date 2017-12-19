@@ -4,6 +4,9 @@ The tapir website is generated with [Jekyll](http://jekyllrb.com).
 
 It's based on the [Jekyll Doc Theme](https://github.com/aksakalli/jekyll-doc-theme).
 
+## Hosted at GitHub Pages
+The webite is hosted by GitHub Pages: [https://tapir-test.github.io/tapir-website/](https://tapir-test.github.io/tapir-website/)
+
 ## Running locally
 
 You need Ruby and gem before starting, then:
