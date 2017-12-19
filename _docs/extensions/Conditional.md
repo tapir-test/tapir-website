@@ -5,11 +5,11 @@ permalink: /docs/extensions/conditional/
 
 You might find yourself in situations where you want to execute test
 steps, cases or suites depending on complex conditions (for instance,
-the annotations of Tapir's[variant module](Variant_Management)cannot
+the annotations of <i>tapir's</i>[variant module]({{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}) cannot
 describe your condition). Of course you could simply use a plain
 *if*-statement. But the test case would still be visible in the test
 report, although you don't want it to be executed. For such situations,
-Tapir provides the conditional module.
+<i>tapir</i> provides the conditional module.
 
 # Dependency
 
@@ -21,15 +21,15 @@ Tapir provides the conditional module.
 ```
 
 The module gives you the
-[Conditional](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/conditional/annotations/Conditional.html)annotation.
+[Conditional](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/conditional/annotations/Conditional.html) annotation.
 This annotation can be used on test steps, test cases and test suites.
 The usage of this annotationforces you to implement a method with a
 boolean return type which determines whether the annotated element will
 be executed or not. The naming convention of the method is similar as
 for the
-[Parameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/Parameter.html)and
-[IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html)annotations
-in the [data provider chapter](Data_Provider). There are three
+[Parameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
+[IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotations
+in the [data provider chapter]({{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}). There are three
 possibilities.
 
 # Unparameterized
@@ -42,7 +42,7 @@ name of the test class and the suffix *Condition.*
 
 **MyTestCase.xtend**
 
-``` java
+``` xtend
 @TestClass
 @Conditional
 class MyTestCase {
@@ -72,7 +72,7 @@ different classes and steps.
 
 **MyTestCase.xtend**
 
-``` java
+``` xtend
 @TestClass
 @Conditional(method="myCondition")
 class MyTestCase {
@@ -102,7 +102,7 @@ Spring.
 
 **MyConditional.xtend**
 
-``` java
+``` xtend
 @Component
 class MyConditional {
 
@@ -115,7 +115,7 @@ class MyConditional {
 
 **MyTestCase.xtend**
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -128,10 +128,16 @@ class MyTestCase {
 ```
 
 # Examples
-
-For the following example, we assume that you are already familiar with
-data provider in Tapir. If you are not sure, you might want to take
-another look at the [chapter](Data_Provider).
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  For the following example, we assume that you are already familiar with
+  data provider in <i>tapir</i>. If you are not sure, you might want to take
+  another look at the <a href="{{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}">chapter</a>.
+  </div>
+</div>
 
 Let us take a look at some examples. The following test case consists of
 two steps. The field *param* is annotated with *IteratedParameter*. As
@@ -143,7 +149,7 @@ in the third pass of the test case.
 
 **MyTestCase.xtend**
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -174,11 +180,18 @@ The following image shows the execution in the Eclipse IDE. Note that
 in the first two passes. The condition avoids that *step2* will be seen
 in the report in the first place.
 
-![](img/docs/45940767/45940796.png){.image-center width="720"}
+![]({{"/img/docs/45940767/45940796.png" | prepend: site.baseurl}}){:width="720px"}
 
-For the following example, we assume that you are already familiar with
-the variant management in Tapir. If you are not sure, you might want to
-take another look at the [chapter](Variant_Management).
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  For the following example, we assume that you are already familiar with
+  the variant management in <i>tapir</i>. If you are not sure, you might want to
+  take another look at the <a href="{{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}">chapter</a>.
+  </div>
+</div>
 
 Now let us assume that you have three features in your application:
 *Feature1*, *Feature2* and *Feature3*. Now you want to execute your test
@@ -188,7 +201,7 @@ is not active but *Feature3* is active. With the help of the
 
 **MyTestCase.xtend**
 
-``` java
+``` xtend
 @TestClass
 class MyTestCase {
 
@@ -210,8 +223,3 @@ class MyTestCase {
 
 }
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif){width="8" height="8"}
-[1.png](img/docs/45940767/45940796.png) (image/png)  

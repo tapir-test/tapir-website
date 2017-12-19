@@ -3,7 +3,7 @@ title: Configuration Management
 permalink: /docs/extensions/configurationmanagement/
 ---
 
-In the previous chapter about [variant management](Variant_Management),
+In the previous chapter about [variant management]({{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}),
 we showed you how to execute test code depending on specific
 [Features](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/Feature.html)
 and
@@ -14,7 +14,7 @@ in different configurations. Let us assume that your software provides
 the possibility to configure the control steps between two eye and four
 eye principle. Now you want to run all your tests with a two eye
 configuration of your software and at some other time with a four eye
-configuration. Tapir's *configuration* module provides you with the
+configuration. <i>tapir's</i> *configuration* module provides you with the
 possibility to deposit default configurations which can be different for
 different configuration variants.
 
@@ -140,7 +140,7 @@ Depending on which of those configuration variants is active, the
 active, when the value of the property *configurationVariant* is the
 name of the variant. The name of a variant is the classname, unless you
 specify it with the attribute *name* in the annotation. [This
-chapter](Externalized_Configuration) explains how to configure
-properties.
+chapter]({{"/docs/usingtapir/externalizedconfiguration/" | prepend: site.baseurl}}) explains how to configure
+properties. 
 
  

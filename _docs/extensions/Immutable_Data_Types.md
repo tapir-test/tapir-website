@@ -4,11 +4,18 @@ permalink: /docs/extensions/immutables/
 ---
 Data used in the test cases is often supposed to be "immutable", hence
 the data is defined once and only read by the tests afterwards. The
-Tapir Data module provides a helpful annotation for this task.
+<i>tapir</i> Data module provides a helpful annotation for this task.
 
-This Tapir module is inspired by
-[Immutables](https://immutables.github.io/), a great library which
-relies on Java Annotation Processing.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  This <i>tapir</i> module is inspired by
+  <a href="https://immutables.github.io/">Immutables</a>, a great library which
+  relies on Java Annotation Processing.
+  </div>
+</div>
 
 # Dependency
 
@@ -37,11 +44,11 @@ class LoginUser {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Showcase</h3>
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
   </div>
   <div class="panel-body">
-  <strong>de.bmiag.tapir.showcase.test.data.ContentElementExpectation</strong> and
-  <strong>de.bmiag.tapir.showcase.test.data.WikipediaContentTableExpectaton</strong> are
+  <i>de.bmiag.tapir.showcase.test.data.ContentElementExpectation</i> and
+  <i>de.bmiag.tapir.showcase.test.data.WikipediaContentTableExpectaton</i> are
   marked as immutable.
   </div>
 </div>
@@ -73,7 +80,7 @@ The original object is not changed during this operation.
 
 **MyCode.xtend**
 
-``` java
+``` xtend
 val adminUser = LoginUser.build [
   username = 'admin'
   password = 'password'
@@ -95,7 +102,7 @@ build LoginUser, some of the required attributes are not set
 
 **MyCode.xtend**
 
-``` java
+``` xtend
 LoginUser.build [
   username = 'admin'
 ]
@@ -108,7 +115,7 @@ of LoginUser, the above code would no longer throw an exception.
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable
 class LoginUser {
   String username
@@ -125,7 +132,7 @@ from them will result in a *java.lang.UnsupportedOperationException*.
 
 **NumberHolder.xtend**
 
-``` java
+``` xtend
 @Immutable
 class NumberHolder {
     List<Integer> listOfNumbers
@@ -138,7 +145,7 @@ and sets.
 
 **MyCode.xtend**
 
-``` java
+``` xtend
 NumberHolder.build [
     listOfNumbers = #[1, 2, 3]
     setOfNumbers = #{1, 2, 3, 3}
@@ -154,7 +161,7 @@ immutable class.
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable
 class LoginUser {
     String username
@@ -166,7 +173,7 @@ class LoginUser {
 
 **LoginUserWithDomain.xtend**
 
-``` java
+``` xtend
 @Immutable
 class LoginUserWithDomain {
     @Include
@@ -178,7 +185,7 @@ class LoginUserWithDomain {
 In this example, the *LoginUserWithDomain* has the same attributes as
 the *LoginUser*, plus the new attribute *domain*.
 
-``` java
+``` xtend
 LoginUserWithDomain.build [  
     username = 'admin'
     password = 'password'
@@ -196,7 +203,7 @@ generated based on the getters within the interface.
 
 **User.xtend**
 
-``` java
+``` xtend
 interface User {
     def String getUsername()
 }
@@ -206,7 +213,7 @@ interface User {
 
 **Password.xtend**
 
-``` java
+``` xtend
 interface Password {
     def String getPassword()
 }
@@ -216,7 +223,7 @@ interface Password {
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable(interfaces = #[User, Password])
 class LoginUser {
 }
@@ -229,7 +236,7 @@ not getters, your class simply has to implement the methods.
 
 **LogIn.xtend**
 
-``` java
+``` xtend
 interface LogIn {
     def void logIn()    
 }
@@ -237,7 +244,7 @@ interface LogIn {
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable(interfaces = #[LogIn])
 class LoginUser {
 
@@ -256,7 +263,7 @@ a setter for the field as well.
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable
 class LoginUser {
     String username
@@ -270,7 +277,7 @@ you can also change the field password later.
 
 **MyCode.xtend**
 
-``` java
+``` xtend
 val user = LoginUser.build [
         username = 'admin'
         password = 'password'
@@ -284,7 +291,7 @@ also annotate the getter method.
 
 **User.xtend**
 
-``` java
+``` xtend
 interface User {
     def String getUsername()
 }
@@ -292,7 +299,7 @@ interface User {
 
 **Password.xtend**
 
-``` java
+``` xtend
 interface Password {
     @Modifiable
     def String getPassword()
@@ -301,14 +308,21 @@ interface Password {
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable(interfaces = #[User, Password])
 class LoginUser {
 }
 ```
 
-We recommend to use this annotation sparingly and with caution. It
-breaks the concept of the immutability of test data!
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  We recommend to use this annotation sparingly and with caution. It
+  breaks the concept of the immutability of test data!
+  </div>
+</div>
 
 # Equals, hashCode and toString
 
@@ -317,13 +331,13 @@ based on the attributes of the immutable class. Per default all
 available attributes are used in these methods. If you don't want to use
 specific attributes in these methods, you can exclude them by annotating
 the fields with
-[ExcludeFromEqualsHashCode](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/data/Immutable.ExcludeFromEqualsHashCode.html)or
+[ExcludeFromEqualsHashCode](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/data/Immutable.ExcludeFromEqualsHashCode.html) or
 with
 [ExcludeFromToString](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/data/Immutable.ExcludeFromToString.html).
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable
 class LoginUser {
     @ExcludeFromToString
@@ -385,7 +399,7 @@ As usual, you can also annotate the getter methods of interfaces.
 
 **User.xtend**
 
-``` java
+``` xtend
 interface User {
    @ExcludeFromToString
    def String getUsername()
@@ -394,7 +408,7 @@ interface User {
 
 **Password.xtend**
 
-``` java
+``` xtend
 interface Password {
    @ExcludeFromEqualsHashCode
    def String getPassword()
@@ -403,7 +417,7 @@ interface Password {
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable(interfaces = #[User, Password])
 class LoginUser {
 }
@@ -411,15 +425,15 @@ class LoginUser {
 
 # Custom Label
 
-Tapir offers the possibility to declare which attributes form an
+<i>tapir</i> offers the possibility to declare which attributes form an
 object's label. The feature perfectly fits in conjunction with Immutable
 Data Types, but it can be used with any data container.
 
-Annotating a class with @CustomLabel instructs the class to implement
-the CustomLabeled interface. An implementation of the getCustomLabel()
-method is generated. You can optionally annotate fields with @LabelPart
+Annotating a class with [@CustomLabel](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/label/CustomLabel.html) instructs the class to implement
+the [CustomLabeled](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/label/CustomLabeled.html) interface. An implementation of the getCustomLabel()
+method is generated. You can optionally annotate fields with [@LabelPart](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/label/LabelPart.html)
 in order to declare them as part of the object's label. If no field is
-annotated with @LabelPart all fields are taken into account for the
+annotated with *@LabelPart* all fields are taken into account for the
 label generation.
 
 For the LoginUser a reasonable label just contains the username and
@@ -428,7 +442,7 @@ below.
 
 **LoginUser.xtend**
 
-``` java
+``` xtend
 @Immutable
 @CustomLabel
 class LoginUser {
@@ -438,14 +452,19 @@ class LoginUser {
 }
 ```
 
-Tapir's runtime is aware of the *CustomLabeled* interface by
+<i>tapir's</i> runtime is aware of the *CustomLabeled* interface by
 binding [CustomLabelAwareLabelProvider](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/label/CustomLabelAwareLabelProvider.html).
 Whenever the *getLabel(Object)* method is called, the
 *CustomLabelAwareLabelProvider* checks if the given object implements
 *CustomLabeled*. If so, it returns *CustomLabel.getCustomLabel()*,
 otherwise it falls back to the object's *toString()* method.
 
-Showcase
-
-*de.bmiag.tapir.showcase.test.data.WikipediaContentTableExpectaton* uses
-a custom label.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  <i>de.bmiag.tapir.showcase.test.data.WikipediaContentTableExpectaton</i> uses
+  a custom label.
+  </div>
+</div>

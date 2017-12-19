@@ -8,7 +8,7 @@ different variants of your application under test. Either because there
 exist certain editions of your application (for instance a standard and
 a professional edition) or you have a specific manifestation of the
 application for each of your customers. The variant management of the
-Tapir Variant module helps you with this task.
+<i>tapir</i> Variant module helps you with this task.
 
 # Dependency
 
@@ -27,11 +27,11 @@ of them (for instance, only the professional version of your application
 provides a REST API). Defining fine-grained features for your
 application enables a better reuse of your tests in case a new variant
 is added to your application. A feature can be specified by marking a
-class with the @Feature annotation.
+class with the [@Feature](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/Feature.html) annotation.
 
 **Feature1.xtend**
 
-``` java
+``` xtend
 @Feature
 class Feature1 {
 }
@@ -41,7 +41,7 @@ class Feature1 {
 
 **Feature2.xtend**
 
-``` java
+``` xtend
 @Feature
 class Feature2 {
 }
@@ -51,19 +51,19 @@ class Feature2 {
 
 **RestAPIFeature.xtend**
 
-``` java
+``` xtend
 @Feature
 class RestAPIFeature {
 }
 ```
 
 Defining the features of your application allows to mark test steps,
-classes or even suites with the @FeatureActivated annotation. The marked
+classes or even suites with the [@FeatureActivated](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/feature/FeatureActivated.html) annotation. The marked
 elements are only executed if the specified feature(s) is/are active.
 
 **RestAPITestClass.xtend**
 
-``` java
+``` xtend
 @TestClass
 @FeatureActivated(RestAPIFeature)
 class RestAPITestClass {
@@ -75,7 +75,7 @@ class RestAPITestClass {
 
 **TestClass1.xtend**
 
-``` java
+``` xtend
 @TestClass
 class TestClass1 {
 
@@ -87,11 +87,11 @@ class TestClass1 {
 }
 ```
 
-The FeatureActivated annotation provides also the methods allOf and
+The *FeatureActivated* annotation provides also the methods allOf and
 anyOf in case you want to define that your tests will be executed only
 if all features or at least one of a set of features are active.
 
-``` java
+``` xtend
 @TestClass
 @FeatureActivated(anyOf = #[Feature1, Feature2])
 class TestClass2 {
@@ -105,11 +105,11 @@ class TestClass2 {
 ```
 
 In case you want to specify that a test is only executed if some
-features are not active, you can also use the @FeatureNotActivated
-annotation. It provides the same methods as the FeatureActivated
+features are not active, you can also use the [@FeatureNotActivated](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/feature/FeatureNotActivated.html)
+annotation. It provides the same methods as the *FeatureActivated*
 annotation.
 
-``` java
+``` xtend
 @TestClass
 @FeatureNotActivated(allOf = #[Feature1, Feature2])
 class TestClass3 {
@@ -119,15 +119,22 @@ class TestClass3 {
 
 If you need to ask for the features in a more fine-grained way (for
 instance, you want to access a text field only if a feature is active),
-you can use the FeatureCheckService. You can use the service to check
+you can use the [FeatureCheckService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/service/FeatureCheckService.html). You can use the service to check
 whether a feature is active or not.
 
-The [conditional](Conditional)module of Tapir can help you to implement
-more complex and reusable conditions.
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+  </div>
+  <div class="panel-body">
+  The <a href="{{"/docs/extensions/conditional/" | prepend: site.baseurl}}">conditional</a> module of <i>tapir</i> can help you to implement
+  more complex and reusable conditions.
+  </div>
+</div>
 
 **TestClass4.xtend**
 
-``` java
+``` xtend
 @TestClass
 class TestClass4 {
 
@@ -145,19 +152,19 @@ class TestClass4 {
  }
 ```
 
-If you are using data providers in your tests, you can also enable or
+If you are using [data providers]({{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}) in your tests, you can also enable or
 disable parts of the provided data by checking for features. Your data
-element classes should implement FeatureBased. The
-method getActivateByFeatureExpression() returns an optional
-FeatureExpression which can be built by using FeatureExpressionBuilder.
+element classes should implement [FeatureBased](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/data/FeatureBased.html). The
+method *getActivateByFeatureExpression()* returns an optional
+[FeatureExpression](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/expression/FeatureExpression.html) which can be built by [using FeatureExpressionBuilder](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/expression/FeatureExpressionBuilder.html).
 The extension provides methods similar to those of
-the FeatureActivated and FeatureNotActivated annotations. In conjunction
-with Tapir's Immutables you can delcare your feature based objects like
+the *FeatureActivated* and *FeatureNotActivated* annotations. In conjunction
+with <i>tapir's</i> [Immutables]({{"/docs/extensions/immutables/" | prepend: site.baseurl}}) you can declare your feature based objects like
 this:
 
 **DataProviderElement1.xtend**
 
-``` java
+``` xtend
 @Immutable
 class DataProviderElement1 implements FeatureBased{
     int id
@@ -166,7 +173,7 @@ class DataProviderElement1 implements FeatureBased{
 
 **DataProvider1.xtend**
 
-``` java
+``` xtend
 @Component
 @UseExtension(FeatureExpressionBuilder)
 class DataProvider1 {
@@ -190,20 +197,20 @@ class DataProvider1 {
 }
 ```
 
-For types which are not annotated with @Immutable
-extending FeatureSpecificDataElement might be an option. This abstract
-class implements FeatureBased and provides a getter and a setter for the
+For types which are not annotated with *@Immutable* extending
+[FeatureSpecificDataElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/data/FeatureSpecificDataElement.html) might be an option. This abstract
+class implements *FeatureBased* and provides a getter and a setter for the
 feature expression.
 
 # Variants
 
 A variant specification usually acts as a container for a set of
 features. A class can be marked as variant specification by using the
-Variant annotation.
+[Variant](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/variant/Variant.html) annotation.
 
 **StandardEdition.xtend**
 
-``` java
+``` xtend
  @Variant(features = #[Feature1])
  class StandardEdition {
  }
@@ -211,7 +218,7 @@ Variant annotation.
 
 **ProfessionalEdition.xtend**
 
-``` java
+``` xtend
  @Variant(features = #[Feature1, Feature2])
  class ProfessionalEdition {
  }
@@ -221,10 +228,17 @@ Variant annotation.
 A variant is active, when the value of the property *variant* is the
 name of the variant. The name of a variant is the classname, unless you
 specify it with the attribute *name* in the annotation. [This
-chapter](Externalized_Configuration) explains how to configure
+chapter]({{"/docs/usingtapir/externalizedconfiguration/" | prepend: site.baseurl}}) explains how to configure
 properties. Once a variant is active, all features of the variant are
 active.
 
-When developing your test cases, you should focus on features and not on
-variants. Using the correct amount of features makes it way easier to
-add further variants of your application later.
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+  </div>
+  <div class="panel-body">
+  When developing your test cases, you should focus on features and not on
+  variants. Using the correct amount of features makes it way easier to
+  add further variants of your application later.
+  </div>
+</div>
