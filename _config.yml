@@ -9,10 +9,8 @@ url: https://tapir-test.github.io # the base hostname & protocol for your site
 twitter:
     username: tapir_test
 
-author:
-  twitter: OLibutzki
+author: olibutzki
 
-twitter_username: tapir_test
 
 logo: /img/jekyll-dark.png
 image: /img/jekyll-dark.png
@@ -54,11 +52,19 @@ exclude:
 timezone: Europe/Berlin
 defaults:
 - scope:
+    path: ""
+  values:
+    image: /img/jekyll-dark.png
+    seo:
+      type: "WebPage"
+- scope:
     path: _posts
     type: posts
   values:
     layout: post
     sectionid: blog
+    seo:
+        type: "BlogPosting"
 
 - scope:
     path: _docs
@@ -66,8 +72,7 @@ defaults:
   values:
     layout: docs
     sectionid: docs
-    seo:
-      type: "WebPage"
+
 
 collections:
   docs:
