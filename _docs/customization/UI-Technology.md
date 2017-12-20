@@ -150,7 +150,7 @@ class DefaultJavaFXButton extends AbstractJavaFXElement implements Button {
 
 ## Query lately
 
-As decribed in the chapter [Selenium Core module]({{"/docs/selenium/seleniumcoremodule/" | prepend: site.baseurl}})
+As decribed in the chapter [Selenium Core module]({{"/docs/selenium/core/" | prepend: site.baseurl}})
 you should query elements as late as possible. Unfortunately JavaFX
 makes extensive use of final methods without providing interfaces.
 Therefore it's impossible to use proxies. In this example we focus on

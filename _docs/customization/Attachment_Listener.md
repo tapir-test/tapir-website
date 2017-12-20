@@ -1,6 +1,6 @@
 ---
 title: Attachment Listener
-permalink: /docs/customization/attachmentlistener/
+permalink: /docs/customization/attachment-listener/
 ---
 In a [previous chapter]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}) we showed you how to implement custom execution listeners. You might have noted, that some of the listeners were responsible for creating attachments (screenshots, HTML content and so on). In this chapter we show you how to handle attachments during the test execution. The attachment listeners are part of <i>tapir's</i> *execution* module.
 

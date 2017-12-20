@@ -1,6 +1,6 @@
 ---
 title: Variant Management
-permalink: /docs/extensions/variantmanagement/
+permalink: /docs/extensions/variant-management/
 ---
 
 You might find yourself in a situation where you want to distinguish
@@ -152,7 +152,7 @@ class TestClass4 {
  }
 ```
 
-If you are using [data providers]({{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}) in your tests, you can also enable or
+If you are using [data providers]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) in your tests, you can also enable or
 disable parts of the provided data by checking for features. Your data
 element classes should implement [FeatureBased](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/data/FeatureBased.html). The
 method *getActivateByFeatureExpression()* returns an optional
@@ -228,7 +228,7 @@ features. A class can be marked as variant specification by using the
 A variant is active, when the value of the property *variant* is the
 name of the variant. The name of a variant is the classname, unless you
 specify it with the attribute *name* in the annotation. [This
-chapter]({{"/docs/usingtapir/externalizedconfiguration/" | prepend: site.baseurl}}) explains how to configure
+chapter]({{"/docs/usingtapir/externalized-configuration/" | prepend: site.baseurl}}) explains how to configure
 properties. Once a variant is active, all features of the variant are
 active.
 

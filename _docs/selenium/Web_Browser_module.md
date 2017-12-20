@@ -1,6 +1,6 @@
 ---
 title: Web Browser Module
-permalink: /docs/selenium/webbrowsermodule/
+permalink: /docs/selenium/browser/
 ---
 <i>tapir's</i> web browser implementations are organized in optional modules.
 <i>tapir</i> delivers four built-in browser modules, but feel free to add a

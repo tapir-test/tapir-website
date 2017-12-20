@@ -3,7 +3,7 @@ title: Execution Listener
 permalink: /docs/customization/executionlistener/
 ---
 
-As you might remember (or might look up in the chapter [How does it work?]({{"/docs/usingtapir/howdoesitwork/" | prepend: site.baseurl}})), <i>tapir</i> builds an execution plan based on the test suites, cases, steps and various annotations. The execution plan is executed by the
+As you might remember (or might look up in the chapter [How does it work?]({{"/docs/usingtapir/how-does-it-work/" | prepend: site.baseurl}})), <i>tapir</i> builds an execution plan based on the test suites, cases, steps and various annotations. The execution plan is executed by the
 [ExecutionPlanExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/ExecutionPlanExecutor.html)
 which itself notifies the execution listeners. In this chapter we take a more detailed look at this and show you how to hook into the execution of the test plan. The execution listeners are part of <i>tapir's</i> *execution* module.
 
@@ -66,7 +66,7 @@ prints the name of all started test steps.
 
 # Order
 
-As mentioned in the chapter [How does it work?]({{"/docs/usingtapir/howdoesitwork/" | prepend: site.baseurl}}), there
+As mentioned in the chapter [How does it work?]({{"/docs/usingtapir/how-does-it-work/" | prepend: site.baseurl}}), there
 are already various listeners per default active during the test
 execution. There is one listener responsible for making screenshots in
 case that the execution failed, one listener is responsible for writing
@@ -75,7 +75,7 @@ plan execution, you should keep an eye on the order of the listeners. By
 using Spring's
 [@Order](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/annotation/Order.html)
 annotation, the listeners are notified in a deterministic order. In the
-following table you can find the listeners within Tapir.
+following table you can find the listeners within <i>tapir</i>.
 
 | Execution Listener | Order | Description |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

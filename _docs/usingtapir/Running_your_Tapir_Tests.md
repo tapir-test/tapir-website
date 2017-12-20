@@ -1,6 +1,6 @@
 ---
 title: Running your tapir Tests
-permalink: /docs/usingtapir/runningtapirtests/
+permalink: /docs/usingtapir/running-tapir-tests/
 ---
 
 # JUnit

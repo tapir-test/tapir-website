@@ -5,7 +5,7 @@ permalink: /docs/extensions/junit/
 
 <i>tapir</i> does not enforce the usage of JUnit. <i>tapir</i> tests can be started
 using a Java main mathod as stated in [Running your tapir
-Tests]({{"/docs/usingtapir/runningtapirtests/" | prepend: site.baseurl}}). Anyway, using JUnit enables a lot of
+Tests]({{"/docs/usingtapir/running-tapir-tests/" | prepend: site.baseurl}}). Anyway, using JUnit enables a lot of
 additional amenities. JUnit is widespread and integrates into existing
 ecosystems quite well. There are many tools which are aware of JUnit's
 API.

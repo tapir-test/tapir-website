@@ -3,10 +3,10 @@ title: Execution Filter
 permalink: /docs/customization/executionfilter/
 ---
 
-Before Tapir starts the test cases, a execution plan is assembled by
+Before <i>tapir</i> starts the test cases, a execution plan is assembled by
 the
 [TapirExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/TapirExecutor.html). This
-is also described in the chapter [How does it work?]({{"/docs/usingtapir/howdoesitwork/" | prepend: site.baseurl}}).
+is also described in the chapter [How does it work?]({{"/docs/usingtapir/how-does-it-work/" | prepend: site.baseurl}}).
 Before the plan is actually executed, various filters can decide whether
 steps, classes or suites should be filtered out. This is especially
 useful when you want to make sure that specific elements are not
@@ -19,10 +19,10 @@ executed and are not even visible in the test report in the first place.
 </dependency>
 ```
 
-As you might remember, some previous features of Tapir were able to
+As you might remember, some previous features of <i>tapir</i> were able to
 remove elements from the execution plan: The
 [@FeatureActivated](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/feature/FeatureActivated.html)annotation
-from the [variant management chapter]({{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}), the
+from the [variant management chapter]({{"/docs/extensions/variant-management/" | prepend: site.baseurl}}), the
 [@Conditional](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/conditional/annotations/Conditional.html)annotation
 from the [conditional chapter]({{"/docs/extensions/conditional/" | prepend: site.baseurl}}) and so on. Well, they all
 use the same mechanism as described in this chapter.
@@ -63,7 +63,7 @@ implemented. The
 searches for an *Conditional* annotation at the respective element,
 retrieves the conditional provider, as well as the conditional method
 and invokes it. If the method returns *false*, the element is filtered
-out. The other listeners in Tapir, the
+out. The other listeners in <i>tapir</i>, the
 [FeatureActivatedAnnotationFilter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/filter/FeatureActivatedAnnotationFilter.html)and
 the
 [FeatureBasedParameterFilter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/filter/FeatureBasedParameterFilter.html),

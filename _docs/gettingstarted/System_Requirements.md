@@ -1,6 +1,6 @@
 ---
 title: System Requirements
-permalink: /docs/gettingstarted/systemrequirements/
+permalink: /docs/gettingstarted/system-requirements/
 ---
 <i>tapir</i> requires <a href="http://www.java.com/">Java 8</a> or above.
 Build support is provided for <a href="https://maven.apache.org/">Maven 3.3+</a>

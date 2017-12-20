@@ -4,8 +4,8 @@ permalink: /docs/customization/htmlcomponents/
 ---
 
 At some point you may encounter a situation where you need to develop
-own Tapir web components. Either because your application uses (custom)
-components not covered by the default Tapir components or simply because
+own <i>tapir</i> web components. Either because your application uses (custom)
+components not covered by the default <i>tapir</i> components or simply because
 the components in your application have a different behaviour.
 
 In order to create a custom web component, you should start with an
@@ -198,8 +198,8 @@ No way! 
 
 # Conclusion
 
-Writing a custom Tapir component is easy, but you have to deal with the
+Writing a custom <i>tapir</i> component is easy, but you have to deal with the
 characteristics of your web component. The great advantage of using
-these Tapir components is that they completely encapsulate your test
+these <i>tapir</i> components is that they completely encapsulate your test
 code and your HTML page. In conjunction with [Page
-Objects]({{"/docs/usingtapir/pageobjects/" | prepend: site.baseurl}}) you get a highly maintainable test code base.
+Objects]({{"/docs/usingtapir/page-objects/" | prepend: site.baseurl}}) you get a highly maintainable test code base.

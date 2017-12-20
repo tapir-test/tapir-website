@@ -18,5 +18,5 @@ are not explicitly supported.
 
 You install <i>tapir</i> by including the required dependencies in your
 project. A more detailed documentation for Maven and Gradle can be found
-<a href="{{ "/docs/usingtapir/buildsystems/" | prepend: site.baseurl }}">here</a>. <i>tapir</i> might work with further build tools and systems, but this is
+<a href="{{ "/docs/usingtapir/build-systems/" | prepend: site.baseurl }}">here</a>. <i>tapir</i> might work with further build tools and systems, but this is
 not specifically supported.

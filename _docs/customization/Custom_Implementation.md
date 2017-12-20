@@ -1,6 +1,6 @@
 ---
 title: Custom Implementation
-permalink: /docs/customization/customimplementation/
+permalink: /docs/customization/custom-implementation/
 ---
 
 As all instances are managed by Spring <i>tapir</i> enables you to overwrite

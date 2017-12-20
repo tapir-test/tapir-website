@@ -56,7 +56,7 @@ subfolder which is named like your artifactId.
 
 This archetype can be used for arbitrary <i>tapir</i> modules. It provides a
 basic [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html) annotated class and inherits
-from tapir-starter-module which provides a couple of [presets]({{ "/docs/usingtapir/buildsystems#BuildSystems-Maven" | prepend: site.baseurl }}).
+from tapir-starter-module which provides a couple of [presets]({{ "/docs/usingtapir/build-systems#BuildSystems-Maven" | prepend: site.baseurl }}).
 
 ### Properties
 

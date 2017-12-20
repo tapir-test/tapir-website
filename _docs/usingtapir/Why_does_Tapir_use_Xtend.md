@@ -1,6 +1,6 @@
 ---
 title: Why does tapir use Xtend?
-permalink: /docs/usingtapir/whyxtend/
+permalink: /docs/usingtapir/xtend/
 ---
 
 Xtend is a statically-typed programming language which translates to

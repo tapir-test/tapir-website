@@ -1,6 +1,6 @@
 ---
 title: Step Execution Invocation Handler
-permalink: /docs/customization/stepexecutioninvocationhandler/
+permalink: /docs/customization/step-execution-invocation-handler/
 ---
 
 A

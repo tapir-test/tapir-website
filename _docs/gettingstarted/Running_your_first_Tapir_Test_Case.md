@@ -1,6 +1,6 @@
 ---
 title: Running your first tapir Test Case
-permalink: /docs/gettingstarted/firsttapirtestcase/
+permalink: /docs/gettingstarted/first-tapir-test-case/
 ---
 
 # Setting up the Test Module
@@ -76,7 +76,7 @@ test class is called GoogleTest and contains three test steps:
   Firefox browser in place and want to use it, you could modify
   the <i>test.properties</i> located in <i>src/test/resources</i> by switching the
   browser property from <i>htmlunit</i> to<i>firefox</i>. For more information on
-  how to switch the browser take a look at the <a href="{{ "/docs/selenium/webbrowsermodule/" | prepend: site.baseurl }}">web browser chapter</a>.
+  how to switch the browser take a look at the <a href="{{ "/docs/selenium/browser/" | prepend: site.baseurl }}">web browser chapter</a>.
   </div>
 </div>
 

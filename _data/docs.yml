@@ -1,33 +1,33 @@
 - title: Getting Started
   docs:
-  - gettingstarted/introducingtapir
-  - gettingstarted/systemrequirements
+  - gettingstarted/introduction
+  - gettingstarted/system-requirements
   - gettingstarted/installation
-  - gettingstarted/firsttapirtestcase
+  - gettingstarted/first-tapir-test-case
   - gettingstarted/license
 
 - title: Using tapir
   docs:
-  - usingtapir/howdoesitwork
-  - usingtapir/whyxtend
-  - usingtapir/buildsystems
+  - usingtapir/how-does-it-work
+  - usingtapir/xtend
+  - usingtapir/build-systems
   - usingtapir/modules
   - usingtapir/archetypes
-  - usingtapir/testclass
-  - usingtapir/testsuite
-  - usingtapir/pageobjects
-  - usingtapir/structuringcode
-  - usingtapir/runningtapirtests
-  - usingtapir/dataprovider
+  - usingtapir/test-class
+  - usingtapir/test-suite
+  - usingtapir/page-objects
+  - usingtapir/code-structure
+  - usingtapir/running-tapir-tests
+  - usingtapir/data-provider
   - usingtapir/logging
-  - usingtapir/concurrenttestexecution
-  - usingtapir/externalizedconfiguration
+  - usingtapir/concurrency
+  - usingtapir/externalized-configuration
 
 - title: Selenium
   docs:
-  - selenium/seleniumcoremodule
-  - selenium/webbrowsermodule
-  - selenium/webframeworkmodule
+  - selenium/core
+  - selenium/browser
+  - selenium/framework
 
 - title: Extensions
   docs:
@@ -35,17 +35,17 @@
   - extensions/junit
   - extensions/allure
   - extensions/immutables
-  - extensions/variantmanagement
-  - extensions/configurationmanagement
+  - extensions/variant-management
+  - extensions/configuration-management
   - extensions/conditional
 
 - title: Customization
   docs:
   - customization/executionfilter
   - customization/executionlistener
-  - customization/stepexecutioninvocationhandler
-  - customization/attachmentlistener
-  - customization/customimplementation
+  - customization/step-execution-invocation-handler
+  - customization/attachment-listener
+  - customization/custom-implementation
   - customization/htmlcomponents
   - customization/ui-technology
-  - customization/dynamicactiveannotations
+  - customization/dynamic-active-annotations

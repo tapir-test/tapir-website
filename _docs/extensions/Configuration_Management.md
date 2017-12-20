@@ -1,9 +1,9 @@
 ---
 title: Configuration Management
-permalink: /docs/extensions/configurationmanagement/
+permalink: /docs/extensions/configuration-management/
 ---
 
-In the previous chapter about [variant management]({{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}),
+In the previous chapter about [variant management]({{"/docs/extensions/variant-management/" | prepend: site.baseurl}}),
 we showed you how to execute test code depending on specific
 [Features](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/Feature.html)
 and
@@ -140,7 +140,7 @@ Depending on which of those configuration variants is active, the
 active, when the value of the property *configurationVariant* is the
 name of the variant. The name of a variant is the classname, unless you
 specify it with the attribute *name* in the annotation. [This
-chapter]({{"/docs/usingtapir/externalizedconfiguration/" | prepend: site.baseurl}}) explains how to configure
-properties. 
+chapter]({{"/docs/usingtapir/externalized-configuration/" | prepend: site.baseurl}}) explains how to configure
+properties.
 
  

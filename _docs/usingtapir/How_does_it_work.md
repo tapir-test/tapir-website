@@ -1,6 +1,6 @@
 ---
 title: How does it work?
-permalink: /docs/usingtapir/howdoesitwork/
+permalink: /docs/usingtapir/how-does-it-work/
 ---
 
 <i>tapir's</i> architecture is fundamentaly based on the [Spring

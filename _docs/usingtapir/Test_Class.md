@@ -1,6 +1,6 @@
 ---
 title: Test Class
-permalink: /docs/usingtapir/testclass/
+permalink: /docs/usingtapir/test-class/
 ---
 # Structure
 
@@ -27,7 +27,7 @@ class MyTest {
 Test classes should use page objects to interact with the SUT. Like any
 other Spring bean these page objects can be autowired by using
 Spring's *@Autowire* annotation. You can find additional information
-about page objects in the [dedicated chapter]({{ "/docs/usingtapir/pageobjects/" | prepend: site.baseurl }}).
+about page objects in the [dedicated chapter]({{ "/docs/usingtapir/page-objects/" | prepend: site.baseurl }}).
 
 <div class="panel panel-info">
   <div class="panel-heading">

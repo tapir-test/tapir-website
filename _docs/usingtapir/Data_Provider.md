@@ -1,6 +1,6 @@
 ---
 title: Data Provider
-permalink: /docs/usingtapir/dataprovider/
+permalink: /docs/usingtapir/data-provider/
 ---
 
 Separating your tests from the test data helps to increase

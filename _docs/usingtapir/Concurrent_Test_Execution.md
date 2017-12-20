@@ -1,6 +1,6 @@
 ---
 title: Concurent Test Execution
-permalink: /docs/usingtapir/concurrenttestexecution/
+permalink: /docs/usingtapir/concurrency/
 ---
 
 <i>tapir</i> provides the possibility to execute tests concurrently. This can
@@ -51,7 +51,7 @@ class (or test suite) of the suite in parallel. In the above example,
 the execution of *TestSuite1* would start *TestClass2* and *TestClass3*
 in parallel. Annoting a test class becomes interesting when you use the
 [@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html)annotation
-from the [data provider module]({{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}) on a field. If a field of
+from the [data provider module]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) on a field. If a field of
 a test class is annotated with *IteratedParameter*, then the test class
 is executed for each element of the corresponding data collection. If
 the test class itself is annotated with the *Parallel* annotation, then
@@ -101,4 +101,4 @@ that this is necessary. The component delegates the task execution to
 Spring's *ThreadPoolTaskExecutor* with a default pool size of four. You
 can change this value by setting the property *threadPoolSize* to
 another value. Take a look at the chapter [Externalized
-Configuration]({{"/docs/usingtapir/externalizedconfiguration/" | prepend: site.baseurl}}) on how to do this.
+Configuration]({{"/docs/usingtapir/externalized-configuration/" | prepend: site.baseurl}}) on how to do this.

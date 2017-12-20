@@ -5,7 +5,7 @@ permalink: /docs/extensions/conditional/
 
 You might find yourself in situations where you want to execute test
 steps, cases or suites depending on complex conditions (for instance,
-the annotations of <i>tapir's</i>[variant module]({{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}) cannot
+the annotations of <i>tapir's</i>[variant module]({{"/docs/extensions/variant-management/" | prepend: site.baseurl}}) cannot
 describe your condition). Of course you could simply use a plain
 *if*-statement. But the test case would still be visible in the test
 report, although you don't want it to be executed. For such situations,
@@ -29,7 +29,7 @@ be executed or not. The naming convention of the method is similar as
 for the
 [Parameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
 [IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotations
-in the [data provider chapter]({{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}). There are three
+in the [data provider chapter]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}). There are three
 possibilities.
 
 # Unparameterized
@@ -135,7 +135,7 @@ class MyTestCase {
   <div class="panel-body">
   For the following example, we assume that you are already familiar with
   data provider in <i>tapir</i>. If you are not sure, you might want to take
-  another look at the <a href="{{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}">chapter</a>.
+  another look at the <a href="{{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}">chapter</a>.
   </div>
 </div>
 
@@ -189,7 +189,7 @@ in the report in the first place.
   <div class="panel-body">
   For the following example, we assume that you are already familiar with
   the variant management in <i>tapir</i>. If you are not sure, you might want to
-  take another look at the <a href="{{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}">chapter</a>.
+  take another look at the <a href="{{"/docs/extensions/variant-management/" | prepend: site.baseurl}}">chapter</a>.
   </div>
 </div>
 

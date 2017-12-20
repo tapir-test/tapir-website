@@ -1,6 +1,6 @@
 ---
 title: Test Suite
-permalink: /docs/usingtapir/testsuite/
+permalink: /docs/usingtapir/test-suite/
 ---
 
 Test suites compose other test suites or test classes. They are a
@@ -20,7 +20,7 @@ Test suites do not have any members (field, methods). They just declare
 their children as an attribute list in the *@TestSuite* annotation.
 
 There are some exceptions, in which test suites do have methods. For
-instance, if you use the [variant management]({{"/docs/extensions/variantmanagement/" | prepend: site.baseurl}}) module
+instance, if you use the [variant management]({{"/docs/extensions/variant-management/" | prepend: site.baseurl}}) module
 or the [conditional]({{"/docs/extensions/conditional/" | prepend: site.baseurl}}) module.
 
 

@@ -1,6 +1,6 @@
 ---
 title: Web Framework Module
-permalink: /docs/selenium/webframeworkmodule/
+permalink: /docs/selenium/framework/
 ---
 <i>tapir's</i> Selenium integration is able to automate the interaction with
 any web framework. By default, only basic HTML components are
@@ -75,7 +75,7 @@ public interface Button extends TapirElement, Displayable, Clickable, Enabable {
   Notice the extended
   <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/TapirElement.html">TapirElement</a>.
   This is an important marker interface as <i>tapir</i> handles interfaces which
-  extend <i>TapirElement</i> specifically. Read <a href="{{"/docs/selenium/seleniumcoremodule/" | prepend: site.baseurl}}">Selenium Core
+  extend <i>TapirElement</i> specifically. Read <a href="{{"/docs/selenium/core/" | prepend: site.baseurl}}">Selenium Core
   module</a> for more information.
   </div>
 </div>

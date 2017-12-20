@@ -1,6 +1,6 @@
 ---
 title: Dynamic Active Annotations
-permalink: /docs/customization/dynamicactiveannotations/
+permalink: /docs/customization/dynamic-active-annotations/
 ---
 
 You may have noticed throughout the documentation, that <i>tapir</i> uses a lot
@@ -17,7 +17,7 @@ annotation processor and override <i>tapir's</i> behaviour.
   <div class="panel-body">
   For this chapter we assume that you are already familiar with active
   annotations. If not, you might want to take another look at the
-  <a href="{{"/docs/usingtapir/whyxtend/" | prepend: site.baseurl}}">Xtend</a> chapter of this documentation.
+  <a href="{{"/docs/usingtapir/xtend/" | prepend: site.baseurl}}">Xtend</a> chapter of this documentation.
   </div>
 </div>
 
@@ -54,7 +54,7 @@ class ParameterValidator implements ValidationParticipant<NamedElement> {
 }
 ```
 
-The above example shows the dynamic active *Parameter* annotation from the [data provider chapter]({{"/docs/usingtapir/dataprovider/" | prepend: site.baseurl}}) and the corresponding *ParameterValidator*. Note that the *ParameterValidator* is responsible to process more than one annotation and has an order of -10000. If you would want to overwrite the behaviour of the *ParameterValidator*, you would create an own annotation processor with an order higher than -10000.
+The above example shows the dynamic active *Parameter* annotation from the [data provider chapter]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) and the corresponding *ParameterValidator*. Note that the *ParameterValidator* is responsible to process more than one annotation and has an order of -10000. If you would want to overwrite the behaviour of the *ParameterValidator*, you would create an own annotation processor with an order higher than -10000.
 
 <div class="panel panel-warning">
   <div class="panel-heading">

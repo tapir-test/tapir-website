@@ -1,6 +1,6 @@
 ---
 title: Build Systems
-permalink: /docs/usingtapir/buildsystems/
+permalink: /docs/usingtapir/build-systems/
 ---
 
 # Dependency Management

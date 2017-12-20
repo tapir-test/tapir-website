@@ -1,6 +1,6 @@
 ---
 title: Externalized Configuration
-permalink: /docs/usingtapir/externalizedconfiguration/
+permalink: /docs/usingtapir/externalized-configuration/
 ---
 
 <i>tapir</i> allows you to externalize your configuration so you can work with

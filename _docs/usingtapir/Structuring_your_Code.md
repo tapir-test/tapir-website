@@ -1,6 +1,6 @@
 ---
 title: Structuring your Code
-permalink: /docs/usingtapir/structuringcode/
+permalink: /docs/usingtapir/code-structure/
 ---
 
 In the previous chapters test suites, test classes and page objects are

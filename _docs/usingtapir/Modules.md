@@ -23,7 +23,7 @@ class which is annotated by @BootstrapConfiguration.
     <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
   </div>
   <div class="panel-body">
-  If you are not familiar with Spring so far, consult the chapter <a href="{{ "/docs/usingtapir/howdoesitwork/" | prepend: site.baseurl }}">How
+  If you are not familiar with Spring so far, consult the chapter <a href="{{ "/docs/usingtapir/how-does-it-work/" | prepend: site.baseurl }}">How
   does it work?</a>
   </div>
 </div>
@@ -38,7 +38,7 @@ class which is annotated by @BootstrapConfiguration.
   annotation. It declares the precedence of the configuration processing.
   Beans defined in configurations with a higher order value override beans
   of lower-ordered configurations. For more information on overriding
-  beans, consult the chapter <a href="{{ "/docs/customization/customimplementation/" | prepend: site.baseurl }}">Custom
+  beans, consult the chapter <a href="{{ "/docs/customization/custom-implementation/" | prepend: site.baseurl }}">Custom
   Implementation</a>.
   </div>
 </div>

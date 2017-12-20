@@ -1,6 +1,6 @@
 ---
 title: Introducing tapir
-permalink: /docs/gettingstarted/introducingtapir/
+permalink: /docs/gettingstarted/introduction/
 ---
 
 <i>tapir</i> is a framework to develop maintainable GUI tests. It's name is an
