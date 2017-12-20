@@ -1,5 +1,6 @@
 ---
 title: JUnit
+description: tapir provides the possibility to launch your tests with JUnit. Moreover, JUnit can be used a reporting tool/format.
 permalink: /docs/extensions/junit/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Execution Listener
+description: Execution Listeners are notified whenever a test suite, class or step is started or finished.
 permalink: /docs/customization/executionlistener/
 ---
 

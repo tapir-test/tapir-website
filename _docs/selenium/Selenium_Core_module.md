@@ -1,5 +1,6 @@
 ---
 title: Selenium Core Module
+description: The Selenium Core module acts as a bridge between tapir and Selenium. It encapsulates the Selenium WebDriver API.
 permalink: /docs/selenium/core/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Test Class
+description: This chapter explains the concept of test classes.
 permalink: /docs/usingtapir/test-class/
 ---
 # Structure

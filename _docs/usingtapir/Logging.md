@@ -1,5 +1,6 @@
 ---
 title: Logging
+description: tapir uses Log4j2 for logging. This chapter explains how to configure it.
 permalink: /docs/usingtapir/logging/
 ---
 

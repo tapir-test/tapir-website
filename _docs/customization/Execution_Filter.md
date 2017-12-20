@@ -1,5 +1,6 @@
 ---
 title: Execution Filter
+description: Execution Filters can prevent the execution of a test suite, class or step.
 permalink: /docs/customization/executionfilter/
 ---
 

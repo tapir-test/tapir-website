@@ -1,5 +1,6 @@
 ---
 title: Installation
+description: This chapter describes how to install and use tapir.
 permalink: /docs/gettingstarted/installation/
 ---
 

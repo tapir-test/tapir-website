@@ -1,5 +1,6 @@
 ---
 title: Conditional
+description: By using the Conditional module you can skip/execute test suites, cases or steps if certain conditions apply. 
 permalink: /docs/extensions/conditional/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Page Objects
+description: Page Objects encapsulate implementation details of the Application under Test and just expose a business API to the test code.
 permalink: /docs/usingtapir/page-objects/
 ---
 

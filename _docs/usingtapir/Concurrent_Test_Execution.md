@@ -1,5 +1,6 @@
 ---
 title: Concurent Test Execution
+description: tapir tests can optionally executed in parallel.
 permalink: /docs/usingtapir/concurrency/
 ---
 

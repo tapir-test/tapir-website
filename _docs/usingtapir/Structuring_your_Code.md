@@ -1,5 +1,6 @@
 ---
 title: Structuring your Code
+description: this chapter gives a introduction in how to structure your tets code.
 permalink: /docs/usingtapir/code-structure/
 ---
 

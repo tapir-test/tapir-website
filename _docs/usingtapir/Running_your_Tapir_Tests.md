@@ -1,5 +1,6 @@
 ---
 title: Running your tapir Tests
+description: tapir tests can be executed with JUnit or as a standalone application. Moreover, it's possible to add custom launchers.
 permalink: /docs/usingtapir/running-tapir-tests/
 ---
 

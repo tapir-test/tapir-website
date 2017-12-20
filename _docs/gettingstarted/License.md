@@ -1,5 +1,6 @@
 ---
 title: License
+description: This chapter explains how to integrate your license in tapir.
 permalink: /docs/gettingstarted/license/
 ---
 

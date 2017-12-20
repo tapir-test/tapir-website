@@ -1,5 +1,6 @@
 ---
 title: Dynamic Active Annotations
+description: Dynamic Active Annotations offer the possibility to enhance the validator and code generator.
 permalink: /docs/customization/dynamic-active-annotations/
 ---
 

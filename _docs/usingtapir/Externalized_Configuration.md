@@ -1,5 +1,6 @@
 ---
 title: Externalized Configuration
+description: Externalizing the configuration offers the possibility to execute tapir tests in different environments.
 permalink: /docs/usingtapir/externalized-configuration/
 ---
 

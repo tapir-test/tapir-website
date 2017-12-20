@@ -1,5 +1,6 @@
 ---
 title: Step Execution Invocation Handler
+description: The Step Execution Invocation Handler is notified before and after a step is executed and can influenxe the result of the step execution.
 permalink: /docs/customization/step-execution-invocation-handler/
 ---
 

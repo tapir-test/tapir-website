@@ -1,5 +1,6 @@
 ---
 title: Web Framework Module
+description: tapir's Selenium integration works with any web framework. You can build testing components which reflect the components of your Application under Test.
 permalink: /docs/selenium/framework/
 ---
 <i>tapir's</i> Selenium integration is able to automate the interaction with

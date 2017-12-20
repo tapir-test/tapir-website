@@ -1,5 +1,6 @@
 ---
 title: Archetypes
+description: tapir provides Maven Archetypes in order to setup modules in no time. You can either run the archetypes from Eclipse or from command-line.
 permalink: /docs/usingtapir/archetypes/
 ---
 

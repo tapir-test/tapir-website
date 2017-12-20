@@ -1,5 +1,6 @@
 ---
 title: System Requirements
+description: This chapter is about the minimum system requirements in order to maintain and run tapir tests.
 permalink: /docs/gettingstarted/system-requirements/
 ---
 <i>tapir</i> requires <a href="http://www.java.com/">Java 8</a> or above.

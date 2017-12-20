@@ -1,5 +1,6 @@
 ---
 title: Modules
+description: Modularization is one of tapir's core concepts. tapir distinguishes between Inclusion modules and Bootstrap modules.
 permalink: /docs/usingtapir/modules/
 ---
 

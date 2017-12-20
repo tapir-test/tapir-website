@@ -1,5 +1,6 @@
 ---
 title: HTML Components
+description: tapir offers the possibility to build testing components for the web components of your application under test.
 permalink: /docs/customization/htmlcomponents/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Allure
+description: Allure is a framework/tool which generates comprehensive reports for your test executions.
 permalink: /docs/extensions/allure/
 ---
 

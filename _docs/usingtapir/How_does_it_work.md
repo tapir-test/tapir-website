@@ -1,5 +1,6 @@
 ---
 title: How does it work?
+description: This chapter gives a brief overview of tapir's architecture.
 permalink: /docs/usingtapir/how-does-it-work/
 ---
 

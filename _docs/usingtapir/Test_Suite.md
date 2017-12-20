@@ -1,5 +1,6 @@
 ---
 title: Test Suite
+description: This chapter explains the concept of test suites.
 permalink: /docs/usingtapir/test-suite/
 ---
 

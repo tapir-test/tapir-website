@@ -1,5 +1,6 @@
 ---
 title: Why does tapir use Xtend?
+description: tapir uses Xtend because of its syntactic sugar and code generation capabilities.
 permalink: /docs/usingtapir/xtend/
 ---
 

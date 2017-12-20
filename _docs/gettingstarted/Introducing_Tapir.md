@@ -1,5 +1,6 @@
 ---
 title: Introducing tapir
+description: This chapter explains the motiviation and main concepts behind tapir.
 permalink: /docs/gettingstarted/introduction/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Web Browser Module
+description: For each supported web browser (Chrome, Firefox, Internet Explorer, HtmlUnit) tapir provides an optional module.
 permalink: /docs/selenium/browser/
 ---
 <i>tapir's</i> web browser implementations are organized in optional modules.

@@ -1,5 +1,6 @@
 ---
 title: Documentation
+description: Additional documentation might help other developers, test managers and stakeholders to understand the purpose of a test suite, class or step. 
 permalink: /docs/extensions/documentation/
 ---
 

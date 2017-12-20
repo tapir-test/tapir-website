@@ -1,5 +1,6 @@
 ---
 title: Custom Implementation
+description: tapir allows you to overwrite any implementation by binding a custom bean.
 permalink: /docs/customization/custom-implementation/
 ---
 

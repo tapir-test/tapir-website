@@ -1,5 +1,6 @@
 ---
 title: UI Technology
+description: With tapir you can use any automation framework, not just Selenium WebDriver. This chapter explains how to create a custom binding.
 permalink: /docs/customization/ui-technology/
 ---
 
