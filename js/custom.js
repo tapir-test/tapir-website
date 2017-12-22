@@ -26,5 +26,10 @@ $(function() {
   });
 });
 
+// Add anchors on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function(event) {
+  anchors.add('h2:not(.noanchor), h3:not(.noanchor), h4:not(.noanchor), h5:not(.noanchor), h6:not(.noanchor)');
+});
+
 window.sr = ScrollReveal();
 sr.reveal('.reveal', { duration: 800 });
