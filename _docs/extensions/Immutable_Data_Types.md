@@ -48,17 +48,6 @@ class LoginUser {
     <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  <i>de.bmiag.tapir.showcase.test.data.ContentElementExpectation</i> and
-  <i>de.bmiag.tapir.showcase.test.data.WikipediaContentTableExpectaton</i> are
-  marked as immutable.
-  </div>
-</div>
-
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
-  </div>
-  <div class="panel-body">
   <ul>
     <li>
         <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/data/SearchTermExpectation.xtend">SearchTermExpectation</a>
