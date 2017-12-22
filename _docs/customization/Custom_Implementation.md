@@ -18,7 +18,7 @@ module. This offers maximum flexibility to the user.
   </div>
 </div>
 
-# Example
+## Example
 
 <i>tapir's</i> Selenium integration captures a screenshot every time a test
 step fails. The name of the screenshot has the following format: 
@@ -85,7 +85,7 @@ this logged message:
 
     The attachment GoogleTest-assertTitle-Failure has been written to {somepath}/GoogleTest-assertTitle-Failure.png
 
-# Conclusion
+## Conclusion
 
 Overriding a bean is quite simple. All you need to know is the name of the bean you would like to override. Of course you have to make sure that the type of your bean is compatible with the type of the overridden bean.
 

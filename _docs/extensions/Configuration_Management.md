@@ -26,7 +26,7 @@ different configuration variants.
 </dependency>
 ```
 
-# Configuration
+## Configuration
 
 A single configuration is a container for a data value. You specify such
 a class by marking it with the annotation
@@ -92,7 +92,7 @@ class TestClass1 {
 }
 ```
 
-# ConfigurationVariant
+## ConfigurationVariant
 
 Now we know how to create configurations with a default value. But how
 do we actually create a variant of this configuration? We do this by

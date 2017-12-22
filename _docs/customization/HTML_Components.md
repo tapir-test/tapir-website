@@ -48,7 +48,7 @@ methods. What can he do with your component?
 </div>
 
 
-# Example Interface
+## Example Interface
 
 Instead of describing the custom component creation in an abstract way, we will use the example of a button provided by [Vaadin](https://vaadin.com/), a widespread web framework. Vaadin makes use of complex components which extend the functionaility and behaviour of the basic HTML components. In order to
 benefit from these advances features in your test cases, you have to design custom <i>tapir</i> components.
@@ -210,7 +210,7 @@ tooltip:
 It's simple, but would you like to have this in your business test code?
 No way! 
 
-# Conclusion
+## Conclusion
 
 Writing a custom <i>tapir</i> component is easy, but you have to deal with the
 characteristics of your web component. The great advantage of using

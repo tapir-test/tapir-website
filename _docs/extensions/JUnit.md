@@ -11,7 +11,7 @@ additional amenities. JUnit is widespread and integrates into existing
 ecosystems quite well. There are many tools which are aware of JUnit's
 API.
 
-# Dependency
+## Dependency
 
 ``` xml
 <dependency>
@@ -20,7 +20,7 @@ API.
 </dependency>
 ```
 
-# Eclipse
+## Eclipse
 
 You can start your <i>tapir</i> tests directly from Eclipse by rightclicking
 the test class and selecting *Run as...* *\| JUnit Test*.
@@ -41,7 +41,7 @@ The progress and the results are displayed in the JUnit view.
   Test</i>. The selected and all upcoming steps are executed.
   </div>
 </div>
-# Maven
+## Maven
 
 The maven-failsafe-plugin is a perfect match for running integration
 tests with <i>tapir</i>. If you inherit from *tapir-starter-selenium-allure*
@@ -61,7 +61,7 @@ You can execute the tests by running this command:
 > mvn clean integration-test
 ```
 
-# Jenkins
+## Jenkins
 
 [Jenkins](https://jenkins.io/) provides a [JUnit
 plugin](https://plugins.jenkins.io/junit) which is 100% compatible with

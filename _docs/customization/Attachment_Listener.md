@@ -13,7 +13,7 @@ In a [previous chapter]({{"/docs/customization/executionlistener/" | prepend: s
 </dependency>
 ```
 
-# Sending Attachments
+## Sending Attachments
 
 Let's first take a look at how to create and send attachments. The
 following snippet is a simplified excerpt from the
@@ -54,7 +54,7 @@ class ScreenshotService {
 The listener creates a screenshot with the class *AShot* and creates a new attachment instance (*attachment* is incidentally an [immutable
 class]({{"/docs/extensions/immutables/" | prepend: site.baseurl}})). The mandatory fields of the attachment are the name, the mime type and, of course, the binary content. Once created, the listener uses the [AttachmentListenerNotifier](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/AttachmentListenerNotifier.html)to send the attachment to the registered observers. You should always use this mechanism to propagate attachments to the listeners responsible for creating reports, because otherwise not all listeners might receive the data.
 
-# Receiving Attachments
+## Receiving Attachments
 
 If you want to be notified about new attachments, you have to create a class which implements the interface [AttachmentListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/AttachmentListener.html).
 Furthermore, Spring must be aware of your component. The following excerpt is from the [FilesystemAttachmentListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html), which writes the attachments to a temporary folder on the file system.

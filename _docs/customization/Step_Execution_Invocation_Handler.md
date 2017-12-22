@@ -8,7 +8,7 @@ A
 [StepExecutionInvocationHandler](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/StepExecutionInvocationHandler.html)
 is notified before and after a step is executed. In constrast to an [execution listener]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}) the StepExecutionInvocationHandler can influence the result of the step execution.
 
-# Dependency
+## Dependency
 
 ``` xml
 <dependency>
@@ -17,7 +17,7 @@ is notified before and after a step is executed. In constrast to an [execution 
 </dependency>
 ```
 
-# Custom Step Execution Invocation Handler
+## Custom Step Execution Invocation Handler
 
 Let us assume we would like to check if the browser we use for our tests
 displays the expected page before we start with a step execution. We

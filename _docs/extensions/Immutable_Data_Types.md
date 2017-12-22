@@ -18,7 +18,7 @@ the data is defined once and only read by the tests afterwards. The
   </div>
 </div>
 
-# Dependency
+## Dependency
 
 ``` xml
 <dependency>
@@ -27,7 +27,7 @@ the data is defined once and only read by the tests afterwards. The
 </dependency>
 ```
 
-# Creating Immutable Objects
+## Creating Immutable Objects
 
 The annotation Immutable can be used on the classes containing the test
 data. The annotated classes are made immutable and can therefore only be
@@ -81,7 +81,7 @@ println( adminUser.toString )
 println( adminUser.equals(adminUser) )
 ```
 
-# Copying Immutable Objects
+## Copying Immutable Objects
 
 Although an existing immutable object cannot be changed, you can use the
 copy method to copy the existing object and change some of its values.
@@ -100,7 +100,7 @@ val consultantUser = adminUser.copy [
 ]
 ```
 
-# Optional and Mandatory Fields
+## Optional and Mandatory Fields
 
 Attributes of an immutable class are by default mandatory. If you try
 and create an instance of such a class with the build method without
@@ -132,7 +132,7 @@ class LoginUser {
 }
 ```
 
-# Collection Attributes
+## Collection Attributes
 
 The Immutable annotation currently supports collection attributes of the
 types Set and List. The attributes are immutable as well in the sense
@@ -161,7 +161,7 @@ NumberHolder.build [
 ]
 ```
 
-# Inheritance and Composition
+## Inheritance and Composition
 
 Immutable classes are made final and can therefore not be used for
 inheritance. However, it is possible to use composition instead. With
@@ -202,7 +202,7 @@ LoginUserWithDomain.build [
 ]
 ```
 
-# Implementing Interfaces
+## Implementing Interfaces
 
 In some cases you might want to create test data which just fulfils a
 contract. As contracts in Java are usually represented by interfaces,
@@ -263,7 +263,7 @@ class LoginUser {
 }
 ```
 
-# Making Fields Modifiable
+## Making Fields Modifiable
 
 In very rare cases you might want to break the immutability of an
 otherwise immutable object partially. For this use case, you can use the
@@ -333,7 +333,7 @@ class LoginUser {
   </div>
 </div>
 
-# Equals, hashCode and toString
+## Equals, hashCode and toString
 
 The three methods *equals*, *hashCode* and *toString* and generated
 based on the attributes of the immutable class. Per default all
@@ -432,7 +432,7 @@ class LoginUser {
 }
 ```
 
-# Custom Label
+## Custom Label
 
 <i>tapir</i> offers the possibility to declare which attributes form an
 object's label. The feature perfectly fits in conjunction with Immutable

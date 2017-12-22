@@ -3,7 +3,7 @@ title: Test Class
 description: This chapter explains the concept of test classes.
 permalink: /docs/usingtapir/test-class/
 ---
-# Structure
+## Structure
 
 A test class (annotated with
 [@TestClass](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)) is
@@ -23,7 +23,7 @@ class MyTest {
 }
 ```
 
-# Using Page Objects
+## Using Page Objects
 
 Test classes should use page objects to interact with the SUT. Like any
 other Spring bean these page objects can be autowired by using
@@ -55,7 +55,7 @@ class MyTest {
 }
 ```
 
-# Extensions
+## Extensions
 
 In every Test
 class [TapirAssertions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/util/extensions/TapirAssertions.html)
@@ -78,7 +78,7 @@ class MyTest {
 You can add custom extensions by
 using [@UseExtension](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/useextension/UseExtension.html).
 
-# Documentation
+## Documentation
 
 Test classes can and should be documented. There is a dedicated chapter
 about [Documentation]({{"/docs/extensions/documentation/" | prepend: site.baseurl}}).

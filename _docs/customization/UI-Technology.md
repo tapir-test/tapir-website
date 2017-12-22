@@ -28,7 +28,7 @@ implemented in Java. <i>tapir's</i> API is completely technology-independent.
 
 
 
-# How to Start?
+## How to Start?
 
 These is a single point where you could integrate your custom UI
 technology module: Page objects. In your page object each field is bound
@@ -253,7 +253,7 @@ much the same as in *JavaFxConfiguration*, but using the interceptor
 again enables proxying nested *NodeQuery* calls
 like *NodeQuery.lookup(String query)* which returns a *NodeQuery*.
 
-# Conclusion
+## Conclusion
 
 Integrating a new UI technology in <i>tapir</i> is a complex task, but most
 users never ever get in touch as you could rely on the UI technologies

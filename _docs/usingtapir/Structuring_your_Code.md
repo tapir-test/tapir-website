@@ -8,7 +8,7 @@ In the previous chapters test suites, test classes and page objects are
 introduced. This chapter helps you to understand how to structure these
 test artifacts.
 
-# The Page Module
+## The Page Module
 
 It's recommended to have a specific Inclusion module which contains all
 page objects. This offers the possiblity to reuse these pages from
@@ -33,7 +33,7 @@ by [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/late
 you just need to declare your pages in a (sub-) package of the module
 configuration.
 
-# The Test Module
+## The Test Module
 
 Your test suites and classes should be located in a dedicated module
 which depends on your pages-module. You need a @BootstrapConfiguration
@@ -43,7 +43,7 @@ package, so they are scanned automatically.
 Inheriting from a tapir-starter module is the easiest way to get your
 dependencies and plugins into place.
 
-# Additional Modules
+## Additional Modules
 
 Of course you could have as many modules as you would like to.
 Modularity is one of <i>tapir's</i> key paradigms, so we encourage you to build

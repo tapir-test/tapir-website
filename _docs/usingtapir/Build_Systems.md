@@ -4,7 +4,7 @@ description: tapir supports the usage of Apache Maven and Gradle.
 permalink: /docs/usingtapir/build-systems/
 ---
 
-# Dependency Management
+## Dependency Management
 
 Each release of <i>tapir</i> defines a list of dependencies. In practice, you
 do not need to provide a version for any of these dependencies in your
@@ -23,7 +23,7 @@ consistent way.
 </div>
 
 
-# Maven {#BuildSystems-Maven}
+## Maven {#BuildSystems-Maven}
 
 Maven users can use the *tapir-starter-module* to obtain sensible
 defaults. The project provides the following features:
@@ -126,7 +126,7 @@ features:
 -   Specifies compile-time and runtime dependencies which are needed for
     Selenium and Allure usage
 
-# Gradle
+## Gradle
 
 Currently <i>tapir</i> does not provide a specific Gradle plugin. However, it
 is possible to use Gradle as a build tool for <i>tapir</i> test cases. We

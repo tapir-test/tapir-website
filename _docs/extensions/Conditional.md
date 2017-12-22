@@ -1,6 +1,6 @@
 ---
 title: Conditional
-description: By using the Conditional module you can skip/execute test suites, cases or steps if certain conditions apply. 
+description: By using the Conditional module you can skip/execute test suites, cases or steps if certain conditions apply.
 permalink: /docs/extensions/conditional/
 ---
 
@@ -12,7 +12,7 @@ describe your condition). Of course you could simply use a plain
 report, although you don't want it to be executed. For such situations,
 <i>tapir</i> provides the conditional module.
 
-# Dependency
+## Dependency
 
 ``` xml
 <dependency>
@@ -33,7 +33,7 @@ for the
 in the [data provider chapter]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}). There are three
 possibilities.
 
-# Unparameterized
+## Unparameterized
 
 If you don't parameterize the annotation, the conditional method is
 derived from the test step or the test class and must be provided by the
@@ -64,7 +64,7 @@ class MyTestCase {
 }
 ```
 
-# Value or method
+## Value or method
 
 The name of the conditional method can be specified with the attributes
 of the annotation *value* or *method* (which is just an alias for
@@ -90,7 +90,7 @@ class MyTestCase {
 }
 ```
 
-# conditionalClass
+## conditionalClass
 
 Simmilar to the data provider classes, you can specify conditional
 classes which handle the conditions for your test cases. This allows
@@ -128,7 +128,7 @@ class MyTestCase {
 }
 ```
 
-# Examples
+## Examples
 <div class="panel panel-warning">
   <div class="panel-heading">
     <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>

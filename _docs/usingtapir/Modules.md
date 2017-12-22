@@ -8,7 +8,7 @@ permalink: /docs/usingtapir/modules/
 contrast to Inclusion modules, Bootstrap modules are executable and
 there can only be one Bootstrap module in your execution classpath.
 
-# Spring Boot
+## Spring Boot
 
 <i>tapir</i> relies on [Spring Boot](https://projects.spring.io/spring-boot/)
 and its
@@ -45,7 +45,7 @@ class which is annotated by @BootstrapConfiguration.
 </div>
 
 
-# Bootstrap Module
+## Bootstrap Module
 
 A Bootstrap module has to contain a class which is annotated
 by [@BootstrapConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)*.*
@@ -105,7 +105,7 @@ class MyTest {
 The easisiest way to create a bootstrap module is the [corresponding
 archetype]({{ "/docs/usingtapir/archetypes#Archetypes-tapir-bootstrap-archetype" | prepend: site.baseurl }}).
 
-# Inclusion Module
+## Inclusion Module
 
 These modules cannot be executed, but provide some functionality which
 might (directly or transitively) be used by a Bootstrap module. Like

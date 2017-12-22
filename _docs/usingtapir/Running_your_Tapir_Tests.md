@@ -4,11 +4,11 @@ description: tapir tests can be executed with JUnit or as a standalone applicati
 permalink: /docs/usingtapir/running-tapir-tests/
 ---
 
-# JUnit
+## JUnit
 
 tapir tests can be executed as JUnit tests. Therefore it's possible just to perform <i>Run As -&gt; JUnit Test</i> in Eclipse to start the test.
 
-# Standalone
+## Standalone
 
 <i>tapir</i> test suites can be started standalone. For every class annotated
 with
@@ -35,7 +35,7 @@ You can also run the test suite or class from the commandline:
 > java de.bmiag.example.MyTestClass
 ```
 
-# CLI
+## CLI
 
 <i>tapir</i> provides a dedicated cli module which can be used to run test
 suites or classes. Currently this module does not provide any advantages

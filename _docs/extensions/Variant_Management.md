@@ -11,7 +11,7 @@ a professional edition) or you have a specific manifestation of the
 application for each of your customers. The variant management of the
 <i>tapir</i> Variant module helps you with this task.
 
-# Dependency
+## Dependency
 
 ``` xml
 <dependency>
@@ -20,7 +20,7 @@ application for each of your customers. The variant management of the
 </dependency>
 ```
 
-# Features
+## Features
 
 In the context of your application, a feature is usually a (small)
 distinct characteristic which can be part of some variants but not all
@@ -203,7 +203,7 @@ For types which are not annotated with *@Immutable* extending
 class implements *FeatureBased* and provides a getter and a setter for the
 feature expression.
 
-# Variants
+## Variants
 
 A variant specification usually acts as a container for a set of
 features. A class can be marked as variant specification by using the

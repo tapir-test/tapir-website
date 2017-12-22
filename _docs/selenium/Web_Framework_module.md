@@ -14,7 +14,7 @@ Implementation module. The API module provides some interfaces which
 reflect the possibilities a component offers to the user. The
 Implementation module provides an implementation of the API.
 
-# Dependencies
+## Dependencies
 
 In order to use the basic HTML components you have to add this
 compile-time dependency...
@@ -35,7 +35,7 @@ compile-time dependency...
 </dependency>
 ```
 
-# Example
+## Example
 
 Let's take a closer look at a Button component. Imagine how a user can
 interact with a button. The major action he can perform is clicking the

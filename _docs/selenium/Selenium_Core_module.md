@@ -9,7 +9,7 @@ without being bound to a specific browser or web framework. It
 encapsulates the Selenium WebDriver API and provides some features which
 simplify the communication between the test code and the browser.
 
-# Dependency
+## Dependency
 
 ``` xml
 <dependency>
@@ -18,7 +18,7 @@ simplify the communication between the test code and the browser.
 </dependency>
 ```
 
-# HTML binding
+## HTML binding
 
 <i>tapir</i> relies on the usage of Page objects. The binding to a specific UI
 technology like Selenium is realized via annotations. The Selenium
@@ -44,7 +44,7 @@ class GooglePage {
 }
 ```
 
-# Services and Execution Listeners
+## Services and Execution Listeners
 
 The Selenium module provides a couple of Selenium-specific services.
 
@@ -79,7 +79,7 @@ provides some execution listeners which make use of these services:
 
 For more information on execution listeners, consult the [corresponding chapter]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}).
 
-# WebDriver Interaction
+## WebDriver Interaction
 
 <i>tapir</i> encapsulates the interaction between the test code and the website
 by using page objects. These page objects have fields of a specific
@@ -216,7 +216,7 @@ You might argue that you prefer failing fast. In the next chapter we
 discuss <i>tapir's</i> failure handling which is the main reason why we
 interact with the WebDriver API as late as possible.
 
-# Failure Handling
+## Failure Handling
 
 <i>tapir</i> tries to keep away technical issues from the test developer.
 Therefore it tries to handle a couple of exceptions thrown by the

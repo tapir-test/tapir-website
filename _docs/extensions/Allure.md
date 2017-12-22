@@ -18,7 +18,7 @@ and Allure's Reporting API. If the optional module is in the classpath
 at test runtime, the corresponding xml files are generated. These xml
 files are picked up by Allure and transformed to a good-looking report.
 
-# Dependency
+## Dependency
 
 ``` xml
 <dependency>
@@ -27,13 +27,13 @@ files are picked up by Allure and transformed to a good-looking report.
 </dependency>
 ```
 
-# Example
+## Example
 
 The screenshot below displays a sample test execution report.
 
 ![]({{"/img/docs/46137538/46497870.png" | prepend: site.baseurl}}){:width="600px"}
 
-# Maven
+## Maven
 
 Allure seamlessly integrates into Maven by providing a [dedicated
 plugin](http://wiki.qatools.ru/display/AL/Allure+Maven+Plugin). By
@@ -50,7 +50,7 @@ Maven fires up a [Jetty Web Server](http://www.eclipse.org/jetty/) on
 port 8080. Just visit <http://localhost:8080> to inspect the Allure
 report.
 
-# Jenkins
+## Jenkins
 
 Allure provides a [plugin for Jenkins](https://plugins.jenkins.io/allure-jenkins-plugin).
 Please consult the documentation on their website, but in general the

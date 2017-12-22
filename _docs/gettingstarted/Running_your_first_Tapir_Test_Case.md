@@ -4,7 +4,7 @@ description: How do I start with tapir and create and run my first test case?
 permalink: /docs/gettingstarted/first-tapir-test-case/
 ---
 
-# Setting up the Test Module
+## Setting up the Test Module
 
 The easiest way to get started with <i>tapir</i> is to use the corresponding
 Maven Archtetype. You can do this from the command-line or the Eclipse
@@ -57,7 +57,7 @@ Eclipse provides a project wizard to create Maven projects:
   </div>
 </div>
 
-# Running your First Test
+## Running your First Test
 
 A very simple test case is included in the generated test module. The
 test class is called GoogleTest and contains three test steps:
@@ -113,7 +113,7 @@ results.
 Open [http://localhost:8080](http://localhost:8080/) in your browser to
 see the test results.
 
-# Summary
+## Summary
 
 This chapter demonstrated how easy and fast it is to set up a <i>tapir</i> test
 module. In the next chapter we focus on the concepts and explain them

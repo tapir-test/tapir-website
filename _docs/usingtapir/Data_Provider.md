@@ -22,7 +22,7 @@ The annotations are
 [@IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html).
 They can be used to inject data into your test cases.
 
-# Parameter
+## Parameter
 
 You can use the *Parameter* annotation to annotate fields or parameters
 of steps in your test classes.
@@ -148,7 +148,7 @@ class MyTestCase {
 }
 ```
 
-# IteratedParameter
+## IteratedParameter
 
 For some tests you don't want to provide a single data entry, but rather
 a whole collection. The

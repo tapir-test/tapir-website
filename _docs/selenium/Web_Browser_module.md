@@ -12,7 +12,7 @@ module for your favorite web browser (emulation).
 -   [Internet Explorer](#WebBrowsermodule-InternetExplorer)
 -   [HtmlUnit](#WebBrowsermodule-HtmlUnit)
 
-# Chrome {#WebBrowsermodule-Chrome}
+## Chrome {#WebBrowsermodule-Chrome}
 
 ## Dependency
 
@@ -81,7 +81,7 @@ version.
 The Chrome integration is very fast and reliable, so using <i>tapir</i> in
 conjunction with Chrome is recommended.
 
-# Firefox {#WebBrowsermodule-Firefox}
+## Firefox {#WebBrowsermodule-Firefox}
 
 ## Dependency
 
@@ -160,7 +160,7 @@ The Firefox integration (especially the one based on the GeckoDriver) is
 not feature-complete and therefore not as stable as the Chrome
 integration.
 
-# Internet Explorer {#WebBrowsermodule-InternetExplorer}
+## Internet Explorer {#WebBrowsermodule-InternetExplorer}
 
 ## Dependency
 
@@ -229,7 +229,7 @@ website](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
   </div>
 </div>
 
-# HtmlUnit {#WebBrowsermodule-HtmlUnit}
+## HtmlUnit {#WebBrowsermodule-HtmlUnit}
 
 ## Dependency
 

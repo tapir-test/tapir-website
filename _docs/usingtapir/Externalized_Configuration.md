@@ -14,7 +14,7 @@ The scope of available properties is very much dependent on the <i>tapir</i>
 modules you use. Therefore no complete reference is provided, but the
 documentation of each modules explains it's own properties.
 
-# @PropertySource
+## @PropertySource
 
 Spring's [@PropertySource](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/annotation/PropertySource.html) annotation provides a convenient and
 declarative mechanism to include properties files. Most likely you
@@ -57,7 +57,7 @@ browser=chrome
   </div>
 </div>
 
-# System Property
+## System Property
 
 In addition to defining properties via properties files it's possible to
 use JAVA VM System properties. System properties have higher precendence

@@ -13,7 +13,7 @@ All of Xtend's features can be used in <i>tapir</i>, but we focus only on the
 most important ones in this documentation. To get a full set of the
 advantages over plain Java consult the Xtend documentation.
 
-# Active Annotations
+## Active Annotations
 
 <div class="panel panel-info">
   <div class="panel-heading">
@@ -79,7 +79,7 @@ public class MyTest {
 Consult the javadoc of the concrete annotation in order to understand
 how it is processed.
 
-# Extension Methods
+## Extension Methods
 
 <div class="panel panel-info">
   <div class="panel-heading">
@@ -124,7 +124,7 @@ over
 inheritence](https://en.wikipedia.org/wiki/Composition_over_inheritance)
 for the known reasons.
 
-# Syntactic Sugar
+## Syntactic Sugar
 
 Xtend offers a lot of syntactic sugar like
 

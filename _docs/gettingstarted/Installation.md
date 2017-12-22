@@ -4,7 +4,7 @@ description: This chapter describes how to install and use tapir.
 permalink: /docs/gettingstarted/installation/
 ---
 
-# IDE
+## IDE
 
 We recommend to develop the <i>tapir</i> test cases with <a href="https://eclipse.org/">Eclipse 4.6+</a>. Eclipse
 is usually shipped with a Maven integration plugin. If such an
@@ -15,7 +15,7 @@ A suitable <a href="https://eclipse.org/xtend/download.html">plugin</a> for Ecli
 (for instance IntelliJ IDEA) might provide suitable plugins as well, but
 are not explicitly supported.
 
-# Build Systems
+## Build Systems
 
 You install <i>tapir</i> by including the required dependencies in your
 project. A more detailed documentation for Maven and Gradle can be found

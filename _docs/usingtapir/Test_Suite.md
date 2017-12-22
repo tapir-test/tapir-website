@@ -25,7 +25,7 @@ instance, if you use the [variant management]({{"/docs/extensions/variant-manage
 or the [conditional]({{"/docs/extensions/conditional/" | prepend: site.baseurl}}) module.
 
 
-# Failure Handling
+## Failure Handling
 
 By default subsequent children are skipped if the execution of one child
 failed. You can customize this behaviour by annotating the test suite

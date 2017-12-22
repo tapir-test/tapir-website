@@ -7,7 +7,7 @@ permalink: /docs/usingtapir/archetypes/
 <i>tapir</i> provides Maven Archetypes in order to setup modules in no time.
 You can either run the archetypes from Eclipse or from command-line.
 
-# Using an archetype
+## Using an archetype
 
 ## Eclipse
 
@@ -51,7 +51,7 @@ Maven asks you to enter some Maven properties:
 After confirming the properties the new Maven module is generated into a
 subfolder which is named like your artifactId.
 
-# Predefined archetypes
+## Predefined archetypes
 
 ## tapir-module-archetype {#Archetypes-tapir-module-archetype}
 

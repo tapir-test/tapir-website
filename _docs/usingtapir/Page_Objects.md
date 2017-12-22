@@ -127,7 +127,7 @@ class GoogleTest {
 </div>
 
 
-#  Assert that a Page is Active
+##  Assert that a Page is Active
 
 Optionally, pages can implement
 [PageActiveAssertion](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/PageActiveAssertion.html).
@@ -221,7 +221,7 @@ page (e.g. click a button or set a value into an input field). Before
 *assertPageActive( )* method and only proceeds if no AssertionError is
 thrown.
 
-# Page Component
+## Page Component
 
 In order to facilitate modularity you can specify Page components
 (annotated by
@@ -278,7 +278,7 @@ Comparison of a page and a page component:
   </div>
 </div>
 
-# Nested Pages
+## Nested Pages
 
 Pages and Page components can be nested by using the *@Include*
 and *@Reference* annotations.

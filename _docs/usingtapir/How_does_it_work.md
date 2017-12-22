@@ -14,7 +14,7 @@ is a General Purpose Framework with a lot of features. <i>tapir</i> only uses a
 small subset of this. Therefore we introduce the main concepts in this
 chapter and refer to the Spring reference selectively.
 
-# Bootstrapping
+## Bootstrapping
 
 Spring manages all instances of classes (so called beans) in a
 container. So to fire up a Spring based application you have to build
@@ -63,7 +63,7 @@ After picking up the configurations and their beans the Spring Container
 is built. Nearly all instances used in <i>tapir</i> are managed by Spring.
 Therefore it is possible to access these instances in any class. 
 
-# Building your Execution Plan
+## Building your Execution Plan
 
 The test execution runs completely within the Spring container and
 therefore all involved instances are managed by Spring.
@@ -95,7 +95,7 @@ is executed afterwards.
   </div>
 </div>
 
-# Running your Execution Plan
+## Running your Execution Plan
 
 The execution of the execution plan is delegated to the
 [ExecutionPlanExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/ExecutionPlanExecutor.html).
@@ -120,7 +120,7 @@ listeners can use this information, e.g. for building reports.
   </div>
 </div>
 
-# Dependency Injection
+## Dependency Injection
 
 <i>tapir</i> heavily uses Dependency Injection. Nearly all instances are
 managed by Spring. Therefore it's possible to inject any bean in any
@@ -130,7 +130,7 @@ annotation. As <i>tapir</i> just leverages the features Spring provides, it's
 most reasonable to read the corresponding [Spring
 documentation](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#beans-dependencies).
 
-# <i>tapir</i> modules
+## <i>tapir</i> modules
 
 <i>tapir</i> is shipped with a couple of modules. These modules can be
 distinguishes into core, ui and extension modules. The core modules

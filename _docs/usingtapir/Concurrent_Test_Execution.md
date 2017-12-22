@@ -28,7 +28,7 @@ issues or as a load test). The concurrent test execution is part of
   </div>
 </div>
 
-# Parallelize Test Suites and Test Cases
+## Parallelize Test Suites and Test Cases
 
 The annotation [@Parallel](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/behaviour/Parallel.html) can be used to mark test classes or test suites
 for concurrent execution.
@@ -81,7 +81,7 @@ there are no further children of *MyTestSuite1*). If you would want to
 start the test cases in parallel, you would have to annotate
 *MyTestSuite2*.
 
-# Execution of the Tasks
+## Execution of the Tasks
 
 Per default, the
 [TapirTaskExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/TapirTaskExecuter.html)is
