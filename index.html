@@ -5,8 +5,7 @@ layout: default
 <div class="header-container jumbotron">
     <div class="container">
         <h1>Jekyll Template for Project Websites</h1>
-        <p>Simple and modern design for publishing blog posts, documentation and many more things for your project.
-          You can now clone and start to create a website for your project like this one.</p>
+        <p>Simple and modern design for publishing blog posts, documentation and many more things for your project. You can now clone and start to create a website for your project like this one.</p>
         <p><a class="btn btn-primary btn-lg" href="#features" role="button">Learn more</a></p>
     </div>
 </div>
@@ -18,18 +17,18 @@ layout: default
         <div class="col-md-6">
             <h2 class="header-light regular-pad">What is tapir?</h2>
             <blockquote>
-              <p>
-                  <i>tapir</i> is a framework to develop UI regression tests. Its name is an acronym for <i><strong>T</strong>est <strong>API</strong> against <strong>R</strong>egression</i>. <i>tapir</i> focuses on maintainablity, readability and robustness.
-              </p>
-              <p>
-                  Unlike Capture/Replay-Tools <i>tapir</i> pursues the approach to implement test cases with a technology independent API.
-              </p>
-              <p>
-                Instead of reinventing the wheel <i>tapir</i> uses established open-source frameworks and tools. It applies patterns and concepts commonly known in the application development to the testing domain.
-              </p>
-              <p>
-                  <a href="{{ "/docs/gettingstarted/first-tapir-test-case/" | prepend: site.baseurl }}">Let's get started!</a>
-              </p>
+                <p>
+                    <i>tapir</i> is a framework to develop UI regression tests. Its name is an acronym for <i><strong>T</strong>est <strong>API</strong> against <strong>R</strong>egression</i>. <i>tapir</i> focuses on maintainablity, readability and robustness.
+                </p>
+                <p>
+                    Unlike Capture/Replay-Tools <i>tapir</i> pursues the approach to implement test cases with a technology independent API.
+                </p>
+                <p>
+                    Instead of reinventing the wheel <i>tapir</i> uses established open-source frameworks and tools. It applies patterns and concepts commonly known in the application development to the testing domain.
+                </p>
+                <p>
+                    <a href="{{ '/docs/gettingstarted/first-tapir-test-case/' | prepend: site.baseurl }}">Let's get started!</a>
+                </p>
             </blockquote>
         </div>
         <div class="col-md-6 text-center">
@@ -40,7 +39,7 @@ layout: default
     <hr>
 
     <div class="row">
-        <div class="col-lg-12 text-center"  id="features">
+        <div class="col-lg-12 text-center" id="features">
             <h2 class="section-heading">Features</h2>
         </div>
     </div>
@@ -67,7 +66,7 @@ layout: default
         <div class="col-sm-4 reveal">
             <h1 class="text-center"><i class="fa fa-puzzle-piece" aria-hidden="true"></i></h1>
             <h3 class="text-center">Modular</h3>
-            <p><i>tapir</i> itself is splitted into several modules. Every module is a functional unit. There are a lot of modules (<a href="{{ "/docs/extensions/documentation/" | prepend: site.baseurl }}">extensions</a>) which can be used optionally.
+            <p><i>tapir</i> itself is splitted into several modules. Every module is a functional unit. There are a lot of modules (<a href="{{ ''/docs/extensions/documentation/' | prepend: site.baseurl }}">extensions</a>) which can be used optionally.
             </p>
         </div>
         <div class="col-sm-4 reveal">
@@ -86,12 +85,42 @@ layout: default
 
     <hr>
 
+    <div class="row featurette reveal">
+        <img class="featurette-image img-responsive pull-right grow" src="img/tapir-TestClass.png" width="444">
+        <h2 class="featurette-heading">Concise test code</h2>
+        <p>As <i>Test API against Regression</i> suggests tapir is designed to write functional regression tests by using a domain-specific API. You do not have to deal with technical issues while writing your tests. You can read und understand your tests or the teasts written by your teammates as an executable specification.</p>
+        <p>All the tests do not have any dependency to a certain browser and therefore you (or your DevOps) are free to decide which browser(s) to use for testing.</p>
+
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette reveal">
+        <img class="featurette-image img-responsive pull-left grow" src="img/tapir-JUnitView.png" width="444">
+        <h2 class="featurette-heading">Great IDE and build tool integration
+            </h2>
+        <p>Benefit form all the cool features your Eclipse IDE provides. tapir is <a href="https://www.eclipse.org/xtend/">Xtend</a>/Java based. Both languages have great Eclipse support by means of code highlighting, content assist or formatting. The editor notifies the user immediately if something is wrong with your code.</p>
+        <p>tapir integrates with established tools seamlessly. You can run any tapir test as plain JUnit test. The Eclipse IDE and your favorite build tool (Maven or Gradle) just behave as they would with plan JUnit tests.</p>
+        <p>
+            Because tapir uses these standard interfaces and formats integration in your CI server (like Jenkins) is as simple as possible as well.
+        </p>
+
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette reveal">
+        <div>
+        <img class="featurette-image img-responsive pull-right grow" src="img/tapir-AllureReport.png" width="444">
+        <h2 class="featurette-heading">Comprehensive reports</h2>
+        <p class="">Thanks to <a href="http://allure.qatools.ru/">Allure</a> tapir is shipped with the ability to create modern, comprehensive and interactive reports. Allure is connected via tapir <a href="{{"/docs/customization/executionlistener/" | prepend: site.baseurl}}">Execution Listener API</a>. Attaching your favorite reporting tool is just implementing one interface away!</p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
     <div class="row">
         <div class="col-lg-12 text-center" id="editions">
             <h2 class="section-heading">Editions</h2>
         </div>
     </div>
-{% include editions.html %}
+    {% include editions.html %}
     <hr>
     <div class="row">
         <div class="col-lg-12 text-center" id="contact">
@@ -130,4 +159,4 @@ layout: default
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
-</div>
+    </div>
