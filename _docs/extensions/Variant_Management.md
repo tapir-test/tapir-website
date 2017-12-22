@@ -28,7 +28,7 @@ of them (for instance, only the professional version of your application
 provides a REST API). Defining fine-grained features for your
 application enables a better reuse of your tests in case a new variant
 is added to your application. A feature can be specified by marking a
-class with the [@Feature](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/Feature.html) annotation.
+class with the [@Feature](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/Feature.html) annotation.
 
 **Feature1.xtend**
 
@@ -59,7 +59,7 @@ class RestAPIFeature {
 ```
 
 Defining the features of your application allows to mark test steps,
-classes or even suites with the [@FeatureActivated](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/feature/FeatureActivated.html) annotation. The marked
+classes or even suites with the [@FeatureActivated](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/annotation/feature/FeatureActivated.html) annotation. The marked
 elements are only executed if the specified feature(s) is/are active.
 
 **RestAPITestClass.xtend**
@@ -106,7 +106,7 @@ class TestClass2 {
 ```
 
 In case you want to specify that a test is only executed if some
-features are not active, you can also use the [@FeatureNotActivated](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/feature/FeatureNotActivated.html)
+features are not active, you can also use the [@FeatureNotActivated](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/annotation/feature/FeatureNotActivated.html)
 annotation. It provides the same methods as the *FeatureActivated*
 annotation.
 
@@ -120,7 +120,7 @@ class TestClass3 {
 
 If you need to ask for the features in a more fine-grained way (for
 instance, you want to access a text field only if a feature is active),
-you can use the [FeatureCheckService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/service/FeatureCheckService.html). You can use the service to check
+you can use the [FeatureCheckService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/service/FeatureCheckService.html). You can use the service to check
 whether a feature is active or not.
 
 <div class="panel panel-info">
@@ -155,9 +155,9 @@ class TestClass4 {
 
 If you are using [data providers]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) in your tests, you can also enable or
 disable parts of the provided data by checking for features. Your data
-element classes should implement [FeatureBased](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/data/FeatureBased.html). The
+element classes should implement [FeatureBased](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/data/FeatureBased.html). The
 method *getActivateByFeatureExpression()* returns an optional
-[FeatureExpression](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/expression/FeatureExpression.html) which can be built by [using FeatureExpressionBuilder](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/feature/expression/FeatureExpressionBuilder.html).
+[FeatureExpression](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/expression/FeatureExpression.html) which can be built by [using FeatureExpressionBuilder](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/expression/FeatureExpressionBuilder.html).
 The extension provides methods similar to those of
 the *FeatureActivated* and *FeatureNotActivated* annotations. In conjunction
 with <i>tapir's</i> [Immutables]({{"/docs/extensions/immutables/" | prepend: site.baseurl}}) you can declare your feature based objects like
@@ -199,7 +199,7 @@ class DataProvider1 {
 ```
 
 For types which are not annotated with *@Immutable* extending
-[FeatureSpecificDataElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/data/FeatureSpecificDataElement.html) might be an option. This abstract
+[FeatureSpecificDataElement](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/data/FeatureSpecificDataElement.html) might be an option. This abstract
 class implements *FeatureBased* and provides a getter and a setter for the
 feature expression.
 
@@ -207,7 +207,7 @@ feature expression.
 
 A variant specification usually acts as a container for a set of
 features. A class can be marked as variant specification by using the
-[Variant](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/variant/annotation/variant/Variant.html) annotation.
+[Variant](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/annotation/variant/Variant.html) annotation.
 
 **StandardEdition.xtend**
 

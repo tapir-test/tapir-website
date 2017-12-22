@@ -34,14 +34,14 @@ These is a single point where you could integrate your custom UI
 technology module: Page objects. In your page object each field is bound
 to a specific UI technology implementation. This binding is established
 by an annotation which is annotated by
-[@PageElementAnnotation](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/annotation/PageElementAnnotation.html).
+[@PageElementAnnotation](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/PageElementAnnotation.html).
 <i>tapir's</i> Selenium module provides
-the [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
+the [@SeleniumElement](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
 annotation in order to bind the field to a html element which is located
 by Selenium. The annotated fields are processed and initialized by the
-bound [PageObjectFieldInitializer](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/aop/pageobject/PageObjectFieldInitializer.html).
+bound [PageObjectFieldInitializer](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/aop/pageobject/PageObjectFieldInitializer.html).
 In case of Selenium
-the [SeleniumPageObjectFieldInitializer](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/aop/pageobject/SeleniumPageObjectFieldInitializer.html)
+the [SeleniumPageObjectFieldInitializer](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/aop/pageobject/SeleniumPageObjectFieldInitializer.html)
 solves this task.
 
 <i>tapir</i> provides an experimental JavaFX module which is based
@@ -79,7 +79,7 @@ annotation JavaFXElement {
 
 ## PageObjectFieldInitializer
 
-You have to implement your own [PageObjectFieldInitializer](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/aop/pageobject/PageObjectFieldInitializer.html) in order to inject the fields of the page objects.
+You have to implement your own [PageObjectFieldInitializer](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/aop/pageobject/PageObjectFieldInitializer.html) in order to inject the fields of the page objects.
 
 **JavaFXPageObjectFieldInitializer.xtend**
 

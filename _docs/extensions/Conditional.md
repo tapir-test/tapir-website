@@ -22,14 +22,14 @@ report, although you don't want it to be executed. For such situations,
 ```
 
 The module gives you the
-[Conditional](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/conditional/annotations/Conditional.html) annotation.
+[Conditional](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/conditional/annotations/Conditional.html) annotation.
 This annotation can be used on test steps, test cases and test suites.
 The usage of this annotationforces you to implement a method with a
 boolean return type which determines whether the annotated element will
 be executed or not. The naming convention of the method is similar as
 for the
-[Parameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
-[IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotations
+[Parameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
+[IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotations
 in the [data provider chapter]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}). There are three
 possibilities.
 

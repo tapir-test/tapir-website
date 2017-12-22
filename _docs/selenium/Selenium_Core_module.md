@@ -23,11 +23,11 @@ simplify the communication between the test code and the browser.
 <i>tapir</i> relies on the usage of Page objects. The binding to a specific UI
 technology like Selenium is realized via annotations. The Selenium
 module provides
-the [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
+the [@SeleniumElement](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
 annotation for this purpose.
 
 Annotating a page object field
-with [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html) instructs
+with [@SeleniumElement](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/annotation/SeleniumElement.html) instructs
 <i>tapir</i> to identify the element with Selenium. The annotation offers a
 couple of ways how to identify the element in the HTML DOM. The
 corresponding annotation methods are inspired by
@@ -48,33 +48,33 @@ class GooglePage {
 
 The Selenium module provides a couple of Selenium-specific services.
 
--   [HtmlPageCaptureService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html):  Reads
+-   [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html):  Reads
     the currently displayed browser content as HTML code and provides it
     as an attachment
--   [JavaScriptErrorCaptureService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/JavaScriptErrorCaptureService.html):
+-   [JavaScriptErrorCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/JavaScriptErrorCaptureService.html):
     Reads all current JavaScript errors from the web driver and provides
     them as an attachment
--   [ScreenshotService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/ScreenshotService.html):
+-   [ScreenshotService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html):
     Captures a screenshot from the currently displayed browser
     window and provides it as an attachment
--   [ImplicitWaitService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/ImplicitWaitService.html):
+-   [ImplicitWaitService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ImplicitWaitService.html):
     Executes a given code with a given [implicit wait
     time](http://www.seleniumhq.org/docs/04_webdriver_advanced.jsp)
 
 You can use these services in your client code. Additionally <i>tapir</i>
 provides some execution listeners which make use of these services:
 
--   [HtmlPageCaptureListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/HtmlPageCaptureListener.html):
+-   [HtmlPageCaptureListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/HtmlPageCaptureListener.html):
     Calls
-    the [HtmlPageCaptureService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html) whenever
+    the [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html) whenever
     a step fails
--   [JavaScriptErrorListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/JavaScriptErrorListener.html):
+-   [JavaScriptErrorListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/JavaScriptErrorListener.html):
     Calls
-    the [JavaScriptErrorCaptureService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/JavaScriptErrorCaptureService.html) whenever
+    the [JavaScriptErrorCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/JavaScriptErrorCaptureService.html) whenever
     a step fails
--   [ScreenshotListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/ScreenshotListener.html):
+-   [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/ScreenshotListener.html):
     Calls the
-    [ScreenshotService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/ScreenshotService.html) whenever
+    [ScreenshotService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html) whenever
     a step fails
 
 For more information on execution listeners, consult the [corresponding chapter]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}).
@@ -227,7 +227,7 @@ method invocations against the WebDriver API with an implicit wait time
 of 0 ms. Whenever
 a [StaleElementReferenceException](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/StaleElementReferenceException.html),
 [NoSuchElementException](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/NoSuchElementException.html)
-or [InvalidTapirElementStateException](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/element/InvalidTapirElementStateException.html) is
+or [InvalidTapirElementStateException](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/element/InvalidTapirElementStateException.html) is
 thrown, the whole query stack is re-executed. That means that you can
 relocate an element at any time. Considering the design of modern web
 applications where elements are added, removed and hidden constantly

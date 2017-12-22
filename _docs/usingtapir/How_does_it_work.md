@@ -19,9 +19,9 @@ chapter and refer to the Spring reference selectively.
 Spring manages all instances of classes (so called beans) in a
 container. So to fire up a Spring based application you have to build
 the Spring Container first. This job is done by the
-[TapirBootstrapper](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/TapirBootstrapper.html).
+[TapirBootstrapper](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/TapirBootstrapper.html).
 It searches for a module in the classpath which contains
-a [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
+a [@BootstrapConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
 annotated class.
 
 <div class="panel panel-warning">
@@ -37,7 +37,7 @@ annotated class.
 
 Beside the Bootstrap modules all inclusion modules are picked up by
 searching
-for [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html)
+for [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html)
 annotated classes. All of these configurations provide so-called beans
 which are just instances of certain classes. These beans can be defined
 by adding
@@ -70,10 +70,10 @@ therefore all involved instances are managed by Spring.
 
 The picture looks similar to the one above, but has a completely
 different purpose. The
-[TapirExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/TapirExecutor.html)picks
+[TapirExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/TapirExecutor.html)picks
 up all
-the [@TestSuite](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/suite/TestSuite.html)and
-[@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)
+the [@TestSuite](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/suite/TestSuite.html)and
+[@TestClass](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)
 annotated classes which are provided by the picked up configurations. In
 other words, TestSuites and TestClasses are Spring beans and the
 *TapirExecuter* collects all Spring beans which are annotated
@@ -98,11 +98,11 @@ is executed afterwards.
 # Running your Execution Plan
 
 The execution of the execution plan is delegated to the
-[ExecutionPlanExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/ExecutionPlanExecutor.html).
+[ExecutionPlanExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/ExecutionPlanExecutor.html).
 The Executio*nPlanExecuter* traverses the execution plan and executes
 the test classes and their steps. If a test class fails, the whole test
 class/suite is skipped unless you annotate it
-with [@ProceedOnFailure](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/behaviour/ProceedOnFailure.html).
+with [@ProceedOnFailure](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/behaviour/ProceedOnFailure.html).
 
 The executor notifies registered execution listeners about every event
 (suite/class/step started/succeeded/failed/skipped). These execution

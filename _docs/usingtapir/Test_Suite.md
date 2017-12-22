@@ -6,7 +6,7 @@ permalink: /docs/usingtapir/test-suite/
 
 Test suites compose other test suites or test classes. They are a
 structural utility. You define a test suite by annotating a class
-with [@TestSuite](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/suite/TestSuite.html).
+with [@TestSuite](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/suite/TestSuite.html).
 
 ``` xtend
 @TestSuite(#[
@@ -29,7 +29,7 @@ or the [conditional]({{"/docs/extensions/conditional/" | prepend: site.baseurl}}
 
 By default subsequent children are skipped if the execution of one child
 failed. You can customize this behaviour by annotating the test suite
-with [@ProceedOnFailure](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/behaviour/ProceedOnFailure.html).
+with [@ProceedOnFailure](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/behaviour/ProceedOnFailure.html).
 
 <div class="panel panel-info">
   <div class="panel-heading">

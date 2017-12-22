@@ -38,7 +38,7 @@ internal DSL (Domain Specific Language) for Xtend.
 <i>tapir</i> Testcases are organized in steps which are executed sequentially.
 Unfortunately the order of methods is not included in Java's bytecode.
 Therefore we need another way to determine the order at runtime. <i>tapir</i>
-uses the Active Annotation [@Step](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/step/Step.html) to achieve this. A [@DependsOn](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/dependency/DependsOn.html) which
+uses the Active Annotation [@Step](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/step/Step.html) to achieve this. A [@DependsOn](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/dependency/DependsOn.html) which
 refers the name of the predecessor is generated. This information is
 evaluated at runtime and the methods can be sorted and executed in the
 desired order.
@@ -94,10 +94,10 @@ Extension methods allow to add new methods to existing types without
 modifying them. This feature is actually where Xtend got its name from. 
 
 Extension methods enrich <i>tapir</i>'s API when writing test cases. On every
-[@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/model/TestClass.html) annotated class [TapirAssertions](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/util/extensions/TapirAssertions.html) is registered as extension.
+[@TestClass](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/model/TestClass.html) annotated class [TapirAssertions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/util/extensions/TapirAssertions.html) is registered as extension.
 Therefore you can use methods like assertThat or containsString. By
-using [@UseExtension](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/useextension/UseExtension.html) it is possible to add custom extensions like
-[BrowserInteractionService](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/BrowserInteractionService.html) which provides *openURL* and *getTitle*.
+using [@UseExtension](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/useextension/UseExtension.html) it is possible to add custom extensions like
+[BrowserInteractionService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/BrowserInteractionService.html) which provides *openURL* and *getTitle*.
 
 **GoogleTest.xtend**
 

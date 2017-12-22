@@ -51,7 +51,7 @@ browser=chrome
 <td>chrome.connection.mode</td>
 <td><p>Possible values: local, remote</p>
 <p>Default: local</p></td>
-<td>Specifies if the Chrome connection should be established locally or remotely, see <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/chrome/driver/ChromeConnectionMode.html">ChromeConnectionMode</a>.</td>
+<td>Specifies if the Chrome connection should be established locally or remotely, see <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/chrome/driver/ChromeConnectionMode.html">ChromeConnectionMode</a>.</td>
 </tr>
 <tr class="even">
 <td>chrome.chromedriver.binary</td>
@@ -120,7 +120,7 @@ browser=firefox
 <td>firefox.connection.mode</td>
 <td><p>Possible values: local, remote, legacy</p>
 <p>Default: legacy</p></td>
-<td><p>Specifies if the Firefox connection should be established via the legacy mode or the gecko driver (local/remote), see <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/firefox/driver/FirefoxConnectionMode.html">FirefoxConnectionMode</a>.</p></td>
+<td><p>Specifies if the Firefox connection should be established via the legacy mode or the gecko driver (local/remote), see <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/firefox/driver/FirefoxConnectionMode.html">FirefoxConnectionMode</a>.</p></td>
 </tr>
 <tr class="even">
 <td>firefox.geckodriver.binary</td>
@@ -199,7 +199,7 @@ browser=internetexplorer
 <td>internetexplorer.connection.mode</td>
 <td><p>Possible values: local, remote</p>
 <p>Default: local</p></td>
-<td><p>Specifies if the Internet Explorer connection should be established locally or remotely, see <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/ie/driver/InternetExplorerConnectionMode.html">InternetExplorerConnectionMode</a>.</p></td>
+<td><p>Specifies if the Internet Explorer connection should be established locally or remotely, see <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/ie/driver/InternetExplorerConnectionMode.html">InternetExplorerConnectionMode</a>.</p></td>
 </tr>
 <tr class="even">
 <td>internetexplorer.driverservice.binary</td>

@@ -351,9 +351,9 @@ based on the attributes of the immutable class. Per default all
 available attributes are used in these methods. If you don't want to use
 specific attributes in these methods, you can exclude them by annotating
 the fields with
-[ExcludeFromEqualsHashCode](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/data/Immutable.ExcludeFromEqualsHashCode.html) or
+[ExcludeFromEqualsHashCode](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/data/Immutable.ExcludeFromEqualsHashCode.html) or
 with
-[ExcludeFromToString](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/data/Immutable.ExcludeFromToString.html).
+[ExcludeFromToString](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/data/Immutable.ExcludeFromToString.html).
 
 **LoginUser.xtend**
 
@@ -449,9 +449,9 @@ class LoginUser {
 object's label. The feature perfectly fits in conjunction with Immutable
 Data Types, but it can be used with any data container.
 
-Annotating a class with [@CustomLabel](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/label/CustomLabel.html) instructs the class to implement
-the [CustomLabeled](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/label/CustomLabeled.html) interface. An implementation of the getCustomLabel()
-method is generated. You can optionally annotate fields with [@LabelPart](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/label/LabelPart.html)
+Annotating a class with [@CustomLabel](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/label/CustomLabel.html) instructs the class to implement
+the [CustomLabeled](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/label/CustomLabeled.html) interface. An implementation of the getCustomLabel()
+method is generated. You can optionally annotate fields with [@LabelPart](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/label/LabelPart.html)
 in order to declare them as part of the object's label. If no field is
 annotated with *@LabelPart* all fields are taken into account for the
 label generation.
@@ -473,7 +473,7 @@ class LoginUser {
 ```
 
 <i>tapir's</i> runtime is aware of the *CustomLabeled* interface by
-binding [CustomLabelAwareLabelProvider](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/label/CustomLabelAwareLabelProvider.html).
+binding [CustomLabelAwareLabelProvider](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/label/CustomLabelAwareLabelProvider.html).
 Whenever the *getLabel(Object)* method is called, the
 *CustomLabelAwareLabelProvider* checks if the given object implements
 *CustomLabeled*. If so, it returns *CustomLabel.getCustomLabel()*,

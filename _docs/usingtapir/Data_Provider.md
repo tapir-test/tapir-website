@@ -18,8 +18,8 @@ with this task.
 ```
 
 The annotations are
-[@Parameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
-[@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html).
+[@Parameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
+[@IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html).
 They can be used to inject data into your test cases.
 
 # Parameter
@@ -152,7 +152,7 @@ class MyTestCase {
 
 For some tests you don't want to provide a single data entry, but rather
 a whole collection. The
-[@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotation
+[@IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotation
 works similar to the *Parameter* annotation, but it repeats test steps
 or even whole test classes for each element of the returned *Iterable*.
 This is why the test provider methods must return a compatible

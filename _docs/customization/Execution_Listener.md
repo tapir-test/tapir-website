@@ -5,7 +5,7 @@ permalink: /docs/customization/executionlistener/
 ---
 
 As you might remember (or might look up in the chapter [How does it work?]({{"/docs/usingtapir/how-does-it-work/" | prepend: site.baseurl}})), <i>tapir</i> builds an execution plan based on the test suites, cases, steps and various annotations. The execution plan is executed by the
-[ExecutionPlanExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/ExecutionPlanExecutor.html)
+[ExecutionPlanExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/ExecutionPlanExecutor.html)
 which itself notifies the execution listeners. In this chapter we take a more detailed look at this and show you how to hook into the execution of the test plan. The execution listeners are part of <i>tapir's</i> *execution* module.
 
 # Dependency
@@ -19,14 +19,14 @@ which itself notifies the execution listeners. In this chapter we take a more de
 
 # Custom Execution Listener
 
-In order to get notified during the test execution, you have to implement the interface [ExecutionListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/ExecutionListener.html) and make sure that Spring is aware of your component.
+In order to get notified during the test execution, you have to implement the interface [ExecutionListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/ExecutionListener.html) and make sure that Spring is aware of your component.
 
 <div class="panel panel-info">
   <div class="panel-heading">
     <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
   </div>
   <div class="panel-body">
-  A more convenient base might be the <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/AbstractExecutionListener.html">AbstractExecutionListener</a>.
+  A more convenient base might be the <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/AbstractExecutionListener.html">AbstractExecutionListener</a>.
   The interface <i>ExecutionListener</i> has 15 methods which you would have to
   implement, although you probably need only a few of them. The
   <i>AbstractExecutionListener</i> implements all those methods with an empty
@@ -80,14 +80,14 @@ following table you can find the listeners within <i>tapir</i>.
 
 | Execution Listener | Order | Description |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [StepStartedStateUpdater](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/StepStartedStateUpdater.html) | -10000 | Sets the current step of the [ExecutionState](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/ExecutionState.html). |
-| [JUnitExecutionListener](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/junit/listener/JUnitExecutionListener.html) | -7000 | Fulfils the reporting API for JUnit. |
-| [HtmlPageCaptureListener](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/HtmlPageCaptureListener.html) | -4000 | Saves the static HTML content in case a step fails. |
-| [JavaScriptErrorListener](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/JavaScriptErrorListener.html) | -1500 | Saves the dynamic HTML content in case a step fails. |
-| [LoggingExecutionListener](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/LoggingExecutionListener.html) | 1500 | Logs each event based on the logging configuration. |
-| [ScreenshotListener](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/ScreenshotListener.html) | 4000 | Makes a screenshot in case a step fails. |
-| [AllureExecutionListener](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/junit/allure/listener/AllureExecutionListener.html) | 7000 | Fulfils the reporting API for Allure and attaches all screenshots and saved HTML contents. |
-| [StepFinishedStateUpdater](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/StepFinishedStateUpdater.html) | 10000 | Resets the [ExecutionState](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/ExecutionState.html). |
+| [StepStartedStateUpdater](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/StepStartedStateUpdater.html) | -10000 | Sets the current step of the [ExecutionState](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/ExecutionState.html). |
+| [JUnitExecutionListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/junit/listener/JUnitExecutionListener.html) | -7000 | Fulfils the reporting API for JUnit. |
+| [HtmlPageCaptureListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/HtmlPageCaptureListener.html) | -4000 | Saves the static HTML content in case a step fails. |
+| [JavaScriptErrorListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/JavaScriptErrorListener.html) | -1500 | Saves the dynamic HTML content in case a step fails. |
+| [LoggingExecutionListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/LoggingExecutionListener.html) | 1500 | Logs each event based on the logging configuration. |
+| [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/ScreenshotListener.html) | 4000 | Makes a screenshot in case a step fails. |
+| [AllureExecutionListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/junit/allure/listener/AllureExecutionListener.html) | 7000 | Fulfils the reporting API for Allure and attaches all screenshots and saved HTML contents. |
+| [StepFinishedStateUpdater](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/StepFinishedStateUpdater.html) | 10000 | Resets the [ExecutionState](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/ExecutionState.html). |
 
 Your own execution listeners should usually have an order between -10000
 and 10000. The precise order depends on the task you are performing. If,

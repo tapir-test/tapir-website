@@ -56,7 +56,7 @@ subfolder which is named like your artifactId.
 ## tapir-module-archetype {#Archetypes-tapir-module-archetype}
 
 This archetype can be used for arbitrary <i>tapir</i> modules. It provides a
-basic [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html) annotated class and inherits
+basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html) annotated class and inherits
 from tapir-starter-module which provides a couple of [presets]({{ "/docs/usingtapir/build-systems#BuildSystems-Maven" | prepend: site.baseurl }}).
 
 ### Properties
@@ -70,7 +70,7 @@ from tapir-starter-module which provides a couple of [presets]({{ "/docs/usingt
 
 This archteype can be used for <i>tapir</i> bootstrap modules. The modules
 inherits from *tapir-starter-selenium-allure*. It provides a
-basic [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
+basic [@BootstrapConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
 annotated class and an executable test based on the Google website.
 
 ### Properties

@@ -17,7 +17,7 @@ In a [previous chapter]({{"/docs/customization/executionlistener/" | prepend: s
 
 Let's first take a look at how to create and send attachments. The
 following snippet is a simplified excerpt from the
-[*ScreenshotService*](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/service/ScreenshotService.html)-
+[*ScreenshotService*](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html)-
 a service responsible for making screenshots with the current web
 driver.
 
@@ -52,12 +52,12 @@ class ScreenshotService {
 ```
 
 The listener creates a screenshot with the class *AShot* and creates a new attachment instance (*attachment* is incidentally an [immutable
-class]({{"/docs/extensions/immutables/" | prepend: site.baseurl}})). The mandatory fields of the attachment are the name, the mime type and, of course, the binary content. Once created, the listener uses the [AttachmentListenerNotifier](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/AttachmentListenerNotifier.html)to send the attachment to the registered observers. You should always use this mechanism to propagate attachments to the listeners responsible for creating reports, because otherwise not all listeners might receive the data.
+class]({{"/docs/extensions/immutables/" | prepend: site.baseurl}})). The mandatory fields of the attachment are the name, the mime type and, of course, the binary content. Once created, the listener uses the [AttachmentListenerNotifier](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/AttachmentListenerNotifier.html)to send the attachment to the registered observers. You should always use this mechanism to propagate attachments to the listeners responsible for creating reports, because otherwise not all listeners might receive the data.
 
 # Receiving Attachments
 
-If you want to be notified about new attachments, you have to create a class which implements the interface [AttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/AttachmentListener.html).
-Furthermore, Spring must be aware of your component. The following excerpt is from the [FilesystemAttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html), which writes the attachments to a temporary folder on the file system.
+If you want to be notified about new attachments, you have to create a class which implements the interface [AttachmentListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/AttachmentListener.html).
+Furthermore, Spring must be aware of your component. The following excerpt is from the [FilesystemAttachmentListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html), which writes the attachments to a temporary folder on the file system.
 
 ``` xtend
 @Component("tapirFilesystemAttachmentListener")
@@ -95,7 +95,7 @@ your own listener to handle attachments.
   <div class="panel-body">
   Some listeners might implement both <i>ExecutionListener</i> <strong>and</strong>
   <i>AttachmentListener<i>. This is what the
-  <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/junit/allure/listener/AllureExecutionListener.html">AllureExecutionListener</a>does.
+  <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/junit/allure/listener/AllureExecutionListener.html">AllureExecutionListener</a>does.
   It stores all attachments (screenshots, HTML content and so on), but
   sends them to the Allure component not until the test step finished.
   This makes sure that the Allure report assigns all the attachments to

@@ -29,10 +29,10 @@ Imagine you want to change this identifier to
 
     {TestClassName}-{StepName}-Failure
 
-The name is built by [ScreenshotListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/listener/ScreenshotListener.html)
+The name is built by [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/ScreenshotListener.html)
 whose bean name is its fully qualified name *de.bmiag.tapir.selenium.listener.ScreenshotListener*.
 
-The [FilesystemAttachmentListener](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html) captures the attachment, stores it on the disk and outputs the file path:
+The [FilesystemAttachmentListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html) captures the attachment, stores it on the disk and outputs the file path:
 
     The attachment GoogleTest.assertTitle-FailScreenshot has been written to {somepath}/GoogleTest.assertTitle-FailScreenshot.png
 

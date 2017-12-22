@@ -50,15 +50,15 @@ exactly reflects these possibilities by providing the following methods:
 All of these methods are inherited from interfaces which are defined in
 <i>tapir's</i> UI API:
 
--   [Displayable](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/Displayable.html)
+-   [Displayable](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/ui/api/Displayable.html)
     provides *isDisplayed()*
--   [Enabable](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/Enabable.html)
+-   [Enabable](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/ui/api/Enabable.html)
     provides *isEnabled()*
--   [Clickable](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/Clickable.html)
+-   [Clickable](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/ui/api/Clickable.html)
     provides *click()*
 
 This is the complete
-[Button](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/Button.html)
+[Button](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/htmlbasic/api/Button.html)
 interface:
 
 **Button.java**
@@ -74,7 +74,7 @@ public interface Button extends TapirElement, Displayable, Clickable, Enabable {
   </div>
   <div class="panel-body">
   Notice the extended
-  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/TapirElement.html">TapirElement</a>.
+  <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/ui/api/TapirElement.html">TapirElement</a>.
   This is an important marker interface as <i>tapir</i> handles interfaces which
   extend <i>TapirElement</i> specifically. Read <a href="{{"/docs/selenium/core/" | prepend: site.baseurl}}">Selenium Core
   module</a> for more information.

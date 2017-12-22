@@ -30,7 +30,7 @@ issues or as a load test). The concurrent test execution is part of
 
 # Parallelize Test Suites and Test Cases
 
-The annotation [@Parallel](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/behaviour/Parallel.html) can be used to mark test classes or test suites
+The annotation [@Parallel](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/behaviour/Parallel.html) can be used to mark test classes or test suites
 for concurrent execution.
 
 ``` xtend
@@ -51,7 +51,7 @@ If you annotate a test suite with *Parallel*, <i>tapir</i> executes each test
 class (or test suite) of the suite in parallel. In the above example,
 the execution of *TestSuite1* would start *TestClass2* and *TestClass3*
 in parallel. Annoting a test class becomes interesting when you use the
-[@IteratedParameter](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html)annotation
+[@IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html)annotation
 from the [data provider module]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) on a field. If a field of
 a test class is annotated with *IteratedParameter*, then the test class
 is executed for each element of the corresponding data collection. If
@@ -84,7 +84,7 @@ start the test cases in parallel, you would have to annotate
 # Execution of the Tasks
 
 Per default, the
-[TapirTaskExecutor](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/executor/TapirTaskExecuter.html)is
+[TapirTaskExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/TapirTaskExecuter.html)is
 responsible for executing the *Runnables* for the test suites and test
 cases. The executor is a Spring component with the name
 *tapirTaskExecutor*, which means that you can overwrite it, if you feel

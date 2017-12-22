@@ -66,13 +66,13 @@ class GooglePage {
 
 You just have to provide some fundamental information without any
 boilerplate or glue
-code. [@Page](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/annotation/Page.html)
+code. [@Page](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/Page.html)
 declares the class as a page object. There is a
-[TextField](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/TextField.html) called
+[TextField](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/htmlbasic/api/TextField.html) called
 *queryField* and a
-[Button](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/api/Button.html) called
+[Button](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/htmlbasic/api/Button.html) called
 *searchButton* on the
-page. [@SeleniumElement](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
+page. [@SeleniumElement](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/annotation/SeleniumElement.html)
 tells <i>tapir</i> to use its Selenium implementation. The provided name
 attributes *"g"* and *"btnG"* finally bind the *TextField* and the
 *Button* to their HTML counterparts.
@@ -130,7 +130,7 @@ class GoogleTest {
 #  Assert that a Page is Active
 
 Optionally, pages can implement
-[PageActiveAssertion](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/annotation/PageActiveAssertion.html).
+[PageActiveAssertion](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/PageActiveAssertion.html).
 If so you have to implement *assertPageActive( )*. The page checks by
 itself if it's active, e.g. by checking for a specific element or a
 headline text. If the page is not active, you have to throw an
@@ -157,7 +157,7 @@ headline text. If the page is not active, you have to throw an
 ### Check using PageActiveAssertionExtensions
 
 Test classes can check, if a page is active by using
-the [PageActiveAssertionExtensions](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/extensions/PageActiveAssertionExtensions.html)as
+the [PageActiveAssertionExtensions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/extensions/PageActiveAssertionExtensions.html)as
 an extension.
 
 ``` xtend
@@ -188,7 +188,7 @@ Alternatively you can explicitly call the *assertPageActive( )* method:
 ### Check by declaring *@AssertPostPage*
 
 Using
-the [*@*AssertPostPage](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/annotation/AssertPostPage.html)
+the [*@*AssertPostPage](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/AssertPostPage.html)
 annotation you can ensure that the given page is active after the step
 is completed:
 
@@ -225,7 +225,7 @@ thrown.
 
 In order to facilitate modularity you can specify Page components
 (annotated by
-[@PageComponent](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/page/annotation/PageComponent.html)) which
+[@PageComponent](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/PageComponent.html)) which
 are reusable parts of your pages. Several pages can reference or include
 the same page component. Page components do not "know" where they are
 embedded, in other words, they are contextless and can not implement
@@ -285,7 +285,7 @@ and *@Reference* annotations.
 
 ## @Reference
 
-[@Reference](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/reference/Reference.html)
+[@Reference](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/reference/Reference.html)
 just generates a getter for the referenced Page (component).
 
 ``` xtend
@@ -312,7 +312,7 @@ class Page1 {
 ## @Include
 
 In contrast
-to *@Reference,* [@Include](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/include/Include.html)
+to *@Reference,* [@Include](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/include/Include.html)
 generates delegate methods for all public members of the annotated
 field. Include solves the problem of multiple inheritance as it is
 possible to include multiple pages / page components.

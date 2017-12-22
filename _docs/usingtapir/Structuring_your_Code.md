@@ -29,7 +29,7 @@ technlogy module you would like to use (e.g. tapir-selenium).
 ```
 
 Beside a class annotated
-by [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html),
+by [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html),
 you just need to declare your pages in a (sub-) package of the module
 configuration.
 

@@ -18,7 +18,7 @@ documentation of each modules explains it's own properties.
 
 Spring's [@PropertySource](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/annotation/PropertySource.html) annotation provides a convenient and
 declarative mechanism to include properties files. Most likely you
-annotate your [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html) annotated class
+annotate your [@BootstrapConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html) annotated class
 with *@PropertySource* in order to use one or more properties files.
 
 ## Example

@@ -72,7 +72,7 @@ public interface Tooltipped {
 }
 ```
 
-It is very important that the interface extends [TapirElement](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/ui/api/TapirElement.html) as this marker interface is handled separately by <i>tapir</i>.
+It is very important that the interface extends [TapirElement](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/ui/api/TapirElement.html) as this marker interface is handled separately by <i>tapir</i>.
 
 ## Example Implementation
 
@@ -159,7 +159,7 @@ Let's take a deeper look into the implementation:
 
 ### @Component
 
-Because of the [@Component](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html) annotation the <i>tapir</i> component is scanned by the module configuration. You just have to make sure that the <i>tapir</i> component is located in a (sub-) package of the classes which is annotated by [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html).
+Because of the [@Component](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html) annotation the <i>tapir</i> component is scanned by the module configuration. You just have to make sure that the <i>tapir</i> component is located in a (sub-) package of the classes which is annotated by [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html).
 
 ### isDisplayed()
 
@@ -169,7 +169,7 @@ forwarded to the underlying web element.
 ### click()
 
 The implementation is straightforward and does not differ from
-[DefaultSeniumButton](http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/htmlbasic/impl/DefaultSeleniumButton.html).
+[DefaultSeniumButton](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/htmlbasic/impl/DefaultSeleniumButton.html).
 
 ### isEnabled()
 

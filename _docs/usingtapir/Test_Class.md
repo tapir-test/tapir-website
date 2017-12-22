@@ -6,10 +6,10 @@ permalink: /docs/usingtapir/test-class/
 # Structure
 
 A test class (annotated with
-[@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)) is
+[@TestClass](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)) is
 an executable unit which contains at least one step. All the steps
 (annotated with
-[@Step](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/step/Step.html)) declared
+[@Step](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/step/Step.html)) declared
 in a test class are executed sequentially. The most simple test class
 looks like this:
 
@@ -58,7 +58,7 @@ class MyTest {
 # Extensions
 
 In every Test
-class [TapirAssertions](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/util/extensions/TapirAssertions.html)
+class [TapirAssertions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/util/extensions/TapirAssertions.html)
 is registered and all its visible members can be used in the test class:
 
 ``` xtend
@@ -76,7 +76,7 @@ class MyTest {
 ```
 
 You can add custom extensions by
-using [@UseExtension](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/core/annotation/useextension/UseExtension.html).
+using [@UseExtension](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/useextension/UseExtension.html).
 
 # Documentation
 

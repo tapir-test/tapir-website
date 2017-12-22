@@ -48,16 +48,16 @@ class which is annotated by @BootstrapConfiguration.
 # Bootstrap Module
 
 A Bootstrap module has to contain a class which is annotated
-by [@BootstrapConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)*.*
+by [@BootstrapConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)*.*
 This class is the main entry point for the configuration of your test
 execution environment. You do not have to add anything in this class,
 unless you would like to customize or extend <i>tapir</i>. These possibilities
 are convered in the chapter [Customiziation]({{ "/docs/customization/executionfilter/" | prepend: site.baseurl }}).
 
 Beside a Bootstrap Configuration you need a class annotated
-by [@TestClass](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)
+by [@TestClass](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/testclass/TestClass.html)
 which contains at least one method which is annotated
-by [@Step](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/execution/annotations/step/Step.html).
+by [@Step](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/step/Step.html).
 So the most simple setup to run a <i>tapir</i> test looks like this:
 
 ``` xtend
@@ -111,7 +111,7 @@ These modules cannot be executed, but provide some functionality which
 might (directly or transitively) be used by a Bootstrap module. Like
 Bootstrap modules, Inclusion modules have a main configuration class as
 well which is annotated
-by [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html).
+by [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html).
 
 <div class="panel panel-info">
   <div class="panel-heading">
