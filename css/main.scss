@@ -41,7 +41,7 @@ body {
 
 .header-container {
   background-color: black;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Schabrackentapir.JPG') no-repeat 50% 0;
+  background: url('{{"/img/bg.jpg" | prepend: site.baseurl}}') no-repeat 50% 0;
   color: #fff;
 
   h1 {
@@ -49,7 +49,7 @@ body {
   }
   // background-attachment: fixed;
   background-size: cover;
-  background-position: center 36%;
+  background-position: center 100%;
   margin-top: -37px;
 }
 .navbar-container {
