@@ -5,8 +5,8 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js" integrity="sha256-SDKDHU0lE3Q1tYhe8x3nqrEl15dwjAM3sEIP0G50RBc=" crossorigin="anonymous"></script>
+    <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript" ></script>
+    <script src="{{ "/js/scrollreveal.min.js" | prepend: site.baseurl }}" type="text/javascript" ></script>
     {% if page.tipue_search_active or layout.tipue_search_active %}
     <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/normalize.css" | relative_url }}">
     <script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
