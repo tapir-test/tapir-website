@@ -15,25 +15,38 @@ done by the end-user sitting in front of the web browser, as well.
 Always set yourself in the user's place when defining the interface
 methods. What can he do with your component?
 
- 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-      <p>
-          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/ContentTable.html">de.bmiag.tapir.showcase.element.ContentTable</a>
-          and
-          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/ContentElement.html">de.bmiag.tapir.showcase.element.ContentElement</a>  are interfaces of custom components.
-      </p>
-      <p>
-          These interfaces are implemented by
-          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/impl/ContentTableImpl.html">de.bmiag.tapir.showcase.element.impl.ContentTableImpl</a>
-          and
-          <a href="http://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/element/impl/ContentElementImpl.html">de.bmiag.tapir.showcase.element.impl.ContentElementImpl</a>.
-      </p>
+  <h4>Interfaces</h4>
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-pages/src/main/java/de/bmiag/tapir/showcase/google/pages/component/Listbox.xtend">Listbox</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/component/ContentElement.xtend">ContentElement</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/component/WikipediaContentTable.xtend">WikipediaContentTable</a>
+    </li>
+  </ul>
+  <h4>Implementations</h4>
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-pages/src/main/java/de/bmiag/tapir/showcase/google/pages/component/impl/ListboxImpl.xtend">ListboxImpl</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/component/impl/ContentElementImpl.xtend">ContentElementImpl</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/component/impl/ContentTableImpl.xtend">ContentTableImpl</a>
+    </li>
+  </ul>
   </div>
 </div>
+
 
 # Example Interface
 

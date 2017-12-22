@@ -70,13 +70,23 @@ class MyConfiguration {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  The showcase bootstrap configuration is
-  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/TestConfiguration.html">de.bmiag.tapir.showcase.TestConfiguration.</a>
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/GoogleSystemtestConfiguration.xtend">GoogleSystemtestConfiguration</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-unittest/src/test/java/de/bmiag/tapir/showcase/google/unittest/GoogleUnitTestConfiguration.xtend">GoogleUnitTestConfiguration</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/WikipediaTestConfiguration.xtend">WikipediaTestConfiguration</a>
+    </li>
+  </ul>
   </div>
 </div>
+
 
 ``` xtend
 import de.bmiag.tapir.execution.annotations.step.Step
@@ -102,6 +112,20 @@ might (directly or transitively) be used by a Bootstrap module. Like
 Bootstrap modules, Inclusion modules have a main configuration class as
 well which is annotated
 by [@ModuleConfiguration](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html).
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-pages/src/main/java/de/bmiag/tapir/showcase/google/pages/GooglePagesConfiguration.xtend">GooglePagesConfiguration</a>
+    </li>
+  </ul>
+  </div>
+</div>
+
 You don't need to have any further configuration as
 *BootstrapConfiguration* and *ModuleConfiguration* are aware of Spring's
 component-scan capabilities.

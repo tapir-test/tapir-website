@@ -45,12 +45,31 @@ class LoginUser {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
   <i>de.bmiag.tapir.showcase.test.data.ContentElementExpectation</i> and
   <i>de.bmiag.tapir.showcase.test.data.WikipediaContentTableExpectaton</i> are
   marked as immutable.
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+  </div>
+  <div class="panel-body">
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/data/SearchTermExpectation.xtend">SearchTermExpectation</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/ContentElementExpectation.xtend">ContentElementExpectation</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectaton.xtend">WikipediaContentTableExpectaton</a>
+    </li>
+  </ul>
   </div>
 </div>
 
@@ -462,10 +481,16 @@ otherwise it falls back to the object's *toString()* method.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  <i>de.bmiag.tapir.showcase.test.data.WikipediaContentTableExpectaton</i> uses
-  a custom label.
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/data/SearchTermExpectation.xtend">SearchTermExpectation</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectaton.xtend">WikipediaContentTableExpectaton</a>
+    </li>
+  </ul>
   </div>
 </div>

@@ -40,11 +40,20 @@ browser=chrome
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  Used by
-  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/TestConfiguration.html">de.bmiag.tapir.showcase.TestConfiguration</a>.
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/GoogleSystemtestConfiguration.xtend">GoogleSystemtestConfiguration</a> which refers <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/resources/test.properties">test.properties</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-unittest/src/test/java/de/bmiag/tapir/showcase/google/unittest/GoogleUnitTestConfiguration.xtend">GoogleUnitTestConfiguration</a> which refers <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-unittest/src/test/resources/test.properties">test.properties</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/WikipediaTestConfiguration.xtend">WikipediaTestConfiguration</a> which refers <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/resources/test.properties">test.properties</a>
+    </li>
+  </ul>
   </div>
 </div>
 

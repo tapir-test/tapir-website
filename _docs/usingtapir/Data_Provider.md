@@ -327,15 +327,23 @@ The following image shows the complete test execution in Eclipse.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  <i>IteratedParameter</i> is used by
-  <i>de.bmiag.tapir.showcase.test.WikipediaContentTableTest.wikipediaContentTableExpectaton</i>
-  and
-  <i>de.bmiag.tapir.showcase.test.WikipediaContentTableTest.assertContentTableEntry(ContentElementExpectation)</i>.
-  The parameter value of <i>wikipediaContentTableExpectaton</i> is injected by
-  the external data provider
-  <i>de.bmiag.tapir.showcase.test.data.ContentTableTestDataProvider.</i>
+  <h4>External data provider</h4>
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/GoogleSuggestSystemTest.xtend">GoogleSuggestSystemTest</a> by using <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/data/SearchTermProvider.xtend">SearchTermProvider</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend">WikipediaContentTableTest</a> by using <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/ContentTableTestDataProvider.xtend">ContentTableTestDataProvider</a>
+    </li>
+  </ul>
+  <h4>Internal data provider</h4>
+  <ul>
+      <li>
+          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend">WikipediaContentTableTest</a>
+      </li>
+  </ul>
   </div>
 </div>

@@ -83,16 +83,21 @@ using [@UseExtension](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/lates
 Test classes can and should be documented. There is a dedicated chapter
 about [Documentation]({{"/docs/extensions/documentation/" | prepend: site.baseurl}}).
 
-
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  There are two test classes in the showcase:
   <ul>
-    <li>de.bmiag.tapir.showcase.test.WikipediaContentTableTest</li>
-    <li>de.bmiag.tapir.showcase.test.WikipediaSmokeTest</li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/GoogleSuggestSystemTest.xtend">GoogleSuggestSystemTest</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaSmokeTest.xtend">WikipediaSmokeTest</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend">WikipediaContentTableTest</a>
+    </li>
   </ul>
   </div>
 </div>

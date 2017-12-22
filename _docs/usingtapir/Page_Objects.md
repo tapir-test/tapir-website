@@ -109,13 +109,19 @@ class GoogleTest {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  There are two test classes in the showcase:
   <ul>
-    <li><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaContentPage.htmlt">de.bmiag.tapir.showcase.page.WikipediaContentPage</a></li>
-    <li><a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaMainPage.html">de.bmiag.tapir.showcase.page.WikipediaMainPage</a></li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-pages/src/main/java/de/bmiag/tapir/showcase/google/pages/page/GooglePage.xtend">GooglePage</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/page/WikipediaMainPage.xtend">WikipediaMainPage</a>
+    </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/page/WikipediaContentPage.xtend">WikipediaContentPage</a>
+    </li>
   </ul>
   </div>
 </div>
@@ -132,11 +138,17 @@ headline text. If the page is not active, you have to throw an
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  In the showcase
-  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaMainPage.html">de.bmiag.tapir.showcase.page.WikipediaMainPage</a> implements <i>PageActiveAssertion</i>.
+  <ul>
+      <li>
+          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-pages/src/main/java/de/bmiag/tapir/showcase/google/pages/page/GooglePage.xtend">GooglePage</a>
+      </li>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/page/WikipediaMainPage.xtend">WikipediaMainPage</a>
+    </li>
+  </ul>
   </div>
 </div>
 
@@ -189,10 +201,14 @@ is completed:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-    Used by <i>de.bmiag.tapir.showcase.test.WikipediaSmokeTest.openWebsite()</i>
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaSmokeTest.xtend#L21">WikipediaSmokeTest.openWebsite()</a>
+    </li>
+  </ul>
   </div>
 </div>
 
@@ -251,12 +267,14 @@ Comparison of a page and a page component:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  In the showcase the
-  <a href="https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/tapir/latest/apidocs/de/bmiag/tapir/showcase/page/WikipediaHeader.html">de.bmiag.tapir.showcase.page.WikipediaHeader</a>
-  is declared as <i>PageComponent</i>.
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/page/WikipediaHeader.xtend">WikipediaHeader</a>
+    </li>
+  </ul>
   </div>
 </div>
 
@@ -280,14 +298,16 @@ class Page1 {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
+    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
   </div>
   <div class="panel-body">
-  Used by <i>de.bmiag.tapir.showcase.page.WikipediaMainPage.header</i>
+  <ul>
+    <li>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/page/WikipediaMainPage.xtend#L13">WikipediaMainPage.header</a>
+    </li>
+  </ul>
   </div>
 </div>
-
-
 
 ## @Include
 

@@ -81,16 +81,6 @@ there are no further children of *MyTestSuite1*). If you would want to
 start the test cases in parallel, you would have to annotate
 *MyTestSuite2*.
 
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Showcase</h3>
-  </div>
-  <div class="panel-body">
-  <i>Parallel</i> is used by
-  <i>de.bmiag.tapir.showcase.test.WikipediaContentTableTest</i>.
-  </div>
-</div>
-
 # Execution of the Tasks
 
 Per default, the
