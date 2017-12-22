@@ -222,7 +222,7 @@ website](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
     The Internet Explorer will only work on Windows!
@@ -287,7 +287,7 @@ HtmlUnitDriver website](https://github.com/SeleniumHQ/htmlunit-driver).
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   HtmlUnit does not have a rendering engine, so you cannot see any browser

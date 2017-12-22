@@ -68,7 +68,7 @@ test class is called GoogleTest and contains three test steps:
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   The tests are executed by using the headless

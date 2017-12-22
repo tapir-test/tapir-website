@@ -314,7 +314,7 @@ The following image shows the complete test execution in Eclipse.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   With the help of the annotation <i>IterableParameter</i> you can allow

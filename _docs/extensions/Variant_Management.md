@@ -235,7 +235,7 @@ active.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   When developing your test cases, you should focus on features and not on

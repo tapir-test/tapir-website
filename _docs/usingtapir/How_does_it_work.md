@@ -26,7 +26,7 @@ annotated class.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   Exactly one <i>@BootstrapConfiguration</i> annotated class has to be in the
@@ -48,7 +48,7 @@ annotated class in a (sub-) package of the configuration class.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   This is a very simplified view. If you would like to understand Spring's

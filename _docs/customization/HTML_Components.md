@@ -182,7 +182,7 @@ following conditions match:
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   This implementation is Vaadin-specific. A Vaadin update might necessitate an implementation adjustment, but always keep in mind that you have to adjust one single point. All of your test code is not affected!

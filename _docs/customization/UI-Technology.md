@@ -17,7 +17,7 @@ implemented in Java. <i>tapir's</i> API is completely technology-independent.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   In <i>tapir</i> this is the most complex task as you need to build a UI
@@ -50,7 +50,7 @@ exemplify the implementation of a custom UI technology.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Warning</h3>
+    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
   </div>
   <div class="panel-body">
   As we don't want to get lost in Java FX implementation details we focus
