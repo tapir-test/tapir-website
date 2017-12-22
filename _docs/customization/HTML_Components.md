@@ -17,7 +17,7 @@ methods. What can he do with your component?
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <h4>Interfaces</h4>
@@ -182,7 +182,7 @@ following conditions match:
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   This implementation is Vaadin-specific. A Vaadin update might necessitate an implementation adjustment, but always keep in mind that you have to adjust one single point. All of your test code is not affected!
@@ -191,12 +191,12 @@ following conditions match:
 
 
 
-## getLabel()
+### getLabel()
 
 Accessing the button label is straightforward but Vaadin-specific. You
 just have to search for the element with css class *v-button-caption*.
 
-## getToolTip()
+### getToolTip()
 
 This is the most complicated implementation, but if you take a deeper
 look it exactly reflects the actions a user performs in order to see the

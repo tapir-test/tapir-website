@@ -23,7 +23,7 @@ In order to get notified during the test execution, you have to implement the in
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   A more convenient base might be the <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/AbstractExecutionListener.html">AbstractExecutionListener</a>.

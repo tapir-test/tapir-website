@@ -32,7 +32,7 @@ about page objects in the [dedicated chapter]({{ "/docs/usingtapir/page-objects/
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   The showcase bootstrap configuration is
@@ -85,7 +85,7 @@ about [Documentation]({{"/docs/extensions/documentation/" | prepend: site.baseur
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>

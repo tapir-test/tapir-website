@@ -72,7 +72,7 @@ work in a similar manner.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   Keep in mind that you cannot "unfilter" an element. If at least one

@@ -29,7 +29,7 @@ to deal with technical issues.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   There is a lot of information about Page Objects around the web. One of
@@ -98,7 +98,7 @@ class GoogleTest {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   Please notice the syntactic sugar Xtend provides. For more information
@@ -109,7 +109,7 @@ class GoogleTest {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>
@@ -138,7 +138,7 @@ headline text. If the page is not active, you have to throw an
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>
@@ -152,9 +152,9 @@ headline text. If the page is not active, you have to throw an
   </div>
 </div>
 
-## Explicit check
+### Explicit check
 
-### Check using PageActiveAssertionExtensions
+#### Check using PageActiveAssertionExtensions
 
 Test classes can check, if a page is active by using
 the [PageActiveAssertionExtensions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/extensions/PageActiveAssertionExtensions.html)as
@@ -174,7 +174,7 @@ class GoogleTest {
 }
 ```
 
-### Check by calling assertPageActive()
+#### Check by calling assertPageActive()
 
 Alternatively you can explicitly call the *assertPageActive( )* method:
 
@@ -185,7 +185,7 @@ Alternatively you can explicitly call the *assertPageActive( )* method:
     }
 ```
 
-### Check by declaring *@AssertPostPage*
+#### Check by declaring *@AssertPostPage*
 
 Using
 the [*@*AssertPostPage](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/AssertPostPage.html)
@@ -201,7 +201,7 @@ is completed:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>
@@ -212,7 +212,7 @@ is completed:
   </div>
 </div>
 
-## Implicit check
+### Implicit check
 
 Explicitly checking for a page to be active is not needed mostly,
 because <i>tapir</i> does this check for you whenever you interact with the
@@ -267,7 +267,7 @@ Comparison of a page and a page component:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>
@@ -283,7 +283,7 @@ Comparison of a page and a page component:
 Pages and Page components can be nested by using the *@Include*
 and *@Reference* annotations.
 
-## @Reference
+### @Reference
 
 [@Reference](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/reference/Reference.html)
 just generates a getter for the referenced Page (component).
@@ -298,7 +298,7 @@ class Page1 {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>
@@ -309,7 +309,7 @@ class Page1 {
   </div>
 </div>
 
-## @Include
+### @Include
 
 In contrast
 to *@Reference,* [@Include](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/include/Include.html)

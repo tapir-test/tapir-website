@@ -14,7 +14,7 @@ module for your favorite web browser (emulation).
 
 ## Chrome {#WebBrowsermodule-Chrome}
 
-## Dependency
+### Dependency
 
 ``` xml
 <dependency>
@@ -23,7 +23,7 @@ module for your favorite web browser (emulation).
 </dependency>
 ```
 
-## Activation
+### Activation
 
 Chrome is activated by setting the *browser* property:
 
@@ -31,7 +31,7 @@ Chrome is activated by setting the *browser* property:
 browser=chrome
 ```
 
-## Properties
+### Properties
 
 <table>
 <colgroup>
@@ -83,7 +83,7 @@ conjunction with Chrome is recommended.
 
 ## Firefox {#WebBrowsermodule-Firefox}
 
-## Dependency
+### Dependency
 
 ``` xml
 <dependency>
@@ -92,7 +92,7 @@ conjunction with Chrome is recommended.
 </dependency>
 ```
 
-## Activation
+### Activation
 
 Firefox is activated by setting the *browser* property:
 
@@ -100,7 +100,7 @@ Firefox is activated by setting the *browser* property:
 browser=firefox
 ```
 
-## Properties
+### Properties
 
 <table>
 <colgroup>
@@ -162,7 +162,7 @@ integration.
 
 ## Internet Explorer {#WebBrowsermodule-InternetExplorer}
 
-## Dependency
+### Dependency
 
 ``` xml
 <dependency>
@@ -171,7 +171,7 @@ integration.
 </dependency>
 ```
 
-## Activation
+### Activation
 
 Internet Explorer is activated by setting the *browser* property:
 
@@ -179,7 +179,7 @@ Internet Explorer is activated by setting the *browser* property:
 browser=internetexplorer
 ```
 
-## Properties
+### Properties
 
 <table>
 <colgroup>
@@ -222,7 +222,7 @@ website](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
     The Internet Explorer will only work on Windows!
@@ -231,7 +231,7 @@ website](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
 
 ## HtmlUnit {#WebBrowsermodule-HtmlUnit}
 
-## Dependency
+### Dependency
 
 ``` xml
 <dependency>
@@ -240,7 +240,7 @@ website](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
 </dependency>
 ```
 
-## Activation
+### Activation
 
 HtmlUnit is activated by setting the *browser* property:
 
@@ -248,7 +248,7 @@ HtmlUnit is activated by setting the *browser* property:
 browser=htmlunit
 ```
 
-## Properties
+### Properties
 
 <table>
 <colgroup>
@@ -287,7 +287,7 @@ HtmlUnitDriver website](https://github.com/SeleniumHQ/htmlunit-driver).
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   HtmlUnit does not have a rendering engine, so you cannot see any browser

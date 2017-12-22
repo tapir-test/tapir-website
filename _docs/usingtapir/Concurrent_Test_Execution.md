@@ -18,7 +18,7 @@ issues or as a load test). The concurrent test execution is part of
 ```
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   Keep in mind that a concurrent test execution can also mean that it is

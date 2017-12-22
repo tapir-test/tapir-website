@@ -14,7 +14,7 @@ consistent way.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   You can still specify a version and override <i>tapir's</i> recommendations if
@@ -36,7 +36,7 @@ defaults. The project provides the following features:
 -   A Dependency section containing some must-have dependencies
 -   The Maven filtering is changed to use `@..@` placeholders
 
-## Inheriting the Starter Parent
+### Inheriting the Starter Parent
 
 To configure your project to inherit from the
 tapir-*starter-module *simply set the *parent*:
@@ -52,7 +52,7 @@ tapir-*starter-module *simply set the *parent*:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   You should only need to specify the <i>tapir</i> version number on this
@@ -72,14 +72,14 @@ another Selenium version you would add the following to your *pom.xml*.
 ```
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
     Check the <i>tapir-dependencies</i> pom for a list of supported properties.
   </div>
 </div>
 
-## Using <i>tapir</i> Without the Parent POM
+### Using <i>tapir</i> Without the Parent POM
 
 If you don’t want to use the tapir-*starter-module*, you can still keep
 the benefit of the dependency management (but not the plugin management)
@@ -103,12 +103,12 @@ by using a dependency with the import scope:
 That setup does not allow you to override individual dependencies using
 a property as explained above.
 
-## Additional Starters
+### Additional Starters
 
 There a more specialized starters provided by <i>tapir</i>. Those starters are
 explained below.
 
-### tapir-starter-selenium-allure
+#### tapir-starter-selenium-allure
 
 If you would like to use <i>tapir's</i> Selenium implementation and the Allure
 report capabilities you might want to

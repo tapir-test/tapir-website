@@ -21,7 +21,7 @@ class which is annotated by @BootstrapConfiguration.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   If you are not familiar with Spring so far, consult the chapter <a href="{{ "/docs/usingtapir/how-does-it-work/" | prepend: site.baseurl }}">How
@@ -31,7 +31,7 @@ class which is annotated by @BootstrapConfiguration.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   Take care of the
@@ -70,7 +70,7 @@ class MyConfiguration {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>
@@ -115,7 +115,7 @@ by [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/late
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>

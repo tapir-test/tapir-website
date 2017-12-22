@@ -314,7 +314,7 @@ The following image shows the complete test execution in Eclipse.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   With the help of the annotation <i>IterableParameter</i> you can allow
@@ -327,7 +327,7 @@ The following image shows the complete test execution in Eclipse.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <h4>External data provider</h4>

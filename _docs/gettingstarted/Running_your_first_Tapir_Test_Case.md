@@ -10,7 +10,7 @@ The easiest way to get started with <i>tapir</i> is to use the corresponding
 Maven Archtetype. You can do this from the command-line or the Eclipse
 IDE:
 
-## Commandline
+### Commandline
 
 ``` text
 mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId=tapir-bootstrap-archetype -DarchetypeVersion=2.0.0
@@ -28,7 +28,7 @@ Maven will ask you for the following properties:
 After confirming the properties the new Maven module is generated into a
 subfolder which is named like your artifactId.
 
-## Eclipse
+### Eclipse
 
 Eclipse provides a project wizard to create Maven projects:
 
@@ -49,7 +49,7 @@ Eclipse provides a project wizard to create Maven projects:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   For additional information on archetypes, consult the <a href="{{ "/docs/usingtapir/archetypes/" | prepend: site.baseurl }}">dedicated
@@ -68,7 +68,7 @@ test class is called GoogleTest and contains three test steps:
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   The tests are executed by using the headless
@@ -83,7 +83,7 @@ test class is called GoogleTest and contains three test steps:
 
 
 
-## Commandline
+### Commandline
 
 Switch to the newly created directory and type:
 
@@ -97,7 +97,7 @@ visualize the test results.
 
 Open <http://localhost:8080> in your browser to see the test results.
 
-## Eclipse
+### Eclipse
 
 In the newly created project you can find launch files in the launch
 subfolder. Just right-click the $\{artifactId\}-eclipse.launch file

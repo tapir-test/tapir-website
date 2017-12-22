@@ -9,7 +9,7 @@ You can either run the archetypes from Eclipse or from command-line.
 
 ## Using an archetype
 
-## Eclipse
+### Eclipse
 
 Eclipse's Maven integration [m2e](http://www.eclipse.org/m2e/) provides
 a wizard to creates modules based on Maven archetypes.
@@ -34,7 +34,7 @@ a wizard to creates modules based on Maven archetypes.
 6.  After clicking Finish the module is available in your workspace as
     an Eclipse project
 
-## Command line
+### Command line
 
 ``` text
 > mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId={desired-tapir-archetype} -DarchetypeVersion=3.0.0
@@ -53,27 +53,27 @@ subfolder which is named like your artifactId.
 
 ## Predefined archetypes
 
-## tapir-module-archetype {#Archetypes-tapir-module-archetype}
+### tapir-module-archetype {#Archetypes-tapir-module-archetype}
 
 This archetype can be used for arbitrary <i>tapir</i> modules. It provides a
 basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html) annotated class and inherits
 from tapir-starter-module which provides a couple of [presets]({{ "/docs/usingtapir/build-systems#BuildSystems-Maven" | prepend: site.baseurl }}).
 
-### Properties
+#### Properties
 
 | Property               | Description                                                                     |
 |------------------------|---------------------------------------------------------------------------------|
 | moduleName             | The name of the module which has to fulfill this pattern: \[A-Z\]\[A-Za-z0-9\]+ |
 | autoConfigurationOrder | The AutoConfigurationOrder. The default value is 0.                             |
 
-## tapir-bootstrap-archetype {#Archetypes-tapir-bootstrap-archetype}
+### tapir-bootstrap-archetype {#Archetypes-tapir-bootstrap-archetype}
 
 This archteype can be used for <i>tapir</i> bootstrap modules. The modules
 inherits from *tapir-starter-selenium-allure*. It provides a
 basic [@BootstrapConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
 annotated class and an executable test based on the Google website.
 
-### Properties
+#### Properties
 
 | Property   | Description                                                                     |
 |------------|---------------------------------------------------------------------------------|

@@ -33,7 +33,7 @@ with [@ProceedOnFailure](https://www.javadoc.io/page/de.bmiag.tapir/tapir/lates
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</h3>
+    <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
   <ul>

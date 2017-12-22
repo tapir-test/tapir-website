@@ -125,7 +125,7 @@ whether a feature is active or not.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   The <a href="{{"/docs/extensions/conditional/" | prepend: site.baseurl}}">conditional</a> module of <i>tapir</i> can help you to implement
@@ -235,7 +235,7 @@ active.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-warning"></span> Caution</h3>
+    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
   </div>
   <div class="panel-body">
   When developing your test cases, you should focus on features and not on

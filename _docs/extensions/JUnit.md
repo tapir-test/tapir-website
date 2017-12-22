@@ -34,7 +34,7 @@ The progress and the results are displayed in the JUnit view.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title"><span class="fa fa-info-circle"></span> Hint</h3>
+    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   You can select any method/step and execute it with <i>Run As</i> \| <i>JUnit
