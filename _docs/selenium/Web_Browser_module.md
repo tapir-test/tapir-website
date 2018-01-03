@@ -56,7 +56,7 @@ browser=chrome
 <tr class="even">
 <td>chrome.chromedriver.binary</td>
 <td> </td>
-<td>Location of the ChromeDriver binary. Required if the connection mode is local and the binary is not in the path environment variable</td>
+<td>Location of the ChromeDriver binary. If this property is not specified, tapir tries to download the latest chrome driver (or uses a cached one).</td>
 </tr>
 <tr class="odd">
 <td>chrome.browser.binary</td>
@@ -125,7 +125,7 @@ browser=firefox
 <tr class="even">
 <td>firefox.geckodriver.binary</td>
 <td> </td>
-<td>Location of the GeckoDriver binary. Required if the connection mode is local and the binary is not in the path environment variable</td>
+<td>Location of the GeckoDriver binary.  If this property is not specified, tapir tries to download the latest gecko driver (or uses a cached one).</td>
 </tr>
 <tr class="odd">
 <td>firefox.browser.binary</td>
@@ -204,7 +204,7 @@ browser=internetexplorer
 <tr class="even">
 <td>internetexplorer.driverservice.binary</td>
 <td> </td>
-<td>Location of the DriverServer binary. Required if the connection mode is local and the binary is not in the path environment variable</td>
+<td>Location of the DriverServer binary.  If this property is not specified, tapir tries to download the latest Internet Explorer driver (or uses a cached one).</td>
 </tr>
 <tr class="odd">
 <td>internetexplorer.driverservice.url</td>
@@ -250,40 +250,14 @@ browser=htmlunit
 
 ### Properties
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Property</th>
-<th>Info</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>htmlunit.proxy.host</td>
-<td><p> </p></td>
-<td><p>Optional proxy host</p></td>
-</tr>
-<tr class="even">
-<td>htmlunit.proxy.port</td>
-<td> Default: 3128</td>
-<td>Optional proxy port</td>
-</tr>
-</tbody>
-</table>
+There are no special HtmlUnit properties. The proxy settings are configured via [HTTP Proxy]({{"/docs/usingtapir/http-proxy/" | prepend: site.baseurl}}).
 
 HtmlUnit is a headless web browser implemented in Java. Therefore it
 does not need any additional binaries. All required depdendencies are
 provided by <i>tapir</i>. HtmlUnit does not require a graphical user interface.
 
 HtmlUnit is very fast as it does emulate the browser interaction and
-does not render the web site. For further information consult [the
-HtmlUnitDriver website](https://github.com/SeleniumHQ/htmlunit-driver).
+does not render the web site. For further information consult the [HtmlUnitDriver website](https://github.com/SeleniumHQ/htmlunit-driver).
 
 <div class="panel panel-warning">
   <div class="panel-heading">
