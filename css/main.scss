@@ -27,7 +27,7 @@ html {
 }
 body {
   padding-top: $navbar-height + $navbar-margin-bottom;
-  margin-bottom: 46px;
+  //margin-bottom: 46px;
 }
 
 .navbar-brand{
@@ -40,8 +40,7 @@ body {
 
 
 .header-container {
-  background-color: black;
-  background: url('{{"/img/bg.jpg" | prepend: site.baseurl}}') no-repeat 50% 0;
+  background: url('{{"/img/jumbotron-bg.jpg" | prepend: site.baseurl}}') no-repeat 50% 0;
   color: #fff;
 
   h1 {
@@ -49,15 +48,18 @@ body {
   }
   // background-attachment: fixed;
   background-size: cover;
-  background-position: center 100%;
-  margin-top: -37px;
+  background-position: center;
+  margin-top: -19px;
 }
 .navbar-container {
   font-size: 16px;
 }
+
+
 .page-content {
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
+/*
 .footer {
   position: absolute;
   bottom: 0;
@@ -69,7 +71,18 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+*/
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
 
 .post-list-container {
   li a.active {
@@ -107,6 +120,7 @@ code.prettyprint  {
 .prettyprint  {
     background-color: transparent;
 }
+
 
 #tipue_search_input, #tipue_search_foot_boxes
 {
@@ -182,6 +196,14 @@ code.prettyprint  {
     .featurette-image.pull-right {
         margin-left: 20px;
     }
+
+    .page-content {
+      padding-bottom: 140px;
+    }
+
+    .footer {
+      height: 120px;
+    }
 }
 
 @media(max-width:991px) {
@@ -200,6 +222,12 @@ code.prettyprint  {
 
     .featurette-image.pull-right {
         margin-left: 10px;
+    }
+
+    #tipue_search_input
+    {
+
+         width: 200px;
     }
 }
 
