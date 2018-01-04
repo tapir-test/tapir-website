@@ -87,7 +87,7 @@ Because of the *@Component* annotation the data source is picked up automaticall
   <div class="panel-body">
   <ul>
       <li>
-          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectatonCsvDataSource">WikipediaContentTableExpectatonCsvDataSource</a>
+          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectatonCsvDataSource.xtend">WikipediaContentTableExpectatonCsvDataSource</a>
       </li>
   </ul>
   </div>
