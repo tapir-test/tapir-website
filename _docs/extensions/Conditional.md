@@ -30,7 +30,7 @@ be executed or not. The naming convention of the method is similar as
 for the
 [Parameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
 [IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotations
-in the [data provider chapter]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}). There are three
+in the [data provider chapter]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}). There are three
 possibilities.
 
 ## Unparameterized
@@ -136,7 +136,7 @@ class MyTestCase {
   <div class="panel-body">
   For the following example, we assume that you are already familiar with
   data provider in <i>tapir</i>. If you are not sure, you might want to take
-  another look at the <a href="{{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}">chapter</a>.
+  another look at the <a href="{{"/docs/testdata/data-injection/" | prepend: site.baseurl}}">chapter</a>.
   </div>
 </div>
 

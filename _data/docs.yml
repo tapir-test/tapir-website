@@ -18,11 +18,16 @@
   - usingtapir/page-objects
   - usingtapir/code-structure
   - usingtapir/running-tapir-tests
-  - usingtapir/data-provider
   - usingtapir/http-proxy
   - usingtapir/logging
   - usingtapir/concurrency
   - usingtapir/externalized-configuration
+
+- title: Test Data
+  docs:
+  - testdata/data-injection
+  - testdata/external-data-format
+  - testdata/csv-data-source
 
 - title: Selenium
   docs:

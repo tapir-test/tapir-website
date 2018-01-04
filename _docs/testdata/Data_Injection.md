@@ -1,7 +1,7 @@
 ---
-title: Data Provider
-description: By using Data Providers you can specify your test data externally (Excel, database, REST-API,...).
-permalink: /docs/usingtapir/data-provider/
+title: Data Injection
+description: By using Data Injection you can seperate your test code and the data.
+permalink: /docs/testdata/data-injection/
 ---
 
 Separating your tests from the test data helps to increase
@@ -330,19 +330,10 @@ The following image shows the complete test execution in Eclipse.
     <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
   </div>
   <div class="panel-body">
-  <h4>External data provider</h4>
-  <ul>
-    <li>
-        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/GoogleSuggestSystemTest.xtend">GoogleSuggestSystemTest</a> by using <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/data/SearchTermProvider.xtend">SearchTermProvider</a>
-    </li>
-    <li>
-        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend">WikipediaContentTableTest</a> by using <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/ContentTableTestDataProvider.xtend">ContentTableTestDataProvider</a>
-    </li>
-  </ul>
   <h4>Internal data provider</h4>
   <ul>
       <li>
-          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend">WikipediaContentTableTest</a>
+          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend#L54">WikipediaContentTableTest</a>
       </li>
   </ul>
   </div>

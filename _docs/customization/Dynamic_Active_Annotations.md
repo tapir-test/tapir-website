@@ -55,7 +55,7 @@ class ParameterValidator implements ValidationParticipant<NamedElement> {
 }
 ```
 
-The above example shows the dynamic active *Parameter* annotation from the [data provider chapter]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) and the corresponding *ParameterValidator*. Note that the *ParameterValidator* is responsible to process more than one annotation and has an order of -10000. If you would want to overwrite the behaviour of the *ParameterValidator*, you would create an own annotation processor with an order higher than -10000.
+The above example shows the dynamic active *Parameter* annotation from the [data provider chapter]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}) and the corresponding *ParameterValidator*. Note that the *ParameterValidator* is responsible to process more than one annotation and has an order of -10000. If you would want to overwrite the behaviour of the *ParameterValidator*, you would create an own annotation processor with an order higher than -10000.
 
 <div class="panel panel-warning">
   <div class="panel-heading">

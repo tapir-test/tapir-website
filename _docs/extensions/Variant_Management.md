@@ -153,7 +153,7 @@ class TestClass4 {
  }
 ```
 
-If you are using [data providers]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) in your tests, you can also enable or
+If you are using [data providers]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}) in your tests, you can also enable or
 disable parts of the provided data by checking for features. Your data
 element classes should implement [FeatureBased](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/data/FeatureBased.html). The
 method *getActivateByFeatureExpression()* returns an optional

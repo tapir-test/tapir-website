@@ -52,7 +52,7 @@ class (or test suite) of the suite in parallel. In the above example,
 the execution of *TestSuite1* would start *TestClass2* and *TestClass3*
 in parallel. Annoting a test class becomes interesting when you use the
 [@IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html)annotation
-from the [data provider module]({{"/docs/usingtapir/data-provider/" | prepend: site.baseurl}}) on a field. If a field of
+from the [data provider module]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}) on a field. If a field of
 a test class is annotated with *IteratedParameter*, then the test class
 is executed for each element of the corresponding data collection. If
 the test class itself is annotated with the *Parallel* annotation, then
