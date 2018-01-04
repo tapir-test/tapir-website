@@ -20,7 +20,7 @@ When using <i>tapir's</i> [immutable data types]({{"/docs/extensions/immutables/
 
 The generated DataSource assumes that the columns of the csv file correspond to the attribute names of your immutable object.
 
-As csv files are just plain ASCII files every value is just a string and you do not have any type information. tapir uses Spring's [ConversionService](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/convert/ConversionService.html) in order to convert from String to any other type. You can add custom converters by implementing [Converter](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/convert/converter/Converter.html) and registering the class as Spring bean (e.g. by annotating it with [@Component](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html)).
+As csv files are just plain UTF-8 files every value is just a string and you do not have any type information. tapir uses Spring's [ConversionService](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/convert/ConversionService.html) in order to convert from String to any other type. You can add custom converters by implementing [Converter](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/convert/converter/Converter.html) and registering the class as Spring bean (e.g. by annotating it with [@Component](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html)).
 
 The following csv file can be converted to a list of users just by adding the <i>CsvDataSource</i> annotation.
 
