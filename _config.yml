@@ -54,7 +54,7 @@ defaults:
 - scope:
     path: ""
   values:
-    image: /img/tapir-icon.png
+    image: /img/tapir-icon-144px.png
     seo:
       type: "WebPage"
 - scope:
