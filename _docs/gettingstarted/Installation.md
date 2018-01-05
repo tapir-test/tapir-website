@@ -4,20 +4,37 @@ description: This chapter describes how to install and use tapir.
 permalink: /docs/gettingstarted/installation/
 ---
 
-## IDE
+## Eclipse
 
-We recommend to develop the <i>tapir</i> test cases with <a href="https://eclipse.org/">Eclipse 4.6+</a>. Eclipse
-is usually shipped with a Maven integration plugin. If such an
-integration is missing, you should install one, for instance <a href="http://www.eclipse.org/m2e/">M2Eclipse</a>.
-Also, many aspects of <i>tapir</i> are realized by using the Xtend language and
-its features. A Xtend plugin in the Version 2.12 is therefore required.
-A suitable <a href="https://eclipse.org/xtend/download.html">plugin</a> for Eclipse is provided by the Xtend team. Further IDEs
-(for instance IntelliJ IDEA) might provide suitable plugins as well, but
-are not explicitly supported.
+We recommend to use [Eclipse](https://eclipse.org/) to develop with <i>tapir</i>. By using the Eclipse Installer you get a running preconfigured Eclipse IDE in no time at all.
+
+### Alternative 1: Eclipse Installer (recommended)
+
+The Eclipse Installer is the easiest way to install and update your Eclipse Development Environment. You can download the Eclipse Installer .
+
+1. Download the Eclipse Installer for your platform:
+  * [Windows 64 Bit](http://www.eclipse.org/downloads/download.php?file=/oomph/products/eclipse-inst-win64.exe) (self-extracting exe)
+  * [Windows 32 Bit](http://www.eclipse.org/downloads/download.php?file=/oomph/products/eclipse-inst-win32.exe) (self-extracting exe)
+  * [Mac OS 64 Bit](http://www.eclipse.org/downloads/download.php?file=/oomph/products/eclipse-inst-mac64.tar.gz) (tar.gz)
+  * [Linux 64 Bit](http://www.eclipse.org/downloads/download.php?file=/oomph/products/eclipse-inst-linux64.tar.gz) (tar.gz)
+  * [Linux 32 Bit](http://www.eclipse.org/downloads/download.php?file=/oomph/products/eclipse-inst-linux32.tar.gz) (tar.gz)
+1. Run the Eclipse Installer
+1. Drap and drop this button into the Eclipse Installer header: <a href="https://raw.githubusercontent.com/tapir-test/tapir-oomph-setup/master/tapir-configuration.setup" class="btn btn-primary btn-sm">Install <i class="fa fa-download" aria-hidden="true"></i></a>
+1. Confirm via Finish
+
+### Alternative 2: Manual installation
+In case you don't want to use the Eclipse Installer you can install the plugins in your eclipse manually via the corresponding update-site. Beside JDT tapir needs Maven (M2Eclipse)/Gradle (Buildship) and [Xtend](https://www.eclipse.org/xtend/download.html) to work.
+
 
 ## Build Systems
 
-You install <i>tapir</i> by including the required dependencies in your
-project. A more detailed documentation for Maven and Gradle can be found
-<a href="{{ "/docs/usingtapir/build-systems/" | prepend: site.baseurl }}">here</a>. <i>tapir</i> might work with further build tools and systems, but this is
-not specifically supported.
+*tapir* itself is integrated via dependencies in your test project. A more detailed documentation for Maven and Gradle can be found [here]({{ "/docs/usingtapir/build-systems/" | prepend: site.baseurl }}). *tapir* might work with further build tools and systems, but this is not specifically supported.
+
+## Showcase
+If you just would like to get a first impression of tapir we highly recommend our show case which it hosted at [GitHub](https://github.com/tapir-test/tapir-showcase).
+
+### Eclipse
+1. Switch to the git perspective by choosing *Windows* \| *Preferences* \| *Open Perspective* \| *Other...* \| *Git*
+1. Choose *Clone a Git repository* and paste [https://github.com/tapir-test/tapir-showcase.git](https://github.com/tapir-test/tapir-showcase.git) into the *URI* field
+1. Choose *Next >* \| *Next >* \| *Finish*
+1. In the *Git Repositories* view perform a right-click on *tapir-showcase* and choose *Import projects...* and confirm the dialog with *Finish*.
