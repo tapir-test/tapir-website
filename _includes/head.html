@@ -23,7 +23,7 @@
     <link rel="shortcut icon" href="{{ "/favicon.ico?1" | prepend: site.baseurl }}">
     {% seo %}
 
-    <meta name="twitter:image" content="{{"/img/tapir-2-1.png" | prepend: site.baseurl}}" />
+    <meta name="twitter:image" content="{{"/img/tapir-2-1.png" | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
