@@ -4,10 +4,9 @@
     <input type="hidden" name="options[parent]" value="{{ post_slug }}">
     <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
     <input type="hidden" name="options[redirect]" value="{{ site.url }}{{ page.url }}">
-    <!--
-        <input type="hidden" name="options[reCaptcha][siteKey]" value="6LddezEUAAAAAEgYhFlbg6YMrola0d5ZdhK6OyrA">
-        <input type="hidden" name="options[reCaptcha][secret]" value="C/beoE4nGgpjfvj6yPT4/B+54tlnfxXiL/OynntFifQ2CFQDadkGXnBAzxk/LFa2Ta/KCUSSfmgpDrODqzgZ4euo+EGL1VL3jKcP6mstpyT39Z9mlzd4grO2COrdbjuIJ1R4dlmjL95532Os0qbw3KfYkj0tOzbxBahlOrCzC0o=">
-    -->
+
+        <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcRtz8UAAAAAA4jcY72sd_LOI7bmUJVQh_8wxIb">
+        <input type="hidden" name="options[reCaptcha][secret]" value="TC88Ah6QZbIX+9I9kdH9fl60+4x9ypFuiHF33KvzWvVUUygFe0Ium9SZSSjx+6wVS400Mo3OH2NNjZvh82Fe4W2rVRDtCiXecvMC3cHP/NVwNZLI+9PEODATtGydsdvcMAixwKdI+svFwz0GvQYe8oxEGfTJkcsUxvANLbjiFl4=">
 
 
     <div class="control-group form-group">
@@ -29,11 +28,6 @@
             <textarea rows="10" cols="100" class="form-control" name="fields[message]" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
         </div>
     </div>
-    <!--
-
-        <div class="form__recaptcha g-recaptcha" data-sitekey="6LddezEUAAAAAEgYhFlbg6YMrola0d5ZdhK6OyrA"></div>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
-
-    -->
+        <div class="form__recaptcha g-recaptcha" data-sitekey="6LcRtz8UAAAAAA4jcY72sd_LOI7bmUJVQh_8wxIb"></div>
     <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
