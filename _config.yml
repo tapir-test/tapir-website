@@ -12,8 +12,8 @@ twitter:
 author: olibutzki
 
 
-logo: /img/tapir-2-1.png
-image: /img/tapir-2-1.png
+logo: /img/tapir-icon-circle.png
+image: /img/tapir-icon-circle.png
 
 social:
     name: tapir
@@ -54,7 +54,7 @@ defaults:
 - scope:
     path: ""
   values:
-    image: /img/tapir-2-1.png
+    image: /img/tapir-icon-circle.png
     seo:
       type: "WebPage"
 - scope:
