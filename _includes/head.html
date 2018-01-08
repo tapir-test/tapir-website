@@ -21,12 +21,9 @@
     <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
 
     <link rel="shortcut icon" href="{{ "/favicon.ico?1" | prepend: site.baseurl }}">
-    {% capture seo %}
     {% seo %}
-    {% endcapture %}
 
-    {{ seo | replace: "summary_large_image", "summary" }}
-
+    <meta name="twitter:image" content="{{"/img/tapir-2-1.png" | prepend: site.baseurl}}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
