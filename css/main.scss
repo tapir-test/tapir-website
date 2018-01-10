@@ -121,13 +121,14 @@ code.prettyprint  {
     background-color: transparent;
 }
 
-
+/*
 #tipue_search_input, #tipue_search_foot_boxes
 {
      padding-top: 0px;
      padding-bottom: 0px;
      font: 300 14px/1 Roboto, sans-serif;
 }
+*/
 #tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug, .tipue_search_related_text
 {
      font: 300 14px/1.7 Roboto, sans-serif;
@@ -225,11 +226,6 @@ code.prettyprint  {
         margin-left: 10px;
     }
 
-    #tipue_search_input
-    {
-
-         width: 200px;
-    }
 }
 
 @media(max-width:768px) {
