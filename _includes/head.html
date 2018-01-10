@@ -26,4 +26,24 @@
     <meta name="twitter:image" content="{{"/img/tapir-2-1.png" | prepend: site.baseurl }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#003271"
+        },
+        "button": {
+          "background": "transparent",
+          "border": "#ffffff",
+          "text": "#ffffff"
+        }
+      }
+    })});
+    </script>
+    {% if jekyll.environment == 'production' %}
+    {% include gtag.html %}
+    {% endif %}
 </head>
