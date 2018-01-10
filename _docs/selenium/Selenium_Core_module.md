@@ -51,9 +51,6 @@ The Selenium module provides a couple of Selenium-specific services.
 -   [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html):  Reads
     the currently displayed browser content as HTML code and provides it
     as an attachment
--   [JavaScriptErrorCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/JavaScriptErrorCaptureService.html):
-    Reads all current JavaScript errors from the web driver and provides
-    them as an attachment
 -   [ScreenshotService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html):
     Captures a screenshot from the currently displayed browser
     window and provides it as an attachment
@@ -67,10 +64,6 @@ provides some execution listeners which make use of these services:
 -   [HtmlPageCaptureListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/HtmlPageCaptureListener.html):
     Calls
     the [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html) whenever
-    a step fails
--   [JavaScriptErrorListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/JavaScriptErrorListener.html):
-    Calls
-    the [JavaScriptErrorCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/JavaScriptErrorCaptureService.html) whenever
     a step fails
 -   [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/ScreenshotListener.html):
     Calls the
