@@ -1,4 +1,5 @@
 ---
+---
 
 $(function() {
 	var $commentForm = $('#comment-form');
