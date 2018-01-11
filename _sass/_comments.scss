@@ -50,18 +50,6 @@
   img {
     max-width: 100%;
   }
-
-  .highlighter-rouge {
-    .highlight {
-      margin-left: 0;
-      margin-right: 0;
-      padding: 1em;
-    }
-
-    .highlight code {
-      font-size: 0.8em;
-    }
-  }
 }
 
 .comment-avatar {
@@ -123,6 +111,9 @@
 /* Site author specific */
 .admin {
   .comment-author-name {
-    box-shadow: inset 0 -0.25em 0 rgba($brand-warning, 0.5);
+      a:first-of-type {
+          box-shadow: inset 0 -0.25em 0 rgba($brand-primary, 0.5);
+      }
+
   }
 }
