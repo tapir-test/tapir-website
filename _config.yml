@@ -20,6 +20,7 @@ social:
     links:
         - https://twitter.com/tapir_test
 
+repository     : "tapir-test/tapir-website"
 staticmanUrl: https://api.staticman.net/v2/entry/tapir-test/tapir-website/master/comments
 git_address: https://github.com/tapir-test/tapir-website
 git_edit_address: https://github.com/tapir-test/tapir-website/blob/master
@@ -81,3 +82,11 @@ collections:
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
+
+staticman:
+  branch                 : "master"
+
+# reCAPTCHA keys
+reCaptcha:
+  siteKey: "6LcRtz8UAAAAAA4jcY72sd_LOI7bmUJVQh_8wxIb"
+  secret: "TC88Ah6QZbIX+9I9kdH9fl60+4x9ypFuiHF33KvzWvVUUygFe0Ium9SZSSjx+6wVS400Mo3OH2NNjZvh82Fe4W2rVRDtCiXecvMC3cHP/NVwNZLI+9PEODATtGydsdvcMAixwKdI+svFwz0GvQYe8oxEGfTJkcsUxvANLbjiFl4="
