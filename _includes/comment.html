@@ -5,7 +5,7 @@
   {%endif %}
 {% endfor %}
 
-<article  class="js-comment comment {% if isAdmin%}admin{% endif %} {% unless include.replying_to == 0 %}child{% endunless %}">
+<article  class="js-comment comment {% unless include.replying_to == 0 %}child{% endunless %}">
   <div class="comment-avatar">
     {% if include.avatar %}
       <noscript><img src="{{ include.avatar }}" alt=""></noscript>
@@ -25,7 +25,7 @@
       {{ include.name | strip_html }}
     {% endunless %}
     {%if isAdmin %}
-      <span class="label label-info label-small">Developer</span>
+      <span class="label label-info label-small">Admin</span>
     {% endif %}
   </h3>
   <div class="comment-timestamp">
