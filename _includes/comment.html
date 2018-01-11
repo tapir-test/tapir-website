@@ -24,6 +24,9 @@
     {% else %}
       {{ include.name | strip_html }}
     {% endunless %}
+    {%if isAdmin %}
+      <span class="label label-info label-small">Developer</span>
+    {% endif %}
   </h3>
   <div class="comment-timestamp">
     {% if include.date %}
