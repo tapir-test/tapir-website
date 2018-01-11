@@ -31,7 +31,9 @@
             </div>
         </div>
       <div class="form-group hidden" style="display: none;">
-        <input type="hidden" name="options[origin]" value="{{ page.url | relative_url }}">
+        <input type="hidden" name="options[title]" value="{{ page.title }}">
+        <input type="hidden" name="options[origin]" value="{{ site.url }}{{site.baseurl}}{{ page.url }}">
+        <input type="hidden" name="options[redirect]" value="{{ site.url }}{{site.baseurl}}{{ page.url }}">
         <input type="hidden" name="options[parent]" value="{{ page.url | relative_url }}">
         <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
         <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
