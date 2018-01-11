@@ -20,7 +20,7 @@
         </div>
         <div class="control-group form-group">
             <div class="controls">
-                <label for="comment-form-email">Email <small>(used for <a href="http://gravatar.com">Gravatar</a> image and reply notifications)</small>:</label>
+                <label for="comment-form-email">Email <small>(used for <a href="http://gravatar.com">Gravatar</a> image)</small>:</label>
                 <input type="email" id="comment-form-email" class="form-control" name="fields[email]" required data-validation-required-message="Please enter your email address." spellcheck="false">
             </div>
         </div>
@@ -49,10 +49,6 @@
       <!-- End comment form alert messaging -->
       <div class="control-group form-group">
         <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
-        <label class="comment-reply-notifications" for="comment-form-reply">
-          <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
-          Notify me of replies by email.
-        </label>
       </div>
       <button type="submit" id="comment-form-submit" class="btn btn-primary">Send Comment</button>
     </form>
