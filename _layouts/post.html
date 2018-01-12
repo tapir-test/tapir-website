@@ -19,8 +19,28 @@ layout: default
 
         <div class="col-md-8">
             <h1>{{ page.title }}</h1>
-            {% assign author  = site.data.authors[page.author] %}
-            <p>{{ page.date | date: "%b %-d, %Y" }}{% if author %} • {% if author.twitter %}<a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+            {% if page.authors.size > 0 %}
+                {% assign authorIds = page.authors %}
+            {% elsif page.author %}
+                {% assign authorIds = page.author | split: "," %}
+            {% else %}
+                {% assign authorIds = site.author | split: "," %}
+            {% endif %}
+            <div class="row">
+                <div class="group1 col-sm-6 col-md-6">
+                    <i class="fa fa-user{% if authorIds.size > 1 %}s{% endif %}" aria-hidden="true"></i>&nbsp;
+                    {% for authorId in authorIds %}
+                        {% assign author = site.data.authors[authorId]  %}
+                        {% if author.twitter %}<a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </div>
+                <div class="group2 col-sm-6 col-md-6">
+                    <i class="fa fa-comments-o" aria-hidden="true"></i> <a href="#comments">{{site.data.comments[page.slug].size}} Comments</a>
+                    &nbsp;&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i> {{ page.date | date: "%b %-d, %Y" }}
+                </div>
+              </div>
+              <hr>
             <div  id="markdown-content-container">{{ content }}</div>
             <hr>
             {% if page.comments == true %}
