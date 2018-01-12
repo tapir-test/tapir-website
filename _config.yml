@@ -4,7 +4,7 @@ email: tapir@bmiag.de
 description: >
   tapir - Test API against Regression
 
-baseurl: "/tapir-website" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://tapir-test.github.io # the base hostname & protocol for your site
 twitter:
     username: tapir_test
