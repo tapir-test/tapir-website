@@ -4,19 +4,19 @@
 var addComment = {
   moveForm: function(parentId, parentAuthor) {
 
-      var $replyTo = $("#comment-replying-to")
-      var $cancel = $("#cancel-comment-reply-link")
-      var $commentForm = $("#comment-form")
+      var $replyTo = $("#comment-replying-to");
+      var $cancel = $("#cancel-comment-reply-link");
+      var $commentForm = $("#comment-form");
 
-      $replyTo.value = parentId
+      $replyTo.val(parentId);
       $cancel.html('<i class="fa fa-times" aria-hidden="true"></i> Cancel reply to ' + parentAuthor);
       $cancel.show();
       $cancel.click(function() {
-          $replyTo.value = ""
+          $replyTo.value = "";
           $cancel.hide();
       });
 
-      $('#comment-form:not(.filter) :input:visible:enabled:first').focus()
+      $('#comment-form:not(.filter) :input:visible:enabled:first').focus();
 
     return false;
   }
