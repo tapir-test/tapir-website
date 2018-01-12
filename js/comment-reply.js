@@ -1,8 +1,8 @@
 // Staticman comment replies
 // modified from Wordpress https://core.svn.wordpress.org/trunk/wp-includes/js/comment-reply.js
 // Released under the GNU General Public License - https://wordpress.org/about/gpl/
-var addComment = {
-  moveForm: function(parentId, parentAuthor) {
+var comment = {
+  reply: function(parentId, parentAuthor) {
 
       var $replyTo = $("#comment-replying-to");
       var $cancel = $("#cancel-comment-reply-link");
@@ -15,9 +15,10 @@ var addComment = {
           $replyTo.val("");
           $cancel.hide();
       });
-
-      $('#comment-form:not(.filter) :input:visible:enabled:first').focus();
+      resetForm($commentForm);
+      focusForm($commentForm);
 
     return false;
   }
+
 };

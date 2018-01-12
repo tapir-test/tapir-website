@@ -40,7 +40,7 @@
   </div>
   {% unless include.replying_to != 0 or page.comments_locked == true %}
     <div class="comment-reply">
-      <a rel="nofollow" href="#leave-comment" onclick="return addComment.moveForm('{{ include.index }}', '{{ include.name }}')"><i class="fa fa-reply" aria-hidden="true"></i> Reply to {{ include.name }}</a>
+      <a rel="nofollow" href="#leave-comment" onclick="return comment.reply('{{ include.index }}', '{{ include.name }}')"><i class="fa fa-reply" aria-hidden="true"></i> Reply to {{ include.name }}</a>
     </div>
   {% endunless %}
 </article>
