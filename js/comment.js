@@ -14,17 +14,20 @@ $(function() {
             type: $(this).attr("method"),
             url: $(this).attr("action"),
 			data: $(this).serialize(),
-			dataType: 'json',
+            contentType: 'application/x-www-form-urlencoded',
 			beforeSend: function() {
                 $commentForm.find('input, textarea, button, select').attr('disabled','disabled');
                 $commentFormSubmissionResult.html(msgLoad);
-			}
-		}).done(function(data) {
-			$commentFormSubmissionResult.html(msgSuccess);
-            $commentForm.find('input, textarea, button, select').removeAttr('disabled');
-		}).fail(function() {
-			$commentFormSubmissionResult.html(msgError);
-            $commentForm.find('input, textarea, button, select').removeAttr('disabled');
+			},
+            success: function (data) {
+                $commentFormSubmissionResult.html(msgSuccess);
+                $commentForm.find('input, textarea, button, select').removeAttr('disabled');
+            },
+            error: function (err) {
+              console.log(err);
+              $commentFormSubmissionResult.html(msgError);
+              $commentForm.find('input, textarea, button, select').removeAttr('disabled');
+            }
 		});
         return false;
 	});

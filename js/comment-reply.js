@@ -12,7 +12,7 @@ var addComment = {
       $cancel.html('<i class="fa fa-times" aria-hidden="true"></i> Cancel reply to ' + parentAuthor);
       $cancel.show();
       $cancel.click(function() {
-          $replyTo.value = "";
+          $replyTo.val("");
           $cancel.hide();
       });
 
