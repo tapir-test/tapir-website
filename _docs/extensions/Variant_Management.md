@@ -183,15 +183,15 @@ class DataProvider1 {
         #[
             new DataProviderElement1.build[
                 id = 1
-                activateByFeatureExpression = allOf(Feature1.activated, Feature2.activated)
+                activateByFeatureExpression = Optional.of(allOf(Feature1.activated, Feature2.activated))
             ],
             new DataProviderElement1.build[
                 id = 2
-                activateByFeatureExpression = anyOf(Feature1.activated, Feature2.activated)
+                activateByFeatureExpression = Optional.of(anyOf(Feature1.activated, Feature2.activated))
             ],
             new DataProviderElement1.build[
                 id = 3
-                activateByFeatureExpression = not(Feature1.activated)
+                activateByFeatureExpression = Optional.of(not(Feature1.activated))
             ]
         ]
     }
