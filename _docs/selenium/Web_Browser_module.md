@@ -68,6 +68,11 @@ browser=chrome
 <td> </td>
 <td>URL of the driver server. Required if the connection mode is remote.</td>
 </tr>
+<tr class="odd">
+<td>chrome.headless.mode</td>
+<td>Default: false</td>
+<td>Specifies if Chrome should be started in headless mode (without visible UI)</td>
+</tr>
 </tbody>
 </table>
 
