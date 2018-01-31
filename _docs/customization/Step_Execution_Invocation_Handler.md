@@ -29,7 +29,7 @@ could provide an annotation:
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 annotation AssertEntryPage {
-    Class<? extends PageActiveAssertion> value
+    Class<? extends PageActiveCheck> value
 }
 ```
 
@@ -41,6 +41,7 @@ check:
 
 ``` xtend
 @Component
+@UseExtension(PageActiveCheckExtensions)
 class AssertEntryPageStepExecutionInvocationHandler implements StepExecutionInvocationHandler {
 
     @Autowired

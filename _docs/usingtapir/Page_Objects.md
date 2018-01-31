@@ -127,14 +127,13 @@ class GoogleTest {
 </div>
 
 
-##  Assert that a Page is Active
+##  Check that a Page is active
 
 Optionally, pages can implement
-[PageActiveAssertion](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/PageActiveAssertion.html).
-If so you have to implement *assertPageActive( )*. The page checks by
+[PageActiveCheck](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/PageActiveCheck.html).
+If so you have to implement *isPageActive( )*. The page checks by
 itself if it's active, e.g. by checking for a specific element or a
-headline text. If the page is not active, you have to throw an
-*AssertionError*.
+headline text. If the page is active, the method returns true, otherwise false.
 
 <div class="panel panel-info">
   <div class="panel-heading">
@@ -151,17 +150,15 @@ headline text. If the page is not active, you have to throw an
   </ul>
   </div>
 </div>
+### Explicit assertions
 
-### Explicit check
+#### Assertions using PageActiveCheckExtensions
 
-#### Check using PageActiveAssertionExtensions
-
-Test classes can check, if a page is active by using
-the [PageActiveAssertionExtensions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/extensions/PageActiveAssertionExtensions.html)as
-an extension.
+Test classes can assert that a page is active or inactive by using
+the [PageActiveCheckExtensions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/extensions/PageActiveCheckExtensions.html)as an extension.
 
 ``` xtend
-@UseExtension(PageActiveAssertionExtensions)
+@UseExtension(PageActiveCheckExtensions)
 class GoogleTest {
 
     @Autowired
@@ -169,23 +166,12 @@ class GoogleTest {
 
     @Step
     def void assertGooglePageActive() {
-        assertThat(googlePage.pageActive)
+        googlePage.assertPageActive
     }
 }
 ```
 
-#### Check by calling assertPageActive()
-
-Alternatively you can explicitly call the *assertPageActive( )* method:
-
-``` xtend
- @Step
-    def void assertGooglePageActive() {
-        googlePage.assertPageActive
-    }
-```
-
-#### Check by declaring *@AssertPostPage*
+#### Assertions by declaring *@AssertPostPage*
 
 Using
 the [*@*AssertPostPage](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/AssertPostPage.html)
@@ -193,10 +179,10 @@ annotation you can ensure that the given page is active after the step
 is completed:
 
 ``` xtend
- @Step
-    @AssertPostPage(GooglePage)
-    def void assertGooglePageActive() {
-    }
+@Step
+@AssertPostPage(GooglePage)
+  def void assertGooglePageActive() {
+}
 ```
 
 <div class="panel panel-info">
@@ -212,14 +198,12 @@ is completed:
   </div>
 </div>
 
-### Implicit check
+### Implicit assertions
 
 Explicitly checking for a page to be active is not needed mostly,
-because <i>tapir</i> does this check for you whenever you interact with the
+because <i>tapir</i> does this check for you whenever you interact with the element of your
 page (e.g. click a button or set a value into an input field). Before
-<i>tapir</i> interacts with an element on a page, it calls the page's
-*assertPageActive( )* method and only proceeds if no AssertionError is
-thrown.
+<i>tapir</i> interacts with an element on a page, it asserts that the expected page is active.
 
 ## Page Component
 
@@ -229,7 +213,7 @@ In order to facilitate modularity you can specify Page components
 are reusable parts of your pages. Several pages can reference or include
 the same page component. Page components do not "know" where they are
 embedded, in other words, they are contextless and can not implement
-*PageActiveAssertion*.
+*PageActiveCheck*.
 
 Comparison of a page and a page component:
 
@@ -259,7 +243,7 @@ Comparison of a page and a page component:
   </tr>
 
   <tr>
-    <td>PageActiveAssertion</td>
+    <td>PageActiveCheck</td>
     <td style="text-align: center;"><div class="fa fa-check"/></td>
     <td style="text-align: center;"><div class="fa fa-times"/></td>
   </tr>
