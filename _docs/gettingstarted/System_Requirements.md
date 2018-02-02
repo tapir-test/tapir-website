@@ -4,7 +4,6 @@ description: This chapter is about the minimum system requirements in order to m
 permalink: /docs/gettingstarted/system-requirements/
 ---
 <i>tapir</i> requires <a href="http://www.java.com/">Java 8</a> or above.
-Build support is provided for <a href="https://maven.apache.org/">Maven 3.3+</a>
-and documented for <a href="https://gradle.org/">Gradle 3.5+</a>.
-We recommend developing <i>tapir</i> test cases in <a href="https://eclipse.org/">Eclipse 4.6+</a> with <a href="http://www.eclipse.org/xtend/">Xtend 2.13</a>.
+Build support is provided and docuemnted for [Maven 3.3+](https://maven.apache.org/). [Gradle](https://gradle.org/) might work as well, but its usage is not documented and officially supported.
+We recommend developing <i>tapir</i> test cases with the latest [Eclipse](https://eclipse.org/) and [Xtend 2.13](http://www.eclipse.org/xtend/).
 Details on the installation of the IDE can be found in the following section.

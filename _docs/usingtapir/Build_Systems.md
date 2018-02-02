@@ -1,6 +1,6 @@
 ---
 title: Build Systems
-description: tapir supports the usage of Apache Maven and Gradle.
+description: tapir supports the usage of Apache Maven.
 permalink: /docs/usingtapir/build-systems/
 ---
 
@@ -22,8 +22,7 @@ consistent way.
   </div>
 </div>
 
-
-## Maven {#BuildSystems-Maven}
+We recommend the usage of Maven. Gradle might work as well, but is not officially supported.
 
 Maven users can use the *tapir-starter-module* to obtain sensible
 defaults. The project provides the following features:
@@ -36,7 +35,7 @@ defaults. The project provides the following features:
 -   A Dependency section containing some must-have dependencies
 -   The Maven filtering is changed to use `@..@` placeholders
 
-### Inheriting the Starter Parent
+## Inheriting the Starter Parent
 
 To configure your project to inherit from the
 tapir-*starter-module *simply set the *parent*:
@@ -79,7 +78,7 @@ another Selenium version you would add the following to your *pom.xml*.
   </div>
 </div>
 
-### Using <i>tapir</i> Without the Parent POM
+## Using <i>tapir</i> Without the Parent POM
 
 If you don’t want to use the tapir-*starter-module*, you can still keep
 the benefit of the dependency management (but not the plugin management)
@@ -103,12 +102,12 @@ by using a dependency with the import scope:
 That setup does not allow you to override individual dependencies using
 a property as explained above.
 
-### Additional Starters
+## Additional Starters
 
 There a more specialized starters provided by <i>tapir</i>. Those starters are
 explained below.
 
-#### tapir-starter-selenium-allure
+### tapir-starter-selenium-allure
 
 If you would like to use <i>tapir's</i> Selenium implementation and the Allure
 report capabilities you might want to
@@ -125,85 +124,3 @@ features:
     -   allure-maven-plugin
 -   Specifies compile-time and runtime dependencies which are needed for
     Selenium and Allure usage
-
-## Gradle
-
-Currently <i>tapir</i> does not provide a specific Gradle plugin. However, it
-is possible to use Gradle as a build tool for <i>tapir</i> test cases. We
-suggest to use the [Spring dependency management
-plugin](https://plugins.gradle.org/plugin/io.spring.dependency-management)
-for Gradle in order to import the dependency management from <i>tapir</i>. You
-need also a [plugin](https://github.com/xtext/xtext-gradle-plugin)to
-support the Xtend build and another
-[plugin](https://github.com/d10xa/gradle-allure-plugin)to create the
-Allure report. The following snippet shows you a simple *build.gradle*
-file which can be used to execute <i>tapir</i> test cases and generate an
-Allure report.
-
-``` groovy
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath "ru.d10xa:gradle-allure-plugin:0.5.5"
-    }
-}
-
-
-plugins {
-    id "org.xtext.xtend" version "1.0.17"
-    id "io.spring.dependency-management" version "1.0.2.RELEASE"
-}
-
-apply plugin: 'ru.d10xa.allure'
-
-dependencyManagement {
-    imports {
-        mavenBom 'de.bmiag.tapir:tapir-dependencies:2.0.0'
-    }
-}
-
-repositories {
-    jcenter()
-
-    maven {
-        url ...
-    }
-}
-
-dependencies {
-    compile 'org.eclipse.xtend:org.eclipse.xtend.lib'
-    compile 'de.bmiag.tapir:tapir-junit'
-    compile 'de.bmiag.tapir:tapir-selenium'
-    compile 'de.bmiag.tapir:tapir-html-basic-api'
-    compile 'de.bmiag.tapir:tapir-data'
-    compile 'org.springframework.boot:spring-boot-autoconfigure'
-
-    runtime 'de.bmiag.tapir:tapir-html-basic-impl'
-    runtime 'de.bmiag.tapir:tapir-allure'
-    runtime 'de.bmiag.tapir:tapir-selenium-htmlunit'
-    runtime 'de.bmiag.tapir:tapir-selenium-firefox'
-    runtime 'de.bmiag.tapir:tapir-selenium-chrome'
-    runtime 'de.bmiag.tapir:tapir-selenium-ie'
-}
-
-sourceSets {
-    main {
-        resources {
-            srcDirs = ['src/main/resources', sourceSets.main.xtendOutputDir]
-            exclude '**/*.java'
-        }
-    }
-
-    test {
-        resources {
-            srcDirs = ['src/test/resources', sourceSets.test.xtendOutputDir]
-            exclude '**/*.java'
-        }
-    }
-}
-```
-
-This build script allows to start the tests with the task *test* and
-builds the allure report with *allureReport*.

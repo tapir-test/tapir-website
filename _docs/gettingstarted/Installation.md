@@ -23,7 +23,7 @@ The Eclipse Installer is the easiest way to install and update your Eclipse Deve
 1. Confirm via Install and Start
 
 ### Alternative 2: Manual installation
-In case you don't want to use the Eclipse Installer you can install the plugins in your eclipse manually via the corresponding update-site. Beside JDT tapir needs Maven (M2Eclipse)/Gradle (Buildship) and [Xtend](https://www.eclipse.org/xtend/download.html) to work.
+In case you don't want to use the Eclipse Installer you can install the plugins in your eclipse manually via the corresponding update-site. Beside JDT tapir needs Maven (M2Eclipse) and [Xtend](https://www.eclipse.org/xtend/download.html) to work.
 
 ## Showcase
 If you just would like to get a first impression of <i>tapir</i> we highly recommend our show case which it hosted at [GitHub](https://github.com/tapir-test/tapir-showcase).
@@ -36,4 +36,4 @@ If you just would like to get a first impression of <i>tapir</i> we highly recom
 
 ## Build Systems
 
-*tapir* itself is integrated via dependencies in your test project. A more detailed documentation for Maven and Gradle can be found [here]({{ "/docs/usingtapir/build-systems/" | prepend: site.baseurl }}). *tapir* might work with further build tools and systems, but this is not specifically supported.
+*tapir* itself is integrated via dependencies in your test project. A more detailed documentation for Maven can be found [here]({{ "/docs/usingtapir/build-systems/" | prepend: site.baseurl }}). *tapir* might work with further build tools and systems, but this is not specifically supported.
