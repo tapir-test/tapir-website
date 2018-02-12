@@ -4,7 +4,7 @@ description: This chapter explains how to integrate your license in tapir.
 permalink: /docs/gettingstarted/license/
 ---
 
-The evaluation license is contained in the <i>tapir</i> libraries and has not
+The community license is contained in the <i>tapir</i> libraries and has not
 to be specified in any way. It is always used if no other license is
 found. If you have an own license, you can simply use it by adding it to
 your classpath root. For instance, add your *tapir.license* file into
