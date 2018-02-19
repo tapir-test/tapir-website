@@ -73,7 +73,7 @@ You can find an example in our show case.
   <div class="panel-body">
   <ul>
       <li>
-          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia-showcase/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend">WikipediaContentTableTest</a>
+          <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/WikipediaContentTableTest.xtend">WikipediaContentTableTest</a>
       </li>
   </ul>
   </div>

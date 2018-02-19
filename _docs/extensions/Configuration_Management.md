@@ -8,7 +8,7 @@ In the previous chapter about [variant management]({{"/docs/extensions/variant-m
 we showed you how to execute test code depending on specific
 [Features](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/Feature.html)
 and
-[Variants](https://psbm-mvnrepo-p.intranet.kiel.bmiag.de/nexus/content/sites/site/tapir/2.0.0-SNAPSHOT/apidocs/de/bmiag/tapir/variant/annotation/variant/Variant.html).
+[Variants](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/annotation/variant/Variant.html).
 You are now able to test the variants of your software. However, you
 might encounter situations in which you want to test your software also
 in different configurations. Let us assume that your software provides

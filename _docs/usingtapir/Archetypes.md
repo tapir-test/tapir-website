@@ -54,10 +54,8 @@ subfolder which is named like your artifactId.
 ## Predefined archetypes
 
 ### tapir-module-archetype {#Archetypes-tapir-module-archetype}
-
 This archetype can be used for arbitrary <i>tapir</i> modules. It provides a
-basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html) annotated class and inherits
-from tapir-starter-module which provides a couple of [presets]({{ "/docs/usingtapir/build-systems#BuildSystems-Maven" | prepend: site.baseurl }}).
+basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html) annotated class and inherits from tapir-starter-module which provides a couple of [presets]({{ "/docs/usingtapir/build-systems#inheriting-the-starter-parent" | prepend: site.baseurl }}).
 
 #### Properties
 

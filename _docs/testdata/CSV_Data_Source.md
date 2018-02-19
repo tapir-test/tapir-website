@@ -4,7 +4,7 @@ description: Data Source which can provide data from csv files.
 permalink: /docs/testdata/csv-data-source/
 ---
 
-The concept of [Data Sources]({{"/docs/testdata/data-source/" | prepend: site.baseurl}}) is used to provide a convenient way to inject data from csv files.
+The concept of [Data Sources]({{"/docs/testdata/external-data-format/#data-source" | prepend: site.baseurl}}) is used to provide a convenient way to inject data from csv files.
 
 ## Dependency
 

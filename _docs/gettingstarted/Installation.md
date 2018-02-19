@@ -29,7 +29,7 @@ In case you don't want to use the Eclipse Installer you can install the plugins 
 If you just would like to get a first impression of <i>tapir</i> we highly recommend our show case which it hosted at [GitHub](https://github.com/tapir-test/tapir-showcase).
 
 ### Eclipse
-1. Switch to the git perspective by choosing *Windows* \| *Preferences* \| *Open Perspective* \| *Other...* \| *Git*
+1. Switch to the git perspective by choosing *Windows* \| *Perspective* \| *Open Perspective* \| *Other...* \| *Git*
 1. Choose *Clone a Git repository* and paste [https://github.com/tapir-test/tapir-showcase.git](https://github.com/tapir-test/tapir-showcase.git) into the *URI* field
 1. Choose *Next >* \| *Next >* \| *Finish*
 1. In the *Git Repositories* view perform a right-click on *tapir-showcase* and choose *Import projects...* and confirm the dialog with *Finish*.

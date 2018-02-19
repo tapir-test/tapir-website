@@ -36,7 +36,7 @@ The screenshot below displays a sample test execution report.
 ## Maven
 
 Allure seamlessly integrates into Maven by providing a [dedicated
-plugin](http://wiki.qatools.ru/display/AL/Allure+Maven+Plugin). By
+plugin](https://github.com/allure-framework/allure-maven). By
 extending *tapir-starter-selenium-allure* you do not have to care about
 the configuration as this is done by the parent pom. In order to run the
 tests (using the [Maven failsafe plugin]({{"/docs/extensions/junit/" | prepend: site.baseurl}})), generate the report
