@@ -29,7 +29,7 @@ methods. What can he do with your component?
         <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/component/ContentElement.xtend">ContentElement</a>
     </li>
     <li>
-        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/component/WikipediaContentTable.xtend">WikipediaContentTable</a>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/main/java/de/bmiag/tapir/showcase/wikipedia/component/ContentTable.xtend">ContentTable</a>
     </li>
   </ul>
   <h4>Implementations</h4>
