@@ -27,7 +27,7 @@ For this purpose tapir provides the concept of Data Sources. They can retrieve t
 </dependency>
 ```
 
-You have to implement [DataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/DataSource.html) in order to private a data source. It's recommended not to implement the interface dieretly, but to extend abstract sub-classes like [AbstractDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/AbstractDataSource.html) or [AbstractCsvDataSource](https://www.javadoc.io/page/de/bmiag/tapir/datasource/csv/AbstractCsvDataSource.html).
+You have to implement [DataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/DataSource.html) in order to private a data source. It's recommended not to implement the interface dieretly, but to extend abstract sub-classes like [AbstractDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/AbstractDataSource.html) or [AbstractCsvDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/csv/AbstractCsvDataSource.html).
 
 In general data sources specify which data type they can provide and which input format (selector) they support. Based in this information the [DataProvider](#data-provider) selects a suitable DataSource and calls it's *getData* method in order to retrieve the data.
 

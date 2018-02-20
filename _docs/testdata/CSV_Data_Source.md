@@ -61,7 +61,7 @@ class User {
 
 *@CsvDataSource* is just a convenience annotation which triggeres a generation process. You could easily implement the DataSource by yourself in order to have more fine-grained control.
 
-It's recommended to extend [AbstractCsvDataSource](https://www.javadoc.io/page/de/bmiag/tapir/datasource/csv/AbstractCsvDataSource.html) for csv data sources.
+It's recommended to extend [AbstractCsvDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/csv/AbstractCsvDataSource.html) for csv data sources.
 
 So this is the data source for the User introcduced before:
 
