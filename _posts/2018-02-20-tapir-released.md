@@ -33,7 +33,7 @@ We tried to keep the entry barrier as low as possible by distributing our artifa
 
 ## Communication
 
-We would like to thank our company [b+m Informatik AG](http://www.bmiag.de) for giving us the free space in order to get the website and everything else which is needed for a public release into place. In the first run we decided not to have a forum for communication, so if you want to get in touch with us use our contact form or comment on this or any upcoming post.
+We would like to thank our company [b+m Informatik AG](http://www.bmiag.de) for giving us the free space in order to get the website and everything else which is needed for a public release into place. In the first run we opened a [Gitter room]({{ "https://gitter.im/" | append: site.gitterroom }}) for support. Alternatively, you can use our contact form or comment on this or any upcoming post.
 
 We plan to blog about *tapir* constantly by announcing new releases or putting specific features into spotlight.
 

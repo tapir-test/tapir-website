@@ -29,14 +29,21 @@
       </div>
       <div class="col-lg-5 h-100 text-center text-lg-right my-auto">
         <ul class="list-inline mb-0">
+            {% if site.gitterroom %}
+            <li class="list-inline-item mr-2">
+              <a href="https://gitter.im/{{ site.gitterroom }}">
+                <i class="fab fa-gitter fa-2x fa-fw"></i>
+              </a>
+            </li>
+          {% endif %}
           {% if site.twitter.username %}
-          <li class="list-inline-item mr-3">
+          <li class="list-inline-item mr-2">
             <a href="https://twitter.com/{{ site.twitter.username }}">
-              <i class="fa fa-twitter fa-2x fa-fw"></i>
+              <i class="fab fa-twitter fa-2x fa-fw"></i>
             </a>
           </li>
           {% endif %}
-          <li class="list-inline-item mr-3">
+          <li class="list-inline-item mr-2">
                 <a href="http://www.bmiag.de/">
                       <img src="{{"/img/bm-logo.png" | prepend: site.baseurl}}" alt="b+m Logo" style="height: 3em; top: -0.5em; position: relative;"></img>
                 </a>
