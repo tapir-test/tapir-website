@@ -36,7 +36,7 @@ layout: default
                     {% endfor %}
                 </div>
                 <div class="group2 col-sm-6 col-md-6">
-                    <i class="fa fa-comments-o" aria-hidden="true"></i> {% if site.data.comments[page.slug].size > 0 %}<a href="#comments">{{site.data.comments[page.slug].size}} Comments</a>{% else %}<a href="#leave-comment">No Comments</a>{% endif %}
+                    <i class="fas fa-comments" aria-hidden="true"></i> {% if site.data.comments[page.slug].size > 0 %}<a href="#comments">{{site.data.comments[page.slug].size}} Comments</a>{% else %}<a href="#leave-comment">No Comments</a>{% endif %}
                     &nbsp;&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i> {{ page.date | date: "%b %-d, %Y" }}
                 </div>
               </div>
