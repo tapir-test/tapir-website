@@ -166,6 +166,10 @@ code.prettyprint  {
     margin-top: 0px;
 }
 
+.has-feedback .form-control {
+    padding-right: 35px;
+}
+
 @media(min-width:1200px) {
     .grow:hover  {
         transform: scale(1.5);
