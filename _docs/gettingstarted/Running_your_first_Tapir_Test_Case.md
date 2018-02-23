@@ -7,7 +7,7 @@ permalink: /docs/gettingstarted/first-tapir-test-case/
 ## Setting up the Test Module
 
 The easiest way to get started with <i>tapir</i> is to use the corresponding
-Maven Archtetype. You can do this from the command-line or the Eclipse
+Maven Archetype. You can do this from the command-line or the Eclipse
 IDE:
 
 ### Commandline
