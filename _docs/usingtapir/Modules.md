@@ -68,6 +68,15 @@ class MyConfiguration {
 }
 ```
 
+You also need to include the bootstrap module as dependency.
+
+``` xml
+<dependency>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-bootstrap</artifactId>
+</dependency>
+```
+
 <div class="panel panel-info">
   <div class="panel-heading">
     <div class="panel-title"><i class="fa fa-external-link" aria-hidden="true"></i> Showcase</div>
@@ -112,6 +121,15 @@ might (directly or transitively) be used by a Bootstrap module. Like
 Bootstrap modules, Inclusion modules have a main configuration class as
 well which is annotated
 by [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/ModuleConfiguration.html).
+
+The *@ModuleConfiguration* is contained in the bootstrap module.
+
+``` xml
+<dependency>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-bootstrap</artifactId>
+</dependency>
+```
 
 <div class="panel panel-info">
   <div class="panel-heading">

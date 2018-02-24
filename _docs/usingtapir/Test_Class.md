@@ -3,6 +3,16 @@ title: Test Class
 description: This chapter explains the concept of test classes.
 permalink: /docs/usingtapir/test-class/
 ---
+
+In order to use test classes in your project, you need the tapir-execution module.
+
+``` xml
+<dependency>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-execution</artifactId>
+</dependency>
+```
+
 ## Structure
 
 A test class (annotated with

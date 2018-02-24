@@ -6,8 +6,18 @@ permalink: /docs/usingtapir/running-tapir-tests/
 
 ## JUnit
 
-tapir tests can be executed as JUnit tests. Therefore it's possible just to perform <i>Run As -&gt; JUnit Test</i> in Eclipse to start the test.
+<i>tapir</i> tests can be executed as JUnit tests. Therefore it's possible just to perform <i>Run As -&gt; JUnit Test</i> in Eclipse to start the test. For this to work you need to include the JUnit modules for <i>tapir</i>.
 
+``` xml
+<dependency>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-junit</artifactId>
+</dependency>
+<dependency>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-junit-execution</artifactId>
+</dependency>
+```
 ## Standalone
 
 <i>tapir</i> test suites can be started standalone. For every class annotated

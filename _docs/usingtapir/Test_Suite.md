@@ -4,6 +4,15 @@ description: This chapter explains the concept of test suites.
 permalink: /docs/usingtapir/test-suite/
 ---
 
+In order to use test suites in your project, you need the tapir-execution module.
+
+``` xml
+<dependency>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-execution</artifactId>
+</dependency>
+```
+
 Test suites compose other test suites or test classes. They are a
 structural utility. You define a test suite by annotating a class
 with [@TestSuite](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/suite/TestSuite.html).
