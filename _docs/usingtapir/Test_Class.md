@@ -45,7 +45,6 @@ about page objects in the [dedicated chapter]({{ "/docs/usingtapir/page-objects/
     <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
-  The showcase bootstrap configuration is
   You can inject any bean by using <i>@Autowired</i>. This capability is not
   limited to page objects.
   </div>
