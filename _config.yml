@@ -3,7 +3,7 @@ shorttitle: tapir
 title: tapir - Stable, maintainable UI regression tests
 email: tapir@bmiag.de
 description: >
-  tapir - Test API against Regression
+  Test API against Regression
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://www.tapir-test.io # the base hostname & protocol for your site
