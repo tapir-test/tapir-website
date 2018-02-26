@@ -13,7 +13,7 @@ IDE:
 ### Commandline
 
 ``` text
-mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId=tapir-bootstrap-archetype -DarchetypeVersion=2.0.0
+mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId=tapir-bootstrap-archetype -DarchetypeVersion=3.0.0
 ```
 
 Maven will ask you for the following properties:
