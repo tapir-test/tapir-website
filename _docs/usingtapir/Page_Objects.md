@@ -50,12 +50,12 @@ In <i>tapir</i>'s Selenium integration you need these dependencies:
     <artifactId>tapir-selenium</artifactId>
 </dependency>
 <dependency>
-			<groupId>de.bmiag.tapir</groupId>
-			<artifactId>tapir-html-basic-api</artifactId>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-html-basic-api</artifactId>
 </dependency>
 <dependency>
-			<groupId>de.bmiag.tapir</groupId>
-			<artifactId>tapir-html-basic-impl</artifactId>
+    <groupId>de.bmiag.tapir</groupId>
+    <artifactId>tapir-html-basic-impl</artifactId>
 </dependency>
 ```
 
