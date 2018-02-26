@@ -4,10 +4,10 @@ description: Data Sources act as bridge between tapir and arbitrary data formats
 permalink: /docs/testdata/external-data-format/
 ---
 
-<i>tapir's</i> [data injection]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}) capabilities highly encourage you to seperate your test code und data. In general the [@Parameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
+<i>tapir's</i> [data injection]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}) capabilities highly encourage you to separate your test code and data. In general the [@Parameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) and
 [@IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html) annotations do not make any assumptions where you get the data from. You can build the data objects in Java/Xtend or retrieve them from a (external) resource like a csv or Excel file.
 
-For programmers building the objects in Xtend is the most trivial and straightforward way, especially in conjuntion with <i>tapir's</i> [immutable data types]({{"/docs/extensions/immutables/" | prepend: site.baseurl}})). This is already covered in the [data injection chapter]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}).
+For programmers building the objects in Xtend is the most trivial and straightforward way, especially in conjunction with <i>tapir's</i> [immutable data types]({{"/docs/extensions/immutables/" | prepend: site.baseurl}})). This is already covered in the [data injection chapter]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}).
 
 Building data in a programming language has two major drawbacks:
 1. You need to have developer skills in order to define the data
@@ -15,7 +15,7 @@ Building data in a programming language has two major drawbacks:
 
 Therefore it's common practice to use tools like Excel to configure the test data. In order to use this data in your test tool you need to have an adapter which translates the information from your favorite data description format to one your test framework understands.
 
-For this purpose tapir provides the concept of Data Sources. They can retrieve the test data from any input format.
+For this purpose <i>tapir</i> provides the concept of Data Sources. They can retrieve the test data from any input format.
 
 ## Data Source
 ### Dependency
@@ -27,9 +27,9 @@ For this purpose tapir provides the concept of Data Sources. They can retrieve t
 </dependency>
 ```
 
-You have to implement [DataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/DataSource.html) in order to private a data source. It's recommended not to implement the interface dieretly, but to extend abstract sub-classes like [AbstractDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/AbstractDataSource.html) or [AbstractCsvDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/csv/AbstractCsvDataSource.html).
+You have to implement [DataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/DataSource.html) in order to provide a data source. It is not recommended to implement the interface directly, but to extend abstract sub-classes like [AbstractDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/AbstractDataSource.html) or [AbstractCsvDataSource](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/csv/AbstractCsvDataSource.html).
 
-In general data sources specify which data type they can provide and which input format (selector) they support. Based in this information the [DataProvider](#data-provider) selects a suitable DataSource and calls it's *getData* method in order to retrieve the data.
+In general data sources specify which data type they can provide and which input format (selector) they support. Based in this information the [DataProvider](#data-provider) selects a suitable DataSource and calls its *getData* method in order to retrieve the data.
 
 ## Data Provider
 The [DataProvider](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/DataProvider.html) can be queried to retrieve some data in your tests. The *DataProvider* consults the registeres data sources, picks up one that can handle the request and returns the result.
@@ -44,7 +44,7 @@ You just have to inject the *DataProvider* and call its *getData* method by pass
     <artifactId>tapir-datasource-resource</artifactId>
 </dependency>
 ```
-For retrieving resource data in a convenient way, tapir offers the [@Resource annotation](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de\bmiag\tapir\datasource\resource\annotations\Resource.html). You can add this annotation to any field or step parameter wich is annotated by [@Parameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) or
+For retrieving resource data in a convenient way, tapir offers the [@Resource annotation](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de\bmiag\tapir\datasource\resource\annotations\Resource.html). You can add this annotation to any field or step parameter which is annotated by [@Parameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/Parameter.html) or
 [@IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html). By using the *Resource* annotation you do not have to implement the provider method by yourself, but it's completely generated by <i>tapir</i>.
 
 You can find an example in our show case.
@@ -62,7 +62,7 @@ You can find an example in our show case.
   </div>
 </div>
 
-This is just a convenience annotaton. Of course you can still implement the provider method by yourself. If you would like to access classpath resources inject and use the [ResouceLoader](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/io/ResourceLoader.html).
+This is just a convenience annotation. Of course you can still implement the provider method by yourself. If you would like to access classpath resources inject and use the [ResouceLoader](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/io/ResourceLoader.html).
 
 You can find an example in our show case.
 

@@ -119,7 +119,7 @@ This allows also to reuse the same data through multiple tests. You can
 use the attribute *providerClass* of the *Parameter* annotation to
 specify another provider class. If you use such external data provider
 classes, they must be available in the Spring context. It is usually
-sufficient to annoatate them with Spring's *Component* annotation.
+sufficient to annotate them with Spring's *Component* annotation.
 
 ``` xtend
 @Component
