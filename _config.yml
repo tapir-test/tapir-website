@@ -1,5 +1,6 @@
 # Site settings
-title: tapir
+shorttitle: tapir
+title: tapir - Stable, maintainable UI regression tests
 email: tapir@bmiag.de
 description: >
   tapir - Test API against Regression
