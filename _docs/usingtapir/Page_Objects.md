@@ -49,6 +49,14 @@ In <i>tapir</i>'s Selenium integration you need these dependencies:
     <groupId>de.bmiag.tapir</groupId>
     <artifactId>tapir-selenium</artifactId>
 </dependency>
+<dependency>
+			<groupId>de.bmiag.tapir</groupId>
+			<artifactId>tapir-html-basic-api</artifactId>
+</dependency>
+<dependency>
+			<groupId>de.bmiag.tapir</groupId>
+			<artifactId>tapir-html-basic-impl</artifactId>
+</dependency>
 ```
 
 A Page Object for the Google website looks like this:
