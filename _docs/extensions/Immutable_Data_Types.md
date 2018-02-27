@@ -56,7 +56,7 @@ class LoginUser {
         <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/ContentElementExpectation.xtend">ContentElementExpectation</a>
     </li>
     <li>
-        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectaton.xtend">WikipediaContentTableExpectaton</a>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectation.xtend">WikipediaContentTableExpectation</a>
     </li>
   </ul>
   </div>
@@ -478,7 +478,7 @@ otherwise it falls back to the object's *toString()* method.
         <a href="https://github.com/tapir-test/tapir-showcase/blob/master/google/google-systemtest/src/test/java/de/bmiag/tapir/showcase/google/systemtest/data/SearchTermExpectation.xtend">SearchTermExpectation</a>
     </li>
     <li>
-        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectaton.xtend">WikipediaContentTableExpectaton</a>
+        <a href="https://github.com/tapir-test/tapir-showcase/blob/master/wikipedia/src/test/java/de/bmiag/tapir/showcase/wikipedia/test/data/WikipediaContentTableExpectation.xtend">WikipediaContentTableExpectation</a>
     </li>
   </ul>
   </div>
