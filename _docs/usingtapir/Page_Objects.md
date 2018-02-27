@@ -316,3 +316,69 @@ class Page1 {
     PageComponent1 pageComponent1
 }
 ```
+##  Tables
+
+Tables are special components, as they are very heterogeneous throughout different applications. Fortunately *tapir* provides a base implementation which allows you already to work with most default tables. The main difference between tables and the other basic HTML elements is that tables are typed with a generic - the row type.
+
+ ``` xtend
+ @SeleniumElement(xpath="//table")
+ Table<ProductTableRow> products
+```
+
+For technical reasons, the row type has to be an interface for which you can define multiple (but at least one) implementation.
+
+ ``` xtend
+ interface ProductTableRow extends TableRow {
+
+   def Label getProductID()
+
+   def Label getName()
+
+}
+ ```
+
+In most cases you should let your implementation of the row extend the base class
+[DefaultSeleniumTableRow](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/htmlbasic/impl/DefaultSeleniumTableRow.html). This class provides a helpful method to define the columns of a single row: *getTapirElementFromColumn*. If your table row consists of columns, each containing only a single HTML component, you just have to specify the column number and the type of the component.
+
+ ``` xtend
+@Component
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+class ProductTableRowImpl extends DefaultSeleniumTableRow implements ProductTableRow {
+
+  override getProductID() {
+    getTapirElementFromColumn(0, Label)
+  }
+
+  override getName() {
+    getTapirElementFromColumn(1, Label)
+  }
+
+}
+ ```
+
+ Note that your row implementation has to have the prototype scope, as the row implementation is created for each row of your table. For simple tables you are already finished. But let us assume that your column is a little bit more complex and contains two buttons. In this case you have to query the web element of the row directly and have to use the [SeleniumElementFactory](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/element/SeleniumElementFactory.html) to create instances of the components.
+
+ ``` xtend
+ @Autowired
+ SeleniumElementFactory seleniumElementFactory
+
+ override getEdit() {
+   val element = webElement.findElement(By.linkText('Edit'))
+   seleniumElementFactory.getSeleniumElement(element, Button)
+ }
+
+ override getDelete() {
+   val element = webElement.findElement(By.linkText('Delete'))
+   seleniumElementFactory.getSeleniumElement(element, Button)
+ }
+  ```
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    </div>
+    <div class="panel-body">
+    The <i>SeleniumElementFactory</i> provides multiple methods to create components. Some of them work with instances of
+    <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/element/WebElementProvider.html">WebElementProvider</a>. Together with <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/element/WebElementQuery.html">WebElementQuery</a>, you can define the query rather than just querying the web element yourself. This allows <i>tapir</i> to query the web elements in certain situations again and ensures in return a more stable test execution.
+    </div>
+  </div>
