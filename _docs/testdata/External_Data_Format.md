@@ -62,7 +62,7 @@ You can find an example in our show case.
   </div>
 </div>
 
-This is just a convenience annotation. Of course you can still implement the provider method by yourself. If you would like to access classpath resources inject and use the [ResouceLoader](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/io/ResourceLoader.html).
+This is just a convenience annotation. Of course you can still implement the provider method by yourself. If you would like to access classpath resources inject and use the [ResourceLoader](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/io/ResourceLoader.html).
 
 You can find an example in our show case.
 
