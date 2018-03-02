@@ -17,7 +17,7 @@ From time to time you need to establish a HTTP connection from your tapir tests.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   The configuration only affects connections established by the tapir Java Virtual Machine. The web browsers (except HtmlUnit) have their own proxy configurations.

@@ -13,7 +13,7 @@ annotation processor and override <i>tapir's</i> behaviour.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   For this chapter we assume that you are already familiar with active
@@ -59,7 +59,7 @@ The above example shows the dynamic active *Parameter* annotation from the [data
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
     If you decide to overwrite tapir's behaviour, we suggest that you inherit from the default processor of the annotation in question.

@@ -50,7 +50,7 @@ The following logging frameworks are bridged out-of-the-box:
 -   [Log4j 1.2](https://logging.apache.org/log4j/1.2/)
   <div class="panel panel-warning">
     <div class="panel-heading">
-      <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+      <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
     </div>
     <div class="panel-body">
     Due to

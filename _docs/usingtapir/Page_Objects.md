@@ -29,7 +29,7 @@ to deal with technical issues.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   There is a lot of information about Page Objects around the web. One of
@@ -106,7 +106,7 @@ class GoogleTest {
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   Please notice the syntactic sugar Xtend provides. For more information
@@ -375,7 +375,7 @@ class ProductTableRowImpl extends DefaultSeleniumTableRow implements ProductTabl
 
   <div class="panel panel-info">
     <div class="panel-heading">
-      <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+      <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
     </div>
     <div class="panel-body">
     The <i>SeleniumElementFactory</i> provides multiple methods to create components. Some of them work with instances of

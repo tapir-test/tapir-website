@@ -49,7 +49,7 @@ Eclipse provides a project wizard to create Maven projects:
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   For additional information on archetypes, consult the <a href="{{ "/docs/usingtapir/archetypes/" | prepend: site.baseurl }}">dedicated
@@ -68,7 +68,7 @@ test class is called GoogleTest and contains three test steps:
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   The tests are executed by using the headless

@@ -90,7 +90,7 @@ your own listener to handle attachments.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   Some listeners might implement both <i>ExecutionListener</i> <strong>and</strong>

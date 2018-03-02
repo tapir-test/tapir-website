@@ -182,7 +182,7 @@ following conditions match:
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   This implementation is Vaadin-specific. A Vaadin update might necessitate an implementation adjustment, but always keep in mind that you have to adjust one single point. All of your test code is not affected!
