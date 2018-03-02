@@ -80,9 +80,9 @@ Finally we have to map an instance of *String* to an instance of *TestData*.
 ```
 
 ## Data Provider
-The [DataProvider](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/DataProvider.html) can be queried to retrieve some data in your tests. The *DataProvider* consults the registeres data sources, picks up one that can handle the request and returns the result.
+The [DataProvider](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/datasource/api/DataProvider.html) can be queried to retrieve some data in your tests. The *DataProvider* consults the registers data sources, picks up one that can handle the request and returns the result.
 
-You just have to inject the *DataProvider* and call its *getData* method by passing the selector type and a selector (for csv files it is a [Resource](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/io/Resource.html)).
+You just have to inject the *DataProvider* and call its *getData* method by passing the expected type and a selector (for csv files it is a [Resource](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/io/Resource.html)).
 
 As our example datasource is a bean in the Spring context, we can now use the *DataProvider* to read our text files. The *DataProvider* will use the requested selector type and the concrete selector to find a suitable datasource.
 
