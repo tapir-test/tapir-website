@@ -143,6 +143,11 @@ browser=firefox
 <td>URL of the driver server. Required if the connection mode is remote.</td>
 </tr>
 <tr class="odd">
+<td>firefox.headless.mode</td>
+<td>Default: false</td>
+<td>Specifies if Firefox should be started in headless mode (without visible UI)</td>
+</tr>
+<tr class="even">
 <td>firefox.connection.timeout</td>
 <td>Default: 60</td>
 <td>Connection timeout to the Firefox browser in seconds.</td>
