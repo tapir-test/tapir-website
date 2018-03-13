@@ -1,0 +1,154 @@
+.comparison {
+    text-align: center;
+}
+
+.comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    border-bottom: 1px solid #CCC;
+}
+
+.comparison td, .comparison th {
+    border-right: 1px solid #CCC;
+    empty-cells: show;
+    padding: 10px;
+}
+
+.compare-heading {
+    font-size: $font-size-large;
+    font-weight: bold !important;
+    border-bottom: 0 !important;
+    padding-top: 10px !important;
+}
+
+.comparison tbody tr:nth-child(odd) {
+    display: none;
+}
+
+.comparison .compare-row {
+    background: $gray-lighter;
+}
+
+
+.comparison th {
+
+    text-align : center;
+    font-weight: normal;
+    padding: 0;
+}
+
+.comparison tr:last-of-type th {
+    font-weight: normal;
+    padding: 0;
+}
+
+.comparison tbody tr:nth-child(2) td {
+    border-top: 1px solid #CCC;
+}
+
+.comparison tr td:first-child {
+    text-align: left;
+    border-left: 1px solid #CCC;
+    font-weight: bold;
+}
+
+.comparison .qbse, .comparison .qbo, .comparison .tl {
+    color: #FFF;
+    padding: 10px;
+    font-size: $font-size-large;
+    border-right: 1px solid #CCC;
+    border-bottom: 0;
+}
+
+.comparison .tl2 {
+    border-right: 0;
+}
+
+.comparison .qbse {
+    background: $brand-primary;
+    border-top-left-radius: 3px;
+    border-left: 0px;
+}
+
+.comparison .qbo {
+    background: $brand-success;
+    border-top-right-radius: 3px;
+    border-right: 0px;
+}
+
+.comparison .price-info {
+    padding-bottom: 15px;
+}
+
+
+.comparison .price-now, .comparison .price-now span {
+    color: $component-active-bg;
+}
+
+.comparison .price-now span {
+    font-size: $font-size-large;
+}
+
+
+
+.comparison .license-request-button-row th a {
+    margin: 5px 0 10px 0;
+}
+
+@media(max-width:1200px) {
+    .comparison .license-request-button-row {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .comparison td:first-child, .comparison th:first-child {
+        display: none;
+    }
+    .comparison tbody tr:nth-child(odd) {
+        display: table-row;
+        background: $gray-lighter;
+    }
+    .comparison .row {
+        background: #FFF;
+    }
+    .comparison .compare-row {
+        background: #FFF;
+    }
+
+    .comparison td, .comparison th {
+        border: 1px solid #CCC;
+    }
+    .price-info {
+        border-top: 0 !important;
+    }
+}
+
+@media (max-width: 639px) {
+
+
+    .comparison .price-buy {
+        padding: 5px 10px;
+    }
+    .comparison td, .comparison th {
+        padding: 10px 5px;
+    }
+    .comparison .hide-mobile {
+        display: none;
+    }
+    .comparison .price-now span {
+        font-size: $font-size-small;
+    }
+    .comparison .qbse, .comparison .qbo {
+        font-size: $font-size-small;
+        padding: 10px 5px;
+    }
+    .comparison .price-buy {
+        margin-top: 10px;
+    }
+    .compare-heading {
+        font-size: $font-size-small;
+    }
+}
