@@ -37,7 +37,7 @@ a wizard to creates modules based on Maven archetypes.
 ### Command line
 
 ``` text
-> mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId={desired-tapir-archetype} -DarchetypeVersion=3.0.0
+> mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId={desired-tapir-archetype} -DarchetypeVersion={{ site.latesttapirversion }}
 ```
 
 Maven asks you to enter some Maven properties:

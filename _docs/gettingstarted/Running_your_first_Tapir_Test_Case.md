@@ -36,7 +36,7 @@ Eclipse provides a project wizard to create Maven projects:
     <i>Next</i>
 -   Proceed to the location selection by clicking *Next* again
 -   Select the Archtype with GroupId *de.bmiag.tapir* and ArtifactId
-    *tapir-test-archetype*, click *Next*
+    *tapir-bootstrap-archetype*, click *Next*
 -   Eclipse asks you to specify the following properties:
     -   groupId: The GroupId of your test project
     -   artifactId: The ArtifactId of your test project

@@ -45,7 +45,7 @@ tapir-*starter-module *simply set the *parent*:
 <parent>
     <groupId>de.bmiag.tapir</groupId>
     <artifactId>tapir-starter-module</artifactId>
-    <version>3.0.0</version>
+    <version>{{ site.latesttapirversion }}</version>
 </parent>
 ```
 
@@ -91,7 +91,7 @@ by using a dependency with the import scope:
             <!-- Import dependency management from tapir -->
             <groupId>de.bmiag.tapir</groupId>
             <artifactId>tapir-dependencies</artifactId>
-            <version>3.0.0</version>
+            <version>{{ site.latesttapirversion }}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
