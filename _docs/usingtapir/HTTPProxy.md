@@ -7,8 +7,9 @@ permalink: /docs/usingtapir/http-proxy/
 From time to time you need to establish a HTTP connection from your tapir tests. If you have to use a HTTP proxy, tapir provides some properties to configure the connection.
 
 ## Properties
+
 | Property | Info | Description |
-|--------------------------|---------------|--------------------------------------------------------|
+|--- | --- | --- |
 | http.proxy.host |  | Specifies the proxy host |
 | http.proxy.port | Default: 3128 | Specifies the proxy port |
 | http.proxy.user | Optional | Specifies the proxy user for authentification |
