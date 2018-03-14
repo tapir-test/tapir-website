@@ -23,7 +23,7 @@ API.
 ## Eclipse
 
 You can start your <i>tapir</i> tests directly from Eclipse by rightclicking
-the test class and selecting *Run as...* *\| JUnit Test*.
+the test class and selecting *Run As* | *JUnit Test*.
 
 ![]({{"/img/docs/46497836/46497856.png" | prepend: site.baseurl}}){:height="500px" width="600px"}
 
