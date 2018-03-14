@@ -45,6 +45,10 @@
   - extensions/configuration-management
   - extensions/conditional
 
+- title: Third Party Extensions
+  docs:
+  - thirdpartyextensions/rapit
+
 - title: Customization
   docs:
   - customization/executionfilter
