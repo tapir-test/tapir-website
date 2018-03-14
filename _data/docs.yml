@@ -55,3 +55,7 @@
   - customization/htmlcomponents
   - customization/ui-technology
   - customization/dynamic-active-annotations
+
+- title: Troubleshooting
+  docs:
+  - troubleshooting/common-errors-and-exceptions
