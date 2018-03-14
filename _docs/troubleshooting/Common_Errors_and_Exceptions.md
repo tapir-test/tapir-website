@@ -1,6 +1,6 @@
 ---
 title: Common Errors and Exceptions
-description: This chapter shws some common errors and exceptions and how to solve them.
+description: This chapter shows some common errors and exceptions and how to solve them.
 permalink: /docs/troubleshooting/common-errors-and-exceptions/
 ---
 
