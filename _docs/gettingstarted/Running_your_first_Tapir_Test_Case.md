@@ -13,7 +13,7 @@ IDE:
 ### Commandline
 
 ``` text
-mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId=tapir-bootstrap-archetype -DarchetypeVersion={{site.latesttapirversion}}}
+mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId=tapir-bootstrap-archetype -DarchetypeVersion={{site.latesttapirversion}}
 ```
 
 Maven will ask you for the following properties:
@@ -79,7 +79,7 @@ Create a new Xtend class by choosing *File* | *New* | *Xtend Class* with these p
 This is the implementation of our first Page Object. We mark the class as a Page Object by using the *@Page* annotation. Each UI element is annotated by *@SeleniumElement*. The UI element is bound to the HTML Page by passing a locator like *id ="searchInput"*.
 
 ``` xtend
-package de.bmiag.firsttapirtest.firsttapirtest.page
+package de.bmiag..firsttapirtest.page
 
 import de.bmiag.tapir.page.annotation.Page
 import de.bmiag.tapir.htmlbasic.api.TextField
@@ -108,13 +108,13 @@ Our test class exactly reflects the workflow we described above. The test class 
 Additonally, we use the *BrowerInteractionService* which is shipped with tapir in order to have the *openURL* and *title* method. Note that *BrowerInteractionService* is injected as an extension. This is an Xtend feature which means that you can call visible methods of the *BrowerInteractionService* directly from your test class without need of referencing the field. This syntactic sugar makes your test code much more readable.
 
 ``` xtend
-package de.bmiag.firsttapirtest.firsttapirtest.test
+package de.bmiag..firsttapirtest.test
 
 import org.springframework.beans.factory.annotation.Autowired
 import de.bmiag.tapir.selenium.service.BrowserInteractionService
 import de.bmiag.tapir.execution.annotations.step.Step
 import de.bmiag.tapir.execution.annotations.testclass.TestClass
-import de.bmiag.firsttapirtest.firsttapirtest.page.WikipediaPage
+import de.bmiag..firsttapirtest.page.WikipediaPage
 
 @TestClass
 class WikipediaSearchTest {
