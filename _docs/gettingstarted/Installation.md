@@ -22,6 +22,15 @@ The Eclipse Installer is the easiest way to install and update your Eclipse Deve
 1. Drag and drop this button into the Eclipse Installer header: <a href="https://raw.githubusercontent.com/tapir-test/tapir-oomph-setup/master/tapir-configuration.setup" class="btn btn-primary btn-sm">Install <i class="fa fa-download" aria-hidden="true"></i></a>
 1. Confirm via Install and Start
 
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
+  </div>
+  <div class="panel-body">
+  On some systems the drag and drop approach from the website doesn't work with the Eclipse Installer. In this case it can help to download the setup file from the button above to your file system first. Then drag and drop the file into the Eclipse Installer header.
+  </div>
+</div>
+
 ### Alternative 2: Manual installation
 In case you don't want to use the Eclipse Installer you can install the plugins in your eclipse manually via the corresponding update-site. Beside JDT tapir needs Maven (M2Eclipse) and [Xtend](https://www.eclipse.org/xtend/download.html) (at least 2.13) to work.
 
