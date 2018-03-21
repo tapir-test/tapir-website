@@ -100,6 +100,31 @@ val consultantUser = adminUser.copy [
 ]
 ```
 
+Collection attributes (they are detailed further below) can not be replaced in
+the copy. Instead the elements are added to the collection from the template object.
+Take a look at the following example in which the *StringHolder* has a list of
+strings. *stringHolderA* is initialized with a list consisting of *oldValue*
+and *stringHolderB* with a list consisting of *newValue*.
+
+``` xtend
+@Immutable
+class StringHolder {
+    List<String> listOfStrings
+}
+
+val stringHolderA = StringHolder.build [
+  listOfStrings = #['oldValue']
+]
+
+val stringHolderB = stringHolderA.copy [
+  listOfStrings = #['newValue']
+]
+```
+
+The value of *stringHolderB's* *listOfStrings* is a list consisting of
+*oldValue* and *newValue* though, as *newValue* is only added to the list of
+*stringHolderA*.
+
 ## Optional and Mandatory Fields
 
 Attributes of an immutable class are by default mandatory. If you try
