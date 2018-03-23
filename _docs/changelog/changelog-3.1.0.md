@@ -17,3 +17,8 @@ permalink: /docs/changelog/changelog-3.1.0/
 * It is no longer necessary to specify user name and password for HTTP proxies if the proxy does not expect an authentication.
 * Issue tags are now included in the execution plan.
 * The Allure listener now includes the parameters into the title of a test class. This makes sure that Allure does no longer aggregate test classes with different parameters into a single run.
+
+### Deprecations
+Deprecated API will be removed with tapir 4.0.0.
+* *de.bmiag.tapir.util.action.Action* are marked as deprecated and should be replaced by *de.bmiag.tapir.execution.annotations.action.Action*
+* *de.bmiag.tapir.util.extensions.TapirAssertions* and all its methods are marked as deprecated. Please use the AssertJ based assertions like  *de.bmiag.tapir.coreassertion.CoreAssertions*.
