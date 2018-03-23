@@ -20,5 +20,6 @@ permalink: /docs/changelog/changelog-3.1.0/
 
 ### Deprecations
 Deprecated API will be removed with tapir 4.0.0.
-* *de.bmiag.tapir.util.action.Action* are marked as deprecated and should be replaced by *de.bmiag.tapir.execution.annotations.action.Action*
+* *de.bmiag.tapir.util.action.Action* is marked as deprecated and should be replaced by *de.bmiag.tapir.execution.annotations.action.Action*
 * *de.bmiag.tapir.util.extensions.TapirAssertions* and all its methods are marked as deprecated. Please use the AssertJ based assertions like  *de.bmiag.tapir.coreassertion.CoreAssertions*.
+* *de.bmiag.tapir.selenium.element.InvalidTapirElementStateException* is marked as deprecated, instead throw an *java.lang.AssertionError*.
