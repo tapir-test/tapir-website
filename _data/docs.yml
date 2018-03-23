@@ -18,6 +18,7 @@
   - usingtapir/page-objects
   - usingtapir/code-structure
   - usingtapir/running-tapir-tests
+  - usingtapir/assertions
   - usingtapir/http-proxy
   - usingtapir/logging
   - usingtapir/concurrency
