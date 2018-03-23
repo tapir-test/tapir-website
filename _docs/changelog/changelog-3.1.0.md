@@ -7,9 +7,9 @@ permalink: /docs/changelog/changelog-3.1.0/
 
 ### Enhancements
 * Fields in page object can now be annotated with @Private. This will avoid the generation of a *public* getter.
-* The CsvDataSource can now be used with optional fields in the data container. Other generic types are still not supported, but are now shown as error.
-* *tapir* supports now the headless modes of Firefox and Chrome.
-* Assertions are now backed up by *AssertJ*. This enhancement comes with a completely new API for using assertions in your test cases.
+* The CsvDataSource can now be used with optional fields in the data container. Other generic types are still not supported, but are now marked as error.
+* *tapir* now supports the headless mode of Firefox.
+* Assertions are now backed up by *AssertJ*. This enhancement comes with a completely new API for using assertions in your test cases. For further information consult the [Assertions chapter]({{"/docs/usingtapir/assertions/" | prepend: site.baseurl}}).
 * Various performance improvements.
 
 ### Bugfixes
