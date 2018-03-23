@@ -17,7 +17,7 @@ In a [previous chapter]({{"/docs/customization/executionlistener/" | prepend: s
 
 Let's first take a look at how to create and send attachments. The
 following snippet is a simplified excerpt from the
-[*ScreenshotService*](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html)-
+[*ScreenshotService*](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/service/ScreenshotService.html) -
 a service responsible for making screenshots with the current web
 driver.
 
@@ -95,7 +95,7 @@ your own listener to handle attachments.
   <div class="panel-body">
   Some listeners might implement both <i>ExecutionListener</i> <strong>and</strong>
   <i>AttachmentListener<i>. This is what the
-  <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/junit/allure/listener/AllureExecutionListener.html">AllureExecutionListener</a>does.
+  <a href="https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/allure/listener/AllureExecutionListener.html">AllureExecutionListener</a> does.
   It stores all attachments (screenshots, HTML content and so on), but
   sends them to the Allure component not until the test step finished.
   This makes sure that the Allure report assigns all the attachments to

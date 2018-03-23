@@ -48,10 +48,10 @@ class GooglePage {
 
 The Selenium module provides a couple of Selenium-specific services.
 
--   [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html):  Reads
+-   [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/service/HtmlPageCaptureService.html):  Reads
     the currently displayed browser content as HTML code and provides it
     as an attachment
--   [ScreenshotService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html):
+-   [ScreenshotService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/service/ScreenshotService.html):
     Captures a screenshot from the currently displayed browser
     window and provides it as an attachment
 -   [ImplicitWaitService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ImplicitWaitService.html):
@@ -61,13 +61,13 @@ The Selenium module provides a couple of Selenium-specific services.
 You can use these services in your client code. Additionally <i>tapir</i>
 provides some execution listeners which make use of these services:
 
--   [HtmlPageCaptureListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/HtmlPageCaptureListener.html):
+-   [HtmlPageCaptureListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/listener/HtmlPageCaptureListener.html):
     Calls
-    the [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/HtmlPageCaptureService.html) whenever
+    the [HtmlPageCaptureService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/service/HtmlPageCaptureService.html) whenever
     a step fails
--   [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/ScreenshotListener.html):
+-   [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/listener/ScreenshotListener.html):
     Calls the
-    [ScreenshotService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html) whenever
+    [ScreenshotService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/service/ScreenshotService.html) whenever
     a step fails
 
 For more information on execution listeners, consult the [corresponding chapter]({{"/docs/customization/executionlistener/" | prepend: site.baseurl}}).

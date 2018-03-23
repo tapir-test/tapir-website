@@ -29,8 +29,8 @@ Imagine you want to change this identifier to
 
     {TestClassName}-{StepName}-Failure
 
-The name is built by [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/listener/ScreenshotListener.html)
-whose bean name is its fully qualified name *de.bmiag.tapir.selenium.listener.ScreenshotListener*.
+The name is built by [ScreenshotListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/listener/ScreenshotListener.html)
+whose bean name is its fully qualified name *de.bmiag.tapir.seleniumexecution.listener.ScreenshotListenerr*.
 
 The [FilesystemAttachmentListener](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/attachment/FilesystemAttachmentListener.html) captures the attachment, stores it on the disk and outputs the file path:
 
