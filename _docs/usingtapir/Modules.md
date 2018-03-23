@@ -21,7 +21,7 @@ class which is annotated by @BootstrapConfiguration.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   If you are not familiar with Spring so far, consult the chapter <a href="{{ "/docs/usingtapir/how-does-it-work/" | prepend: site.baseurl }}">How
@@ -31,7 +31,7 @@ class which is annotated by @BootstrapConfiguration.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   Take care of the

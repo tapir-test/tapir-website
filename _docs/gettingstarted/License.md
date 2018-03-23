@@ -17,7 +17,7 @@ also specify the license with the system property *tapirLicenseFile*.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Using a license for multiple test projects</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Using a license for multiple test projects</div>
   </div>
   <div class="panel-body">
   If you want to provide multiple test projects with the same license, you

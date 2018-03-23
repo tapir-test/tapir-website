@@ -7,8 +7,9 @@ permalink: /docs/usingtapir/http-proxy/
 From time to time you need to establish a HTTP connection from your tapir tests. If you have to use a HTTP proxy, tapir provides some properties to configure the connection.
 
 ## Properties
+
 | Property | Info | Description |
-|--------------------------|---------------|--------------------------------------------------------|
+|--- | --- | --- |
 | http.proxy.host |  | Specifies the proxy host |
 | http.proxy.port | Default: 3128 | Specifies the proxy port |
 | http.proxy.user | Optional | Specifies the proxy user for authentification |
@@ -17,7 +18,7 @@ From time to time you need to establish a HTTP connection from your tapir tests.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   The configuration only affects connections established by the tapir Java Virtual Machine. The web browsers (except HtmlUnit) have their own proxy configurations.

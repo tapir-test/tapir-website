@@ -17,7 +17,7 @@ advantages over plain Java consult the Xtend documentation.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   The complete documentation can be found <a href="http://www.eclipse.org/xtend/documentation/204_activeannotations.html">here</a>.
@@ -83,7 +83,7 @@ how it is processed.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   The complete documentation can be found <a href="http://www.eclipse.org/xtend/documentation/202_xtend_classes_members.html#extension-methods">here</a>.

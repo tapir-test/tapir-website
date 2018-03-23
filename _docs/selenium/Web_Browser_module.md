@@ -232,7 +232,7 @@ website](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
     The Internet Explorer will only work on Windows!
@@ -271,7 +271,7 @@ does not render the web site. For further information consult the [HtmlUnitDrive
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   HtmlUnit does not have a rendering engine, so you cannot see any browser

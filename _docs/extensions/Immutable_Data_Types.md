@@ -9,7 +9,7 @@ the data is defined once and only read by the tests afterwards. The
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   This <i>tapir</i> module is inspired by
@@ -99,6 +99,31 @@ val consultantUser = adminUser.copy [
   username = 'consultant'
 ]
 ```
+
+Collection attributes (they are detailed further below) can not be replaced in
+the copy. Instead the elements are added to the collection from the template object.
+Take a look at the following example in which the *StringHolder* has a list of
+strings. *stringHolderA* is initialized with a list consisting of *oldValue*
+and *stringHolderB* with a list consisting of *newValue*.
+
+``` xtend
+@Immutable
+class StringHolder {
+    List<String> listOfStrings
+}
+
+val stringHolderA = StringHolder.build [
+  listOfStrings = #['oldValue']
+]
+
+val stringHolderB = stringHolderA.copy [
+  listOfStrings = #['newValue']
+]
+```
+
+The value of *stringHolderB's* *listOfStrings* is a list consisting of
+*oldValue* and *newValue* though, as *newValue* is only added to the list of
+*stringHolderA*.
 
 ## Optional and Mandatory Fields
 
@@ -325,7 +350,7 @@ class LoginUser {
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   We recommend to use this annotation sparingly and with caution. It

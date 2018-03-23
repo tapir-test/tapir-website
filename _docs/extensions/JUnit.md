@@ -23,7 +23,7 @@ API.
 ## Eclipse
 
 You can start your <i>tapir</i> tests directly from Eclipse by rightclicking
-the test class and selecting *Run as...* *\| JUnit Test*.
+the test class and selecting *Run As* | *JUnit Test*.
 
 ![]({{"/img/docs/46497836/46497856.png" | prepend: site.baseurl}}){:height="500px" width="600px"}
 
@@ -34,7 +34,7 @@ The progress and the results are displayed in the JUnit view.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   You can select any method/step and execute it with <i>Run As</i> \| <i>JUnit

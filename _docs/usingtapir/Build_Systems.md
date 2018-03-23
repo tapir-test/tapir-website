@@ -14,7 +14,7 @@ consistent way.
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   You can still specify a version and override <i>tapir's</i> recommendations if
@@ -45,13 +45,13 @@ tapir-*starter-module *simply set the *parent*:
 <parent>
     <groupId>de.bmiag.tapir</groupId>
     <artifactId>tapir-starter-module</artifactId>
-    <version>3.0.0</version>
+    <version>{{ site.latesttapirversion }}</version>
 </parent>
 ```
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
   You should only need to specify the <i>tapir</i> version number on this
@@ -71,7 +71,7 @@ another Selenium version you would add the following to your *pom.xml*.
 ```
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
   </div>
   <div class="panel-body">
     Check the <i>tapir-dependencies</i> pom for a list of supported properties.
@@ -91,7 +91,7 @@ by using a dependency with the import scope:
             <!-- Import dependency management from tapir -->
             <groupId>de.bmiag.tapir</groupId>
             <artifactId>tapir-dependencies</artifactId>
-            <version>3.0.0</version>
+            <version>{{ site.latesttapirversion }}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>

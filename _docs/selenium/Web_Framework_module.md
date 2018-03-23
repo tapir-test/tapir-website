@@ -70,7 +70,7 @@ public interface Button extends TapirElement, Displayable, Clickable, Enabable {
 ```
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   Notice the extended

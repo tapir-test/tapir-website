@@ -10,7 +10,7 @@ module. This offers maximum flexibility to the user.
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   Handle this feature with care! Violating contracts might lead to elusive
@@ -91,7 +91,7 @@ Overriding a bean is quite simple. All you need to know is the name of the bean 
 
 <div class="panel panel-warning">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fa fa-warning"></span> Caution</div>
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
   </div>
   <div class="panel-body">
   Beans which are registered via component scan cannot override other beans. You have to declare them in your module's configuration class.

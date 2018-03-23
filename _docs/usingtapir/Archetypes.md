@@ -15,38 +15,35 @@ Eclipse's Maven integration [m2e](http://www.eclipse.org/m2e/) provides
 a wizard to creates modules based on Maven archetypes.
 
 1.  Select *File* \| *New* \| *Project ...*
-2.  Select *Maven* \| *Maven Project* and click *Next &gt;*
-3.  Leave the defaults of the first wizard page by clicking *Next &gt;*
-4.  Select one of the <i>tapir</i> archetypes:  
+1.  Select *Maven* \| *Maven Project* and click *Next &gt;*
+1.  Leave the defaults of the first wizard page by clicking *Next &gt;*
+1.  Select *Add Archetype...* and enter these coordinates:
+    -   Archetype Group Id: *de.bmiag.tapir*
+    -   Archetype Artifact Id: *{desired-tapir-archetype}*
+    -   Archetype Version: *{{ site.latesttapirversion }}*
+1.  Ensure the <i>tapir</i> archetype is selected and click *Next >*:  
     ![]({{ "/img/docs/47218729/47218725.png" | prepend: site.baseurl }}){:height="400px" width="473px"}
-5.  Provide some Maven properties:
-
-    -   groupId: The GroupId of your module
-
-    -   artifactId: The ArtifactId of your module
-
-    -   version: The version of module
-
-    -   package: The base package of module
-
-    -   Custom properties which depend on the archetype you select
-
-6.  After clicking Finish the module is available in your workspace as
-    an Eclipse project
+1.  Eclipse asks you to specify the following properties:
+    -   groupId: The GroupId of your test project
+    -   artifactId: The ArtifactId of your test project
+    -   version: The version of your test project
+    -   package: The base package of your test project
+    -   moduleName: The name of your test project. The name should start with an upper case letter and shouldn't contain spaces.
+1.  After clicking *Finish* the module is available in your workspace as
+        an Eclipse project.
 
 ### Command line
 
 ``` text
-> mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId={desired-tapir-archetype} -DarchetypeVersion=3.0.0
+> mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId={desired-tapir-archetype} -DarchetypeVersion={{ site.latesttapirversion }}
 ```
 
-Maven asks you to enter some Maven properties:
-
--   groupId: The GroupId of your module
--   artifactId: The ArtifactId of your module
--   version: The version of module
--   package: The base package of module
--   Custom properties which depend on the archetype you select
+Maven asks you to specify the following properties:
+-   groupId: The GroupId of your test project
+-   artifactId: The ArtifactId of your test project
+-   version: The version of your test project
+-   package: The base package of your test project
+-   moduleName: The name of your test project. The name should start with an upper case letter and shouldn't contain spaces.
 
 After confirming the properties the new Maven module is generated into a
 subfolder which is named like your artifactId.
