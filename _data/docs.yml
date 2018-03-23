@@ -19,7 +19,7 @@
   - usingtapir/code-structure
   - usingtapir/running-tapir-tests
   - usingtapir/assertions
-  - usingtapir/http-proxy
+  - usingtapir/general-properties
   - usingtapir/logging
   - usingtapir/concurrency
   - usingtapir/externalized-configuration
@@ -63,7 +63,7 @@
 
 - title: Changelog
   docs:
-  - changelog/changelog-3.1.0    
+  - changelog/changelog-3.1.0
   - changelog/changelog-3.0.0
 
 - title: Troubleshooting

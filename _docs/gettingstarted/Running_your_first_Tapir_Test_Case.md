@@ -151,7 +151,7 @@ tapir offers the possibility to launch your test class directly from Eclipse or 
   <div class="panel-body">
   The tests are executed by using the headless
   browser <a href="http://htmlunit.sourceforge.net/">HtmlUnit</a>. Therefore you
-  won't see any browser interaction while running the test. If you are behind a proxy consult <a href="{{ "/docs/usingtapir/http-proxy/" | prepend: site.baseurl }}">this page</a> for information.
+  won't see any browser interaction while running the test. If you are behind a proxy consult <a href="{{"/docs/usingtapir/general-properties/#http-proxy" | prepend: site.baseurl}}">this page</a> for information.
 
   In case you want to run your test with another browser, you could modify
   the <i>test.properties</i> located in <i>src/test/resources</i> by switching the

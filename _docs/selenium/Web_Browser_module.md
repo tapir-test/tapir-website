@@ -260,7 +260,7 @@ browser=htmlunit
 
 ### Properties
 
-There are no special HtmlUnit properties. The proxy settings are configured via [HTTP Proxy]({{"/docs/usingtapir/http-proxy/" | prepend: site.baseurl}}).
+There are no special HtmlUnit properties. The proxy settings are configured via [HTTP Proxy]({{"/docs/usingtapir/general-properties/#http-proxy" | prepend: site.baseurl}}).
 
 HtmlUnit is a headless web browser implemented in Java. Therefore it
 does not need any additional binaries. All required depdendencies are

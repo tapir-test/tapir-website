@@ -6,7 +6,7 @@ permalink: /docs/usingtapir/assertions/
 For writing tests in general assertions are a fundamental element. They represent the expectation of the tester regarding the System Under Test (SUT). To understand how *tapir* treats assertions we have to split them into two blocks: implicit and explicit assertions.
 
 ## Implicit assertions
-Implicit assertions are assertions you do not write down in your test code. They are derived from the statements you choose for interacting with the SUT. Implicit assertions wait for prerequisites to be fulfilled before executing subsequent statements. If the assertion fails constantly within a certain time (configurable via implicit wait time) the test fails. There are several layers where you use *tapir's* implicit assertions.
+Implicit assertions are assertions you do not write down in your test code. They are derived from the statements you choose for interacting with the SUT. Implicit assertions wait for prerequisites to be fulfilled before executing subsequent statements. If the assertion fails constantly within a certain time (configurable via the [implicit wait time property]({{"/docs/usingtapir/general-properties/#implicit-wait-time" | prepend: site.baseurl}})) the test fails. There are several layers where you use *tapir's* implicit assertions.
 
 ### Interaction with an UI element
 Whenever you interact with an ui component implicit assertions are checked by the framework. Let's explain this by example:
@@ -52,16 +52,16 @@ In order to use [CoreAssertions](https://www.javadoc.io/page/de.bmiag.tapir/tapi
 <dependency>
     <groupId>de.bmiag.tapir</groupId>
     <artifactId>tapir-core-assertion</artifactId>
-</depend
+</dependency>
 ```
 
 ### Waiting for long-running tasks
 All implicit assertions wait until the condition is fulfilled or the implicit wait time is exceeded. There might be situation where you have to wait for a long-running task performed by your SUT. The implicit wait time's purpose is to handle short delays of your SUT and shall not be configured to exceed 10 seconds. Therefore we need another concept for waiting for long-running tasks.
 
-The following statements expects the name-label's to be "Peter" within 60 seconds (60,000 ms).
+The following statements expects the name-label to be "Peter" within 60 seconds (In the example *import static java.util.concurrent.TimeUnit.\** is omitted).
 
 ``` xtend
-assertThatWithin(60000)[page1.nameLabel.text].isEqualTo("Peter")
+assertThatWithin(60, SECONDS)[page1.nameLabel.text].isEqualTo("Peter")
 ```
 
 ## Adding custom assertions
