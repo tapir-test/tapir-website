@@ -17,7 +17,7 @@ In a [previous chapter]({{"/docs/customization/executionlistener/" | prepend: s
 
 Let's first take a look at how to create and send attachments. The
 following snippet is a simplified excerpt from the
-[*ScreenshotService*](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/selenium/service/ScreenshotService.html)-
+[*ScreenshotService*](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/seleniumexecution/service/ScreenshotService.html) -
 a service responsible for making screenshots with the current web
 driver.
 

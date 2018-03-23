@@ -163,7 +163,7 @@ headline text. If the page is active, the method returns true, otherwise false.
 #### Assertions using PageActiveCheckExtensions
 
 Test classes can assert that a page is active or inactive by using
-the [PageActiveCheckExtensions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/extensions/PageActiveCheckExtensions.html)as an extension.
+the [PageActiveCheckExtensions](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/extensions/PageActiveCheckExtensions.html) as an extension.
 
 ``` xtend
 @UseExtension(PageActiveCheckExtensions)
@@ -182,7 +182,7 @@ class GoogleTest {
 #### Assertions by declaring *@AssertPostPage*
 
 Using
-the [*@*AssertPostPage](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/AssertPostPage.html)
+the [*@*AssertPostPage](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/pageexecution/annotation/AssertPostPage.html)
 annotation you can ensure that the given page is active after the step
 is completed:
 

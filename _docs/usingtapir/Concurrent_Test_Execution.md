@@ -84,7 +84,7 @@ start the test cases in parallel, you would have to annotate
 ## Execution of the Tasks
 
 Per default, the
-[TapirTaskExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/TapirTaskExecuter.html)is
+[TapirTaskExecutor](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/executor/TapirTaskExecutor.html) is
 responsible for executing the *Runnables* for the test suites and test
 cases. The executor is a Spring component with the name
 *tapirTaskExecutor*, which means that you can overwrite it, if you feel
