@@ -213,6 +213,28 @@ because <i>tapir</i> does this check for you whenever you interact with the elem
 page (e.g. click a button or set a value into an input field). Before
 <i>tapir</i> interacts with an element on a page, it asserts that the expected page is active.
 
+## Private page fields
+
+The fields of page objects are usually generated with a getter method to access them.
+However, sometimes it is useful to have pure *private* visible page object fields.
+This is especially useful if you need some elements inside your page active check method but don't want them accessible from the outside.
+You can use the [@Private](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/page/annotation/Private.html) annotation to make sure that no *public* getter is generated.
+
+``` xtend
+@Page
+class MyPage {
+
+    @Private
+    @SeleniumElement(name="message")
+    Label message
+
+    ...
+
+}
+```
+
+Now the field *message* can only be accessed from inside *MyPage*.
+
 ## Page Component
 
 In order to facilitate modularity you can specify Page components
