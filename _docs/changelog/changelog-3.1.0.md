@@ -10,6 +10,14 @@ permalink: /docs/changelog/changelog-3.1.0/
 * The CsvDataSource can now be used with optional fields in the data container. Other generic types are still not supported, but are now marked as error.
 * *tapir* now supports the headless mode of Firefox.
 * Assertions are now backed up by *AssertJ*. This enhancement comes with a completely new API for using assertions in your test cases. For further information consult the [Assertions chapter]({{"/docs/usingtapir/assertions/" | prepend: site.baseurl}}).
+* Update to latest versions of third-party libraries
+  * Spring Boot: 1.5.9 --> 1.5.10
+  * Selenium: 3.8.1 --> 3.11.0
+  * HtmlUnit: 2.29.0 --> 2.29.3
+  * WebDriver-Manager: 2.1.0 --> 2.2.0
+  * Allure2: 2.0-BETA21 --> 2.6.0
+  * jacoco-maven-plugin --> 0.7.9 --> 0.8.1
+  * maven-failsafe-plugin/maven-surefire-plugin: 2.20 --> 2.21.0
 * Various performance improvements.
 
 ### Bugfixes
