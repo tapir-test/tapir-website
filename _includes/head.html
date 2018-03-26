@@ -4,7 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#003271">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script>
+      window.FontAwesomeConfig = {
+        searchPseudoElements: true
+      }
+    </script>
     <!--<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/v4-shims.js"></script>-->
     <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}" type="text/javascript" ></script>
     <script src="{{ "/js/scrollreveal.min.js" | prepend: site.baseurl }}" type="text/javascript" ></script>
@@ -27,6 +32,7 @@
     <meta name="twitter:image" content="{{"/img/tapir-2-1.png"  | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
     window.addEventListener("load", function(){
