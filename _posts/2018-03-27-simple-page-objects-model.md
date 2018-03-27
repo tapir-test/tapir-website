@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Simple Page Object Model"
-description: "Keep your Page Objects simple, stupid!"
+description: "About the simplicity of Page Objects and how you could overcome their drawbacks."
 authors:
     - olibutzki
 permalink: /blog/simple-page-objects-model/
@@ -75,7 +75,7 @@ By using the *SPOM* Page Objects are lowered to the amount of information which 
 Do not build all your Page Objects up-front. Start small and just add UI elements when you need them first for one of your functional tests. Page Objects do not provide any benefits, if there is no test code which uses them.
 
 ### Structure
-Page Objects and their contained UI elements help you to structure your test code. Assume that a locator in the SUT has changed. This normally doesn't happen because of a functional requirement but because of a technical refactoring. It's much easier to locate the element in your test code base if they are organized in pages rather than in functional units. Page Objects provide a single source of truth and therefore encourage the DRY (Don't repeat yourself) idea. 
+Page Objects and their contained UI elements help you to structure your test code. Assume that a locator in the SUT has changed. This normally doesn't happen because of a functional requirement but because of a technical refactoring. It's much easier to locate the element in your test code base if they are organized in pages rather than in functional units. Page Objects provide a single source of truth and therefore encourage the DRY (Don't repeat yourself) idea.
 
 ### Separation of Concerns
 <blockquote>
