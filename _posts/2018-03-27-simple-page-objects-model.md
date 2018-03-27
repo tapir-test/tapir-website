@@ -30,7 +30,7 @@ These are Selenium's recommendations:
 * Generally don't make assertions
 * ~~Methods return other PageObjects~~
 * Need not represent an entire page
-* ~~Different results for the same action are modelled as different methods~~M
+* ~~Different results for the same action are modelled as different methods~~
 
 The bullet points which are striked through cause the Page Objects to violate the Single-Responsibility and Open/Closed principle. They are all based on the wrong assumption that functional code is contained in a Page Object. Substituting these three rules with one other rule  solves at least these two principle violations:
 
