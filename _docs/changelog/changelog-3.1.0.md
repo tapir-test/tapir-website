@@ -1,5 +1,5 @@
 ---
-title: Changes in Version 3.1.0 (2018-03-23)
+title: Changes in Version 3.1.0 (2018-03-27)
 description: The changelog for the 3.1.0 release
 permalink: /docs/changelog/changelog-3.1.0/
 
