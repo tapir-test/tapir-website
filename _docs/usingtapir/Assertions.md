@@ -55,6 +55,15 @@ In order to use [CoreAssertions](https://www.javadoc.io/page/de.bmiag.tapir/tapi
 </dependency>
 ```
 
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
+  </div>
+  <div class="panel-body">
+  In order to set the description of an assertion, AssertJ provides you with the method <i>as</i>. However, <i>as</i> is also a reserved keyword in Xtend, which may confuse Eclipse and the Xtend compiler. To solve this, escape the method name with the circumflex character and write <i>&circ;as</i> instead of <i>as</i>.
+  </div>
+</div>
+
 ### Waiting for long-running tasks
 All implicit assertions wait until the condition is fulfilled or the implicit wait time is exceeded. There might be situation where you have to wait for a long-running task performed by your SUT. The implicit wait time's purpose is to handle short delays of your SUT and shall not be configured to exceed 10 seconds. Therefore we need another concept for waiting for long-running tasks.
 
