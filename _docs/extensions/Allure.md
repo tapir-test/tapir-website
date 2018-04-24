@@ -46,7 +46,7 @@ and deploying the report, run the following command:
 > mvn clean integration-test allure:serve
 ```
 
-Maven fires up a web server and starts the browser which renders the the Allure report.
+Maven fires up a web server and starts the browser which renders the Allure report.
 
 ## Jenkins
 
