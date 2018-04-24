@@ -43,12 +43,10 @@ tests (using the [Maven failsafe plugin]({{"/docs/extensions/junit/" | prepend: 
 and deploying the report, run the following command:
 
 ``` text
-> mvn clean integration-test site jetty:run
+> mvn clean integration-test allure:serve
 ```
 
-Maven fires up a [Jetty Web Server](http://www.eclipse.org/jetty/) on
-port 8080. Just visit <http://localhost:8080> to inspect the Allure
-report.
+Maven fires up a web server and starts the browser which renders the the Allure report.
 
 ## Jenkins
 
