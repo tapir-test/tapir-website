@@ -51,7 +51,7 @@ body {
   // background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  margin-top: -19px;
+  margin-top: -26px;
 }
 .navbar-container {
   font-size: 16px;
@@ -141,6 +141,13 @@ code.prettyprint  {
     font-size: 60%;
     top: -0.25em;
     position: relative;
+}
+
+
+.embed-responsive .embed-responsive-item {
+    border-color: $gray-dark;
+    border-width: 3px;
+    border-style: solid;
 }
 
 /*

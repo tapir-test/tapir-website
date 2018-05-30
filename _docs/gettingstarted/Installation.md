@@ -46,3 +46,11 @@ If you just would like to get a first impression of <i>tapir</i> we highly recom
 ## Build Systems
 
 *tapir* itself is integrated via dependencies in your test project. A more detailed documentation for Maven can be found [here]({{ "/docs/usingtapir/build-systems/" | prepend: site.baseurl }}). *tapir* might work with further build tools and systems, but this is not specifically supported.
+
+## Screencast
+We also recorded a short screencast which shows how to setup a tapir environment and start the showcase.
+<div class="row">
+    <div class="col-lg-12">
+        {% include youtube-player.html id='9W4usMHNxHA' %}
+    </div>
+</div>
