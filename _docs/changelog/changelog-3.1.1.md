@@ -1,7 +1,7 @@
 ---
 title: Changes in Version 3.1.1 (2018-06-29)
 description: The changelog for the 3.1.1 release
-permalink: /docs/changelog/changelog-3.1.0/
+permalink: /docs/changelog/changelog-3.1.1/
 
 ---
 
