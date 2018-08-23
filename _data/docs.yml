@@ -20,9 +20,20 @@
   - usingtapir/running-tapir-tests
   - usingtapir/assertions
   - usingtapir/general-properties
+  - usingtapir/documentation
+  - usingtapir/immutables
   - usingtapir/logging
   - usingtapir/concurrency
   - usingtapir/externalized-configuration
+
+- title: Execution
+  docs:
+  - execution/junit4
+  - execution/junit5
+
+- title: Reporting
+  docs:
+  - reporting/allure1
 
 - title: Test Data
   docs:
@@ -36,19 +47,11 @@
   - selenium/browser
   - selenium/framework
 
-- title: Extensions
+- title: Control Flow
   docs:
-  - extensions/documentation
-  - extensions/junit
-  - extensions/allure
-  - extensions/immutables
-  - extensions/variant-management
-  - extensions/configuration-management
-  - extensions/conditional
-
-- title: Third Party Extensions
-  docs:
-  - thirdpartyextensions/rapit
+  - controlflow/variant-management
+  - controlflow/configuration-management
+  - controlflow/conditional
 
 - title: Customization
   docs:

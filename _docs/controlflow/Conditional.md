@@ -1,7 +1,9 @@
 ---
 title: Conditional
 description: By using the Conditional module you can skip/execute test suites, cases or steps if certain conditions apply.
-permalink: /docs/extensions/conditional/
+permalink: /docs/controlflow/conditional/
+redirect_from:
+ - /docs/extensions/conditional/
 ---
 
 You might find yourself in situations where you want to execute test

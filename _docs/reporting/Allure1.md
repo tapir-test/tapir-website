@@ -1,7 +1,9 @@
 ---
-title: Allure
+title: Allure 1
 description: Allure is a framework/tool which generates comprehensive reports for your test executions.
-permalink: /docs/extensions/allure/
+permalink: /docs/reporting/allure1/
+redirect_from:
+ - /docs/extensions/allure/
 ---
 
 Allure is a framework/tool which generates comprehensive reports for

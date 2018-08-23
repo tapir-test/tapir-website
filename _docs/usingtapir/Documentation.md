@@ -1,7 +1,9 @@
 ---
 title: Documentation
-description: Additional documentation might help other developers, test managers and stakeholders to understand the purpose of a test suite, class or step. 
-permalink: /docs/extensions/documentation/
+description: Additional documentation might help other developers, test managers and stakeholders to understand the purpose of a test suite, class or step.
+permalink: /docs/usingtapir/documentation/
+redirect_from:
+ - /docs/extensions/documentation/
 ---
 
 <i>tapir</i> facilitates the developer to write comprehensive and maintainable

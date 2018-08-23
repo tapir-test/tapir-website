@@ -1,7 +1,9 @@
 ---
 title: Variant Management
 description: tapir supports testing for product lines. The tests behave differently based on the enabled features of a certain edition or customer.
-permalink: /docs/extensions/variant-management/
+permalink: /docs/controlflow/variant-management/
+redirect_from:
+ - /docs/extensions/variant-management/
 ---
 
 You might find yourself in a situation where you want to distinguish

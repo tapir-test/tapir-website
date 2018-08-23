@@ -1,7 +1,7 @@
 ---
 title: JUnit
 description: tapir provides the possibility to launch your tests with JUnit. Moreover, JUnit can be used a reporting tool/format.
-permalink: /docs/extensions/junit/
+permalink: /docs/execution/junit4/
 ---
 
 <i>tapir</i> does not enforce the usage of JUnit. <i>tapir</i> tests can be started

@@ -14,7 +14,7 @@ gitterroom: tapir-test/support
 
 author: olibutzki
 
-latesttapirversion: 3.0.0
+latesttapirversion: 3.1.1
 
 
 logo: /img/tapir-icon-circle.png
@@ -29,6 +29,8 @@ repository     : "tapir-test/tapir-website"
 staticmanUrl: https://api.staticman.net/v2/entry/tapir-test/tapir-website/master/comments
 git_address: https://github.com/tapir-test/tapir-website
 git_edit_address: https://github.com/tapir-test/tapir-website/blob/master
+
+tapir_extensions_url: https://github.com/tapir-test/tapir-extensions/tree/master/
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
