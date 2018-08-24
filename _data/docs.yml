@@ -34,6 +34,7 @@
 - title: Reporting
   docs:
   - reporting/allure1
+  - reporting/reporting-base
 
 - title: Test Data
   docs:
