@@ -30,6 +30,7 @@
   docs:
   - execution/junit4
   - execution/junit5
+  - execution/gui
 
 - title: Reporting
   docs:
