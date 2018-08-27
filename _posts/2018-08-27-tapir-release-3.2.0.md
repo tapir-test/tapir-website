@@ -16,7 +16,7 @@ We are pleased to announce, that we released Version 3.2.0 of our *tapir* framew
 * Eclipse Setup is updated to the latest Eclipse Photon release and Xtend 2.14.0
 * Introduction of tapir-extensions (see below)
 
-You can find the full changelog [here]({{"/docs/changelog/changelog-3.2.0/" | prepend: site.baseurl}}).
+You can find the full changelog [here]({{"/docs/tapir-changelog/3.2.0/" | prepend: site.baseurl}}).
 
 ## tapir goes open-source!
 

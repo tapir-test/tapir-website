@@ -1,5 +1,5 @@
 ---
-title: Changes in Version 3.0.0 (2018-02-20)
+title: Changes in Version 1.0.0 (2018-08-27)
 description: The changelog for the tapir extensions 1.0.0 release
 permalink: /docs/tapir-extensions-changelog/1.0.0/
 ---

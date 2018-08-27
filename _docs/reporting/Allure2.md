@@ -4,7 +4,7 @@ description: Allure is a framework/tool which generates comprehensive reports fo
 permalink: /docs/reporting/allure2/
 redirect_from:
  - /docs/extensions/allure/
-tapir-extensions-module: tapir-extensions-junit5-execution
+tapir-extensions-module: tapir-extensions-allure2
 ---
 
 Allure is a framework/tool which generates comprehensive reports for
@@ -19,7 +19,7 @@ further information about Allure.
 The Allure module acts as an adapter between <i>tapir's</i> Notification API
 and Allure's Reporting API. If the optional module is in the classpath
 at test runtime, the corresponding xml files are generated. These xml
-files are picked up by Allure and transformed to a good-looking report.
+files are picked up by Allure and transformed into a good-looking report.
 
 ## Dependency
 
@@ -39,7 +39,7 @@ The screenshot below displays a sample test execution report.
 
 ## Maven
 
-Allure seamlessly integrates into Maven by providing a [dedicated
+Allure integrates seamlessly into Maven by providing a [dedicated
 plugin](https://github.com/allure-framework/allure-maven).
 If you use [JUnit 4]({{"/docs/execution/junit4/" | prepend: site.baseurl}}) or [JUnit 5]({{"/docs/execution/junit5/" | prepend: site.baseurl}}), consult the corresponding documentation.
 

@@ -72,7 +72,7 @@ basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/l
 | useTapirExecution       | Use the *tapir* execution model | *useUnitTest* | true
 | useUnitTest             | Write plain unit tests. | *useTapirExecution* | false
 | useSelenium             | [Selenium 4]({{"/docs/selenium/core/" | prepend: site.baseurl}}) | - | true
-| useJUnit4               | [JUnit 4]({{"/docs/execution/junit5/" | prepend: site.baseurl}}) | *useJUnit5* | false
+| useJUnit4               | [JUnit 4]({{"/docs/execution/junit4/" | prepend: site.baseurl}}) | *useJUnit5* | false
 | useJUnit5               | [JUnit 5]({{"/docs/execution/junit5/" | prepend: site.baseurl}}) | *useJUnit4* | true
 | useAllure1              | [Allure 1]({{"/docs/reporting/allure1/" | prepend: site.baseurl}}) | *useAllure2* | false
 | useAllure2              | [Allure 2]({{"/docs/reporting/allure2/" | prepend: site.baseurl}}) | *useAllure1* | true
@@ -113,7 +113,7 @@ basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/l
   </div>
 </div>
 
-This archteype can be used for <i>tapir</i> bootstrap modules. The modules
+This archteype can be used for <i>tapir</i> bootstrap modules. This module
 inherits from *tapir-starter-selenium-allure*. It provides a
 basic [@BootstrapConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/bootstrap/annotation/BootstrapConfiguration.html)
 annotated class and an executable test based on the Google website.

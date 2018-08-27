@@ -9,7 +9,7 @@ tapir-extensions-module: tapir-extensions-junit5-execution
 
 JUnit 5 is the successor of [JUnit 4]({{"/docs/execution/junit4/" | prepend: site.baseurl}}). In contrast to JUnit 4, the support for custom test engines is one of its core features. Moreover, JUnit 5 is designed with great IDE support in mind.
 
-These characteristics perfectly fit for <i>tapir</i>.
+These characteristics fit perfectly for <i>tapir</i>.
 
 ## Dependency
 
@@ -62,7 +62,7 @@ historical test results as well as a web UI for viewing test reports,
 tracking failures, and so on. 
 
 There are a couple of additional plugins which are based on the JUnit 4
-API, like Test In Progress which visualizes the current test execution
+API, like *Test In Progress* which visualizes the current test execution
 progress.
 
 In general all the frameworks and tools which are compatible to JUnit 4
