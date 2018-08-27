@@ -69,11 +69,16 @@
   - customization/ui-technology
   - customization/dynamic-active-annotations
 
-- title: Changelog
+- title: tapir Changelog
   docs:
-  - changelog/changelog-3.1.1
-  - changelog/changelog-3.1.0
-  - changelog/changelog-3.0.0
+  - tapir-changelog/3.2.0
+  - tapir-changelog/3.1.1
+  - tapir-changelog/3.1.0
+  - tapir-changelog/3.0.0
+
+- title: tapir Extensions Changelog
+  docs:
+  - tapir-extensions-changelog/1.0.0
 
 - title: Troubleshooting
   docs:

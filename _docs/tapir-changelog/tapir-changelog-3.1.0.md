@@ -1,8 +1,9 @@
 ---
 title: Changes in Version 3.1.0 (2018-03-27)
-description: The changelog for the 3.1.0 release
-permalink: /docs/changelog/changelog-3.1.0/
-
+description: The changelog for the tapir 3.1.0 release
+permalink: /docs/tapir-changelog/3.1.0/
+redirect_from:
+ - /docs/changelog/changelog-3.1.0/
 ---
 
 ### Enhancements

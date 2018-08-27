@@ -112,7 +112,7 @@ class MyTest {
 ```
 
 The easisiest way to create a bootstrap module is the [corresponding
-archetype]({{ "/docs/usingtapir/archetypes#Archetypes-tapir-bootstrap-archetype" | prepend: site.baseurl }}).
+archetype]({{ "/docs/usingtapir/archetypes#Archetypes-tapir-extensions-archetype" | prepend: site.baseurl }}).
 
 ## Inclusion Module
 

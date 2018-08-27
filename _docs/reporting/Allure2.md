@@ -4,7 +4,7 @@ description: Allure is a framework/tool which generates comprehensive reports fo
 permalink: /docs/reporting/allure2/
 redirect_from:
  - /docs/extensions/allure/
- tapir-extensions-module: tapir-extensions-junit5-execution
+tapir-extensions-module: tapir-extensions-junit5-execution
 ---
 
 Allure is a framework/tool which generates comprehensive reports for

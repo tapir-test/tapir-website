@@ -19,7 +19,7 @@ java.lang.IllegalArgumentException: org.springframework.context.annotation.Compo
 
 ### Solution
 
-This error is a result of a [Bug in Xtend](https://bugs.eclipse.org/bugs/show_bug.cgi?id=487559), which is solved in Version 2.13. In order to avoid this problem, please make sure that your Eclipse contains Xtend 2.13. You might also want to consider to use the [Eclipse installer]({{"/docs/gettingstarted/installation/#alternative-1-eclipse-installer-recommended" | prepend: site.baseurl}}), as the package contains already everything to start directly with <i>tapir</i>.
+This error is a result of a [Bug in Xtend](https://bugs.eclipse.org/bugs/show_bug.cgi?id=487559), which is solved in Version 2.13. In order to avoid this problem, please make sure that your Eclipse contains Xtend >= 2.14.0. You might also want to consider to use the [Eclipse installer]({{"/docs/gettingstarted/installation/#alternative-1-eclipse-installer-recommended" | prepend: site.baseurl}}), as the package contains already everything to start directly with <i>tapir</i>.
 
 ## Missing Bootstrap configuration
 

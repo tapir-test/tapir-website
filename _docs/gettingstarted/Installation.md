@@ -32,7 +32,7 @@ The Eclipse Installer is the easiest way to install and update your Eclipse Deve
 </div>
 
 ### Alternative 2: Manual installation
-In case you don't want to use the Eclipse Installer you can install the plugins in your eclipse manually via the corresponding update-site. Beside JDT tapir needs Maven (M2Eclipse) and [Xtend](https://www.eclipse.org/xtend/download.html) (at least 2.13) to work.
+In case you don't want to use the Eclipse Installer you can install the plugins in your eclipse manually via the corresponding update-site. Beside JDT tapir needs Maven (M2Eclipse) and [Xtend](https://www.eclipse.org/xtend/download.html) (at least 2.14.0) to work.
 
 ## Showcase
 If you just would like to get a first impression of <i>tapir</i> we highly recommend our show case which it hosted at [GitHub](https://github.com/tapir-test/tapir-showcase).
