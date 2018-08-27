@@ -79,7 +79,7 @@ basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/l
 | useExcelReporting       | [Excel Reporting]({{"/docs/reporting/excel/" | prepend: site.baseurl}}) | - | false
 | useDataSource           | [Data Injection]({{"/docs/testdata/data-injection/" | prepend: site.baseurl}}) | - | false
 | useConditionalExecution | [Conditional]({{"/docs/controlflow/conditional/" | prepend: site.baseurl}}) | - | false
-| useProductLineTesting   | [Configuration management]({{"controlflow/configuration-management/" | prepend: site.baseurl}}) / [Variant management]({{"/docs/controlflow/variant-management/" | prepend: site.baseurl}}) | - | false
+| useProductLineTesting   | [Configuration management]({{"/docs/controlflow/configuration-management/" | prepend: site.baseurl}}) / [Variant management]({{"/docs/controlflow/variant-management/" | prepend: site.baseurl}}) | - | false
 
 ### tapir-module-archetype {#Archetypes-tapir-module-archetype}
 This archetype can be used for arbitrary <i>tapir</i> modules. It provides a
