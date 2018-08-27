@@ -1,14 +1,17 @@
 ---
-title: Allure 1
+title: Allure 2
 description: Allure is a framework/tool which generates comprehensive reports for your test executions.
-permalink: /docs/reporting/allure1/
+permalink: /docs/reporting/allure2/
+redirect_from:
+ - /docs/extensions/allure/
+ tapir-extensions-module: tapir-extensions-junit5-execution
 ---
 
 Allure is a framework/tool which generates comprehensive reports for
 your test executions. This happens in two steps:
 
-1.  The test results are captured and written to xml files
-2.  The xml files are transformed into beautiful reports
+1.  The test results are captured and written to json files
+2.  The json files are transformed into beautiful reports
 
 Please consult the [Allure website](http://allure.qatools.ru/) to obtain
 further information about Allure.
@@ -22,8 +25,9 @@ files are picked up by Allure and transformed to a good-looking report.
 
 ``` xml
 <dependency>
-  <groupId>de.bmiag.tapir</groupId>
-  <artifactId>tapir-allure</artifactId>
+  <groupId>io.tapirtest</groupId>
+  <artifactId>tapir-extensions-allure2</artifactId>
+  <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>
 ```
 

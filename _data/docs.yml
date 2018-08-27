@@ -35,6 +35,7 @@
 - title: Reporting
   docs:
   - reporting/allure1
+  - reporting/allure2
   - reporting/reporting-base
   - reporting/excel
 

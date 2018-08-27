@@ -1,14 +1,14 @@
 ---
-title: JUnit
-description: tapir provides the possibility to launch your tests with JUnit. Moreover, JUnit can be used a reporting tool/format.
+title: JUnit 4
+description: tapir provides the possibility to launch your tests with JUnit 4. Moreover, JUnit 4 can be used a reporting tool/format.
 permalink: /docs/execution/junit4/
 ---
 
-<i>tapir</i> does not enforce the usage of JUnit. <i>tapir</i> tests can be started
-using a Java main mathod as stated in [Running your tapir
-Tests]({{"/docs/usingtapir/running-tapir-tests/" | prepend: site.baseurl}}). Anyway, using JUnit enables a lot of
-additional amenities. JUnit is widespread and integrates into existing
-ecosystems quite well. There are many tools which are aware of JUnit's
+<i>tapir</i> does not enforce the usage of JUnit 4. <i>tapir</i> tests can be started
+using a Java main method as stated in [Running your tapir
+Tests]({{"/docs/usingtapir/running-tapir-tests/" | prepend: site.baseurl}}) or [JUnit 5]({{"/docs/execution/junit5/" | prepend: site.baseurl}}). Anyway, using JUnit 4 enables a lot of
+additional amenities. JUnit 4 is widespread and integrates into existing
+ecosystems quite well. There are many tools which are aware of the JUnit 4
 API.
 
 ## Dependency
@@ -16,13 +16,13 @@ API.
 ``` xml
 <dependency>
   <groupId>de.bmiag.tapir</groupId>
-  <artifactId>tapir-junit</artifactId>
+  <artifactId>tapir-junit-execution</artifactId>
 </dependency>
 ```
 
 ## Eclipse
 
-You can start your <i>tapir</i> tests directly from Eclipse by rightclicking
+You can start your <i>tapir</i> tests directly from Eclipse by right-clicking
 the test class and selecting *Run As* | *JUnit Test*.
 
 ![]({{"/img/docs/46497836/46497856.png" | prepend: site.baseurl}}){:height="500px" width="600px"}
@@ -43,22 +43,12 @@ The progress and the results are displayed in the JUnit view.
 </div>
 ## Maven
 
-The maven-failsafe-plugin is a perfect match for running integration
-tests with <i>tapir</i>. If you inherit from *tapir-starter-selenium-allure*
-all classes ending with TestSuite are executed. You can customize the
-filter by overriding the property *test.suite.filter*. You can specify
-an Ant-like filter, e.g.
-
-``` xml
-<properties>
-    <test.suite.filter>**/GoogleTest.java</test.suite.filter>
-</properties>
-```
+As <i>tapir</i> fulfills the JUnit4 API, it integrates transparently with the maven-surefire-plugin/maven-failsafe-plugin.
 
 You can execute the tests by running this command:
 
 ``` text
-> mvn clean integration-test
+> mvn clean test
 ```
 
 ## Jenkins
@@ -70,9 +60,9 @@ plugin](https://plugins.jenkins.io/junit) which is 100% compatible with
 historical test results as well as a web UI for viewing test reports,
 tracking failures, and so on. 
 
-There are a couple of additional plugins which are based on the JUnit
+There are a couple of additional plugins which are based on the JUnit 4
 API, like Test In Progress which visualizes the current test execution
 progress.
 
-In general all the frameworks and tools which are compatible to JUnit
+In general all the frameworks and tools which are compatible to JUnit 4
 are compatible to <i>tapir</i> as well.
