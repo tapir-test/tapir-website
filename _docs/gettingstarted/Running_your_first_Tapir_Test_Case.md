@@ -134,8 +134,7 @@ class WikipediaSearchTest {
 	def searchForTapir() {
 		wikipediaPage.searchField.text = "tapir"
 		wikipediaPage.searchButton.click
-		assertThat(title, containsString("Tapir"))
-
+		assertThat[title].contains("Tapir")
 	}
 }
 ```

@@ -113,7 +113,7 @@ class GoogleTest {
 
     @Step
     def void assertTitle() {
-        assertThat(title, containsString("Google"))
+        assertThat[title].contains("Google")
     }
 }
 ```
