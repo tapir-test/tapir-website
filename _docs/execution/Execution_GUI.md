@@ -30,6 +30,8 @@ This module contains a new launcher to start *tapir* test cases and test suites.
 
 Once the module is in your classpath, you can start the launcher by calling the main class "io.tapirtest.execution.gui.GUILauncher" with your test class or test suite as first parameter. In Eclipse you can add a launch configuration for this. Once the application is opened, it shows you the whole execution plan of the given test case. You can now select and deselect arbitrary steps in the execution plan. When you are finished, you can start the tests by clicking "Start Tests".
 
+![]({{ "/img/docs/execution-gui/execution-gui.png" | prepend: site.baseurl }}){:height="758px" width="1275px"}
+
 The GUI of the *tapir extensions* launcher allows you not only to start your tests, but also to show the execution plan with different properties. In the lower part of the application, you can add properties and update the view by clicking on "Reinitialize Execution Plan". This is very useful if you are using *tapir*'s variant or conditional module.
 
 Unfortunately the usage of the launcher has a drawback: In Eclipse you can only start your tests with it, if the test cases are located in the main source folder (src/main/java by default). Otherwise the launcher cannot find the classes. Note also that the GUI uses JavaFX, which means that you might have to install JavaFX in addition, if you are using OpenJDK.
