@@ -1,6 +1,6 @@
 ---
 title: JUnit 4
-description: tapir provides the possibility to launch your tests with JUnit 4. Moreover, JUnit 4 can be used a reporting tool/format.
+description: tapir provides the possibility to launch your tests with JUnit 4.
 permalink: /docs/execution/junit4/
 ---
 

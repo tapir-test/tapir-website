@@ -1,6 +1,6 @@
 ---
 title: JUnit 5
-description: tapir provides the possibility to launch your tests with JUnit 5. Moreover, JUnit 5 can be used a reporting tool/format.
+description: tapir provides the possibility to launch your tests with JUnit 5.
 permalink: /docs/execution/junit5/
 redirect_from:
  - /docs/extensions/junit/
