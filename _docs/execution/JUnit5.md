@@ -15,7 +15,7 @@ These characteristics fit perfectly for <i>tapir</i>.
 
 ``` xml
 <dependency>
-  <groupId>io.tapirtest</groupId>
+  <groupId>io.tapir-test</groupId>
   <artifactId>tapir-extensions-junit5-execution</artifactId>
   <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>

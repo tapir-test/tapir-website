@@ -20,7 +20,7 @@ This module contains a new launcher to start *tapir* test cases and test suites.
 
 ``` xml
 <dependency>
-  <groupId>io.tapirtest</groupId>
+  <groupId>io.tapir-test</groupId>
   <artifactId>tapir-extensions-execution-gui</artifactId>
   <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>

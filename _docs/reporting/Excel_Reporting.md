@@ -20,7 +20,7 @@ This module contains a reporting listener which writes an Excel report about the
 
 ``` xml
 <dependency>
-  <groupId>io.tapirtest</groupId>
+  <groupId>io.tapir-test</groupId>
   <artifactId>tapir-extensions-reporting-excel</artifactId>
   <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>

@@ -58,7 +58,7 @@ basic [@ModuleConfiguration](https://www.javadoc.io/page/de.bmiag.tapir/tapir/l
 
 ``` xml
 <dependency>
-  <groupId>io.tapirtest</groupId>
+  <groupId>io.tapir-test</groupId>
   <artifactId>tapir-extensions-archetype</artifactId>
   <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>

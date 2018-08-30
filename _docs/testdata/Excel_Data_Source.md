@@ -20,7 +20,7 @@ The *tapir extensions* Datasource Excel module is an adapter for *tapir*'s datas
 
 ``` xml
 <dependency>
-  <groupId>io.tapirtest</groupId>
+  <groupId>io.tapir-test</groupId>
   <artifactId>tapir-extensions-datasource-excel</artifactId>
   <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>

@@ -25,7 +25,7 @@ files are picked up by Allure and transformed into a good-looking report.
 
 ``` xml
 <dependency>
-  <groupId>io.tapirtest</groupId>
+  <groupId>io.tapir-test</groupId>
   <artifactId>tapir-extensions-allure2</artifactId>
   <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>

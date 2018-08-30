@@ -11,7 +11,7 @@ This module contains an implementation of *tapir*'s execution listener, which ca
 
 ``` xml
 <dependency>
-  <groupId>io.tapirtest</groupId>
+  <groupId>io.tapir-test</groupId>
   <artifactId>tapir-extensions-reporting-base</artifactId>
   <version>{{site.latesttapirextensionsversion}}</version>
 </dependency>
