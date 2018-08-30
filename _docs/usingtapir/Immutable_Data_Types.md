@@ -1,7 +1,9 @@
 ---
 title: Immutable Data Types
 documentation: tapir provides annotations for building immutable types easily. You just have to annotate your class with @Immutable.
-permalink: /docs/extensions/immutables/
+permalink: /docs/usingtapir/immutables/
+redirect_from:
+ - /docs/extensions/immutables/
 ---
 Data used in the test cases is often supposed to be "immutable", hence
 the data is defined once and only read by the tests afterwards. The

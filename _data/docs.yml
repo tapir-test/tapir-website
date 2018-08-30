@@ -20,15 +20,31 @@
   - usingtapir/running-tapir-tests
   - usingtapir/assertions
   - usingtapir/general-properties
+  - usingtapir/documentation
+  - usingtapir/immutables
   - usingtapir/logging
   - usingtapir/concurrency
   - usingtapir/externalized-configuration
+
+- title: Execution
+  docs:
+  - execution/junit4
+  - execution/junit5
+  - execution/gui
+
+- title: Reporting
+  docs:
+  - reporting/allure1
+  - reporting/allure2
+  - reporting/reporting-base
+  - reporting/excel
 
 - title: Test Data
   docs:
   - testdata/data-injection
   - testdata/external-data-format
   - testdata/csv-data-source
+  - testdata/excel-data-source
 
 - title: Selenium
   docs:
@@ -36,19 +52,11 @@
   - selenium/browser
   - selenium/framework
 
-- title: Extensions
+- title: Control Flow
   docs:
-  - extensions/documentation
-  - extensions/junit
-  - extensions/allure
-  - extensions/immutables
-  - extensions/variant-management
-  - extensions/configuration-management
-  - extensions/conditional
-
-- title: Third Party Extensions
-  docs:
-  - thirdpartyextensions/rapit
+  - controlflow/variant-management
+  - controlflow/configuration-management
+  - controlflow/conditional
 
 - title: Customization
   docs:
@@ -61,11 +69,16 @@
   - customization/ui-technology
   - customization/dynamic-active-annotations
 
-- title: Changelog
+- title: tapir Changelog
   docs:
-  - changelog/changelog-3.1.1
-  - changelog/changelog-3.1.0
-  - changelog/changelog-3.0.0
+  - tapir-changelog/3.2.0
+  - tapir-changelog/3.1.1
+  - tapir-changelog/3.1.0
+  - tapir-changelog/3.0.0
+
+- title: tapir Extensions Changelog
+  docs:
+  - tapir-extensions-changelog/1.0.0
 
 - title: Troubleshooting
   docs:

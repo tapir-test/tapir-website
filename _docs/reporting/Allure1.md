@@ -1,7 +1,7 @@
 ---
-title: Allure
+title: Allure 1
 description: Allure is a framework/tool which generates comprehensive reports for your test executions.
-permalink: /docs/extensions/allure/
+permalink: /docs/reporting/allure1/
 ---
 
 Allure is a framework/tool which generates comprehensive reports for
@@ -36,14 +36,13 @@ The screenshot below displays a sample test execution report.
 ## Maven
 
 Allure seamlessly integrates into Maven by providing a [dedicated
-plugin](https://github.com/allure-framework/allure-maven). By
-extending *tapir-starter-selenium-allure* you do not have to care about
-the configuration as this is done by the parent pom. In order to run the
-tests (using the [Maven failsafe plugin]({{"/docs/extensions/junit/" | prepend: site.baseurl}})), generate the report
-and deploying the report, run the following command:
+plugin](https://github.com/allure-framework/allure-maven).
+If you use [JUnit 4]({{"/docs/execution/junit4/" | prepend: site.baseurl}}) or [JUnit 5]({{"/docs/execution/junit5/" | prepend: site.baseurl}}), consult the corresponding documentation.
+
+In general you can just use this command:
 
 ``` text
-> mvn clean integration-test allure:serve
+> mvn clean test allure:serve
 ```
 
 Maven fires up a web server and starts the browser which renders the Allure report.

@@ -13,7 +13,7 @@ IDE:
 ### Commandline
 
 ``` text
-mvn archetype:generate -DarchetypeGroupId=de.bmiag.tapir -DarchetypeArtifactId=tapir-bootstrap-archetype -DarchetypeVersion={{site.latesttapirversion}}
+mvn archetype:generate -DarchetypeGroupId=io.tapirtest -DarchetypeArtifactId=tapir-extensions-archetype -DarchetypeVersion={{site.latesttapirextensionsversion}}
 ```
 
 Maven will ask you for the following properties:
@@ -36,9 +36,9 @@ Eclipse provides a project wizard to create Maven projects:
     <i>Next</i>
 -   Proceed to the location selection by clicking *Next >* again
 -   Select *Add Archetype...* and enter these coordinates:
-    -   Archetype Group Id: *de.bmiag.tapir*
-    -   Archetype Artifact Id: *tapir-bootstrap-archetype*
-    -   Archetype Version: *{{ site.latesttapirversion }}*
+    -   Archetype Group Id: *io.tapirtest*
+    -   Archetype Artifact Id: *tapir-extensions-archetype*
+    -   Archetype Version: *{{ site.latesttapirextensionsversion }}*
 -   Click *OK*
 -   Ensure that the archetype is selected and click *Next >*
 -   Eclipse asks you to specify the following properties:

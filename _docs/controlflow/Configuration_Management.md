@@ -1,7 +1,9 @@
 ---
 title: Configuration Management
 description: Applications under Test behave differently based on their configuration. With this module your tests are ware of these variations.
-permalink: /docs/extensions/configuration-management/
+permalink: /docs/controlflow/configuration-management/
+redirect_from:
+ - /docs/extensions/configuration-management/
 ---
 
 In the previous chapter about [variant management]({{"/docs/extensions/variant-management/" | prepend: site.baseurl}}),
