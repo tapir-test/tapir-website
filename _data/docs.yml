@@ -78,8 +78,8 @@
 
 - title: tapir Extensions Changelog
   docs:
-  - tapir-extensions-changelog/1.0.0
   - tapir-extensions-changelog/1.0.1
+  - tapir-extensions-changelog/1.0.0
 
 - title: Troubleshooting
   docs:
