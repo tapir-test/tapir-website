@@ -87,6 +87,22 @@ class MyTest {
 You can add custom extensions by
 using [@UseExtension](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/useextension/UseExtension.html).
 
+## UseBean
+
+You can use the annotation [@UseBean](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/core/annotation/usebean/UseBean.html) to inject arbitrary beans into your test class. It adds the given bean classes under a default name as a field and adds Spring's *Autowired* annotation. This works similar to *@UseExtension*, but does not add the new field as *extension*. This annotation is useful if you want to use multiple page objects in your test and don't want to add each of them as a field.
+
+``` xtend
+@TestClass
+@UseBean(MyPage)
+class MyTest {
+ 
+    @Step
+    def void step1() {
+        assertThat(myPage.textField.text, is("Test"))
+    }
+}
+```
+
 ## Documentation
 
 Test classes can and should be documented. There is a dedicated chapter
