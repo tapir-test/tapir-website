@@ -34,6 +34,15 @@ for a dynamic active annotation, Spring's
 annotation is used. As a higher order is prefered over a lower order,
 you are able to overwrite <i>tapir's</i> annotation processor in submodules.
 
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <div class="panel-title"><span class="fas fa-exclamation-circle"></span> Caution</div>
+  </div>
+  <div class="panel-body">
+  When you implement an own annotation processor, please make sure that it does not have any kind of state (e.g. a field) to transport data between the annotation processing phases. It is neither guaranteed that the processor is not reused for various annotated elements nor that the same instance is used for two phases of the same annotated element.
+  </div>
+</div>
+
 **Parameter.xtend**
 
 ``` xtend
