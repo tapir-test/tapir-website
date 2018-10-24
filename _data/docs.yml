@@ -57,6 +57,7 @@
   - controlflow/variant-management
   - controlflow/configuration-management
   - controlflow/conditional
+  - controlflow/feature-ide
 
 - title: Customization
   docs:
@@ -78,6 +79,7 @@
 
 - title: tapir Extensions Changelog
   docs:
+  - tapir-extensions-changelog/1.1.0
   - tapir-extensions-changelog/1.0.1
   - tapir-extensions-changelog/1.0.0
 
