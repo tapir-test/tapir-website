@@ -159,7 +159,7 @@ If you are using [data providers]({{"/docs/testdata/data-injection/" | prepend: 
 disable parts of the provided data by checking for features. Your data
 element classes should implement [FeatureBased](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/data/FeatureBased.html). The
 method *getActivateByFeatureExpression()* returns an optional
-[FeatureExpression](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/expression/FeatureExpression.html) which can be built by [using FeatureExpressionBuilder](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/expression/FeatureExpressionBuilder.html).
+[FeatureExpression](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/expression/FeatureExpression.html) which can be built by using  [FeatureExpressionBuilder](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/feature/expression/FeatureExpressionBuilder.html).
 The extension provides methods similar to those of
 the *FeatureActivated* and *FeatureNotActivated* annotations. In conjunction
 with <i>tapir's</i> [Immutables]({{"/docs/extensions/immutables/" | prepend: site.baseurl}}) you can declare your feature based objects like
@@ -204,6 +204,28 @@ For types which are not annotated with *@Immutable* extending
 [FeatureSpecificDataElement](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/data/FeatureSpecificDataElement.html) might be an option. This abstract
 class implements *FeatureBased* and provides a getter and a setter for the
 feature expression.
+
+In case you want to filter a list which is not used in an [IteratedParameter](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/execution/annotations/parameter/IteratedParameter.html), you can also wrap the elements in a [FeatureBasedContainer](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/service/FeatureBasedContainer.html) and use the [FeatureBasedContainerFilterService](https://www.javadoc.io/page/de.bmiag.tapir/tapir/latest/de/bmiag/tapir/variant/service/FeatureBasedContainerFilterService.html) to filter an iterable of those containers. Each container holds exactly one arbitrary element and an optional *FeatureExpression*. The expression can again be created with the *FeatureExpressionBuilder*.
+
+``` xtend
+@Autowired
+extension FeatureBasedContainerFilterService
+
+...
+
+@Step
+def void myStep() {
+  val iterable = #[
+    FeatureBasedContainer.of('1'),
+    FeatureBasedContainer.of('2'),
+    FeatureBasedContainer.of('3', Feature1.activated),
+    FeatureBasedContainer.of('4', not(Feature2.activated))
+  ]
+  val filteredIterable = filterByActivatedFeatures(iterable)
+  ...
+}
+```
+
 
 ## Variants
 
