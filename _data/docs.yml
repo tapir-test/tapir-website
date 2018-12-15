@@ -58,7 +58,8 @@
   - controlflow/configuration-management
   - controlflow/conditional
   - controlflow/feature-ide
-
+  - controlflow/feature-gen
+  
 - title: Customization
   docs:
   - customization/executionfilter

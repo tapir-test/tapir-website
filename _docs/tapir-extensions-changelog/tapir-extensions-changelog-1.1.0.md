@@ -6,6 +6,7 @@ permalink: /docs/tapir-extensions-changelog/1.1.0/
 
 ### Enhancements
 * [Support for the FeatureIDE](https://github.com/tapir-test/tapir-extensions/issues/9)
+* [Support for feature-gen](https://github.com/tapir-test/tapir-extensions/issues/13)
 
 ### Bugfixes
 * [Issue with serialization of parameters in the JUnit5 module](https://github.com/tapir-test/tapir-extensions/issues/7)
