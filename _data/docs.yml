@@ -71,6 +71,7 @@
 
 - title: tapir Changelog
   docs:
+  - tapir-changelog/3.2.1
   - tapir-changelog/3.2.0
   - tapir-changelog/3.1.1
   - tapir-changelog/3.1.0
@@ -78,6 +79,7 @@
 
 - title: tapir Extensions Changelog
   docs:
+  - tapir-extensions-changelog/1.0.2
   - tapir-extensions-changelog/1.0.1
   - tapir-extensions-changelog/1.0.0
 
