@@ -1,5 +1,5 @@
 ---
-title: Changes in Version 3.3.0 (2018-?-?)
+title: Changes in Version 3.3.0 (2018-01-09)
 description: The changelog for the tapir 3.3.0 release
 permalink: /docs/tapir-changelog/3.3.0/
 ---
