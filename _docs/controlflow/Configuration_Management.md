@@ -120,11 +120,6 @@ class Variant1 {
     }
 
 }
-
-@ConfigurationVariant
-class Variant2 {
-
-}
 ```
 
 **Variant2.xtend**
