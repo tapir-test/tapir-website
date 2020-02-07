@@ -72,7 +72,7 @@ configuration class:
 ``` xtend
 @ModuleConfiguration
 public class MyConfiguration {
-    @Bean("de.bmiag.tapir.selenium.listener.ScreenshotListener")
+    @Bean("de.bmiag.tapir.seleniumexecution.listener.ScreenshotListener")
     def CustomScreenshotListener customScreenshotListener() {
         return new CustomScreenshotListener
     }
@@ -80,7 +80,7 @@ public class MyConfiguration {
 ```
 
 This declaration overrides the bean
-*de.bmiag.tapir.selenium.listener.ScreenshotListener*. The result is
+*de.bmiag.tapir.seleniumexecution.listener.ScreenshotListener*. The result is
 this logged message:
 
     The attachment GoogleTest-assertTitle-Failure has been written to {somepath}/GoogleTest-assertTitle-Failure.png
