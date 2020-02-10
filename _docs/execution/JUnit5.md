@@ -61,9 +61,4 @@ plugin](https://plugins.jenkins.io/junit) which is 100% compatible with
 historical test results as well as a web UI for viewing test reports,
 tracking failures, and so on. 
 
-There are a couple of additional plugins which are based on the JUnit 4
-API, like *Test In Progress* which visualizes the current test execution
-progress.
-
-In general all the frameworks and tools which are compatible to JUnit 4
-are compatible to <i>tapir</i> as well.
+In general all the frameworks and tools which are compatible to JUnit 5 are compatible to <i>tapir</i> as well.
