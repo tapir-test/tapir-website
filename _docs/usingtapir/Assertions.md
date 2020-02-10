@@ -103,7 +103,7 @@ You just have to create a class and annotate it with [@AssertJAssertionsWrapper]
 
 In our example we would like to provide assertion for *java.io.File*. As this is already provided by *org.assertj.core.api.Assertions*, we do not have to implement this by ourselves.
 
-With *includes* and *excludes* you select/deselect the assertThat-method by the type of their first parameter. So for our File assertion this is all we need to so.
+With *includes* and *excludes* you select/deselect the assertThat-method by the type of their first parameter. So for our File assertion this is all we need to do.
 
 ``` xtend
 import de.bmiag.tapir.assertion.annotation.AssertJAssertionsWrapper

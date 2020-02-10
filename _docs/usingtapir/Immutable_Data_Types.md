@@ -362,7 +362,7 @@ class LoginUser {
 
 ## Equals, hashCode and toString
 
-The three methods *equals*, *hashCode* and *toString* and generated
+The three methods *equals*, *hashCode* and *toString* are generated
 based on the attributes of the immutable class. Per default all
 available attributes are used in these methods. If you don't want to use
 specific attributes in these methods, you can exclude them by annotating

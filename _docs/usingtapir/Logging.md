@@ -41,7 +41,7 @@ advantage that you can configure all loggers with a Log4j2
 configuration.
 
 We analyzed the logging frameworks which our third-party libraries used
-and included the corresponding bridges in the tapir-depenencies module.
+and included the corresponding bridges in the tapir-dependencies module.
 If you add additional frameworks with additional logging frameworks you
 have to add the bridge by yourself.
 
