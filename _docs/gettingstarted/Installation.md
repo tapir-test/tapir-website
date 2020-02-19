@@ -22,10 +22,14 @@ The Eclipse Installer is the easiest way to install and update your Eclipse Deve
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <div class="panel-title"><span class="fas fa-info-circle"></span> Hint</div>
+    <div class="panel-title"><span class="fas fa-info-circle"></span> Hints</div>
   </div>
   <div class="panel-body">
-  On some systems the drag and drop approach from the website doesn't work with the Eclipse Installer. In this case it can help to download the setup file from the button above to your file system first. Then drag and drop the file into the Eclipse Installer header.
+    <ul>
+      <li>Windows does not allow to drag and drop files when the Eclipse installer is started with elevated admin permissions. Start the installer with normal user permissions to avoid this issue.</li>
+      <li>On some systems the drag and drop approach from the website doesn't work with the Eclipse Installer. In this case it can help to download the setup file from the button above to your file system first. Then drag and drop the file into the Eclipse Installer header.</li>
+      <li>Don't forget to configure the installer's proxy settings in case that you are, for instance, within a company network.</li>
+    </ul>
   </div>
 </div>
 
